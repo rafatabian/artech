@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/artech/static/css/main.c7ec3132.css",
+    "main.js": "/artech/static/js/main.1b7a951d.js",
+    "static/css/162.3b74acdb.chunk.css": "/artech/static/css/162.3b74acdb.chunk.css",
+    "static/js/162.d50e5f9f.chunk.js": "/artech/static/js/162.d50e5f9f.chunk.js",
+    "static/css/951.bb05bf19.chunk.css": "/artech/static/css/951.bb05bf19.chunk.css",
+    "static/js/951.469170da.chunk.js": "/artech/static/js/951.469170da.chunk.js",
+    "static/js/167.8a147be2.chunk.js": "/artech/static/js/167.8a147be2.chunk.js",
+    "static/media/artech_home.jpg": "/artech/static/media/artech_home.2688419382d11f8f8e4e.jpg",
+    "static/media/artech_home-removebg-preview.png": "/artech/static/media/artech_home-removebg-preview.59850a2f12bf19ba5ac7.png",
+    "index.html": "/artech/index.html",
+    "main.c7ec3132.css.map": "/artech/static/css/main.c7ec3132.css.map",
+    "main.1b7a951d.js.map": "/artech/static/js/main.1b7a951d.js.map",
+    "162.3b74acdb.chunk.css.map": "/artech/static/css/162.3b74acdb.chunk.css.map",
+    "162.d50e5f9f.chunk.js.map": "/artech/static/js/162.d50e5f9f.chunk.js.map",
+    "951.bb05bf19.chunk.css.map": "/artech/static/css/951.bb05bf19.chunk.css.map",
+    "951.469170da.chunk.js.map": "/artech/static/js/951.469170da.chunk.js.map",
+    "167.8a147be2.chunk.js.map": "/artech/static/js/167.8a147be2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7ec3132.css",
+    "static/js/main.1b7a951d.js"
+  ]
+}
