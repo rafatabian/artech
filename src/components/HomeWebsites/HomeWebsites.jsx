@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import "./HomeWebsites.css"
+import homePrevProject  from "../../assets/images/home_show_prevous_project.webp"
+import { GiWireframeGlobe } from "react-icons/gi"
 
 const HomeWebsites = () => {
     const [matrix, setMatrix] = useState([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1])
@@ -47,6 +49,22 @@ useEffect(() => {
        <span style={{marginLeft:`${g}px`}}>{matrix.map((number) => <p>{number}</p>)}</span>
        <span style={{marginLeft:`${h}px`}}>{matrix.map((number) => <p>{number}</p>)}</span>
        <span style={{marginLeft:`${i}px`}}>{matrix.map((number) => <p>{number}</p>)}</span>
+
+       <div className="homeWebsite_content">
+        <div>
+            <a href="">
+                <img src={homePrevProject} alt="project"/>
+            </a>
+            <button className="homeWebsite_content_proiect">DESCOPERA PROIECT</button>
+        </div>
+        <div>
+            <h1>Creeare Site Web <GiWireframeGlobe/></h1>
+          <p>Creează-ți Prezența Online cu Serviciile Noastre de Web Development și Web Design!
+          O prezență online puternică este esențială pentru succesul oricărei afaceri. Dacă dorești un website care nu doar să arate bine, dar și să performeze excelent, ai ajuns în locul potrivit!</p>
+          <button className="homeWebsite_content_detalii">AFLA MAI MULTE</button>
+        </div>
+         
+       </div>
     </div>
   )
 }
