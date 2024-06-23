@@ -29,7 +29,7 @@
      text-align: center;
      line-height: 33px;
      max-width: 500px;
-     z-index: 99;
+     z-index: 9;
      margin-right: calc(30vw - 250px);
      margin-top: -50px;
      animation: home_make_text_appear 1s ease forwards;

@@ -19,8 +19,8 @@ const Navbar = () => {
 
       <div className={`navbar_buttons ${showMenu ? "show_menu_icon_clicked" : ""}`}>
         <button onClick={() => setShowMenu(false)}>HOME</button>
-        <button onClick={() => setShowMenu(false)}>WEBSITES</button>
         <button onClick={() => setShowMenu(false)}>BRANDING</button>
+        <button onClick={() => setShowMenu(false)}>WEBSITES</button>
         <button onClick={() => setShowMenu(false)}>MARKETING</button>
         <button onClick={() => setShowMenu(false)}>PERSONALIZARE</button>
         <button onClick={() => setShowMenu(false)}>CONTACT</button>

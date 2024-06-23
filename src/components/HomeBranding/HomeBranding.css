@@ -1,0 +1,51 @@
+.homeBranding_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeBranding_business_card {
+    width: 350px;
+    height: 200px; /* Set a fixed height or adjust based on your image aspect ratio */
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate_card 5s linear infinite;
+    box-shadow: 0 0 3px 3px rgb(219, 219, 219);
+}
+
+.homeBranding_side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-size: cover;
+}
+
+.front {
+    /* Front image background will be set in JSX */
+}
+
+.back {
+    /* Back image background will be set in JSX */
+    transform: rotateY(180deg);
+}
+
+@keyframes rotate_card {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    25% {
+        transform: rotateX(10deg) rotateY(90deg) rotateZ(-5deg);
+    }
+    50% {
+        transform: rotateX(20deg) rotateY(180deg) rotateZ(-10deg);
+    }
+    75% {
+        transform: rotateX(10deg) rotateY(270deg) rotateZ(-5deg);
+    }
+    100% {
+        transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+    }
+}
