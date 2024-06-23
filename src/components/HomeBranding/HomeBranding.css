@@ -8,7 +8,7 @@
 
 .homeBranding_business_card {
     width: 350px;
-    height: 200px; /* Set a fixed height or adjust based on your image aspect ratio */
+    height: 200px;
     position: relative;
     transform-style: preserve-3d;
     animation: rotate_card 5s linear infinite;
@@ -23,12 +23,7 @@
     background-size: cover;
 }
 
-.front {
-    /* Front image background will be set in JSX */
-}
-
 .back {
-    /* Back image background will be set in JSX */
     transform: rotateY(180deg);
 }
 
@@ -48,4 +43,52 @@
     100% {
         transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
     }
+}
+.homeBranding_text{
+    max-width: 40vw;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.homeBranding_text > div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.homeBranding_text > div > h1{
+    font-family: "Roboto";
+    font-weight: 700;
+    color: #313131;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.homeBranding_text > div > svg{
+    width: 40px;
+    height: 40px;
+    color: #313131;
+    margin-left: 5px;
+}
+.homeBranding_text > p{
+    font-family: "Roboto";
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.homeBranding_text > button{
+    padding: 7px 15px;
+    border-radius: 4px;
+    background: green;
+    border: 1px solid green;
+    font-family: "Roboto";
+    font-weight: 500;
+    color: white;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.homeBranding_text > button:hover{
+    background-color: rgb(0, 90, 0);
 }
