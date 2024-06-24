@@ -1,17 +1,29 @@
-import { lazy } from 'react'
+import "./App.css"
+import { Suspense, lazy } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import logo from "./assets/images/artech_logo.webp"
+import { ContextProvider } from "./context/Context"
 
 const Navbar = lazy(() => import("./components/Navbar/Navbar"))
 const Home = lazy(() => import("./components/Home/Home"))
-const HomeBranding = lazy(() => import("./components/HomeBranding/HomeBranding"))
-const HomeWebsites = lazy(() => import("./components/HomeWebsites/HomeWebsites"))
 
 const App = () => {
   return (
-  <div className="app contianer">
-     <Navbar />
-     <Home />
-     <HomeBranding />
-     <HomeWebsites />
+  <div className="app_contianer">
+    <Suspense fallback={<div id="loading_container">
+      <img src={logo} alt="logo" />
+     </div>}>
+     
+     <ContextProvider>
+      <Navbar />
+       <Router>
+       <Routes>
+        <Route path="/" element={<Home />} />
+       </Routes>
+      </Router>
+      </ContextProvider>
+    </Suspense>
+    
   </div>
   )
 }

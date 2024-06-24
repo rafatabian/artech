@@ -1,4 +1,4 @@
-.home_container{
+.home_text{
     width: 100%;
     height: 100vh;
     background-image: url(../../assets/images/artech_home.jpg);
@@ -12,7 +12,7 @@
     justify-content: center;
     flex-direction: column;
 }
-.home_container::before{
+.home_text::before{
     content: "";
     position: absolute;
     top: 0;
@@ -21,7 +21,7 @@
     height: 100%;
     background-color: rgba(255, 255, 255, 0.8);
 }
-.home_container > h1{
+.home_text > h1{
      color: rgb(40, 40, 40);
      font-family: "Roboto";
      font-weight: 700;
@@ -35,7 +35,7 @@
      animation: home_make_text_appear 1s ease forwards;
      color: transparent;
 }
-.home_container > p{
+.home_text > p{
     color: rgb(0, 0, 0);
     font-family: "Roboto";
     font-weight: 500;

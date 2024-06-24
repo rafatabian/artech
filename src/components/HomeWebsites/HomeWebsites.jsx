@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
+import React from "react"
 import "./HomeWebsites.css"
 import homePrevProject  from "../../assets/images/home_show_prevous_project.webp"
 import { GiWireframeGlobe } from "react-icons/gi"
 
-const HomeWebsites = () => {
+const HomeWebsites = React.forwardRef((props, ref) => {
     const [matrix, setMatrix] = useState([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1])
     const [a, setA] = useState(0)
     const [b, setB] = useState(0)
@@ -39,7 +40,7 @@ useEffect(() => {
 
 
   return (
-    <div className="homeWebsites_container">
+    <div className="homeWebsites_container" ref={ref}>
        <span style={{marginLeft:`${a}px`}}>{matrix.map((number) => <p>{number}</p>)}</span>
        <span style={{marginLeft:`${b}px`}}>{matrix.map((number) => <p>{number}</p>)}</span>
        <span style={{marginLeft:`${c}px`}}>{matrix.map((number) => <p>{number}</p>)}</span>
@@ -58,7 +59,7 @@ useEffect(() => {
             <button className="homeWebsite_content_proiect">DESCOPERA PROIECT</button>
         </div>
         <div>
-            <h1>Creeare Site Web <GiWireframeGlobe/></h1>
+            <h1>Creare Site Web <GiWireframeGlobe/></h1>
           <p>Creează-ți Prezența Online cu Serviciile Noastre de Web Development și Web Design!
           O prezență online puternică este esențială pentru succesul oricărei afaceri. Dacă dorești un website care nu doar să arate bine, dar și să performeze excelent, ai ajuns în locul potrivit!</p>
           <button className="homeWebsite_content_detalii">AFLA MAI MULTE</button>
@@ -67,6 +68,5 @@ useEffect(() => {
        </div>
     </div>
   )
-}
-
+})
 export default HomeWebsites
