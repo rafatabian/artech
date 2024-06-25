@@ -2,7 +2,8 @@ import { useContext, useEffect, useState } from "react"
 import "./Navbar.css"
 import { FiMenu } from "react-icons/fi"
 import { IoClose } from "react-icons/io5"
-import logo from "../../assets/images/artech_home-removebg-preview.png"
+import black_logo from "../../assets/images/artech_home-removebg-preview.png"
+import white_logo from "../../assets/images/artech_home_white_logo.webp"
 import { GeneralContext } from "../../context/Context"
 
 const Navbar = () => {
@@ -13,7 +14,9 @@ const Navbar = () => {
   return (
     <div className={`navbar_container ${navbarColor === "black" ? "navbar_dark" : "navbar_white"}`}>
      <div className="navbar_logo">
-        <img src={logo} alt="logo"/>
+        {navbarColor === "white" ? 
+        <img src={black_logo} alt="logo"/>
+        :<img className="navabr_white_logo" src={white_logo} alt="logo"/>}
      </div>
 
      {!showMenu && <FiMenu className="navbar_menu-icon" onClick={() => setShowMenu(true)}/>}

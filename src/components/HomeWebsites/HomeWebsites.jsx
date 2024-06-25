@@ -6,15 +6,17 @@ import { GiWireframeGlobe } from "react-icons/gi"
 
 const HomeWebsites = React.forwardRef((props, ref) => {
     const [matrix, setMatrix] = useState([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1])
-    const [a, setA] = useState(0)
-    const [b, setB] = useState(0)
-    const [c, setC] = useState(0)
-    const [d, setD] = useState(0)
-    const [e, setE] = useState(0)
-    const [f, setF] = useState(0)
-    const [g, setG] = useState(0)
-    const [h, setH] = useState(0)
-    const [i, setI] = useState(0)
+    const [a, setA] = useState(253)
+    const [b, setB] = useState(5)
+    const [c, setC] = useState(517)
+    const [d, setD] = useState(448)
+    const [e, setE] = useState(145)
+    const [f, setF] = useState(846)
+    const [g, setG] = useState(1246)
+    const [h, setH] = useState(1241)
+    const [i, setI] = useState(295)
+
+    // TO DO add some default dinamic margins based on the device width to a,b,c,d, etc...
 
 // changing matrix number
     useEffect(() => {
@@ -26,18 +28,18 @@ const HomeWebsites = React.forwardRef((props, ref) => {
 //choosing random margins for matrix numbers
 useEffect(() => {
     
-    setInterval(() => {setA(Math.floor(Math.random() * window.innerWidth))}, 2000)
-    setInterval(() => {setB(Math.floor(Math.random() * window.innerWidth))}, 4000)
-    setInterval(() => {setC(Math.floor(Math.random() * window.innerWidth))}, 5000)
-    setInterval(() => {setD(Math.floor(Math.random() * window.innerWidth))}, 5500)
-    setInterval(() => {setE(Math.floor(Math.random() * window.innerWidth))}, 4500)
-    setInterval(() => {setF(Math.floor(Math.random() * window.innerWidth))}, 3500)
-    setInterval(() => {setG(Math.floor(Math.random() * window.innerWidth))}, 3200)
-    setInterval(() => {setH(Math.floor(Math.random() * window.innerWidth))}, 4000)
-    setInterval(() => {setI(Math.floor(Math.random() * window.innerWidth))}, 4500)
-    
-}, [])
+    setTimeout(() => {setA(Math.floor(Math.random() * window.innerWidth))}, 5500)
+    setTimeout(() => {setB(Math.floor(Math.random() * window.innerWidth))}, 6000)
+    setTimeout(() => {setC(Math.floor(Math.random() * window.innerWidth))}, 6500)
+    setTimeout(() => {setD(Math.floor(Math.random() * window.innerWidth))}, 7500)
+    setTimeout(() => {setE(Math.floor(Math.random() * window.innerWidth))}, 8500)
+    setTimeout(() => {setF(Math.floor(Math.random() * window.innerWidth))}, 10500)
+    setTimeout(() => {setG(Math.floor(Math.random() * window.innerWidth))}, 13500)
+    setTimeout(() => {setH(Math.floor(Math.random() * window.innerWidth))}, 15500)
+    setTimeout(() => {setI(Math.floor(Math.random() * window.innerWidth))}, 13500)
 
+
+}, [])
 
   return (
     <div className="homeWebsites_container" ref={ref}>
