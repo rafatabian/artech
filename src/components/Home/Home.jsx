@@ -13,7 +13,7 @@ const Home = () => {
   //check where the user is and change navbar background color
   const handleScroll = () => {
     const websiteComponent = websitesRef.current
-    const websiteComponentTop = websiteComponent.offsetTop + websiteComponent.offsetHeight
+    const websiteComponentTop = websiteComponent.offsetTop + websiteComponent.offsetHeight - 45
     const websiteComponentBottom = websiteComponent.offsetTop + websiteComponent.offsetHeight
     const scrollPosition = window.scrollY + window.innerHeight
 

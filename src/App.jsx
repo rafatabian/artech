@@ -6,7 +6,6 @@ import { ContextProvider } from "./context/Context"
 
 const Navbar = lazy(() => import("./components/Navbar/Navbar"))
 const Home = lazy(() => import("./components/Home/Home"))
-
 const App = () => {
   return (
   <div className="app_contianer">
@@ -19,7 +18,7 @@ const App = () => {
        <Router>
        <Routes>
         <Route path="/" element={<Home />} />
-       </Routes>
+\       </Routes>
       </Router>
       </ContextProvider>
     </Suspense>

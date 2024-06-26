@@ -6,15 +6,7 @@ import { GiWireframeGlobe } from "react-icons/gi"
 
 const HomeWebsites = React.forwardRef((props, ref) => {
     const [matrix, setMatrix] = useState([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1])
-    const [a, setA] = useState(253)
-    const [b, setB] = useState(5)
-    const [c, setC] = useState(517)
-    const [d, setD] = useState(448)
-    const [e, setE] = useState(145)
-    const [f, setF] = useState(846)
-    const [g, setG] = useState(1246)
-    const [h, setH] = useState(1241)
-    const [i, setI] = useState(295)
+    const [matrixMargins, setMatrixMargins] = useState([])
 
     // TO DO add some default dinamic margins based on the device width to a,b,c,d, etc...
 
@@ -25,34 +17,48 @@ const HomeWebsites = React.forwardRef((props, ref) => {
         }, 400)
     }, [matrix])
 
-//choosing random margins for matrix numbers
+
+// NEW IMPROVED LOGIC FOR MATRIX
 useEffect(() => {
-    
-    setTimeout(() => {setA(Math.floor(Math.random() * window.innerWidth))}, 5500)
-    setTimeout(() => {setB(Math.floor(Math.random() * window.innerWidth))}, 6000)
-    setTimeout(() => {setC(Math.floor(Math.random() * window.innerWidth))}, 6500)
-    setTimeout(() => {setD(Math.floor(Math.random() * window.innerWidth))}, 7500)
-    setTimeout(() => {setE(Math.floor(Math.random() * window.innerWidth))}, 8500)
-    setTimeout(() => {setF(Math.floor(Math.random() * window.innerWidth))}, 10500)
-    setTimeout(() => {setG(Math.floor(Math.random() * window.innerWidth))}, 13500)
-    setTimeout(() => {setH(Math.floor(Math.random() * window.innerWidth))}, 15500)
-    setTimeout(() => {setI(Math.floor(Math.random() * window.innerWidth))}, 13500)
+    const randomMargins = () => {
+      let margins = [];
+      const minDistance = 20;
+      const maxIterations = 100; // To prevent infinite loop in case of very narrow conditions
+
+      for (let i = 0; i < 20; i++) {
+        let attempts = 0;
+        let marginGenerated;
+
+        do {
+          marginGenerated = Math.floor(Math.random() * window.innerWidth);
+          attempts++;
+        } while (
+          margins.some(number => Math.abs(marginGenerated - number) < minDistance) &&
+          attempts < maxIterations
+        );
+
+        if (attempts < maxIterations) {
+          margins.push(marginGenerated);
+        } else {
+          console.warn('Could not generate a suitable margin within the attempt limit');
+          break;
+        }
+      }
+
+      setMatrixMargins(margins);
+    };
+
+    randomMargins();
+  }, []);
 
 
-}, [])
+
 
   return (
     <div className="homeWebsites_container" ref={ref}>
-       <span style={{marginLeft:`${a}px`}}>{matrix.map((number) => <p>{number}</p>)}</span>
-       <span style={{marginLeft:`${b}px`}}>{matrix.map((number) => <p>{number}</p>)}</span>
-       <span style={{marginLeft:`${c}px`}}>{matrix.map((number) => <p>{number}</p>)}</span>
-       <span style={{marginLeft:`${d}px`}}>{matrix.map((number) => <p>{number}</p>)}</span>
-       <span style={{marginLeft:`${e}px`}}>{matrix.map((number) => <p>{number}</p>)}</span>
-       <span style={{marginLeft:`${f}px`}}>{matrix.map((number) => <p>{number}</p>)}</span>
-       <span style={{marginLeft:`${g}px`}}>{matrix.map((number) => <p>{number}</p>)}</span>
-       <span style={{marginLeft:`${h}px`}}>{matrix.map((number) => <p>{number}</p>)}</span>
-       <span style={{marginLeft:`${i}px`}}>{matrix.map((number) => <p>{number}</p>)}</span>
-
+        {matrixMargins.map((margins, index) => <span style={{marginLeft:`${margins}px`, animationDelay: `${index * 0.5}s`}}>{matrix.map((number) => <p>{number}</p>)}</span>
+)}
+       
        <div className="homeWebsite_content">
         <div>
             <a href="">
