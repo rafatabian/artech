@@ -25,7 +25,7 @@ useEffect(() => {
       const minDistance = 20;
       const maxIterations = 100; // To prevent infinite loop in case of very narrow conditions
 
-      for (let i = 0; i < 20; i++) {
+      for (let i = 0; i < 30; i++) {
         let attempts = 0;
         let marginGenerated;
 
@@ -56,7 +56,7 @@ useEffect(() => {
 
   return (
     <div className="homeWebsites_container" ref={ref}>
-        {matrixMargins.map((margins, index) => <span style={{marginLeft:`${margins}px`, animationDelay: `${index * 0.5}s`}}>{matrix.map((number) => <p>{number}</p>)}</span>
+        {matrixMargins.map((margins, index) => <span style={{marginLeft:`${margins}px`, animationDelay: `${index * 0.3}s`}}>{matrix.map((number) => <p>{number}</p>)}</span>
 )}
        
        <div className="homeWebsite_content">

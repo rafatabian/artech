@@ -3,6 +3,7 @@ import { Suspense, lazy } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import logo from "./assets/images/artech_logo.webp"
 import { ContextProvider } from "./context/Context"
+import Macbook from "./components/ui/macbook-scroll.tsx"
 
 const Navbar = lazy(() => import("./components/Navbar/Navbar"))
 const Home = lazy(() => import("./components/Home/Home"))
@@ -18,7 +19,8 @@ const App = () => {
        <Router>
        <Routes>
         <Route path="/" element={<Home />} />
-\       </Routes>
+        <Macbook />
+       </Routes>
       </Router>
       </ContextProvider>
     </Suspense>
