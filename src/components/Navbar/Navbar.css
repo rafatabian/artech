@@ -6,7 +6,7 @@
     justify-content: space-between;
     flex-direction: row;
     padding: 0px 4rem 7.5px 4rem;
-    position:fixed;
+    /* position:relative; */
     top: 0;
     left: 0;
     right: 0;

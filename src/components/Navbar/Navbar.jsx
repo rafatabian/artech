@@ -10,20 +10,20 @@ import { Link } from "react-router-dom"
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false)
     const [navColor, setNavColor] = useState(null)
+    const [navPosition, setNavPosition] = useState("")
     const location = useLocation()
 
-//changing navbar color
+
   useEffect(() => {
-   if(location.pathname === "/websites"){
-    setNavColor("white")
-   }else{
-    setNavColor("transparent")
-   }
+//changing navbar color  
+   setNavColor(`${location.pathname === "/websites" ? "white": "transparent"}`)
+// change navbar position
+  setNavPosition(`${location.pathname === "/" ? "relative" : "fixed"}`)
   }, [location.pathname])
 
 
   return (
-    <div className="navbar_container">
+    <div className="navbar_container" style={{position: `${navPosition}`}}>
      <div className="navbar_logo">
       {navColor === "white"
       ? <img src={white_logo} alt="logo"/>
