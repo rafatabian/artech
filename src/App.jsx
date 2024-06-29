@@ -4,9 +4,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import logo from "./assets/images/artech_logo.webp"
 import { ContextProvider } from "./context/Context"
 
-
 const Navbar = lazy(() => import("./components/Navbar/Navbar"))
 const Home = lazy(() => import("./components/Home/Home"))
+const Branding = lazy(() => import("./components/Branding/Branding"))
+const Websites = lazy(() => import("./components/Websites/Websites"))
+const Marketing = lazy(() => import("./components/Marketing/Marketing"))
+
+
 const App = () => {
   return (
   <div className="app_contianer">
@@ -15,10 +19,13 @@ const App = () => {
      </div>}>
      
      <ContextProvider>
+      <Router>
       <Navbar />
-       <Router>
        <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/branding" element={<Branding/>} />
+        <Route path="/websites" element={<Websites />} />
+        <Route path="/marketing" element={<Marketing />} />
         
        </Routes>
       </Router>

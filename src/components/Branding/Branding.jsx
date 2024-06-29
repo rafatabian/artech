@@ -1,4 +1,4 @@
-import "./HomeBranding.css"
+import "./Branding.css"
 import  businessCardOne  from "../../assets/images/artech_visit_cart_1.webp"
 import  businessCardTwo  from "../../assets/images/artech_visit_card_2.webp"
 import whiteBackground from "../../assets/images/home_white_background.webp"

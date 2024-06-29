@@ -1,14 +1,11 @@
+import "./Websites.css"
 import { useEffect, useState } from "react"
-import React from "react"
-import "./HomeWebsites.css"
 import homePrevProject  from "../../assets/images/home_show_prevous_project.webp"
 import { GiWireframeGlobe } from "react-icons/gi"
 
-const HomeWebsites = React.forwardRef((props, ref) => {
+const HomeWebsites = () => {
     const [matrix, setMatrix] = useState([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1])
     const [matrixMargins, setMatrixMargins] = useState([])
-
-    // TO DO add some default dinamic margins based on the device width to a,b,c,d, etc...
 
 // changing matrix number
     useEffect(() => {
@@ -55,8 +52,8 @@ useEffect(() => {
 
 
   return (
-    <div className="homeWebsites_container" ref={ref}>
-        {matrixMargins.map((margins, index) => <span style={{marginLeft:`${margins}px`, animationDelay: `${index * 0.3}s`}}>{matrix.map((number) => <p>{number}</p>)}</span>
+    <div className="homeWebsites_container">
+        {matrixMargins.map((margins, index) => <span style={{marginLeft:`${margins}px`, animationDelay: `${index * 0.3}s`}} key={margins}>{matrix.map((number) => <p>{number}</p>)}</span>
 )}
        
        <div className="homeWebsite_content">
@@ -76,5 +73,5 @@ useEffect(() => {
        </div>
     </div>
   )
-})
+}
 export default HomeWebsites

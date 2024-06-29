@@ -1,7 +1,6 @@
 .navbar_container{
     max-width: 100vw;
     height: 60px;
-    /* background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 79%, transparent 100%); */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,12 +11,6 @@
     left: 0;
     right: 0;
     z-index: 99;
-}
-.navbar_dark{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 79%, transparent 100%);
-}
-.navbar_white{
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 79%, transparent 100%);
 }
 
 .navbar_shadowEffect{
@@ -40,9 +33,7 @@
     height: auto;
     object-fit: contain;
 }
-/* .navabr_white_logo{
-    margin-left: -10px;
-} */
+
 .navbar_logo > span{
 display: flex;
 align-items: center;
@@ -66,7 +57,11 @@ color: rgba(0, 0, 0, 0.742);
     margin-left: 50px;
     flex-direction: row;
 }
-.navbar_buttons > button {
+.navbar_buttons > a{
+    text-decoration: none;
+    user-select: none;
+}
+.navbar_buttons > a > button {
     margin-left: 5px;
     border: none;
     background-color: unset;
@@ -77,12 +72,7 @@ color: rgba(0, 0, 0, 0.742);
     font-family:"Roboto";
     font-weight: 500;
     color: rgba(0, 0, 0, 0.748);
-}
-/* @media screen and (max-width: 1440px) and (min-width:1900){
-    .navbar_container{
-        padding:7.5px 10vw 0 10vw;
-    }
-}  improve*/ 
+} 
 
 @media screen and (min-width: 1600px){
     .navbar_container{
@@ -99,7 +89,7 @@ color: rgba(0, 0, 0, 0.742);
     .navbar_buttons{
         display: none;
     } 
-    .navbar_buttons > button {
+    .navbar_buttons > a > button {
         height: unset;
         margin: 10px 0;
     }
