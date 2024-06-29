@@ -40,9 +40,9 @@
     height: auto;
     object-fit: contain;
 }
-.navabr_white_logo{
+/* .navabr_white_logo{
     margin-left: -10px;
-}
+} */
 .navbar_logo > span{
 display: flex;
 align-items: center;

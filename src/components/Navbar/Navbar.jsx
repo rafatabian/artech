@@ -2,8 +2,8 @@ import { useContext, useEffect, useState } from "react"
 import "./Navbar.css"
 import { FiMenu } from "react-icons/fi"
 import { IoClose } from "react-icons/io5"
-import black_logo from "../../assets/images/artech_home-removebg-preview.png"
-import white_logo from "../../assets/images/artech_home_white_logo.webp"
+import black_logo from "../../assets/images/navbar__white_logo.webp"
+import white_logo from "../../assets/images/navabr_black_logo.webp"
 import { GeneralContext } from "../../context/Context"
 
 const Navbar = () => {
