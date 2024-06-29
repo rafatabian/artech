@@ -5,6 +5,7 @@ import { IoClose } from "react-icons/io5"
 import black_logo from "../../assets/images/navbar_white_logo.webp"
 import white_logo from "../../assets/images/navbar_dark_logo.webp"
 import { useLocation } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false)
@@ -34,8 +35,8 @@ const Navbar = () => {
      {showMenu && <IoClose className="navbar_close_icon" onClick={() => setShowMenu(false)}/>}
 
       <div className={`navbar_buttons ${showMenu ? "show_menu_icon_clicked" : ""}`}>
-        <a href="/"><button onClick={() => setShowMenu(false)} style={{color: `${navColor === "transparent" ? "black" : navColor}`}}>HOME</button></a>
-        <a href="/branding"><button onClick={() => setShowMenu(false)} style={{color: `${navColor === "transparent" ? "black" : navColor}`}}>BRANDING</button></a>
+        <Link to="/"><button onClick={() => setShowMenu(false)} style={{color: `${navColor === "transparent" ? "black" : navColor}`}}>HOME</button></Link>
+        <Link to="/branding"><button onClick={() => setShowMenu(false)} style={{color: `${navColor === "transparent" ? "black" : navColor}`}}>BRANDING</button></Link>
         <a href="/websites"><button onClick={() => setShowMenu(false)} style={{color: `${navColor === "transparent" ? "black" : navColor}`}}>WEBSITES</button></a>
         <a href="/marketing"><button onClick={() => setShowMenu(false)} style={{color: `${navColor === "transparent" ? "black" : navColor}`}}>MARKETING</button></a>
         <a href="/personalizare"><button onClick={() => setShowMenu(false)} style={{color: `${navColor === "transparent" ? "black" : navColor}`}}>PERSONALIZARE</button></a>
