@@ -23,7 +23,12 @@ const Navbar = () => {
 
 
   return (
-    <div className="navbar_container" style={{position: `${navPosition}`}}>
+    <div className="navbar_container" style={{ 
+      position: navPosition, 
+      background: navPosition === "relative" 
+        ? 'white' 
+        : "transparent" 
+    }}>
      <div className="navbar_logo">
       {navColor === "white"
       ? <img src={white_logo} alt="logo"/>

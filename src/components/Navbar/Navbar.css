@@ -1,12 +1,12 @@
 .navbar_container{
     max-width: 100vw;
-    height: 60px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    padding: 0px 4rem 7.5px 4rem;
-    /* position:relative; */
+    padding: 0px 4rem 0px 4rem;
+    position:fixed !important;
     top: 0;
     left: 0;
     right: 0;
