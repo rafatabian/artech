@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.017f4914.css",
-    "main.js": "/static/js/main.eadf1c71.js",
+    "main.js": "/static/js/main.ac5a6e71.js",
     "static/css/602.22c8db08.chunk.css": "/static/css/602.22c8db08.chunk.css",
-    "static/js/602.6ef0cfbc.chunk.js": "/static/js/602.6ef0cfbc.chunk.js",
+    "static/js/602.af271795.chunk.js": "/static/js/602.af271795.chunk.js",
     "static/css/574.9b775f97.chunk.css": "/static/css/574.9b775f97.chunk.css",
     "static/js/574.ff794ef9.chunk.js": "/static/js/574.ff794ef9.chunk.js",
     "static/css/448.0eda5ee6.chunk.css": "/static/css/448.0eda5ee6.chunk.css",
@@ -29,9 +29,9 @@
     "static/media/artech_logo.webp": "/static/media/artech_logo.f8ce9998575d86918c85.webp",
     "index.html": "/index.html",
     "main.017f4914.css.map": "/static/css/main.017f4914.css.map",
-    "main.eadf1c71.js.map": "/static/js/main.eadf1c71.js.map",
+    "main.ac5a6e71.js.map": "/static/js/main.ac5a6e71.js.map",
     "602.22c8db08.chunk.css.map": "/static/css/602.22c8db08.chunk.css.map",
-    "602.6ef0cfbc.chunk.js.map": "/static/js/602.6ef0cfbc.chunk.js.map",
+    "602.af271795.chunk.js.map": "/static/js/602.af271795.chunk.js.map",
     "574.9b775f97.chunk.css.map": "/static/css/574.9b775f97.chunk.css.map",
     "574.ff794ef9.chunk.js.map": "/static/js/574.ff794ef9.chunk.js.map",
     "448.0eda5ee6.chunk.css.map": "/static/css/448.0eda5ee6.chunk.css.map",
@@ -48,6 +48,6 @@
   },
   "entrypoints": [
     "static/css/main.017f4914.css",
-    "static/js/main.eadf1c71.js"
+    "static/js/main.ac5a6e71.js"
   ]
 }
