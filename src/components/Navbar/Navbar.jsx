@@ -44,9 +44,9 @@ const Navbar = () => {
         <Link to="/branding"><button onClick={() => setShowMenu(false)} style={{color: `${navColor === "transparent" ? "black" : navColor}`}}>BRANDING</button></Link>
         <Link to="/websites"><button onClick={() => setShowMenu(false)} style={{color: `${navColor === "transparent" ? "black" : navColor}`}}>WEBSITES</button></Link>
         <Link to="/marketing"><button onClick={() => setShowMenu(false)} style={{color: `${navColor === "transparent" ? "black" : navColor}`}}>MARKETING</button></Link>
-        <Link to="/personalizare"><button onClick={() => setShowMenu(false)} style={{color: `${navColor === "transparent" ? "black" : navColor}`}}>PERSONALIZARE</button></Link>
+        <Link to="/personalizare"><button onClick={() => setShowMenu(false)} style={{color: `${navColor === "transparent" ? "black" : navColor}`}}>PACHETE</button></Link>
         <Link to="/contact"><button onClick={() => setShowMenu(false)} style={{color: `${navColor === "transparent" ? "black" : navColor}`}}>CONTACT</button></Link>
-        <Link to="/help"><button onClick={() => setShowMenu(false)} style={{color: `${navColor === "transparent" ? "black" : navColor}`}}>HELP</button></Link>
+        <Link to="/help"><button onClick={() => setShowMenu(false)} style={{color: `${navColor === "transparent" ? "black" : navColor}`}}>AJUTOR</button></Link>
      </div>
      
     </div>
