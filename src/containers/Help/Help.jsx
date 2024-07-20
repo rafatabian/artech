@@ -3,7 +3,7 @@ import help from "../../assets/images/artech_help.webp"
 import { lazy } from "react"
 import questionsData from "../../assets/questionsData"
 
-const Question = lazy(() => import("../Question/Question"))
+const Question = lazy(() => import("../../components/Question/Question"))
 
 
 const Help = () => {

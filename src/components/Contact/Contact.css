@@ -1,0 +1,221 @@
+.contact_container{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #f2f2f7;
+    padding: 2rem 0;
+}
+.container_title,
+.contact_confirmation > h1{
+   font-family: "Roboto";
+   font-size: 30px;
+   color: #222222;
+   font-weight: 400;
+   letter-spacing: 0.3px;
+}
+.contact_form,
+.contact_phone_email{
+    max-width: 700px;
+    width: 700px;
+    height: 100%;
+    background-color: white;
+    margin: 2rem 0;
+    padding: 2rem 4rem;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 2px 12px -4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 12px -4px rgba(0, 0, 0, 0.1);
+}
+.contact_form > h1,
+.contact_confirmation > h2{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 22px;
+    color: #222222;
+    margin-bottom: 10px;
+    letter-spacing: 0.3px;
+}
+.contact_form div:first-child,
+.contact_desctiption,
+.contact_form div:nth-child(3) > div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 25px 0;
+}
+.contact_form div:first-child > label,
+.contact_desctiption > label,
+.contact_form div:nth-child(3) > div > label{
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333333;
+}
+.contact_form div:first-child > select,
+.contact_desctiption > textarea,
+.contact_form div:nth-child(3) > div > input{
+    width: 100%;
+    padding: 7px 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    border: 1px solid #666666;
+    background-color: #fefefe;
+    background-image:none;
+    border:1px solid #ccc;
+    text-decoration: none;
+    user-select: none;
+    color: #666666;
+}
+.contact_form div:first-child > select:focus,
+.contact_desctiption > textarea:focus,
+.contact_form div:nth-child(3) > div > input:focus{
+    outline: none;
+    border: 1px solid var(--blue);
+}
+.contact_desctiption > textarea{
+    min-height: 100px;
+    font-family: "Roboto";
+    max-width: 636px;
+    letter-spacing: 0.3px;
+}
+.contact_form div:nth-child(3) > h2{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 22px;
+    color: #222222;
+    margin-top: 50px;
+    margin-bottom: -5px;
+    letter-spacing: 0.3px;
+} 
+.contact_form p{
+    font-size: 13px;
+    color: #666666;
+    font-family: "Roboto";
+    margin-bottom: 25px;
+    letter-spacing: 0.3px;
+}
+.contact_form button{
+ color: white;
+ background-color: #005eb8;
+ border-radius: 8px;
+ padding: 9px 16px;
+ font-size: 17px;
+ font-family: "Roboto";
+ border: none;
+ letter-spacing: 0.3px;
+ cursor: pointer;
+}
+.contact_form button:hover{
+    background-color: #00509a;
+}
+.contact_alternative_line{
+    width: 700px;
+    height: 1px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact_alternative_line > p{
+    z-index: 10;
+    background-color: #f2f2f7;
+    font-family:cursive;
+    font-size: 18px;
+    padding: 0 10px;
+    margin-top: -4px;
+    color: #333333;
+}
+.contact_phone_email{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-direction: row;
+}
+.contact_phone_email div:first-child,
+.contact_phone_email div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.contact_phone_email div:first-child > svg{
+    width: 22px;
+    height: 22px;
+    color: var(--blue);
+    margin-right: 5px;
+}
+.contact_phone_email div:nth-child(2) > svg{
+    width: 26px;
+    height: 26px;
+    color: var(--blue);
+    margin-right: 5px;
+}
+.contact_phone_email div:first-child > span{
+    display: flex;
+    align-items: flex-start;
+    justify-self: center;
+    flex-direction: column;
+}
+.contact_phone_email div:first-child > span > a,
+.contact_phone_email div:nth-child(2) > a{
+    font-family: "Roboto";
+    font-size: 15px;
+    color: #333333;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* popup styles */
+.contact_confirmation{
+    position: fixed;
+    top: 40px;
+    padding: 2rem 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 90;
+    background-color: #fefefe;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.contact_confirmation > button{
+    position: absolute;
+    right: 4rem;
+    top: 2rem;
+    padding: 10px;
+    background:none;
+    border: none;
+    cursor: pointer;
+}
+.contact_confirmation > button > svg{
+    width: 22px;
+    height: 22px;
+}
+.contact_confirmation > img{
+    max-width: 130px;
+}
+.contact_confirmation > div{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.contact_confirmation > div > svg{
+    color: white;
+    width: 50px;
+    height: 50px;
+}

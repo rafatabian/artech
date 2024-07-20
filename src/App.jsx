@@ -9,7 +9,8 @@ const Home = lazy(() => import("./components/Home/Home"))
 const Branding = lazy(() => import("./components/Branding/Branding"))
 const Websites = lazy(() => import("./components/Websites/Websites"))
 const Marketing = lazy(() => import("./components/Marketing/Marketing"))
-const Help = lazy(() => import("./components/Help/Help"))
+const Help = lazy(() => import("./containers/Help/Help"))
+const Contact = lazy(() => import("./components/Contact/Contact"))
 
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/websites" element={<Websites />} />
         <Route path="/marketing" element={<Marketing />} />
         <Route path="/help" element={<Help />} />
+        <Route path="/contact" element={<Contact />} />
         
        </Routes>
       </Router>

@@ -1,5 +1,4 @@
 .help_container{
-    margin-top: 60px;
     padding: 4rem;
     display: flex;
     align-items: flex-start;
@@ -17,6 +16,7 @@
 }
 .help_img_container > img{
     max-width: 400px;
+    width: 400px;
 }
 .help_question_title > h1{
     font-size: 45px;
