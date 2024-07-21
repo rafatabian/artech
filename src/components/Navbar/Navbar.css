@@ -10,6 +10,14 @@
     left: 0;
     right: 0;
     z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background-color: white; */
+    border-bottom: 1px solid #eee;
+    -webkit-box-shadow: 0 2px 12px -4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 12px -4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar_shadowEffect{
@@ -70,8 +78,32 @@ color: rgba(0, 0, 0, 0.742);
     cursor: pointer;
     font-family:"Roboto";
     font-weight: 500;
-    color: rgba(0, 0, 0, 0.748);
+    /* color: rgba(0, 0, 0, 0.748); */
+    color: white;
 } 
+.navbar_white{
+    animation: navbar_background 0.5s forwards;
+}
+
+.navabr_btns_black > a > button{
+    animation: navbar_btns 0.5s forwards;
+}
+@keyframes navbar_background{
+    0%{
+        background: transparent;
+    }
+    100%{
+        background-color: white;
+    }
+}
+@keyframes navbar_btns {
+    0%{
+        color: white;
+    }
+    100%{
+        color: black;
+    }
+}
 
 @media screen and (min-width: 1600px){
     .navbar_container{
@@ -110,7 +142,7 @@ color: rgba(0, 0, 0, 0.742);
     margin: 0;
     z-index: 98;
     animation: left_scrolling_mobile_menu 0.7s ease forwards;
-}
+} 
 .navbar_close_icon{
     z-index: 99;
     position: absolute;

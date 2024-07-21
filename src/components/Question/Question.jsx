@@ -10,12 +10,12 @@ const Question = ({question, answer}) => {
   return (
     <div className="question_container" onClick={() => setShowQuestion(!showQuestion)}>
         <div>
-             <div>
-            <p>{question}</p>
-            {showQuestion 
-            ?<IoIosArrowUp/>
-            :<IoIosArrowDown/>}
-        </div>
+            <div>
+              <p>{question}</p>
+              {showQuestion 
+              ?<IoIosArrowUp/>
+              :<IoIosArrowDown/>}
+            </div>
         {showQuestion &&
         <div className="help_answer">
             <p>{answer}</p>

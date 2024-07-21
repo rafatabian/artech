@@ -11,15 +11,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
     cursor: pointer;
     user-select: none;
 }
 .question_container > div > div:first-child > p{
     font-family: "Roboto";
-    font-weight: 500;
-    color: rgb(0, 0, 0);
     font-size: 16px;
-    letter-spacing: 0.2px;
+    font-weight: 500;
+    color: #333333;
+    letter-spacing: 0.3px;
 }
 .question_container > div > div:first-child > svg{
    width: 22px;
@@ -29,11 +30,11 @@
    color: #333333;
 }
 .help_answer{
-    margin-top: 20px;
+    margin-top:15px;
 }
 .help_answer > p{
    font-family: "Roboto";
-   letter-spacing: 0.2px;
+   letter-spacing: 0.3px;
    color: #333333;
    font-size: 16px;
    line-height: 25px;
