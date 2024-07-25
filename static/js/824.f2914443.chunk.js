@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkartech=self.webpackChunkartech||[]).push([[824],{824:(e,s,n)=>{n.r(s),n.d(s,{default:()=>t});var c=n(43),r=n(423),i=n(579);const t=e=>{let{question:s,answer:n}=e;const[t,a]=(0,c.useState)(!1);return(0,i.jsx)("div",{className:"question_container",onClick:()=>a(!t),children:(0,i.jsxs)("div",{children:[(0,i.jsxs)("div",{children:[(0,i.jsx)("p",{children:s}),t?(0,i.jsx)(r.Ik,{}):(0,i.jsx)(r.pte,{})]}),t&&(0,i.jsx)("div",{className:"help_answer",children:(0,i.jsx)("p",{children:n})})]})})}}}]);
+//# sourceMappingURL=824.f2914443.chunk.js.map
