@@ -46,8 +46,9 @@
     width: 100%;
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    flex-direction: column;
     padding: 0 4rem;
 }
 .home_main_content{
@@ -59,7 +60,7 @@
 .home_main_content_title_and_text{
    background-color: #eee;
    max-width: 500px;
-   padding: 35px 35px;
+   padding: 20px 25px;
    border-radius: 8px;
    -webkit-box-shadow: 0 2px 12px -4px rgba(0, 0, 0, 0.2);
    box-shadow: 0 2px 12px -4px rgba(0, 0, 0, 0.2);
@@ -67,7 +68,7 @@
    /* margin-right: 20px; */
 }
 .home_main_content_image{
-      width: 45%;
+      width: 42%;
       max-width: 700px;
       padding: 5px;
 }
@@ -78,16 +79,52 @@
 }
 .home_main_content_title_and_text > h1{
     font-family: "Roboto";
-    font-size: 30px;
+    font-size: 25px;
     color: #333333;
     letter-spacing: 0.3px;
     margin-bottom: 10px;
     line-height: 30px;
+    font-weight: 500;
 }
 .home_main_content_title_and_text > h2{
     font-family: "Roboto";
-    font-size: 18px;
+    font-size: 16px;
     color: #555555;
     letter-spacing: 0.3px;
+    font-weight: 500;
 }
-
+.home_main > h1{
+    margin:  0 4rem;
+    font-family: "Roboto";
+    font-size: 40px;
+    color: var(--blue);
+    background: linear-gradient(to right, #0082e6, #8a2be2);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+.home_about_us{
+    min-height: 100vh;
+    width: 100%;
+}
+.home_main > p{
+    margin: 0 4rem;
+    font-family: "Roboto";
+    color: #444444;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+    max-width: 500px;
+}
+.home_plans_description{
+    background-color: #eddede;
+    margin: 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: row;
+}
+.home_plans_description  div{
+    background-color: #b9b9b9;
+    border-radius: 8px;
+    padding: 10px;
+}
