@@ -14,10 +14,10 @@
     top: 0;
     left: 0;
     right: 0;
-    /* background-color: white; */
-    border-bottom: 1px solid #eee;
-    -webkit-box-shadow: 0 2px 12px -4px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 2px 12px -4px rgba(0, 0, 0, 0.1);
+    /* background-color: rgb(255, 255, 255); */
+    /* border-bottom: 1px solid #eee; */
+    /* -webkit-box-shadow: 0 2px 12px -4px rgba(0, 0, 0, 0.1); */
+    /* box-shadow: 0 2px 12px -4px rgba(0, 0, 0, 0.1); */
 }
 
 .navbar_shadowEffect{
@@ -39,21 +39,6 @@
     width: 140px;
     height: auto;
     object-fit: contain;
-}
-
-.navbar_logo > span{
-display: flex;
-align-items: center;
-justify-self: center;
-font-size: 25px;
-font-family: cursive;
-color: rgba(0, 0, 0, 0.742);
-}
-.navbar_logo > span > p{
-    transform: rotate(30deg);
-    font-size: 40px;
-    margin-right: 5px;
-    font-family:cursive;
 }
 .navbar_buttons{
     width: 100%;
@@ -78,32 +63,8 @@ color: rgba(0, 0, 0, 0.742);
     cursor: pointer;
     font-family:"Roboto";
     font-weight: 500;
-    /* color: rgba(0, 0, 0, 0.748); */
-    color: white;
+    letter-spacing: 0.1px;
 } 
-.navbar_white{
-    animation: navbar_background 0.5s forwards;
-}
-
-.navabr_btns_black > a > button{
-    animation: navbar_btns 0.5s forwards;
-}
-@keyframes navbar_background{
-    0%{
-        background: transparent;
-    }
-    100%{
-        background-color: white;
-    }
-}
-@keyframes navbar_btns {
-    0%{
-        color: white;
-    }
-    100%{
-        color: black;
-    }
-}
 
 @media screen and (min-width: 1600px){
     .navbar_container{
@@ -123,6 +84,7 @@ color: rgba(0, 0, 0, 0.742);
     .navbar_buttons > a > button {
         height: unset;
         margin: 10px 0;
+        color: white;
     }
 }
 .show_menu_icon_clicked{
@@ -134,7 +96,7 @@ color: rgba(0, 0, 0, 0.742);
     bottom: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #D7F8FA;
+    background-color: var(--blue);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -149,6 +111,7 @@ color: rgba(0, 0, 0, 0.742);
     right: 4rem;
     width: 20px;
     height: 20px;
+    color: white;
 }
 @keyframes left_scrolling_mobile_menu {
     0%{

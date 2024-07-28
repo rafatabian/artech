@@ -12,6 +12,7 @@ const Marketing = lazy(() => import("./components/Marketing/Marketing"))
 const Help = lazy(() => import("./containers/Help/Help"))
 const Contact = lazy(() => import("./components/Contact/Contact"))
 
+// react-router-dom is installed in this project
 
 const App = () => {
   return (

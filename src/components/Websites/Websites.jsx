@@ -49,6 +49,9 @@ useEffect(() => {
   }, []);
 
 
+// TO DO
+// addd examples for the users to see and 
+// maybe they gonna have more ideas on how to build the page
 
 
   return (
