@@ -256,15 +256,28 @@
         padding: 10px;
     }
     .home_moving_background{
-        height: 120px;
+        height: 100px;
       }
       .home_new_title{
-          height: 120px
+          height: 100px
       }
       .home_new_title > h1,
       .home_new_title > h2{
-      font-size: 70px;
-      line-height: 60px;
+      font-size: 60px;
+      line-height: 50px;
       letter-spacing: -2px;
+      }
+      .home_new_presentation > p{
+        font-size: 18px;
+        letter-spacing: 0.4px;
+        line-height: 27px;
+      }
+      .home_new_btns_container > a{
+       font-size: 18px;
+       max-width: 50%;
+       padding: 14px 20px;
+      }
+      .home_video{
+        width: 140vw;
       }
 }
