@@ -1,20 +1,30 @@
 import "./Navbar.css"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { FiMenu } from "react-icons/fi"
 import { IoClose } from "react-icons/io5"
 import black_logo from "../../assets/images/navbar_white_logo.webp"
-import { Link } from "react-router-dom"
+import white_logo from "../../assets/images/navbar_dark_logo.webp"
+import { Link, useLocation } from "react-router-dom"
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false)
+    const [dark, setDark] = useState(false)
+    const location = useLocation()
+
+
+    // chech location and change nav color
+    useEffect(() => {
+      setDark(location.pathname === "/websites" ? true : false)
+    }, [location.pathname])
+
 
 
 
 
   return (
-    <div className="navbar_container">
+    <div className={`navbar_container ${dark ? "navbar_dark" : ""}`}>
      <div className="navbar_logo">
-        <img src={black_logo} alt="logo"/>
+        <img src={dark ? white_logo : black_logo} alt="logo"/>
      </div>
 
      {!showMenu && <FiMenu className="navbar_menu-icon" onClick={() => setShowMenu(true)}/>}

@@ -31,7 +31,7 @@ const Home = () => {
         </div>
          
       </div>
-     
+       <h1>ADAUGA PROCENTAJ</h1>
  </div>
   )}
 

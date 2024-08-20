@@ -3,7 +3,7 @@
     margin-top: 80px;
     min-height: 200vh;
     overflow: hidden;
-    background-color: red;
+    /* background-color: red; */
 }
 .home_new_container{
     max-height: 800px;
@@ -108,31 +108,6 @@
 .home_new_btns_container > a:first-child{
     margin-bottom: 8px;
 }
-/* @media screen and (min-width: 1500px){
-    .home_moving_background{
-      height: 180px;
-    }
-    .home_new_title{
-        height: 180px;
-        min-width: 556px;
-    }
-    .home_new_title > h1,
-    .home_new_title > h2{
-    font-size: 100px;
-    line-height: 90px;
-    letter-spacing: -1px;
-    }
-    .home_new_presentation > p{
-        font-size: 27px;
-        letter-spacing: 0.4px;
-    }
-    .home_new_btns_container > a{
-        padding: 22px 27px;
-        font-size: 22px;
-        letter-spacing: 0.4px;
-    }
-}
-    */
 @media screen and (min-width: 1700px){
     .home_new_presentation{
         width: 520px;

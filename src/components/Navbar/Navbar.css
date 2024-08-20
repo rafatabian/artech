@@ -18,6 +18,15 @@
     /* border-bottom: 1px solid #eee; */
     /* -webkit-box-shadow: 0 2px 12px -4px rgba(0, 0, 0, 0.1); */
     /* box-shadow: 0 2px 12px -4px rgba(0, 0, 0, 0.1); */
+} 
+.navbar_dark{
+    color: white;
+}
+.navbar_dark > svg{
+   color:white;
+} 
+.navbar_dark a button{
+    color: white;
 }
 
 .navbar_shadowEffect{
