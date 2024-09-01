@@ -7,3 +7,7 @@
 :root{
     --blue: #0082e6
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
