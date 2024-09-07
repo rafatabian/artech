@@ -54,14 +54,7 @@ const Home = () => {
 
 {/* websites */}
       <div className="home_websites">
-        <h1>Website</h1>
-         <p>Website-ul aduce cu 55% mai multi clienti unui business.</p>
-         <p>75% dintre clienti judeca credibilitatea unei firme dupa aspectul website-ului acesteia.</p>
-
-         <div className="home_websites_interactions">
          <WebsitesSection />
-
-         </div>
       </div>
  </div>
   )}

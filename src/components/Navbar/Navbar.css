@@ -43,24 +43,33 @@
     object-fit: contain;
 }
 .navbar_buttons{
-    width: 100%;
-    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-left: 50px;
     flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+}
+.navbar_dark .navbar_buttons{
+    background-color: black;
 }
 .navbar_buttons > a{
     text-decoration: none;
     user-select: none;
 }
+.navbar_buttons > a:nth-child(1),
+.navbar_buttons > a:nth-child(2),
+.navbar_buttons > a:nth-child(3),
+.navbar_buttons > a:nth-child(4),
+.navbar_buttons > a:nth-child(5),
+.navbar_buttons > a:nth-child(6){
+    margin:0 5px;
+}
+
+
 .navbar_buttons > a > button {
-    margin-left: 5px;
     border: none;
     background-color: unset;
     height: 100%;
-    padding: 0 10px;
+    padding: 5px 10px;
     font-size: 15px;
     cursor: pointer;
     font-family:"Roboto";
