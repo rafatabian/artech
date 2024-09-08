@@ -6,6 +6,7 @@ import { lazy } from "react";
 const WebsitesSection = lazy(()=> import("../HomeComponents/HomeWebsites/HomeWebsites.jsx"))
 const MarketingSection = lazy(()=> import("../HomeComponents/HomeMarketing/HomeMarketing.jsx"))
 const LogosSection = lazy(() => import("../HomeComponents/HomeLogos/HomeLogos.jsx"))
+const PacheteSection = lazy(() => import("../HomeComponents/HomePachete/HomePachete.jsx"))
 
 
 const Home = () => {
@@ -48,6 +49,8 @@ const Home = () => {
       <div className="home_branding">
         <MarketingSection />
       </div>
+      {/* pachete  */}
+      <PacheteSection />
  </div>
   )}
 
