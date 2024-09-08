@@ -38,16 +38,30 @@
     justify-content: center;
 }
 .navbar_logo > img{
-    width: 140px;
+    width: 150px;
     height: auto;
     object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 .navbar_buttons{
     display: flex;
     flex-direction: row;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
+.navbar_menu-icon{
+    padding: 5px;
+    width: 30px;
+    min-width: 30px;
+    height:30px;
+    min-height: 30px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
 .navbar_dark .navbar_buttons{
     background-color: black;
 }

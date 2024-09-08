@@ -2,12 +2,10 @@ import "./Home.css"
 import "../../index.css"
 import homeVideo from "../../assets/videos/artech_home_video.webm"
 import { Link } from "react-router-dom";
-import logo1 from "../../assets/images/logos/logo1.webp"
-import logo2 from "../../assets/images/logos/logo2.webp"
-import logo3 from "../../assets/images/logos/logo3.jpg"
-import logo4 from "../../assets/images/logos/logo4.jpg"
 import { lazy } from "react";
-const WebsitesSection = lazy(()=> import("../HomeWebsites/HomeWebsites.jsx"))
+const WebsitesSection = lazy(()=> import("../HomeComponents/HomeWebsites/HomeWebsites.jsx"))
+const MarketingSection = lazy(()=> import("../HomeComponents/HomeMarketing/HomeMarketing.jsx"))
+const LogosSection = lazy(() => import("../HomeComponents/HomeLogos/HomeLogos.jsx"))
 
 
 const Home = () => {
@@ -38,23 +36,17 @@ const Home = () => {
         </div>
          
       </div>
-{/* branding */}
-      <div className="home_logos">
-          <h1>Branding</h1>
-          <p>Logouri, Carti de vizita, Design si Culori.</p>
-          <p>Fiecare element vizual al afacerii tale conteaza!</p>
-          <div>
-            <img src={logo1} alt="logo" />
-            <img src={logo2} alt="logo" />
-            <img src={logo3} alt="logo" />
-            <img src={logo4} alt="logo" />
-          </div>
-          <Link to="/branding" aria-label="descopera"><button>Descopera</button></Link>
-      </div>
+      
+{/* logos */}
+      <LogosSection/>
 
 {/* websites */}
       <div className="home_websites">
          <WebsitesSection />
+      </div>
+{/* marketing */}
+      <div className="home_branding">
+        <MarketingSection />
       </div>
  </div>
   )}

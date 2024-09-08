@@ -3,7 +3,7 @@ import { useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
 import { FaPhone } from "react-icons/fa6"
 import { MdEmail } from "react-icons/md"
-import logo from "../../assets/images/navbar_white_logo.webp"
+import logo from "../../assets/images/navbar_white_logo.jpg"
 import { AiFillLike } from "react-icons/ai" 
 import { IoClose } from "react-icons/io5"
 

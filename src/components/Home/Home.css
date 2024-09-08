@@ -99,6 +99,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 .home_new_btns_container > a:hover{
     background:linear-gradient(to right, #0064e6, #0082e6);
@@ -109,77 +110,17 @@
 .home_new_btns_container > a:first-child{
     margin-bottom: 8px;
 }
-/* logos section */
-.home_logos{
-  width:1318px;
-  margin: 4rem;
-}
-.home_logos > h1{
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 50px;
-    color: #222222;
-}
-.home_logos > p:nth-child(2){
-     font-size: 20px;
-     font-family: "Roboto";
-     letter-spacing: 0.2px;
-     font-weight: 400
-}
-.home_logos > p:nth-child(3){
-    font-family: "Roboto";
-    font-size: 18px;
-    color: #666666;
-}
-.home_logos > div{
-   display: flex;
-   align-items: flex-start;
-   justify-content: flex-start;
-   flex-direction: row;
-   width: 100%;
-   margin: 2rem 0;
-}
-.home_logos > div > img{
-   object-fit: contain;
-   margin: 0 15px; 
-   width: 300px;
-   height: 300px;
-   min-width: 50px;
-   min-height: 50px;
-   border-radius: 150px;
-   box-shadow: 0 0 3px rgb(212, 212, 212);
-}
-.home_logos > div > img:first-child{
-    margin: unset !important;
-}
-.home_logos > div > img:nth-child(2){
-    margin-left:30px;
-}
-.home_logos > a{
-    text-decoration: none;
-}
-.home_logos > a > button{
-    width: 350px;
-    max-width: 350px;
-    font-family: "Roboto";
-    color: white;
-    background-color: var(--blue);
-    padding: 15px 30px;
-    border: none;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 0.1px;
-    border-radius: 10px;
-    letter-spacing: 0.3px;
-}
-.home_logos > a > button:hover{
-   background-color: #0274cb;
-}
+
 .home_websites_interactions{
   width: 100%;
   background-color: #222222;
 }
-
+.home_branding{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 
 @media screen and (min-width: 1700px){
     .home_new_container{
@@ -216,28 +157,6 @@
         width:auto;
         height: 628px;
     }
-    /* branding */
-     .home_logos{
-        width: 1636px;
-        margin: 6rem 0;
-     }
-     .home_logos > h1{
-        font-size: 70px;
-     }
-     .home_logos > p:nth-child(2),
-     .home_logos > p:nth-child(3){
-        font-size: 29px;
-     }
-     .home_logos > div > img{
-        width: 24%;
-        height: 24%;
-       border-radius: 50%
-     }
-     .home_logos > a > button{
-        padding: 18px 22px;
-        font-size: 24px;
-        letter-spacing: 0.5px;
-     }
 }
 
 @media screen and (max-width: 1350px){
@@ -245,14 +164,6 @@
         width: 100%;
         padding: 0 2rem;
      }
-    .home_logos{
-    width: 100%;
-    padding: 0 2rem;
-    }
-    .home_logos > div > img{
-        width: calc(25% - 25px);
-        height: calc(25% - 25px);
-    }
 }
 /* de aici esta codul vechi */
 @media screen and (max-width:970px){
@@ -315,33 +226,6 @@
         width: 100%;
         height: auto;
     }
-    /* branding */
-    .home_logos{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .home_logos > div{
-        height: 375px;
-        width: 375px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-       color: green;
-       align-items: center;
-       justify-items: center;
-       gap: 15px;
-
-    }
-    .home_logos > div > img {
-        width: 100%;
-        height: 100%;
-    }
-    .home_logos > div > img{
-        margin: 0;
-        margin-left: 0 !important
-    }
 }
 @media screen and (max-width:700px){
      @keyframes gradient-animation {
@@ -391,44 +275,7 @@
       .home_video{
         width: 140vw;
       }
-      /* branding */
-      .home_logos{
-        /* margin: 0; */
-        padding: 0;
-      }
-      .home_logos > h1{
-        font-size: 35px;
-        width: 100%;
-        text-align: center;
-      }
-      .home_logos >p:nth-child(2){
-        font-size: 17px;
-        width: 100%;
-        text-align: center;
-      }
-      .home_logos >p:nth-child(3){
-        font-size: 16px;
-        width: 100%;
-        text-align: center;
-      }
-      .home_logos > a > button{
-        padding: 14px 49px;
-        font-size: 18px;
-        border-radius: 15px;
-        max-width: 50vw;
-       }
 } 
-@media screen and (max-width:375px){
-    .home_logos{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-    .home_logos > div{
-        width: 95%;
-        height: 95%;
-    }
-}
 
 
 
