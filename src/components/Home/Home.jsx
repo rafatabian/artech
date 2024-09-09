@@ -50,7 +50,10 @@ const Home = () => {
         <MarketingSection />
       </div>
       {/* pachete  */}
-      <PacheteSection />
+      <div className="home_pachete">
+        <PacheteSection />
+      </div>
+     
  </div>
   )}
 

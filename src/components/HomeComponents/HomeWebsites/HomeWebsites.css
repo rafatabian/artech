@@ -20,12 +20,14 @@
   font-size: 20px;
   font-family: "Roboto";
   letter-spacing: 0.2px;
-  font-weight: 400
+  font-weight: 400;
+  max-width:600px;
 }
 .HomeWebsites_container > p:nth-child(3){
   font-family: "Roboto";
   font-size: 18px;
   color: #666666;
+  max-width:550px;
 }
 .HomeWebsites_container > div {
   width: 100%;

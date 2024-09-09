@@ -15,12 +15,14 @@
     color:black;
     font-weight: 400;
     letter-spacing: 0.2px;
+    max-width: 600px;
 }
 .homeMarketing_conatiner > p:nth-child(3){
     font-size: 18px;
     font-family: "Roboto";
     color:#666666;
     font-weight: 400;
+    max-width: 600px;
 }
 .homeMarketing_images_and_text{
     width: 100%;

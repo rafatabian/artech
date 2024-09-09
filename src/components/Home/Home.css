@@ -227,6 +227,15 @@
         height: auto;
     }
 }
+/* add this styles to the other sections as well */
+.home_pachete{
+    width: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 2rem;
+}
 @media screen and (max-width:700px){
      @keyframes gradient-animation {
         0%{

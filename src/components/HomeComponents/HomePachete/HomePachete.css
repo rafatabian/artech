@@ -1,5 +1,7 @@
 .homePachete_container{
     width: 1318px;  
+    background-color: #f0f0f0;
+    border-radius: 10px;
 }
 .homePachete_container > h1{
     font-size: 50px;
@@ -7,29 +9,22 @@
     color: #222222;
     font-weight: 400;
 }
-.homePachete_text_image{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-}
 .homePachete_text{
     width: 100%;
     max-width: 500px;
 }
 .homePachete_text > p{
     font-family:"Roboto";
-    max-width: 500px;
+    max-width: 600px;
     font-size: 20px;
-    line-height: 35px;
     letter-spacing: 0.3px;
-    color: #444444;
+    color: #222222;
     font-weight: 400;
 }
 .homePachete_text > p:first-child{
     margin-bottom: 15px;
 }
-.homePachete_text > a > button{
+.homePachete_container> a > button{
 width: 350px;
 max-width: 350px;
 font-family: "Roboto";
@@ -45,20 +40,124 @@ letter-spacing: 0.3px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
 margin-top: 20px;
 }
-.homePachete_image{
-    margin-top: -55px;
+.homePachete_cards{
     width: 100%;
-    background-color: antiquewhite;
     display: flex;
     align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.homePachete_first_card{
+    width: 28%;
+    min-height: 400px;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.homePachete_third_card{
+    width: 32%;
+    min-height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.homePachete_third_card{
+    width: 40%;
+}
+/* second card styles */
+.homePachete_second_card{
+    width: 40%;
+    min-height: 450px;
+    max-width: 450px;
+    background: linear-gradient(180deg, rgba(0, 123, 255, 1) 0%, rgba(0, 95, 255, 1) 100%);
+    border-radius: 10px;
+    margin: -20px -10px 0 -10px;
+    z-index: 2;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.homePachete_second_card span:first-child{
+    color: white;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.9rem;
+}
+.homePachete_second_card > .homePachetete_text,
+.homePachete_second_card > .homePachetete_text > svg{
+    color: white !important;
+}
+.homePachete_second_card > .homePachete_alege_btn{
+    color: var(--blue);
+    background-color: white;
+    font-weight: 500;
 }
 
-.homePachete_image > img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+
+.homePachete_first_card,
+.homePachete_second_card,
+.homePachete_third_card{
+    min-height:90vh;
+    max-height:90vh;
 }
+.homePachete_alege_btn{
+    background-color: var(--blue);
+    color: white;
+    padding: 10px 35px;
+    border-radius: 10px;
+    font-family: "Roboto";
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.homePachete_first_card span:first-child,
+.homePachete_third_card span:first-child{
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--blue);
+    margin-bottom: 0.9rem;
+}
+.homePachete_first_card span:first-child > svg,
+.homePachete_second_card span:first-child > svg,
+.homePachete_third_card span:first-child > svg{
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+}
+.homePachetete_text{
+    display: flex;
+    align-items: center;
+    font-family: "Roboto";
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    color: #222222;
+    margin-bottom: 16px;
+}
+.homePachetete_text > svg{
+    color: #007BFF;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+}
+
 @media screen and (min-width:1700px){
     .homePachete_container{
         width: 1636px;
