@@ -11,6 +11,7 @@ const Websites = lazy(() => import("./components/Websites/Websites"))
 const Marketing = lazy(() => import("./components/Marketing/Marketing"))
 const Help = lazy(() => import("./containers/Help/Help"))
 const Contact = lazy(() => import("./components/Contact/Contact"))
+const Footer = lazy(() => import("./components/Footer/Footer"))
 
 // react-router-dom is installed in this project
 
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         
        </Routes>
+       <Footer/>
       </Router>
       </ContextProvider>
     </Suspense>
