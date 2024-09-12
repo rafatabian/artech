@@ -6,6 +6,7 @@
 
 :root{
     --blue: #0082e6
+    /* --blue: #002D18 */
 }
 
 @tailwind base;
