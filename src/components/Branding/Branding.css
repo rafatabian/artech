@@ -1,3 +1,4 @@
+
 .homeBranding_container {
     width: 100%;
     height: 100vh;
@@ -94,8 +95,15 @@
 }
 
 /* new */
+.braning_new{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .braning_new_cont{
     min-height: 100vh;
+    width: 100%;
     background-color: antiquewhite;
     background: url(../../assets/images/branding/branding_pencils.jpg);
     height:500px;
@@ -110,6 +118,7 @@
 }
 .second_parallax{
     min-height: 60vh;
+    width: 100%;
     background-color: antiquewhite;
     background: url(../../assets/images/branding/logos.png);
     background-attachment: fixed;
@@ -137,6 +146,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* padding: 2rem 0; */
 }
 .branding_titles{
     font-size: 40px;
@@ -172,6 +182,7 @@
 }
 .third_parallax{
     min-height: 100vh;
+    width: 100%;
     background-color: antiquewhite;
     background: url(../../assets/images/branding/branding_visit_card.jpg);
     height:500px;
@@ -183,4 +194,32 @@
     align-items: center;
     justify-content: center;
     position: relative;
+}
+.forth_parallax{
+    min-height: 90vh;
+    width: 100%;
+    background-color: antiquewhite;
+    background: url(../../assets/images/branding/branding_graphic_design.png);
+    height:500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.branding_button{
+    background-color: #438543;
+    padding: 10px 25px;
+    font-family: "Roboto";
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+.branding_button:hover{
+    background-color: #387038;
 }
