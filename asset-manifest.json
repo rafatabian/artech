@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.0451e02a.css",
-    "main.js": "/static/js/main.1b3a03d7.js",
+    "main.css": "/static/css/main.318000f4.css",
+    "main.js": "/static/js/main.43adebe2.js",
     "static/css/943.f5d5e798.chunk.css": "/static/css/943.f5d5e798.chunk.css",
     "static/js/943.2b9043b8.chunk.js": "/static/js/943.2b9043b8.chunk.js",
     "static/css/360.dbc47834.chunk.css": "/static/css/360.dbc47834.chunk.css",
     "static/js/360.9d68a1ca.chunk.js": "/static/js/360.9d68a1ca.chunk.js",
-    "static/css/448.a0037b7c.chunk.css": "/static/css/448.a0037b7c.chunk.css",
-    "static/js/448.59c4e722.chunk.js": "/static/js/448.59c4e722.chunk.js",
+    "static/css/448.ba7cbb40.chunk.css": "/static/css/448.ba7cbb40.chunk.css",
+    "static/js/448.7fea6747.chunk.js": "/static/js/448.7fea6747.chunk.js",
     "static/css/463.fe1d2e28.chunk.css": "/static/css/463.fe1d2e28.chunk.css",
     "static/js/463.d75370c1.chunk.js": "/static/js/463.d75370c1.chunk.js",
     "static/css/605.e4322c91.chunk.css": "/static/css/605.e4322c91.chunk.css",
@@ -39,7 +39,8 @@
     "static/js/200.8ba69962.chunk.js": "/static/js/200.8ba69962.chunk.js",
     "static/js/750.d8ecc05a.chunk.js": "/static/js/750.d8ecc05a.chunk.js",
     "static/media/artech_home_video.webm": "/static/media/artech_home_video.2e05adfb74165d5c1063.webm",
-    "static/media/branding_visit_card.jpg": "/static/media/branding_visit_card.5fd3336b275251b77c37.jpg",
+    "static/media/branding_graphic_design.png": "/static/media/branding_graphic_design.423c280cbc3922c0aa8f.png",
+    "static/media/branding_visit_card.jpg": "/static/media/branding_visit_card.47768e319aee7c8a7776.jpg",
     "static/media/logos.png": "/static/media/logos.8e6db7fee7b916c8f92e.png",
     "static/media/branding_pencils.jpg": "/static/media/branding_pencils.f436d56ac46370b56216.jpg",
     "static/media/home_marketing_white_backgorund.jpg": "/static/media/home_marketing_white_backgorund.585db38ba50209d64604.jpg",
@@ -57,14 +58,14 @@
     "static/media/marketing_click.webp": "/static/media/marketing_click.ac3993d69ef692db5089.webp",
     "static/media/artech_logo.webp": "/static/media/artech_logo.f8ce9998575d86918c85.webp",
     "index.html": "/index.html",
-    "main.0451e02a.css.map": "/static/css/main.0451e02a.css.map",
-    "main.1b3a03d7.js.map": "/static/js/main.1b3a03d7.js.map",
+    "main.318000f4.css.map": "/static/css/main.318000f4.css.map",
+    "main.43adebe2.js.map": "/static/js/main.43adebe2.js.map",
     "943.f5d5e798.chunk.css.map": "/static/css/943.f5d5e798.chunk.css.map",
     "943.2b9043b8.chunk.js.map": "/static/js/943.2b9043b8.chunk.js.map",
     "360.dbc47834.chunk.css.map": "/static/css/360.dbc47834.chunk.css.map",
     "360.9d68a1ca.chunk.js.map": "/static/js/360.9d68a1ca.chunk.js.map",
-    "448.a0037b7c.chunk.css.map": "/static/css/448.a0037b7c.chunk.css.map",
-    "448.59c4e722.chunk.js.map": "/static/js/448.59c4e722.chunk.js.map",
+    "448.ba7cbb40.chunk.css.map": "/static/css/448.ba7cbb40.chunk.css.map",
+    "448.7fea6747.chunk.js.map": "/static/js/448.7fea6747.chunk.js.map",
     "463.fe1d2e28.chunk.css.map": "/static/css/463.fe1d2e28.chunk.css.map",
     "463.d75370c1.chunk.js.map": "/static/js/463.d75370c1.chunk.js.map",
     "605.e4322c91.chunk.css.map": "/static/css/605.e4322c91.chunk.css.map",
@@ -97,7 +98,7 @@
     "750.d8ecc05a.chunk.js.map": "/static/js/750.d8ecc05a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0451e02a.css",
-    "static/js/main.1b3a03d7.js"
+    "static/css/main.318000f4.css",
+    "static/js/main.43adebe2.js"
   ]
 }
