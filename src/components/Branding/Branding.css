@@ -1,19 +1,62 @@
 
-.homeBranding_container {
-    width: 100%;
-    height: 100vh;
+.braning_new{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-
+.braning_first_parallax{
+    background: url(../../assets/images/branding/branding_pencils.jpg);
+    min-height: 100vh;
+    background-size: cover;
+}
+.branding_second_parallax{
+   min-height:60vh;
+   background: url(../../assets/images/branding/logos.png);
+   background-size: contain;
+}
+.branding_third_parallax{
+    min-height: 100vh;
+    background: url(../../assets/images/branding/branding_visit_card.jpg);
+    background-size: cover;
+}
+.branding_forth_parallax{
+    min-height: 90vh;
+    background: url(../../assets/images/branding/branding_graphic_design.png);
+    background-size: cover;
+}
+.braning_first_parallax,
+.branding_second_parallax,
+.branding_third_parallax,
+.branding_forth_parallax{
+    width: 100%;
+    height:100%;
+    max-height: 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.ceata{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+} 
 .homeBranding_business_card {
     width: 350px;
     height: 200px;
     position: relative;
     transform-style: preserve-3d;
     animation: rotate_card 5s linear infinite;
-    box-shadow: 0 0 3px 3px rgb(219, 219, 219);
+    margin-top: 50px;
+    z-index: 3;
 }
 
 .homeBranding_side {
@@ -45,108 +88,14 @@
         transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
     }
 }
-.homeBranding_text{
-    max-width: 40vw;
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.homeBranding_text > div{
+.branding_white_text_contianer,
+.branding_green_text_contianer{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.homeBranding_text > div > h1{
-    font-family: "Roboto";
-    font-weight: 700;
-    color: #313131;
-    font-size: 35px;
-    margin-bottom: 10px;
-}
-.homeBranding_text > div > svg{
-    width: 40px;
-    height: 40px;
-    color: #313131;
-    margin-left: 5px;
-}
-.homeBranding_text > p{
-    font-family: "Roboto";
-    font-size: 17px;
-    text-align: center;
-    margin-bottom: 15px;
-}
-.homeBranding_text > button{
-    padding: 7px 15px;
-    border-radius: 4px;
-    background: green;
-    border: 1px solid green;
-    font-family: "Roboto";
-    font-weight: 500;
-    color: white;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-.homeBranding_text > button:hover{
-    background-color: rgb(0, 90, 0);
-}
-
-/* new */
-.braning_new{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.braning_new_cont{
-    min-height: 100vh;
-    width: 100%;
-    background-color: antiquewhite;
-    background: url(../../assets/images/branding/branding_pencils.jpg);
-    height:500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.second_parallax{
-    min-height: 60vh;
-    width: 100%;
-    background-color: antiquewhite;
-    background: url(../../assets/images/branding/logos.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.ceata{
-     position: absolute;
-     width: 100%;
-     height: 100%;
-     top: 0;
-     left: 0;
-     background-color: rgba(255, 255, 255, 0.4);
- }
-.second_paravam,
-.third_paravan{
-    width: 100%;
-    min-height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding: 2rem 0; */
+    padding: 2rem 0;
 }
 .branding_titles{
     font-size: 40px;
@@ -157,58 +106,29 @@
     border-radius: 10px;
     color: white;
     background-color: rgb(67, 133, 67);
+    margin-top: 50px;
 }
-.second_paravam{
-    padding: 2rem 0;
+.branding_white_text_contianer{
     flex-direction: column;
 }
-.second_paravam h2,
-.third_paravan  h2{
+.branding_white_text_contianer p,
+.branding_green_text_contianer  p{
     font-family: "Roboto";
     max-width: 600px;
     text-align: center;
+    font-size: 18px;
 }
-.second_paravam h1,
-.third_paravan h1{
+.branding_white_text_contianer h1,
+.branding_green_text_contianer h1{
    font-size: 30px;
    font-family: "Roboto";
 }  
-.third_paravan h1,
-.third_paravan h2{
+.branding_green_text_contianer h1,
+.branding_green_text_contianer p{
     color: white !important;
 }
-.third_paravan{
+.branding_green_text_contianer{
     background-color: #438543;
-}
-.third_parallax{
-    min-height: 100vh;
-    width: 100%;
-    background-color: antiquewhite;
-    background: url(../../assets/images/branding/branding_visit_card.jpg);
-    height:500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.forth_parallax{
-    min-height: 90vh;
-    width: 100%;
-    background-color: antiquewhite;
-    background: url(../../assets/images/branding/branding_graphic_design.png);
-    height:500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
 }
 .branding_button{
     background-color: #438543;
@@ -223,3 +143,67 @@
 .branding_button:hover{
     background-color: #387038;
 }
+@media screen and (min-width: 1700px){
+    .braning_first_parallax{
+        min-height: 100vh;
+    }
+    .branding_second_parallax{
+       min-height:60vh;
+    }
+    .branding_third_parallax{
+        min-height: 100vh;
+    }
+    .branding_forth_parallax{
+        min-height: 90vh;
+    }
+    .branding_titles{
+        font-size: 70px;
+    }
+    .branding_white_text_contianer,
+    .branding_green_text_contianer{
+       padding: 4rem 0;
+    }
+    .branding_white_text_contianer h1,
+    .branding_green_text_contianer h1{
+     font-size: 50px;
+    } 
+    .branding_white_text_contianer p,
+    .branding_green_text_contianer p{
+     font-size: 30px;
+     max-width: 1000px;
+    } 
+    .branding_button{
+       font-size: 32px;
+       margin: 4rem 0;
+    }
+    .homeBranding_business_card {
+        width: 550px;
+        height: 314px;
+
+    }
+
+}
+ @media screen and (max-width: 1100px){
+    .branding_third_parallax{
+        background-position: left;
+    }
+}
+@media screen and (max-width: 700px){
+    .branding_white_text_contianer,
+    .branding_green_text_contianer{
+        padding: 2rem 15px;
+    }
+} 
+@media screen and (max-width:500px){
+    .branding_titles{
+     font-size: 30px;
+    }
+    .branding_white_text_contianer > p,
+    .branding_green_text_contianer > p{
+        font-size: 16px;
+    }
+    .branding_button{
+        font-size: 16px
+    }
+}
+
