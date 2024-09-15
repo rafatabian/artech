@@ -1,6 +1,6 @@
 import "./App.css"
 import { Suspense, lazy } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import logo from "./assets/images/artech_logo.webp"
 import { ContextProvider } from "./context/Context"
 
@@ -13,7 +13,6 @@ const Help = lazy(() => import("./containers/Help/Help"))
 const Contact = lazy(() => import("./components/Contact/Contact"))
 const Footer = lazy(() => import("./components/Footer/Footer"))
 
-// react-router-dom is installed in this project
 
 const App = () => {
   return (
