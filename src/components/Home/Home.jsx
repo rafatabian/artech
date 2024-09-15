@@ -3,10 +3,10 @@ import "../../index.css"
 import homeVideo from "../../assets/videos/artech_home_video.webm"
 import { Link } from "react-router-dom";
 import { lazy } from "react";
-const WebsitesSection = lazy(()=> import("../HomeComponents/HomeWebsites/HomeWebsites.jsx"))
-const MarketingSection = lazy(()=> import("../HomeComponents/HomeMarketing/HomeMarketing.jsx"))
-const LogosSection = lazy(() => import("../HomeComponents/HomeLogos/HomeLogos.jsx"))
-const PacheteSection = lazy(() => import("../HomeComponents/HomePachete/HomePachete.jsx"))
+const HomeWebsites = lazy(()=> import("../HomeComponents/HomeWebsites/HomeWebsites.jsx"))
+const HomeMarketing = lazy(()=> import("../HomeComponents/HomeMarketing/HomeMarketing.jsx"))
+const HomeBranding = lazy(() => import("../HomeComponents/HomeLogos/HomeLogos.jsx"))
+const HomePachete = lazy(() => import("../HomeComponents/HomePachete/HomePachete.jsx"))
 
 
 const Home = () => {
@@ -39,19 +39,19 @@ const Home = () => {
       </div>
       
 {/* logos */}
-      <LogosSection/>
+      <HomeBranding/>
 
 {/* websites */}
       <div className="home_websites">
-         <WebsitesSection />
+         <HomeWebsites />
       </div>
 {/* marketing */}
       <div className="home_branding">
-        <MarketingSection />
+        <HomeMarketing />
       </div>
       {/* pachete  */}
       <div className="home_pachete">
-        <PacheteSection />
+        <HomePachete />
       </div>
      
  </div>
