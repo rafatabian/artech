@@ -30,7 +30,7 @@ const HomeBranding = () => {
         </div>
 
         <div className="branding_green_text_contianer">
-          <h1>Design de Logo Personalizat</h1>
+          <h1>Logo Personalizat</h1>
           <p>Descoperă arta unui logo unic cu Artech. Înțelegem că logo-ul este inima identității vizuale a afacerii tale, de aceea oferim soluții de design personalizate, fie că ești un start-up în creștere sau o companie bine stabilită. Fiecare logo este creat de la zero, special pentru tine, iar colaborarea noastră îndeaproape ne permite să înțelegem viziunea și valorile tale. Oferim multiple concepte și revizii până când ești complet mulțumit de rezultatul final.</p>
         </div>
 

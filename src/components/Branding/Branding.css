@@ -126,6 +126,8 @@
 .branding_green_text_contianer h1{
    font-size: 30px;
    font-family: "Roboto";
+   width: 100%;
+   text-align: center;
 }  
 .branding_green_text_contianer h1,
 .branding_green_text_contianer p{
@@ -170,8 +172,6 @@
     .branding_white_text_contianer h1,
     .branding_green_text_contianer h1{
      font-size: 50px;
-     width: 100%;
-     text-align: center;
     } 
     .branding_white_text_contianer p,
     .branding_green_text_contianer p{
@@ -232,6 +232,11 @@
     .branding_second_parallax > h3{
         margin-top: -200px;
   }
+  .branding_white_text_contianer h1,
+    .branding_green_text_contianer h1{
+     line-height: 35px;
+     margin-bottom: 10px;
+    } 
 
 }
 
