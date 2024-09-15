@@ -97,7 +97,8 @@
     padding: 7px 18px;
     border-radius: 10px;
     color: white;
-    background-color: rgb(67, 133, 67);
+    /* background-color: #438543; */
+    background-color: var(--blue);
     margin-top: 50px;
 }
 .branding_white_text_contianer{
@@ -125,10 +126,12 @@
     color: white !important;
 }
 .branding_green_text_contianer{
-    background-color: #438543;
+    /* background-color: #438543; */
+    background-color: var(--blue);
 }
 .branding_button{
-    background-color: #438543;
+    /* background-color: #438543; */
+    background-color: var(--blue);
     padding: 10px 25px;
     font-family: "Roboto";
     color: white;
@@ -138,7 +141,7 @@
     margin: 2rem 0;
 }
 .branding_button:hover{
-    background-color: #387038;
+    /* background-color: #387038; */
 }
 @media screen and (min-width: 1700px){
     .branding_second_parallax{
@@ -196,7 +199,7 @@
 } 
 @media screen and (max-width:500px){
     .branding_titles{
-     font-size: 30px;
+     font-size: 27px;
     }
     .branding_white_text_contianer > p,
     .branding_green_text_contianer > p{

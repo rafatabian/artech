@@ -87,7 +87,8 @@
 }
 .home_new_btns_container > a{
     text-decoration: none;
-    background-color: #0082e6;
+    /* background-color: #0082e6; */
+    background-color: var(--blue);
     padding: 15px 20px;
     max-width: 70%;
     color: white;
@@ -101,9 +102,9 @@
     justify-content: flex-start;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
 }
-.home_new_btns_container > a:hover{
+/* .home_new_btns_container > a:hover{
     background:linear-gradient(to right, #0064e6, #0082e6);
-}
+} */
 .home_new_btns_container > a:focus{
     outline: none;
 }

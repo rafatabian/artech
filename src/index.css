@@ -5,8 +5,9 @@
 }
 
 :root{
-    --blue: #0082e6
-    /* --blue: #002D18 */
+    /* --blue: #0082e6 */
+    /* --blue: #438543 culoare veche in branding si marjketing*/
+    --blue:#085c2b
 }
 
 @tailwind base;
