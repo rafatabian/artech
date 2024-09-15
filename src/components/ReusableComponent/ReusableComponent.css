@@ -145,13 +145,13 @@
        min-height:60vh;
     }
     .branding_third_parallax{
-        min-height: 100vh;
+        min-height: 80vh;
     }
     .branding_forth_parallax{
-        min-height: 90vh;
+        min-height: 80vh;
     }
     .branding_titles{
-        font-size: 70px;
+        font-size: 50px;
     }
     .branding_white_text_contianer,
     .branding_green_text_contianer{
@@ -159,24 +159,18 @@
     }
     .branding_white_text_contianer h1,
     .branding_green_text_contianer h1{
-     font-size: 50px;
+     font-size: 35px;
     } 
     .branding_white_text_contianer p,
     .branding_green_text_contianer p{
-     font-size: 30px;
+     font-size: 25px;
      max-width: 1000px;
-     line-height: 50px;
+     line-height: 40px;
     } 
-    .branding_button{
-       font-size: 32px;
-       margin: 4rem 0;
-    }
     .homeBranding_business_card {
         width: 550px;
         height: 314px;
-
     }
-
 }
  @media screen and (max-width: 1100px){
     .branding_third_parallax{

@@ -31,8 +31,6 @@
 }
 .footer_socials > a {
     text-decoration: none;
-    /* width: 40px;
-    height: 40px; */
 }
 .footer_socials > a > svg{
     width: 33px;
@@ -116,21 +114,22 @@ color: #444444;
         margin-bottom: 2.5rem;
     }
     .footer_socials > a > svg{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         margin: 0 8px;
     }
     .footer_links > div > a{
-      font-size: 27px !important;
+      font-size: 22px !important;
       margin: 2px 14px !important;
     }
     .footer_email > span{
         margin: 2.5rem 0;
-        font-size: 27px;
+        font-size: 22px;
     }
     .footer_container > h2{
-     font-size: 20px;
+     font-size: 18px;
     }
+
 }
 @media screen and (max-width:550px){
     .footer_title_blackgorund{
