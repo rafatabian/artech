@@ -1,20 +1,22 @@
 import "./ReusableComponent.css"
 import  businessCardOne  from "../../assets/images/artech_visit_cart_1.webp"
 import  businessCardTwo  from "../../assets/images/artech_visit_card_2.webp"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 
 const HomeBranding = ({props}) => {
+  const location = useLocation()
 
   return(
     <div className="braning_new">
     <div className="branding_third_parallax" style={{backgroundImage: `url(${props.firstImage})`}}>          
         <div className="ceata"></div>
         <h3 className="branding_titles">{props.titles[0]}</h3>
+        {location.pathname === "/branding" ?
         <div className="homeBranding_business_card">
             <div className="homeBranding_side front" style={{ backgroundImage: `url(${businessCardOne})` }}></div>
             <div className="homeBranding_side back" style={{ backgroundImage: `url(${businessCardTwo})` }}></div>
-        </div>  
+        </div> : null}
     </div> 
            
    
@@ -23,7 +25,7 @@ const HomeBranding = ({props}) => {
         <p>{props.firstText}</p>
         </div>
 
-        <div className="branding_second_parallax" style={{backgroundImage: `url(${props.secondImage})`}}>
+        <div className={`${location.pathname === "/branding" ? "branding_second_parallax" : "branding_third_parallax"}`} style={{backgroundImage: `url(${props.secondImage})`}}>
            <div className="ceata"></div> 
            <h3 className="branding_titles">{props.titles[1]}</h3>
         </div>

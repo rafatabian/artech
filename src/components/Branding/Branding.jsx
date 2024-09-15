@@ -19,6 +19,7 @@ const brandingProps={
     thirdText: "O carte de vizită este mai mult decât o simplă bucată de hârtie, este o reflectare a identității tale. La Artech, creăm cărți de vizită elegante și profesionale care fac o impresie durabilă. Fiecare design este personalizat și adaptat nevoilor tale specifice, reflectând identitatea și valorile afacerii tale. Oferim o varietate de opțiuni de personalizare, de la dimensiuni și tipuri de hârtie, la finisaje și detalii unice de design. Procesul nostru simplu și eficient începe cu o consultare detaliată, urmată de un design creativ ce va depăși așteptările tale.",
     forthText: "Oferim soluții complete de design grafic, menite să te ajute să comunici eficient și să te diferențiezi pe piață. De la branding și identitate vizuală care reflectă personalitatea și valorile afacerii tale, până la materiale publicitare de impact precum broșuri, afișe și bannere, ne asigurăm că fiecare detaliu este aliniat perfect cu viziunea ta. Oferim și design digital pentru website-uri, aplicații mobile și social media, completat de animații și infografice care fac conținutul tău mai captivant. În plus, susținem campaniile tale de marketing prin publicitate creativă și conținut vizual optimizat pentru a atrage și angaja audiența. La Dersign Grafic, transformăm ideile tale în realitate!",
 }
+
  return(
     <ReusableComponent props={brandingProps} />
  )
