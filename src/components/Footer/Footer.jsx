@@ -1,9 +1,10 @@
 import "./Footer.css"
 import { FaFacebook,FaInstagram, FaTiktok } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 const Footer = () => {
+
   return (
     <div className="footer_container">
         <h1 className="footer_title_blackgorund">ARTECH</h1>

@@ -87,6 +87,10 @@ color: #444444;
  font-family: "Roboto";
  color: #666666;
 }
+/* dark  */
+.footer_conteiner_dark{
+    background-color: black;
+}
 @media screen and (max-width:1150px){
 .footer_title_blackgorund{
     font-size: 200px;
