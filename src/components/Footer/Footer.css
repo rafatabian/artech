@@ -88,9 +88,33 @@ color: #444444;
  color: #666666;
 }
 /* dark  */
-.footer_conteiner_dark{
+.footer_dark{
     background-color: black;
+    width: 100%;
+    height: 100%;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
+.footer_dark .footer_title_blackgorund{
+       color:rgb(15, 15, 15);
+ }
+.footer_dark .footer_socials > a:nth-child(3) > svg{
+    color: #aeaeae;
+    }
+.footer_dark .footer_links div a,
+.footer_dark .footer_email span
+{
+    color: #d7d7d7;
+}
+.footer_dark .footer_email span > svg{
+    color: green;
+}
+
 @media screen and (max-width:1150px){
 .footer_title_blackgorund{
     font-size: 200px;

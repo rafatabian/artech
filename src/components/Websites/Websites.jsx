@@ -50,7 +50,7 @@ useEffect(() => {
 
 // TO DO
 // addd examples for the users to see and 
-// maybe they gonna have more ideas on how to build the page
+// maybe they gonna have more ideas on how to build the page        
 
 
   return (
@@ -69,7 +69,7 @@ useEffect(() => {
         </div>
 
         <div className="websites_first_parallax">
-           <div className="ceata"></div> 
+           <div className="website_ceata"></div> 
            <h3 className="websites_titles">WEBSITEURI PERSONALIZATE</h3>
         </div>
 
@@ -78,8 +78,8 @@ useEffect(() => {
           <p>Ne specializăm în designul de website-uri personalizate care reflectă identitatea brandului tău și se adaptează nevoilor tale specifice. Fie că ai nevoie de un site simplu și elegant sau de o platformă complexă, echipa noastră asigură un design unic, o experiență de utilizare captivantă și o funcționalitate fără cusur, care îți vor pune afacerea în evidență online.</p>
         </div>
 
-        <div className="websites_third_parallax">
-        <div className="ceata"></div>
+        <div className="websites_first_parallax" style={{backgroundImage: `url(${require("../../assets/images/websites/website_circuit.jpg")})`}}>
+        <div className="website_ceata"></div>
            <h3 className="websites_titles">Optimizare & Performanță</h3>
         </div>
 
@@ -88,8 +88,8 @@ useEffect(() => {
         <p>Website-urile noastre sunt construite având în vedere performanța și optimizarea pentru motoarele de căutare (SEO), asigurând timpi de încărcare rapizi și o clasare mai bună pe Google și alte motoare de căutare. Cu ajutorul nostru, website-ul tău nu doar va arăta bine, ci va și performa eficient, atrăgând mai mult trafic și generând rezultate mai bune pentru afacerea ta.</p>
       </div>
 
-        <div className="websites_forth_parallax">
-        <div className="ceata"></div>
+        <div className="websites_forth_parallax" style={{backgroundImage: `url(${require("../../assets/images/websites/websites_servers.jpg")})`}}>
+        <div className="website_ceata"></div>
            <h3 className="websites_titles">UPDATEURI</h3>
         </div>
 

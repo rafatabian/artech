@@ -31,24 +31,19 @@
       opacity: 0;
       scale:0.5;
     }
-    75%{
-    opacity: 1;
-    }
     100%{
       transform: translateY(80vh);
-      opacity: 0;
+      opacity: 1;
       scale: 1;
     }
 }
-.websites_third_parallax{
-    /*add image*/
-}
 .websites_first_parallax{
-    background-image:url("../../assets/images/websites//websites_intro.jpg");
-
-}
-.websites_forth_parallax{
-    /*add image*/
+    background-image:url("../../assets/images/websites/websites_intro.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
 }
 .websites_matrix_container > h3{
     position: absolute;
@@ -86,7 +81,7 @@
      flex-direction: column;
      position: relative;
  }
- .ceata{
+ .website_ceata{
      position: absolute;
      width: 100%;
      height: 100%;

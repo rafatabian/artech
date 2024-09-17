@@ -4,9 +4,11 @@ import { MdEmail } from "react-icons/md"
 import { Link, useLocation } from "react-router-dom"
 
 const Footer = () => {
+  const location = useLocation()
+  const websitesPage = location.pathname === "/websites"
 
   return (
-    <div className="footer_container">
+    <div className={`${websitesPage ? "footer_dark" : "footer_container"}`}>
         <h1 className="footer_title_blackgorund">ARTECH</h1>
 
         <div className="footer_socials">
