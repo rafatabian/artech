@@ -15,6 +15,7 @@
      font-weight: 900;
      color: #f7f7f7;
      position: absolute;
+     user-select: none;
 }
 .footer_socials,
 .footer_links,
@@ -101,7 +102,8 @@ color: #444444;
     overflow: hidden;
 }
 .footer_dark .footer_title_blackgorund{
-       color:rgb(15, 15, 15);
+    color:rgb(15, 15, 15);
+    user-select: none;
  }
 .footer_dark .footer_socials > a:nth-child(3) > svg{
     color: #aeaeae;
