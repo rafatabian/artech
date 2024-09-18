@@ -5,7 +5,7 @@ import { FaPhone } from "react-icons/fa6"
 import { MdEmail } from "react-icons/md"
 import logo from "../../assets/images/navbar_white_logo.jpg"
 import { AiFillLike } from "react-icons/ai" 
-import { IoClose } from "react-icons/io5"
+import { useNavigate } from "react-router-dom"
 
 
 const Contact = () => {
@@ -18,6 +18,8 @@ const Contact = () => {
     telefon:"",
     email:""
   })
+
+  const navigate = useNavigate()
 
 // sets tip_solicitare data 
 const handleSelectChange = (e) => {
@@ -43,6 +45,10 @@ const sendEmail = (e) => {
         },
       );
       setConfirmation(true)
+      // setTimeout(() => {
+      //   setConfirmation(false)
+      //   navigate("/")
+      // }, 3000)
 }
 
 
@@ -103,13 +109,12 @@ const sendEmail = (e) => {
 
      {/* form confirmation pop up */}
     {confirmation && <div className="contact_confirmation">
-      <button onClick={() => setConfirmation(false)}><IoClose /></button>
       <img src={logo} alt="logo"/>
       <h1>Multumim pentru timpul acordat!</h1>
       <div>
         <AiFillLike />
       </div>
-      <h2>V-om reveni in cel mai scurt timp posibil</h2>
+      <h2>Vom reveni in cel mai scurt timp posibil</h2>
      </div>}
     </div>
   )

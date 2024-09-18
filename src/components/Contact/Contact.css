@@ -199,10 +199,6 @@
     border: none;
     cursor: pointer;
 }
-.contact_confirmation > button > svg{
-    width: 22px;
-    height: 22px;
-}
 .contact_confirmation > img{
     max-width: 130px;
 }
@@ -247,4 +243,29 @@
      .container_title{
         margin-top: 20px;
      }
+     /* confirmation */
+     .contact_confirmation{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+     }
+     .contact_confirmation > img {
+        display: none;
+     }
+     .contact_confirmation > h1{
+        font-size: 25px;
+     }
+     .contact_confirmation > div{
+        width: 70px;
+        height: 70px;
+    }
+    .contact_confirmation > div > svg{
+        color: white;
+        width: 40px;
+        height: 40px;
+    }
+    .contact_confirmation > h2{
+        font-size: 20px;
+    }
 }

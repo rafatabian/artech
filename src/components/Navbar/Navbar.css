@@ -12,6 +12,9 @@
     z-index: 99;
     position: fixed;
 } 
+.navbar_dark .navbar_menu-icon{
+   background-color: black;
+}
 .navbar_dark{
     color: white;
 }
@@ -53,13 +56,20 @@
 }
 .navbar_menu-icon{
     padding: 5px;
-    width: 30px;
-    min-width: 30px;
-    height:30px;
-    min-height: 30px;
+    width: 40px;
+    min-width: 40px;
+    height:40px;
+    min-height: 40px;
     border-radius: 8px;
     background-color: white;
     box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.navbar_close_icon{
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    color: white;
 }
 
 .navbar_dark .navbar_buttons{
