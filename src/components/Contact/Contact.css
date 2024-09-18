@@ -105,7 +105,7 @@
 }
 .contact_form button{
  color: white;
- background-color: #005eb8;
+ background-color: var(--blue);
  border-radius: 8px;
  padding: 9px 16px;
  font-size: 17px;
@@ -221,4 +221,30 @@
     width: 50px;
     height: 50px;
 }
-
+@media screen and (max-width: 730px){
+    .contact_form,
+    .contact_phone_email{
+        width: 100%;
+        border-radius: unset;
+        max-width: unset;
+        padding: 2rem 20px;
+    }
+    .contact_alternative_line{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 510px){
+     .contact_phone_email{
+        display: flex;
+        flex-direction: column;
+     }
+     .contact_phone_email > div:first-child{
+        margin-bottom: 10px;
+     }
+     .contact_form > h1:first-child{
+        font-size: 20px;
+     }
+     .container_title{
+        margin-top: 20px;
+     }
+}
