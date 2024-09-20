@@ -5,9 +5,9 @@ import logo from "./assets/images/artech_logo.webp"
 import { ContextProvider } from "./context/Context"
 
 const Navbar = lazy(() => import("./components/Navbar/Navbar"))
-const Home = lazy(() => import("./components/Home/Home"))
-const Branding = lazy(() => import("./components/Branding/Branding"))
-const Websites = lazy(() => import("./components/Websites/Websites"))
+const Home = lazy(() => import("./containers/Home/Home"))
+const Branding = lazy(() => import("./containers/Branding/Branding"))
+const Websites = lazy(() => import("./containers/Websites/Websites"))
 const Marketing = lazy(() => import("./components/Marketing/Marketing"))
 const Help = lazy(() => import("./containers/Help/Help"))
 const Contact = lazy(() => import("./components/Contact/Contact"))

@@ -4,7 +4,7 @@ import firstImageURL from "../../assets/images/branding/branding_first_img.jpg"
 import secondImageURL from "../../assets/images/branding/logos.png"
 import thirdImageURL from "../../assets/images/branding/branding_visit_card.jpg"
 import forthImageURL from "../../assets/images/branding/branding_graphic_design.png"
-const ReusableComponent = lazy(() => import("../ReusableComponent/ReusableComponent"))
+const ReusableComponent = lazy(() => import("../../components/ReusableComponent/ReusableComponent"))
 
 const HomeBranding = () => {
 const brandingProps={

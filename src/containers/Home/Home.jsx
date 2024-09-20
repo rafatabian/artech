@@ -3,10 +3,10 @@ import "../../index.css"
 import homeVideo from "../../assets/videos/artech_home_video.webm"
 import { Link } from "react-router-dom";
 import { lazy } from "react";
-const HomeWebsites = lazy(()=> import("../HomeComponents/HomeWebsites/HomeWebsites.jsx"))
-const HomeMarketing = lazy(()=> import("../HomeComponents/HomeMarketing/HomeMarketing.jsx"))
-const HomeBranding = lazy(() => import("../HomeComponents/HomeLogos/HomeLogos.jsx"))
-const HomePachete = lazy(() => import("../HomeComponents/HomePachete/HomePachete.jsx"))
+const HomeWebsites = lazy(()=> import("../../components/HomeComponents/HomeWebsites/HomeWebsites.jsx"))
+const HomeMarketing = lazy(()=> import("../../components/HomeComponents/HomeMarketing/HomeMarketing.jsx"))
+const HomeBranding = lazy(() => import("../../components/HomeComponents/HomeLogos/HomeLogos.jsx"))
+const HomePachete = lazy(() => import("../../components/HomeComponents/HomePachete/HomePachete.jsx"))
 
 
 const Home = () => {
