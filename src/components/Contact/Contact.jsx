@@ -1,11 +1,12 @@
 import "./Contact.css"
-import { useRef, useState } from "react"
+import { useRef, useState, useEffect } from "react"
 import emailjs from "@emailjs/browser"
 import { FaPhone } from "react-icons/fa6"
 import { MdEmail } from "react-icons/md"
 import logo from "../../assets/images/navbar_white_logo.jpg"
 import { AiFillLike } from "react-icons/ai" 
-import { useNavigate } from "react-router-dom"
+import { useLocation, useNavigate, useParams } from "react-router-dom"
+
 
 
 const Contact = () => {
@@ -13,6 +14,7 @@ const Contact = () => {
   const [confirmation, setConfirmation] = useState(false)
   const [emailData, setEmailData] = useState({
     tip_solicitare: "",
+    planul:"",
     descriere:"",
     nume:"",
     telefon:"",
@@ -20,6 +22,18 @@ const Contact = () => {
   })
 
   const navigate = useNavigate()
+  // TO DO make sure the paan choosed by the user in pachete page is sended by email
+// getting the plan from the url
+useEffect(() => {
+  const hash = window.location.hash
+  const hashParts = hash.split('/')
+  const plan = hashParts[hashParts.length - 1]
+  if(plan !== "contact"){
+    setEmailData({
+      ...emailData, planul: plan
+  })
+  }
+}, []);
 
 // sets tip_solicitare data 
 const handleSelectChange = (e) => {
@@ -45,10 +59,10 @@ const sendEmail = (e) => {
         },
       );
       setConfirmation(true)
-      // setTimeout(() => {
-      //   setConfirmation(false)
-      //   navigate("/")
-      // }, 3000)
+      setTimeout(() => {
+        setConfirmation(false)
+        navigate("/")
+      }, 3000)
 }
 
 
@@ -65,6 +79,7 @@ const sendEmail = (e) => {
             <option value="Branding">Branding</option>
             <option value="Websites">Websites</option>
             <option value="Marketing">Marketing</option>
+            <option value="Pachete">Pachete</option>
             <option value="Altceva">Altceva</option>
           </select>
         </div>

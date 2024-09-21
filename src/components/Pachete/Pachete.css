@@ -1,0 +1,252 @@
+.plans_container{
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.plans_container > h1{
+   width: 100%;
+   text-align: center;
+   font-family: "Roboto";
+   color: var(--blue);
+   font-weight: 500;
+   font-size: 50px;
+   margin-bottom: 30px;
+}
+.plans_presentation{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  */
+
+.plans_first_plan,
+.plans_second_plan,
+.plans_third_plan{
+    width: 33%;
+    min-height: 410px;
+    max-width: 350px;
+    min-width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+    margin: 0 7.5px;
+}
+
+.plans_second_plan span:first-child{
+    color: var(--blue);
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+} 
+.homePachete_alege_btn{
+    background-color: var(--blue);
+    color: white;
+    padding: 10px 35px;
+    border-radius: 10px;
+    font-family: "Roboto";
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.plans_first_plan span:first-child,
+.plans_third_plan span:first-child{
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--blue);
+    margin-bottom: 5px;
+}
+.plans_first_plan span:first-child > svg,
+.plans_second_plan span:first-child > svg,
+.plans_third_plan span:first-child > svg{
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+}
+.homePachetete_text{
+    width: 100%;
+    display: flex;
+    font-family: "Roboto";
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    color: #222222;
+    margin-bottom: 16px;
+}
+.homePachetete_text > svg{
+    /* color: #007BFF; */
+    color: var(--blue);
+    margin-right: 5px;
+    margin-top: 3px;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+/* class for focus plan */
+.plans_focus_plan{
+    animation: plans_focus_plan_anim 0.5s forwards;
+    background-color: var(--blue);
+    z-index: 10;
+    
+}
+@keyframes plans_focus_plan_anim {
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.07;
+    }
+}
+.plans_focus_plan > span > svg{
+   color: white !important;
+}
+.plans_focus_plan span{
+    color: white !important;
+}
+.plans_focus_plan .homePachete_alege_btn{
+    background-color: white;
+    color: var(--blue);
+    font-weight: 500;
+}
+/* plans descriptions */
+.plans_content{
+    width: 100%;
+    /* max-width: 1080px; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 25px;
+    /* background-color: #eee; */
+    padding: 15px 0;
+}
+.plans_content_starter,
+.plans_content_standard,
+.plans_content_pro{
+   width: 100%;
+   max-width: 700px;
+   background-color: var(--blue);
+   border-radius: 10px;
+   padding: 2rem 3rem;
+   animation: pans_details_anim 0.5s ease-out forwards;
+}
+@keyframes pans_details_anim {
+    0%{
+        opacity: 0;
+        scale: 0.8;
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.plans_button_container{
+    width: 100%;
+    max-width: 700px;
+    margin: 1rem 0;
+}
+.plans_button_container > a{
+    background-color: var(--blue);
+    color: white;
+    font-family: "Roboto";
+    padding: 10px 35px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+/* first plan */
+.plans_content_starter h1,
+.plans_content_standard h1,
+.plans_content_pro h1{
+   color: #eee;
+   font-size: 30px;
+   font-family: "Roboto";
+}
+.plans_content_starter p,
+.plans_content_standard p,
+.plans_content_pro p{
+    color:#eee;
+    font-family: "Roboto";
+    font-size: 17px;
+    letter-spacing: 0.2px;
+    max-width: 600px;
+}
+.plans_content_starter > div > span,
+.plans_content_standard > div > span,
+.plans_content_pro > div > span{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    color: white;
+    font-family: "Roboto";
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    margin-top: 30px;
+}
+.plans_content_starter > div > span > svg,
+.plans_content_standard > div > span > svg,
+.plans_content_pro > div > span >svg{
+  width: 17px;
+  height: 17px;
+  color: white;
+  margin-right: 5px;
+}
+/* ask for offer text */
+.plans_final_text{
+    width: 100%;
+    background-color: #eee;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.plans_final_text  span{
+    max-width: 700px;
+    width: 100%;
+    color: white;
+    background-color: var(--blue);
+    border-radius: 10px;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "Roboto";
+    font-size: 17px;
+    letter-spacing: 0.2px;
+    color: #eee;
+    line-height: 30px;
+}
+.plans_final_text span > svg{
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
+    min-height: 25px;
+    color: white;
+    margin-right: 10px;
+}

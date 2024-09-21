@@ -35,7 +35,7 @@ const Navbar = () => {
         <Link to="/branding"><button onClick={() => setShowMenu(false)}>BRANDING</button></Link>
         <Link to="/websites"><button onClick={() => setShowMenu(false)}>WEBSITES</button></Link>
         <Link to="/marketing"><button onClick={() => setShowMenu(false)}>MARKETING</button></Link>
-        <Link to="/personalizare"><button onClick={() => setShowMenu(false)}>PACHETE</button></Link>
+        <Link to="/plans"><button onClick={() => setShowMenu(false)}>PACHETE</button></Link>
         <Link to="/help"><button onClick={() => setShowMenu(false)}>AJUTOR</button></Link>
         <Link to="/contact" className="navbar_contact"><button onClick={() => setShowMenu(false)}>CONTACT</button></Link>
      </div>
