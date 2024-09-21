@@ -4,7 +4,7 @@ import firstMarketingURL from "../../assets/images/marketing/marketing_first_img
 import secondMarktingURL from "../../assets/images/marketing/marketing_marketing_img.jpg"
 import thirdMarketingURL from "../../assets/images/marketing/marketing_digital.jpg"
 import forthMakretingURL from "../../assets/images/marketing/marketing_strategy.jpg"
-const ReusableComponent = lazy(() => import("../ReusableComponent/ReusableComponent"))
+const ReusableComponent = lazy(() => import("../../components/ReusableComponent/ReusableComponent"))
 
 
 const HomeMarketing = () => {

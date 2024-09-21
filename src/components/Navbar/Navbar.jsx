@@ -23,9 +23,9 @@ const Navbar = () => {
 
   return (
     <div className={`navbar_container ${dark ? "navbar_dark" : ""}`}>
-     <div className="navbar_logo">
+     <Link to="/" className="navbar_logo">
         <img src={dark ? white_logo : black_logo} alt="logo"/>
-     </div>
+     </Link>
 
      {!showMenu && <FiMenu className="navbar_menu-icon" onClick={() => setShowMenu(true)}/>}
      {showMenu && <IoClose className="navbar_close_icon" onClick={() => setShowMenu(false)}/>}

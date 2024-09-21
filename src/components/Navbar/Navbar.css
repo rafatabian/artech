@@ -35,17 +35,18 @@
     z-index: 99;
 }
 .navbar_logo{ 
-    height: 100%;
+    height: 42.5px;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .navbar_logo > img{
     width: 150px;
-    height: auto;
+    height: 42.5px;
     object-fit: contain;
     border-radius: 10px;
-    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 .navbar_buttons{
     display: flex;

@@ -7,12 +7,16 @@ const Question = lazy(() => import("../../components/Question/Question"))
  
 
 const Help = () => {
-  const [opacity, setOpacity] = useState()
+  const [opacity, setOpacity] = useState(null)
 
 
   useEffect(( ) => {
  const handleScroll = (() => {
-  setOpacity(1 - (window.scrollY / (document.body.scrollHeight / 2)));
+  if(window.innerWidth >= 1000){
+   setOpacity(document.body.scrollHeight / 1.6 <= window.scrollY)
+  }else{
+    setOpacity(false)
+  }
 })
 
     window.addEventListener("scroll", handleScroll)
@@ -31,16 +35,15 @@ const Help = () => {
         <h2>BRANDING</h2>
         {questionsData.slice(0, 8).map((question, index) => <Question key={index} question={question.question} answer={question.answer} color={index}/>)}
 
-        <h2>WEB DEVELOPMENT</h2>
+        <h2 className="help_title_spacing">WEB DEVELOPMENT</h2>
         {questionsData.slice(8, 17).map((question, index) => <Question key={index} question={question.question} answer={question.answer} color={index}/>)}
 
-        <h2>MARKETING</h2>
+        <h2 className="help_title_spacing">MARKETING</h2>
         {questionsData.slice(17, 27).map((question, index) => <Question key={index} question={question.question} answer={question.answer} color={index}/>)}
       </div>
  
- {/* make sure img is always in the center for example if questions are 200vh image will be at 100vh from the top */}
      <div className="help_img_container">
-      <img src={help} alt="help" style={{opacity: `${opacity}`}}/>
+      <img src={help} alt="help" className={`${opacity ? "help_img_dissapear" : "help_img_appear"}`}/>
      </div>
     </div>
   )
