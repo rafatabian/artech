@@ -18,7 +18,7 @@ const HomePachete = () => {
          <span className="homePachetete_text"><FaCheckCircle />Creare de logo simplu.</span>
          <span className="homePachetete_text"><FaCheckCircle />Mini-site de prezentare.</span>
          <span className="homePachetete_text"><FaCheckCircle />Setup pentru pagini pe social media.</span>
-         <Link to="/pachete" className="homePachete_alege_btn">ALEGE</Link>
+         <Link to="/plans/#/0" className="homePachete_alege_btn">ALEGE</Link>
         </div>
         <div className="homePachete_second_card">
          <span>PRO <FaStar /></span>
@@ -27,7 +27,7 @@ const HomePachete = () => {
          <span className="homePachetete_text"><FaCheckCircle />Gestionare completă a campaniilor de publicitate</span>
          <span className="homePachetete_text"><FaCheckCircle />Creare de conținut săptămânal</span>
          <span className="homePachetete_text"><FaCheckCircle />Consultanță și updateuri lunare</span>
-         <Link to="/pachete" className="homePachete_alege_btn">ALEGE</Link>
+         <Link to="/plans/#/1" className="homePachete_alege_btn">ALEGE</Link>
         </div>
         <div className="homePachete_third_card">
          <span>STANDARD <ImArrowUpRight2/></span>
@@ -36,10 +36,10 @@ const HomePachete = () => {
          <span className="homePachetete_text"><FaCheckCircle />Website de 5 pagini</span>
          <span className="homePachetete_text"><FaCheckCircle />Creare de conținut și postări lunare.</span>
          <span className="homePachetete_text"><FaCheckCircle />Campanie de publicitate</span>
-         <Link to="/pachete" className="homePachete_alege_btn">ALEGE</Link>
+         <Link to="/plans/#/2" className="homePachete_alege_btn">ALEGE</Link>
         </div>
     </div>
-    <Link to="/pachete" aria-label="pachete"><button>Descopera</button></Link>  
+    <Link to="/plans" aria-label="pachete"><button>Descopera</button></Link>  
     </div>
   )
 }

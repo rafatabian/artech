@@ -1,8 +1,8 @@
 import "./Home.css"
 import "../../index.css"
-import homeVideo from "../../assets/videos/artech_home_video.webm"
+import homeVideo from "../../assets/videos/artech_home_video.mp4"
 import { Link } from "react-router-dom";
-import { lazy } from "react";
+import { lazy, useEffect } from "react";
 const HomeWebsites = lazy(()=> import("../../components/HomeComponents/HomeWebsites/HomeWebsites.jsx"))
 const HomeMarketing = lazy(()=> import("../../components/HomeComponents/HomeMarketing/HomeMarketing.jsx"))
 const HomeBranding = lazy(() => import("../../components/HomeComponents/HomeLogos/HomeLogos.jsx"))
@@ -10,6 +10,11 @@ const HomePachete = lazy(() => import("../../components/HomeComponents/HomePache
 
 
 const Home = () => {
+
+// scroll to top
+useEffect(() => {
+    window.scrollTo(0, 0)
+}, [])
 
 
   return ( 

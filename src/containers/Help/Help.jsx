@@ -9,7 +9,10 @@ const Question = lazy(() => import("../../components/Question/Question"))
 const Help = () => {
   const [opacity, setOpacity] = useState(null)
 
-
+// scroll to top
+useEffect(() => {
+  window.scrollTo(0, 0)
+}, [])
   useEffect(( ) => {
  const handleScroll = (() => {
   if(window.innerWidth >= 1000){

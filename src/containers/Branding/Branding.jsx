@@ -1,12 +1,17 @@
-import "./Branding.css"
-import { lazy } from "react"
-import firstImageURL from "../../assets/images/branding/branding_first_img.jpg"
-import secondImageURL from "../../assets/images/branding/logos.png"
-import thirdImageURL from "../../assets/images/branding/branding_visit_card.jpg"
-import forthImageURL from "../../assets/images/branding/branding_graphic_design.png"
+import { lazy, useEffect } from "react"
+import firstImageURL from "../../assets/images/branding/branding_first_img.webp"
+import secondImageURL from "../../assets/images/branding/logos.webp"
+import thirdImageURL from "../../assets/images/branding/branding_visit_card.webp"
+import forthImageURL from "../../assets/images/branding/branding_graphic_design.webp"
 const ReusableComponent = lazy(() => import("../../components/ReusableComponent/ReusableComponent"))
 
 const HomeBranding = () => {
+
+    // scroll to top
+useEffect(() => {
+    window.scrollTo(0, 0)
+}, [])
+
 const brandingProps={
     titles: ["BRANDING", "LOGOURI", "CARTI DE VIZITA", "DESIGN GRAFIC"],
     headings: ["Branding de top", "Logo Personalizat", "Cărți de Vizită Profesionale", "Design grafic de top" ],

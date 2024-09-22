@@ -1,10 +1,15 @@
 /* css for second button */ 
 .HomeWebsites_container{
-   max-width: 1318px;
+   /* max-width: 1318px; */
+   width: 100%;
    width: 100vw;
-   padding: 1rem 2rem;
+   padding: 2rem !important;
    background-color: #f0f0f0;
    border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
 }
 .HomeWebsites_container > div{
    display: flex;
@@ -15,37 +20,41 @@
   font-weight: 400;
   font-size: 50px;
   color: #222222;
+width: 100%;
+text-align: center;
 }
 .HomeWebsites_container > p:nth-child(2){
   font-size: 20px;
   font-family: "Roboto";
   letter-spacing: 0.2px;
   font-weight: 400;
-  max-width:600px;
+  width: 100%;
+  text-align: center;
 }
 .HomeWebsites_container > p:nth-child(3){
   font-family: "Roboto";
   font-size: 18px;
   color: #666666;
-  max-width:550px;
+  width: 100%;
+  text-align: center;
 }
 .HomeWebsites_container > div {
   width: 100%;
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: row;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 .websites_container_buttons,
 .website_contaner_switches,
 .website_container_inputs{
-  flex:0.3;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   flex-direction: column;
   /* background-color: aqua; */
+  margin: 0 3rem;
 }
 .websites_container_buttons > button{
   margin: 10px 0;
@@ -62,13 +71,14 @@
 /*  */
 .homeWebsites_discover_btn{
   text-decoration: none;
+  margin-bottom: 2rem;
 }
 .homeWebsites_discover_btn > button{
   width: 350px;
   max-width: 350px;
   font-family: "Roboto";
   color: white;
-  background-color: var(--blue);
+  background-color: var(--green);
   padding: 15px 30px;
   border: none;
   font-size: 18px;
@@ -79,7 +89,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 .homeWebsites_discover_btn > button:hover{
- background-color: #0274cb;
+ background-color: var(--greenHover);
 }
 /*  */
 .animated-button {
@@ -94,8 +104,8 @@
     background-color: inherit;
     border-radius: 100px;
     font-weight: 600;
-    color: var(--blue);
-    box-shadow: 0 0 0 2px var(--blue);
+    color: var(--green);
+    box-shadow: 0 0 0 2px var(--green);
     cursor: pointer;
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
@@ -104,7 +114,7 @@
   .animated-button svg {
     position: absolute;
     width: 24px;
-    fill: var(--blue);
+    fill: var(--green);
     z-index: 9;
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
   }
@@ -124,7 +134,7 @@
     transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
-    background-color: var(--blue);
+    background-color: var(--green);
     border-radius: 50%;
     opacity: 0;
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
@@ -161,7 +171,7 @@
   
   .animated-button:active {
     scale: 0.95;
-    box-shadow: 0 0 0 4px var(--blue);
+    box-shadow: 0 0 0 4px var(--green);
   }
   
   .animated-button:hover .circle {
@@ -1220,6 +1230,9 @@
 
 
 @media screen and (max-width:450px){
+  .HomeWebsites_container{
+    padding: 2rem 15px !important;
+  }
     .homeWebsites_discover_btn > button{
   padding: 14px 49px;
   font-size: 18px;

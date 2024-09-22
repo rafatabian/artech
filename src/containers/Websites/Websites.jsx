@@ -6,6 +6,11 @@ const HomeWebsites = () => {
     const [matrix, setMatrix] = useState([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1])
     const [matrixMargins, setMatrixMargins] = useState([])
 
+// scroll to top
+useEffect(() => {
+  window.scrollTo(0, 0)
+}, [])
+
 // changing matrix number
     useEffect(() => {
         setTimeout(() => {
@@ -74,7 +79,7 @@ useEffect(() => {
           <p>Ne specializăm în designul de website-uri personalizate care reflectă identitatea brandului tău și se adaptează nevoilor tale specifice. Fie că ai nevoie de un site simplu și elegant sau de o platformă complexă, echipa noastră asigură un design unic, o experiență de utilizare captivantă și o funcționalitate fără cusur, care îți vor pune afacerea în evidență online.</p>
         </div>
 
-        <div className="websites_first_parallax website_computer_parallax" style={{backgroundImage: `url(${require("../../assets/images/websites/website_circuit.jpg")})`}}>
+        <div className="websites_first_parallax website_computer_parallax" style={{backgroundImage: `url(${require("../../assets/images/websites/website_circuit.webp")})`}}>
         <div className="website_ceata"></div>
            <h3 className="websites_titles">Optimizare & Performanță</h3>
         </div>
@@ -84,7 +89,7 @@ useEffect(() => {
         <p>Website-urile noastre sunt construite având în vedere performanța și optimizarea pentru motoarele de căutare (SEO), asigurând timpi de încărcare rapizi și o clasare mai bună pe Google și alte motoare de căutare. Cu ajutorul nostru, website-ul tău nu doar va arăta bine, ci va și performa eficient, atrăgând mai mult trafic și generând rezultate mai bune pentru afacerea ta.</p>
       </div>
 
-        <div className="websites_forth_parallax website_computer_parallax" style={{backgroundImage: `url(${require("../../assets/images/websites/websites_servers.jpg")})`}}>
+        <div className="websites_forth_parallax website_computer_parallax" style={{backgroundImage: `url(${require("../../assets/images/websites/websites_servers.webp")})`}}>
         <div className="website_ceata"></div>
            <h3 className="websites_titles">UPDATEURI</h3>
         </div>

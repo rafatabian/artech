@@ -98,7 +98,7 @@
     border-radius: 10px;
     color: white;
     /* background-color: #438543; */
-    background-color: var(--blue);
+    background-color: var(--green);
     margin-top: 50px;
 }
 .branding_white_text_contianer{
@@ -127,21 +127,20 @@
 }
 .branding_green_text_contianer{
     /* background-color: #438543; */
-    background-color: var(--blue);
+    background-color: var(--green);
 }
 .branding_button{
-    /* background-color: #438543; */
-    background-color: var(--blue);
+    background-color: var(--green);
     padding: 10px 25px;
     font-family: "Roboto";
     color: white;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 20px;
     border-radius: 10px;
     margin: 2rem 0;
 }
 .branding_button:hover{
-    /* background-color: #387038; */
+    background-color: var(--greenHover);
 }
 @media screen and (min-width: 1700px){
     .branding_second_parallax{

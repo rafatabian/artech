@@ -2,9 +2,15 @@
 .home_logos{
     width:1318px;
     margin: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .home_logos > h1{
       font-family: "Roboto";
+      width: 100%;
+      text-align: center;
       font-weight: 400;
       font-size: 50px;
       color: #222222;
@@ -13,12 +19,16 @@
        font-size: 20px;
        font-family: "Roboto";
        letter-spacing: 0.2px;
-       font-weight: 400
+       font-weight: 400;
+       width:100%;
+       text-align:center;
   }
   .home_logos > p:nth-child(3){
       font-family: "Roboto";
       font-size: 18px;
       color: #666666;
+      width:100%;
+      text-align:center;
   }
   .home_logos > div{
      display: flex;
@@ -52,7 +62,7 @@
       max-width: 350px;
       font-family: "Roboto";
       color: white;
-      background-color: var(--blue);
+      background-color: var(--green);
       padding: 15px 30px;
       border: none;
       font-size: 18px;
@@ -63,7 +73,7 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
   }
   .home_logos > a > button:hover{
-     background-color: #0274cb;
+     background-color: var(--greenHover);
   }
   @media screen and (min-width: 1700px){
     .home_logos{

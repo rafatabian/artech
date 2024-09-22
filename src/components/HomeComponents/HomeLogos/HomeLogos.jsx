@@ -1,8 +1,8 @@
 import "./HomeLogos.css"
 import logo1 from "../../../assets/images/logos/logo1.webp"
 import logo2 from "../../../assets/images/logos/logo2.webp"
-import logo3 from "../../../assets/images/logos/logo3.jpg"
-import logo4 from "../../../assets/images/logos/logo4.jpg"
+import logo3 from "../../../assets/images/logos/logo3.webp"
+import logo4 from "../../../assets/images/logos/logo4.webp"
 import { Link } from "react-router-dom"
 
 const HomeLogos = () => {

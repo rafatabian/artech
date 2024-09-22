@@ -30,22 +30,19 @@
     color: #333333;
     margin-bottom: 1rem;
     letter-spacing: 0.3px;
+
 }
-.help_question_title > h2{
+.help_question_title > h2{    
     font-size: 25px;
     font-family: "Roboto";
     font-weight: 700;
     color: #333333;
+    color: var(--green);
     margin-left: 10px;
     letter-spacing: 0.3px;
-}
-.help_question_title > h2{
-    color: var(--blue);
     margin-top: 40px;
-    font-family: "Roboto";
-    font-weight: 700;
-    letter-spacing: 0.3px;
 }
+
 .help_img_dissapear{
 animation: help_img 0.3s forwards;
 }

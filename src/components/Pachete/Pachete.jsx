@@ -1,22 +1,37 @@
 import "./Pachete.css"
-import { FaPlaneDeparture, FaRocket, FaStar, FaCircleInfo  } from "react-icons/fa6"
+import {  FaRocket, FaStar, FaCircleInfo  } from "react-icons/fa6"
 import { ImArrowUpRight2 } from "react-icons/im"
 import { FaCheckCircle } from "react-icons/fa"
 import { useEffect, useRef, useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
+
 
 const Pachete = () => {
   const [planFocus, setPlanFocus] = useState(2)
   const plansRef = useRef()
 
-      const handlePlanClick = (e) => {
-        setPlanFocus(e)
-        if(plansRef.current){
-        plansRef.current.scrollIntoView({
-          behavior: "smooth"
-          })
-      }
-      }
+  // scroll to top and to plans details when redirected from anothe page
+useEffect(() => {
+  const hash = window.location.hash
+  const hashParts = hash.split("/")
+  const planSelected = hashParts[hashParts.length - 1]
+  if(planSelected !== "plans"){
+    setPlanFocus(Number(planSelected)) 
+    plansRef.current.scrollIntoView()
+  }else{
+  window.scrollTo(0, 0)
+  }
+}, [])
+
+
+// auto scroll to plans details when clicking btns inside of the component
+const handlePlanClick = (e) => {
+  setPlanFocus(e)
+  if(plansRef.current){
+  plansRef.current.scrollIntoView({
+     behavior: "smooth"
+     })
+  }}
 
 
   return (

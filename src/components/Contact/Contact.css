@@ -8,7 +8,7 @@
     flex-direction: column;
     background-color: #f2f2f7;
     padding: 2rem 0;
-    margin-top: 40px;
+    padding-top: 80px;
 }
 .container_title,
 .contact_confirmation > h1{
@@ -79,7 +79,7 @@
 .contact_desctiption > textarea:focus,
 .contact_form div:nth-child(3) > div > input:focus{
     outline: none;
-    border: 1px solid var(--blue);
+    border: 1px solid var(--green);
 }
 .contact_desctiption > textarea{
     min-height: 100px;
@@ -105,7 +105,7 @@
 }
 .contact_form button{
  color: white;
- background-color: var(--blue);
+ background-color: var(--green);
  border-radius: 8px;
  padding: 9px 16px;
  font-size: 17px;
@@ -115,7 +115,7 @@
  cursor: pointer;
 }
 .contact_form button:hover{
-    background-color: #00509a;
+    background-color:var(--greenHover);
 }
 .contact_alternative_line{
     width: 700px;
@@ -150,13 +150,13 @@
 .contact_phone_email div:first-child > svg{
     width: 22px;
     height: 22px;
-    color: var(--blue);
+    color: var(--green);
     margin-right: 5px;
 }
 .contact_phone_email div:nth-child(2) > svg{
     width: 26px;
     height: 26px;
-    color: var(--blue);
+    color: var(--green);
     margin-right: 5px;
 }
 .contact_phone_email div:first-child > span{

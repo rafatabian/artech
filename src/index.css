@@ -7,7 +7,11 @@
 :root{
     /* --blue: #0082e6 */
     /* --blue: #438543 culoare veche in branding si marjketing*/
-    --blue:#085c2b;
+    --green:#085c2b;
+    /* --greenHover:#0d6e35; alternative of green when hovering buttons*/ 
+    --greenHover: #0a7d39
+
+
 }
 
 @tailwind base;

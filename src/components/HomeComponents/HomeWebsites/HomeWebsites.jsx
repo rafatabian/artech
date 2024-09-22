@@ -111,7 +111,7 @@ const HomeWebsites = () => {
 <div className="website_container_inputs">
   {/* first input */}
 <div className="first_input_group">
-    <input type="email" className="firstInput" id="Email" name="Email" placeholder="exemplu@gmail.com" autoComplete="off"/>
+    <input type="email" aria-label="example input" className="firstInput" id="Email" name="Email" placeholder="exemplu@gmail.com" autoComplete="off"/>
     <input className="first_button--submit" value="Trimite" type="submit"/>
 </div>
 {/* second input */}
@@ -136,7 +136,7 @@ const HomeWebsites = () => {
         <div className="searchbar-center">
             <div className="searchbar-input-spacer"></div>
 
-            <input type="text" className="searchbar-input" maxLength="2048" name="q" autoCapitalize="off" autoComplete="off" title="Search" role="combobox" placeholder="Exemplu"/>
+            <input type="text" className="searchbar-input" aria-label="input example" maxLength="2048" name="q" autoCapitalize="off" autoComplete="off" title="Search" role="combobox" placeholder="Exemplu"/>
         </div>
 
         <div className="searchbar-right">

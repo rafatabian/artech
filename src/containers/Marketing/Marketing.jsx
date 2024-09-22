@@ -1,13 +1,19 @@
-import "./Marketing.css"
-import { lazy } from "react"
-import firstMarketingURL from "../../assets/images/marketing/marketing_first_img.jpg"
-import secondMarktingURL from "../../assets/images/marketing/marketing_marketing_img.jpg"
-import thirdMarketingURL from "../../assets/images/marketing/marketing_digital.jpg"
-import forthMakretingURL from "../../assets/images/marketing/marketing_strategy.jpg"
+
+import { lazy, useEffect } from "react"
+import firstMarketingURL from "../../assets/images/marketing/marketing_first_img.webp"
+import secondMarktingURL from "../../assets/images/marketing/marketing_marketing_img.webp"
+import thirdMarketingURL from "../../assets/images/marketing/marketing_digital.webp"
+import forthMakretingURL from "../../assets/images/marketing/marketing_strategy.webp"
 const ReusableComponent = lazy(() => import("../../components/ReusableComponent/ReusableComponent"))
 
 
 const HomeMarketing = () => {
+
+  // scroll to top
+useEffect(() => {
+  window.scrollTo(0, 0)
+}, [])
+
   const marketingProps={
     titles: ["MARKETING", "MARKETING DIGITAL", "ANALIZA SI RAPOARTE", "STRATEGII DE MARKETING"],
     headings: ["Arată-le lumii cine esti", "Social Media Marketing", "Monitorizare continua", "Planificare strategica" ],

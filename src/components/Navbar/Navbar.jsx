@@ -2,8 +2,8 @@ import "./Navbar.css"
 import { useEffect, useState } from "react"
 import { FiMenu } from "react-icons/fi"
 import { IoClose } from "react-icons/io5"
-import black_logo from "../../assets/images/navbar_white_logo.jpg"
-import white_logo from "../../assets/images/navbar_dark_logo.jpg"
+import black_logo from "../../assets/images/navbar_white_logo.webp"
+import white_logo from "../../assets/images/navbar_dark_logo.webp"
 import { Link, useLocation } from "react-router-dom"
 
 const Navbar = () => {

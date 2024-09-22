@@ -1,8 +1,11 @@
 .homeMarketing_conatiner{
     max-width: 1318px;
     width: 100vw;
-    margin:4rem 0;
-    /* background-color: rgb(180, 234, 234); */
+    margin:2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .homeMarketing_conatiner > h1 {
     font-size: 50px;
@@ -16,6 +19,7 @@
     font-weight: 400;
     letter-spacing: 0.2px;
     max-width: 600px;
+    text-align: center;
 }
 .homeMarketing_conatiner > p:nth-child(3){
     font-size: 18px;
@@ -23,38 +27,40 @@
     color:#666666;
     font-weight: 400;
     max-width: 600px;
+    text-align: center;
 }
 .homeMarketing_images_and_text{
     width: 100%;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     margin: 2rem 0;
 }
 .homeMarketing_images_and_text > div:nth-child(1),
 .homeMarketing_images_and_text > div:nth-child(2),
-.homeMarketing_images_and_text > div:nth-child(3){
-    margin-right: 15px;
+.homeMarketing_images_and_text > div:nth-child(3),
+.homeMarketing_images_and_text > div:nth-child(4){
+    margin: 0 7.5px;
 }
 .homeMarketing_images_and_text > div >img{
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.homeMarketing_images_and_text > div >h2{
+.homeMarketing_images_and_text > div > h2{
    font-family: "Roboto";
-   font-size: 21px;
+   font-size: 18px;
    letter-spacing: 0.1px;
-   margin: 3px 0;
+   margin: 5px 0;
    font-weight: 400;
-   text-decoration:underline;
+   text-align: center;
 }
 .homeMarketing_conatiner > a > button{
     width: 350px;
     max-width: 350px;
     font-family: "Roboto";
     color: white;
-    background-color: var(--blue);
+    background-color: var(--green);
     padding: 15px 30px;
     border: none;
     font-size: 18px;
@@ -66,7 +72,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 .homeMarketing_conatiner > a > button:hover{
-background-color: #0274cb;
+background-color: var(--greenHover);
 }
 
 @media screen and (min-width:1700px){
@@ -87,7 +93,14 @@ background-color: #0274cb;
         width: 100vw;
         padding: 1rem 2rem; 
        }
-}@media screen and (max-width:950px){
+}
+@media screen and (min-width:950px) and (max-width: 1100px){
+.homeMarketing_images_and_text > div > h2{
+     height: 40px;
+     line-height: 20px;
+}
+}
+@media screen and (max-width:950px){
     .homeMarketing_conatiner{
         display: flex;
         align-items: center;
@@ -123,6 +136,9 @@ background-color: #0274cb;
     }
 }
 @media screen and (max-width:450px){
+    .homeMarketing_conatiner{
+        padding: 1rem 15px;
+    }
     .homeMarketing_conatiner > h1{
       font-size: 35px;
     }

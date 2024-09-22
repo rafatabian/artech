@@ -3,9 +3,9 @@ import { useRef, useState, useEffect } from "react"
 import emailjs from "@emailjs/browser"
 import { FaPhone } from "react-icons/fa6"
 import { MdEmail } from "react-icons/md"
-import logo from "../../assets/images/navbar_white_logo.jpg"
+import logo from "../../assets/images/navbar_white_logo.webp"
 import { AiFillLike } from "react-icons/ai" 
-import { useLocation, useNavigate, useParams } from "react-router-dom"
+import { useNavigate} from "react-router-dom"
 
 
 
@@ -21,6 +21,11 @@ const Contact = () => {
     email:""
   })
 
+// scroll to top
+useEffect(() => {
+  window.scrollTo(0, 0)
+}, [])
+
   const navigate = useNavigate()
   // TO DO make sure the paan choosed by the user in pachete page is sended by email
 // getting the plan from the url
@@ -34,6 +39,7 @@ useEffect(() => {
   })
   }
 }, []);
+
 
 // sets tip_solicitare data 
 const handleSelectChange = (e) => {
