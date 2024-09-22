@@ -1,0 +1,14 @@
+TO DO
+-navbar contact button
+-var(--blue) should be named green
+-compress images
+-check safari optimisation
+-/plans page have to much padding on the button
+-make sure is sending the plan by email
+-add home elements to the middle
+-improve HomeMarketing component design
+-add font roboto to all texts in the index.css file
+-add tic tok link in footer
+-change footer email
+-Home website button has a bug. when I click the descopera btn is triggering another btn.
+-improve seo, performance, accesibility.

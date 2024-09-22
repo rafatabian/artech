@@ -250,3 +250,45 @@
     color: white;
     margin-right: 10px;
 }
+@media screen and (max-width: 1100px){
+    .plans_presentation{
+        flex-direction: column;
+    }
+    .plans_first_plan,
+    .plans_second_plan,
+    .plans_third_plan{
+    width: 33%;
+    min-height: 410px;
+    max-width: 450px;
+    min-width: 450px;
+    margin: 15px 0;
+    }
+    .plans_final_text{
+        padding: 3rem 0;
+    }
+}
+@media screen and (max-width: 740px){
+    .plans_container{
+        padding: 2rem 15px ;
+        margin-top:50px ;
+    }
+    .plans_content_standard,
+    .plans_content_pro,
+    .plans_content_starter,
+    .plans_final_text > span{
+        padding: 20px 15px;
+    }
+    .plans_final_text{
+        width: 100vw;
+        padding: 3rem 15px;
+    }
+
+}
+@media screen and (max-width: 540px){
+    .plans_first_plan,
+    .plans_second_plan,
+    .plans_third_plan{
+        width: 100%;
+        min-width: unset;
+    }
+}
