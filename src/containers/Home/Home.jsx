@@ -38,7 +38,7 @@ useEffect(() => {
         </div>
         
         <div className="home_video">
-          <video src={homeVideo} autoPlay loop muted />
+          <video src={homeVideo} autoPlay loop muted playsInline  controlsList="nofullscreen" preload="auto"/>
         </div>
          
       </div>
