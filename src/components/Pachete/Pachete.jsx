@@ -69,7 +69,7 @@ const handlePlanClick = (e) => {
         <div className="plans_content" ref={plansRef}>
           {planFocus === 0 ?
          <div className="plans_content_starter">
-          <h1>Starter</h1>
+          <h1>STARTER</h1>
           <p>Pentru cei care doresc sa isi contureze identitatea de brand, acest pachet ofera fundatia perfecta</p>
           <div><span><FaCheckCircle />Creearea unui logo simplu:</span> <p>Un design elegant care capteaza esenta afacerii tale. Fiecare element este ales cu grija pentru a reflecta voalorile si personalitatea brandului tau.</p></div>
           <div><span><FaCheckCircle />Minisite de prezentare:</span> <p>O pagina web moderna, optimizata pentru a oferi informatii esentiale despre serviciile tale, intru-un formatr atragator si accesibil.</p></div>
@@ -79,7 +79,7 @@ const handlePlanClick = (e) => {
 
          {planFocus === 2 ? 
          <div className="plans_content_standard" >
-          <h1>Standard</h1>
+          <h1>STANDARD</h1>
           <p>Ideal pentru afaceri in expansiune, acest pachet combina creativitatea cu strategia pentru a-ti transforma prezenta online</p>
           <div><span><FaCheckCircle />Design personalizat:</span><p>Un branding exclusivist, creat spacial pentru tine, care sa rezoneze cu publicul tinta si sa se distanteze de consurenta.</p></div>
           <div><span><FaCheckCircle />Logo avansat:</span><p>Un logo complex si memorabil, realizat cu tehnici de design de varf, pentru a transmite profesionalism si incredere.</p></div>
@@ -91,13 +91,13 @@ const handlePlanClick = (e) => {
 
          {planFocus === 1 ? 
          <div className="plans_content_pro">
-          <h1>Pro</h1>
+          <h1>PRO</h1>
           <p>Pe langa serviciile din pachetele anterioare, aveti si:</p>
           <div><span><FaCheckCircle />Optinizare SEO si performanta:</span><p>Strategii de optimizare care asigura ca site-ul tau este nu doar vizibil, ci si preferat de motoarele de cautare.</p></div>
           <div><span><FaCheckCircle />Consultanta continua:</span><p>O echipa de experti care iti va oferi indrumari si sugestii personalizate, adaptate evolutiei afacerii tale.</p></div>
           <div><span><FaCheckCircle />Update-uri lunare</span><p>intretinerea constanta a siteului si actualizarea continutului pentru a menitine un standard inalt si o relevanta constanta</p></div>
-          <div><span><FaCheckCircle />Domeniu gratuit</span><p>Ne ocupam noi sa platim domeniul siteului tau timp de un an <b>TO DO</b></p></div>
-          <div><span><FaCheckCircle />Server Hosting</span><p>Pentru a mentine site-ul tau sigur si vizibil in cautarile google, il uploadam intru-un server si il oferim din partea casei timp de un an.<b>TO DO</b></p></div>
+          <div><span><FaCheckCircle />Domeniu gratuit</span><p>De exemplu  'afacerea-mea.com'. Ne ocupam noi sa platim domeniul siteului tau timp de un an.</p></div>
+          <div><span><FaCheckCircle />Server Hosting</span><p>Pentru a-ți asigura un site sigur și vizibil în căutările Google, îl găzduim pe un server performant, oferindu-ți gratuit un an de hosting inclus din partea noastră.</p></div>
 
          </div>
          : null}
@@ -108,7 +108,7 @@ const handlePlanClick = (e) => {
         </div>
 
         <div className="plans_final_text">
-          <span><FaCircleInfo />Credem ca fiecare proiect este unic si merita o abordare personalizata. De aceea, preturile noastre sunt adaptate specific nevoilor si cerintelor fiecarui client.
+          <span>Credem ca fiecare proiect este unic si merita o abordare personalizata. De aceea, preturile noastre sunt adaptate specific nevoilor si cerintelor fiecarui client.
             Costul final depinde de complexitatea proiectului, de timpul necesar pentru realizare si de volumul de munca implicat. Te incurajam sa ne cotactezi pentru a discuta despre viziunea ta, astfle incat sa putem oferi o oferta personalizata, care sa reflecte exact ceea ce iti doresti. 
             Asteptam cu interes sa colaboram si sa transormam ideile tale in realitate.
           </span>
