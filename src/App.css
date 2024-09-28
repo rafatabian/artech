@@ -21,3 +21,8 @@
      transform: scale(1);
     }
 }
+@media screen and (max-width: 970px){
+.app_contianer{
+    margin-top: 54.5px;
+ }
+}

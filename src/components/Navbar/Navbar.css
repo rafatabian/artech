@@ -175,7 +175,6 @@
 }
 @media screen and (max-width:970px){
     .navbar_container{
-        position: unset;
         padding: 7.5px 15px 0 15px;
         background-color: white;
         top: 0;

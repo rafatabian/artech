@@ -214,7 +214,7 @@
 .plans_content_standard > div > span,
 .plans_content_pro > div > span{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
     color: white;
@@ -228,8 +228,11 @@
 .plans_content_pro > div > span >svg{
   width: 17px;
   height: 17px;
+  min-width: 17px;
+  min-height: 17px;
   color: white;
   margin-right: 5px;
+  margin-top: 7px;
 }
 /* ask for offer text */
 .plans_final_text{
