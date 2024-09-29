@@ -3,6 +3,7 @@ import firstImageURL from "../../assets/images/branding/branding_first_img.webp"
 import secondImageURL from "../../assets/images/branding/logos.webp"
 import thirdImageURL from "../../assets/images/branding/branding_visit_card.webp"
 import forthImageURL from "../../assets/images/branding/branding_graphic_design.webp"
+import { Helmet } from "react-helmet-async"
 const ReusableComponent = lazy(() => import("../../components/ReusableComponent/ReusableComponent"))
 
 const HomeBranding = () => {
@@ -26,7 +27,14 @@ const brandingProps={
 }
 
  return(
+    <>
+    <Helmet>
+        <title>Branding</title>
+        <meta name="description" content="Alege brandingul de top pentru ati pune afacerea pe primul loc"/>
+        <link rel="canonical" href="/branding"/>
+    </Helmet> 
     <ReusableComponent props={brandingProps} />
+    </>
  )
 }
 

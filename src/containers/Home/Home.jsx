@@ -3,6 +3,7 @@ import "../../index.css"
 import homeVideo from "../../assets/videos/artech_home_video.mp4"
 import { Link } from "react-router-dom";
 import { lazy, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 const HomeWebsites = lazy(()=> import("../../components/HomeComponents/HomeWebsites/HomeWebsites.jsx"))
 const HomeMarketing = lazy(()=> import("../../components/HomeComponents/HomeMarketing/HomeMarketing.jsx"))
 const HomeBranding = lazy(() => import("../../components/HomeComponents/HomeLogos/HomeLogos.jsx"))
@@ -18,6 +19,12 @@ useEffect(() => {
 
 
   return ( 
+    <>
+    <Helmet>
+      <title>Home</title>
+      <meta name="description" content="Aduti afacerea la urmatorul nivel cu Artech, fie ca vine vorba de pagini web, marketing, branding sau logouri, noi suntem cheia. "/>
+      <link rel="canonical" href="/"/>
+    </Helmet>
     <div className="home_container">
       {/* new home section */}
       <div className="home_new_container"> 
@@ -60,6 +67,7 @@ useEffect(() => {
       </div>
      
  </div>
+ </>
   )}
 
 
