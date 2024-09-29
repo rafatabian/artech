@@ -98,11 +98,10 @@
     height: 100%;
     padding: 5px 10px;
     font-size: 15px;
-    cursor: pointer;
-    font-family:"Roboto";
+    cursor: pointer; 
+    font-family:"Roboto", Arial, sans-serif;
     font-weight: 500;
     letter-spacing: 0.1px;
-    font-display: swap;
 } 
 
 @media screen and (min-width: 1600px){
