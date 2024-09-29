@@ -61,6 +61,7 @@
     font-weight: 700;
     line-height: 70px;
     letter-spacing: 1px;
+    font-display: swap;
 }
 .home_video{
     /*  */
@@ -79,6 +80,7 @@
    letter-spacing: 0.3px;
    color: #777777;
    font-weight: 400;
+   font-display: swap;
 }
 .home_new_btns_container{
     width: 100%;
