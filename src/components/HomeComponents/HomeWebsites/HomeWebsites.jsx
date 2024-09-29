@@ -57,9 +57,9 @@ const HomeWebsites = () => {
         </div>
 
         <div className="website_contaner_switches">
-
-<label className="theme-switch">
-  <input type="checkbox" className="theme-switch__checkbox"/>
+{/* first switch */}
+<label htmlFor="first_checkbox" className="theme-switch">
+  <input id="first_checkbox" type="checkbox" className="theme-switch__checkbox" aria-label="checkbox"/>
   <div className="theme-switch__container">
     <div className="theme-switch__clouds"></div>
     <div className="theme-switch__stars-container">
@@ -79,9 +79,9 @@ const HomeWebsites = () => {
   </div>
 </label>
 {/* second switch */}
-<label htmlFor="theme" className="theme">
+<label htmlFor="second_checkbox" className="theme">
 	<span className="theme__toggle-wrap">
-		<input id="theme" className="theme__toggle" type="checkbox" role="switch" name="theme" value="dark"/>
+		<input id="second_checkbox" className="theme__toggle" type="checkbox" role="switch" name="theme" value="dark" aria-label="checkbox"/>
 		<span className="theme__fill"></span>
 		<span className="theme__icon">
 			<span className="theme__icon-part"></span>
@@ -97,13 +97,13 @@ const HomeWebsites = () => {
 	</span>
 </label>
 {/* third switch */}
-<label className="switch">
-  <input type="checkbox"/>
+<label htmlFor="third_checkbox" className="switch">
+  <input type="checkbox" aria-label="checkbox" id="third_checkbox"/>
   <span className="slider"></span>
 </label>
-{/* forth button */}
-<label className="switch1">
-  <input type="checkbox"/>
+{/* forth switch*/}
+<label htmlFor="forth_checkbox  " className="switch1">
+  <input type="checkbox" aria-label="checkbox" id="forth_checkbox"/>
   <span className="slider1"></span>
 </label>
         </div>
@@ -136,7 +136,7 @@ const HomeWebsites = () => {
         <div className="searchbar-center">
             <div className="searchbar-input-spacer"></div>
 
-            <input type="text" className="searchbar-input" aria-label="input example" maxLength="2048" name="q" autoCapitalize="off" autoComplete="off" title="Search" role="combobox" placeholder="Exemplu"/>
+            <input type="text" className="searchbar-input" aria-label="input_example" maxLength="2048" name="q" autoCapitalize="off" autoComplete="off" title="Search" role="combobox" placeholder="Exemplu"/>
         </div>
 
         <div className="searchbar-right">

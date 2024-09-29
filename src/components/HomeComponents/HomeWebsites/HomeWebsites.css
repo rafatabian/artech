@@ -429,16 +429,11 @@ text-align: center;
   }
 }
 /* switchs */
-/* From Uiverse.io by Galahhad */ 
 .theme-switch {
-  --toggle-size: 30px;
-  /* the size is adjusted using font-size,
-     this is not transform scale,
-     so you can choose any size */
+  --toggle-size: 20px;
   --container-width: 5.625em;
   --container-height: 2.5em;
   --container-radius: 6.25em;
-  /* radius 0 - minecraft mode :) */
   --container-light-bg: #3D7EAE;
   --container-night-bg: #1D1F2C;
   --circle-container-diameter: 3.375em;
@@ -633,12 +628,11 @@ text-align: center;
   transform: translateY(-50%);
 }
 /* second shitch */
-/* From Uiverse.io by JkHuger */ 
-/* Default */
 .theme {
   display: flex;
   align-items: center;
   -webkit-tap-highlight-color: transparent;
+  font-size: 17px;
 }
 
 .theme__fill,
@@ -842,14 +836,13 @@ text-align: center;
 /* third switch */
 
 .switch {
-  font-size: 17px;
+  font-size: 20.5px;
   position: relative;
   display: inline-block;
-  width: 62px;
-  height: 35px;
+  width: 90px;
+  height: 45px;
  }
  
- /* Hide default HTML checkbox */
  .switch input {
   opacity: 1;
   width: 0;
@@ -869,15 +862,16 @@ text-align: center;
   border-radius: 30px;
   border: 1px solid #ccc;
  }
+
  
  .slider:before {
   position: absolute;
   content: "";
   height: 1.9em;
   width: 1.9em;
-  border-radius: 16px;
-  left: 1.2px;
-  top: 0;
+  border-radius: 23px;
+  left: 2.3px;
+  top: 2.3px;
   bottom: 0;
   background-color: white;
   box-shadow: 0 2px 5px #999999;
@@ -890,11 +884,11 @@ text-align: center;
  }
  
  input:checked + .slider:before {
-  transform: translateX(1.5em);
+  transform: translateX(2.2em);
  }
  /* forth butotns */
 .switch1 {
-  font-size: 17px;
+  font-size: 22px;
   position: relative;
   display: inline-block;
   width: 3.5em;
