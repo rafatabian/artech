@@ -31,7 +31,7 @@ const brandingProps={
     <Helmet>
         <title>Branding</title>
         <meta name="description" content="Alege brandingul de top pentru ati pune afacerea pe primul loc"/>
-        <link rel="canonical" href="/branding"/>
+        <link rel="canonical" href="https://artech-agency.co/#/branding"/>
     </Helmet> 
     <ReusableComponent props={brandingProps} />
     </>

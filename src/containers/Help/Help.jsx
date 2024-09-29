@@ -1,6 +1,7 @@
 import "./Help.css"
 import help from "../../assets/images/artech_help_img.webp"
 import { lazy, useEffect, useState } from "react"
+import { Helmet } from "react-helmet-async"
 import questionsData from "../../assets/questionsData"
 
 const Question = lazy(() => import("../../components/Question/Question"))
@@ -31,6 +32,12 @@ useEffect(() => {
 
  
   return (
+    <>
+     <Helmet>
+      <title>Ajutor</title>
+      <meta name="description" content="Aici gasesti intrebarile frecvente de care ai nevoie. Brading, websites, marketing, pachete si altele."/>
+      <link rel="canonical" href="https://artech-agency.co/#/help"/>
+    </Helmet>
     <div className="help_container">
 
       <div className="help_question_title">
@@ -49,6 +56,7 @@ useEffect(() => {
       <img src={help} alt="help" className={`${opacity ? "help_img_dissapear" : "help_img_appear"}`}/>
      </div>
     </div>
+    </>
   )
 }
 

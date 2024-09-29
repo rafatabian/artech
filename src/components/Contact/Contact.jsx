@@ -6,6 +6,7 @@ import { MdEmail } from "react-icons/md"
 import logo from "../../assets/images/navbar_white_logo.webp"
 import { AiFillLike } from "react-icons/ai" 
 import { useNavigate} from "react-router-dom"
+import { Helmet } from "react-helmet-async"
 
 
 
@@ -73,6 +74,12 @@ const sendEmail = (e) => {
 
 
   return (
+    <>
+     <Helmet>
+      <title>Contact</title>
+      <meta name="description" content="Nu ezitati sa ne contactati in cazul in care vreti sa luati legatura cu noi. Suntem aici sa va jutam."/>
+      <link rel="canonical" href="https://artech-agency.co/#/contact"/>
+    </Helmet>
     <div className="contact_container">
       <h1 className="container_title">Formular de contact</h1>
      <div className="contact_form">
@@ -138,6 +145,7 @@ const sendEmail = (e) => {
       <h2>Vom reveni in cel mai scurt timp posibil</h2>
      </div>}
     </div>
+    </>
   )
 }
 

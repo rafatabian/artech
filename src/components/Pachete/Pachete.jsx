@@ -4,6 +4,7 @@ import { ImArrowUpRight2 } from "react-icons/im"
 import { FaCheckCircle } from "react-icons/fa"
 import { useEffect, useRef, useState } from "react"
 import { Link, useParams } from "react-router-dom"
+import { Helmet } from "react-helmet-async"
 
 
 const Pachete = () => {
@@ -35,6 +36,13 @@ const handlePlanClick = (e) => {
 
 
   return (
+    <>
+     <Helmet>
+      <title>Pachete</title>
+      <meta name="description" content="Alege pachetul potrivit pentru nevoile tale, fie ca vrei ceva simplu sau ceva mai complex."/>
+      <link rel="canonical" href="https://artech-agency.co/#/plans"/>
+    </Helmet>
+    
     <div className="plans_container">
       <h1>Pachete</h1>
       <div className="plans_presentation">
@@ -119,6 +127,7 @@ const handlePlanClick = (e) => {
        </div>
 
     </div>
+    </>
   )
 }
 

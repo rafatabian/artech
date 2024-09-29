@@ -1,6 +1,7 @@
 import "./Websites.css"
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
+import { Helmet } from "react-helmet-async"
 
 const HomeWebsites = () => {
     const [matrix, setMatrix] = useState([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1])
@@ -55,6 +56,12 @@ useEffect(() => {
 
 
   return (
+    <>
+    <Helmet>
+      <title>Websites</title>
+      <meta name="description" content="Fie ca vrei sa-ti creezi un website simplu, sau mai complex noi suntem aici."/>
+      <link rel="canonical" href="https://artech-agency.co/#/websites"/>
+    </Helmet>
     <div className="homeWebsites_container">
       <div  className="websites_matrix_container">
       <h3 className="websites_titles">WEBSITES</h3>
@@ -106,6 +113,7 @@ useEffect(() => {
         </div>
 
       </div>
+      </>
   )
 }
 export default HomeWebsites
