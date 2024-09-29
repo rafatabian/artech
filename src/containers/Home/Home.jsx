@@ -23,7 +23,7 @@ useEffect(() => {
     <Helmet>
       <title>Home</title>
       <meta name="description" content="Aduti afacerea la urmatorul nivel cu Artech, fie ca vine vorba de pagini web, marketing, branding sau logouri, noi suntem cheia. "/>
-      <link rel="canonical" href="/"/>
+      <link rel="canonical" href="https://artech-agency.co/"/>
     </Helmet>
     <div className="home_container">
       {/* new home section */}
