@@ -4,6 +4,7 @@ import homeVideo from "../../assets/videos/artech_home_video.mp4"
 import { Link } from "react-router-dom";
 import { lazy, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 const HomeWebsites = lazy(()=> import("../../components/HomeComponents/HomeWebsites/HomeWebsites.jsx"))
 const HomeMarketing = lazy(()=> import("../../components/HomeComponents/HomeMarketing/HomeMarketing.jsx"))
 const HomeBranding = lazy(() => import("../../components/HomeComponents/HomeLogos/HomeLogos.jsx"))
@@ -11,6 +12,7 @@ const HomePachete = lazy(() => import("../../components/HomeComponents/HomePache
 
 
 const Home = () => {
+  const [t] = useTranslation("global")
 
 // scroll to top
 useEffect(() => {
@@ -36,11 +38,11 @@ useEffect(() => {
            </div>
           
           
-          <p>Echipă de profesioniști în IT, specializați în dezvoltare web, design și marketing. Oferim servicii de calitate pentru a ajuta companiile să își atingă obiectivele online și să își realizeze potențialul maxim</p>
+          <p>{t("home_intro")}</p>
           <div className="home_new_btns_container">
             {/* add link to section */}
-              <Link>Pachete</Link>
-              <Link to="">Descopera</Link>
+              <Link>{t("home_intro_first_btn")}</Link>
+              <Link to="">{t("home_discover_btn")}</Link>
           </div>
         </div>
         

@@ -1,13 +1,17 @@
+import { useTranslation } from "react-i18next"
 import "../../../index.css"
 import "./HomeWebsites.css"
 import { Link } from "react-router-dom"
 
 const HomeWebsites = () => {
+  const [t] = useTranslation("global")
+
+
   return (
     <div className="HomeWebsites_container">
          <h1>Website</h1>
-         <p>Website-ul aduce cu 55% mai multi clienti unui business.</p>
-         <p>75% dintre clienti judeca credibilitatea unei firme dupa aspectul website-ului acesteia.</p>
+         <p>{t("home_websites_sub1")}</p>
+         <p>{t("home_websites_sub2")}</p>
 
          <div className="homeWesbite_container_interactions">
         <div className="websites_container_buttons">
@@ -160,7 +164,7 @@ const HomeWebsites = () => {
 </div>
 </div>
 </div>
-<Link to="/websites" className="homeWebsites_discover_btn"><button>Descopera</button></Link>
+<Link to="/websites" className="homeWebsites_discover_btn"><button>{t("home_discover_btn")}</button></Link>
 {/* TO  DO add styles to the button */}
     </div>
   )
