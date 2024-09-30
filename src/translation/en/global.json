@@ -17,6 +17,62 @@
     "home_marketing_img1": "Digital Marketing",
     "home_marketing_img2": "Socials advertising",
     "home_marketing_img3": "Content creation",
-    "home_marketing_img4": "PPC Campaigns (Pay-Per-Click)"
+    "home_marketing_img4": "PPC Campaigns (Pay-Per-Click)",
+
+    "pachete_starter1": "Custom design.",
+    "pachete_starter2": "Basic logo design.",
+    "pachete_starter3": "Mini-website.",
+    "pachete_starter4": "Social media page setup.",
+    "pachete_pro1": "Complete Branding & Website Development.",
+    "pachete_pro2": "SEO Optimization and Performance Enhancement.",
+    "pachete_pro3": "End-to-End Advertising Campaign Management.",
+    "pachete_pro4": "Weekly Content Production.",
+    "pachete_pro5": "Monthly Consulting and Updates.",
+    "pachete_standard1": "Professional design.",
+    "pachete_standard2": "Advanced logo.",
+    "pachete_standard3": "5 pages website.",
+    "pachete_standard4": "Content Creation and Monthly Posts.",
+    "pachete_standard5": "Advertising Campaign.",
+    "pachete_choose_btn": "DETAILS",
+
+    "branding_sub1": "Premium Branding",
+    "branding_details1": "We specialize in creating unique and memorable brands that authentically reflect your business identity. Whether you prefer a modern, elegant, or classic style, we ensure your brand remains top of mind for your customers. Every detail matters—from your brand name and logo to your color palettes. Our high-quality graphic design communicates your message with clarity and effectiveness.",
+    "branding_title2": "LOGOS",
+    "branding_sub2": "Custom Logo Design",
+    "branding_details2": "Experience the artistry of a distinctive logo with Artech. We recognize that your logo is the cornerstone of your visual identity, which is why we offer bespoke design solutions tailored to your needs, whether you're a burgeoning startup or an established enterprise. Each logo is crafted from the ground up, and our collaborative approach allows us to truly understand your vision and values. We present multiple concepts and revisions until you are entirely satisfied with the final product.",
+    "branding_title3": "BUSINESS CARDS",
+    "branding_sub3": "Professional Business Cards",
+    "branding_details3": "A business card embodies your professional identity. At Artech, we design elegant and impactful business cards that create a lasting impression. Each design is customized to meet your specific requirements, reflecting the essence of your brand. We offer a wide range of personalization options, including sizes, paper types, finishes, and unique design elements. Our streamlined process begins with an in-depth consultation, followed by a creative design that exceeds your expectations.",
+    "branding_title4": "GRAPHIC DESIGN",
+    "branding_sub4": "Top-Tier Graphic Design",
+    "branding_details4": "We provide comprehensive graphic design solutions to help you communicate effectively and distinguish yourself in the marketplace. From branding and visual identity that resonate with your business's personality and values to compelling advertising materials like brochures, posters, and banners, we ensure that every detail aligns with your vision. Our services also include digital design for websites, mobile applications, and social media, enhanced by animations and infographics that engage your audience. Additionally, we support your marketing efforts with innovative advertising and optimized visual content that attracts and retains your target audience. At Graphic Design, we transform your ideas into reality!",
+    "branding_contact": "GET A QUOTE",
+
+    "website_title2": "BESPOKE WEBSITES",
+    "website_title3": "OPTIMIZATION & PERFORMANCE",
+    "website_title4": "UPDATES",     
+    "website_sub1": "Websites That Drive Success",
+    "website_sub2": "Websites That Impress",
+    "website_sub3": "SEO & Performance Excellence",
+    "website_sub4": "Continuous Support & Maintenance",
+    "website_details1": "In today’s digital world, having a strong online presence is essential for attracting and retaining customers. Our team delivers full-service web development, offering custom designs, performance optimization, and continuous support. Whatever your needs, we build websites that leave a lasting impression and generate real results.",
+    "website_details2": "We specialize in crafting custom websites that align with your brand and meet your specific goals. Whether you need a simple, sophisticated site or a more complex solution, we ensure a distinctive design, smooth functionality, and a compelling user experience that sets your business apart online.",
+    "website_details3": "Our websites are built with speed, performance, and SEO in mind, ensuring quick load times and better rankings on Google and other search engines. We don’t just focus on aesthetics—our sites are engineered to perform, helping you attract more visitors and achieve better business outcomes.",
+    "website_details4": "Our commitment doesn’t end with launching your website. We provide ongoing maintenance, regular updates, and domain management to keep your site running smoothly. While you focus on growing your business, we ensure your website stays up-to-date and fully optimized for success.",
+
+    "marketing_title2": "DIGITAL MARKETING",
+    "marketing_title3": "INSIGHTS & REPORTING",
+    "marketing_title4": "MARKETING STRATEGIES",
+    "marketing_sub1": "Unveil Your Brand to the World",
+    "marketing_sub3": "Real-Time Monitoring",
+    "marketing_sub4": "Strategic Vision and Execution",
+    "marketing_details1": "In today’s fast-paced environment, smart marketing is the driving force behind growth and long-term success. Whether you're aiming to boost visibility, attract valuable customers, or strengthen your brand, we provide the strategic partnership you need. With tailored strategies and cutting-edge solutions, we help transform your business objectives into reality. Let us show you how our marketing expertise can propel your business to the next level.",
+    "marketing_details3": "We offer continuous monitoring of your marketing efforts, identifying opportunities for optimization and ensuring peak performance. Our detailed, easy-to-understand reports, combined with data-driven insights, empower you to make informed decisions. By blending creativity with innovation, we deliver customized solutions that align with your goals. Our focus is on measurable success, constantly refining strategies to maximize the ROI of each campaign.",
+    "marketing_details4": "We start by conducting a thorough analysis of your business, market, and competition to create a strategy tailored to your objectives. Our expert consulting is designed around your goals, followed by a clear, actionable plan with both short-term and long-term strategies, ensuring every tactic is effectively implemented with precise timelines.",
+    "marketing_details2": "We provide comprehensive digital marketing solutions. Social Media Marketing: We manage effective campaigns on Facebook, Instagram, LinkedIn, and TikTok to boost customer engagement. Online Advertising (PPC): We implement PPC campaigns on Google Ads and Facebook Ads, maximizing your ROI. Email Marketing: We create personalized email campaigns, utilizing automation and segmentation to increase conversion rates."
+    
+
+
+
 
 }

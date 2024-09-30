@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next"
 import "./Footer.css"
 import { FaFacebook,FaInstagram, FaTiktok } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
@@ -6,6 +7,7 @@ import { Link, useLocation } from "react-router-dom"
 const Footer = () => {
   const location = useLocation()
   const websitesPage = location.pathname === "/websites"
+  const [t] = useTranslation("global")
 
   return (
     <div className={`${websitesPage ? "footer_dark" : "footer_container"}`}>
@@ -20,14 +22,14 @@ const Footer = () => {
         <div className="footer_links"> 
             <div>
                 <Link to="/" aria-label="home">HOME</Link>
-                <Link to="/help" aria-label="help">AJUTOR</Link>
+                <Link to="/help" aria-label="help">{t("navbar_ajutor")}</Link>
                 <Link to="/contact" aria-label="contact">CONTACT</Link>
             </div>
             <div>
               <Link to="/branding" aria-label="branding">BRANDING</Link>
               <Link to="/websites" aria-label="websites">WEBSITES</Link>
               <Link to="/marketing" aria-label="marketing">MARKETING</Link>
-              <Link to="/personalizare" aria-label="pachete">PACHETE</Link>
+              <Link to="/plans" aria-label="pachete">{t("navbar_pachete")}</Link>
             </div>
         </div>
 

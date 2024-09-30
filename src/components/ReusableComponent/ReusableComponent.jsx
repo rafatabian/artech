@@ -2,10 +2,12 @@ import "./ReusableComponent.css"
 import  businessCardOne  from "../../assets/images/artech_visit_cart_1.webp"
 import  businessCardTwo  from "../../assets/images/artech_visit_card_2.webp"
 import { Link, useLocation } from "react-router-dom"
+import { useTranslation } from "react-i18next"
 
 
 const HomeBranding = ({props}) => {
   const location = useLocation()
+  const [t] = useTranslation("global")
 
   return(
     <div className="braning_new">
@@ -56,7 +58,7 @@ const HomeBranding = ({props}) => {
         <p>{props.forthText}</p>        
         </div>
 
-        <Link to="/contact" className="branding_button" aria-label="contact">CERE OFERTA</Link>
+        <Link to="/contact" className="branding_button" aria-label="contact">{t("branding_contact")}</Link>
 
     </div>
   )
