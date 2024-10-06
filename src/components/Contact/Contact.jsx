@@ -7,6 +7,7 @@ import logo from "../../assets/images/navbar_white_logo.webp"
 import { AiFillLike } from "react-icons/ai" 
 import { useNavigate} from "react-router-dom"
 import { Helmet } from "react-helmet-async"
+import { useTranslation } from "react-i18next"
 
 
 
@@ -21,6 +22,7 @@ const Contact = () => {
     telefon:"",
     email:""
   })
+  const [t] = useTranslation("global")
 
 // scroll to top
 useEffect(() => {
@@ -81,49 +83,49 @@ const sendEmail = (e) => {
       <link rel="canonical" href="https://artech-agency.co/#/contact"/>
     </Helmet>
     <div className="contact_container">
-      <h1 className="container_title">Formular de contact</h1>
+      <h1 className="container_title">{t("contact_title")}</h1>
      <div className="contact_form">
-      <h1>Completează formularul și vom reveni cu un răspuns sau o soluționare în cel mai scurt timp.</h1>
+      <h1>{t("contact_info")}</h1>
       <form onSubmit={sendEmail} ref={formRef}>
         <div>
-          <label htmlFor="options">Solicitarea ta e legata de:</label>
+          <label htmlFor="options">{t("contact_solicitare_title")}</label>
           <select id="options" onChange={handleSelectChange} value={emailData.tip_solicitare} required={true}>
-            <option value="">selecteaza motivul solicitarii</option>
-            <option value="Branding">Branding</option>
-            <option value="Websites">Websites</option>
-            <option value="Marketing">Marketing</option>
-            <option value="Pachete">Pachete</option>
-            <option value="Altceva">Altceva</option>
+            <option value="">{t("contact_solicitare_1")}</option>
+            <option value="Branding">{t("contact_solicitare_2")}</option>
+            <option value="Websites">{t("contact_solicitare_3")}</option>
+            <option value="Marketing">{t("contact_solicitare_4")}</option>
+            <option value="Pachete">{t("contact_solicitare_5")}</option>
+            <option value="Altceva">{t("contact_solicitare_6")}</option>
           </select>
         </div>
 
         <div className="contact_desctiption"> 
-          <label htmlFor="description">Da-ne cateva detalii</label>
+          <label htmlFor="description">{t("contact_detalii")}</label>
           <textarea id="description" onChange={(e) => setEmailData({...emailData, descriere:e.target.value})} value={emailData.descriere} required></textarea>
         </div>
 
         <div>
-          <h2>Date Personale</h2>
+          <h2>{t("contact_date_personale")}</h2>
           <div>
-            <label htmlFor="name">Prenume si Nume:</label>
-            <input id="name" type="text" placeholder="Prenume si Nume" required onChange={(e) => setEmailData({...emailData, nume: e.target.value})} value={emailData.nume}/>
+            <label htmlFor="name">{t("contact_name")}:</label>
+            <input id="name" type="text" placeholder={t("contact_name")} required onChange={(e) => setEmailData({...emailData, nume: e.target.value})} value={emailData.nume}/>
           </div>
           <div>
-            <label htmlFor="phone">Telefon:</label>
-            <input id="phone" type="tel" placeholder="Telefon"  required onChange={(e) => setEmailData({...emailData, telefon: e.target.value})} value={emailData.telefon}/>
+            <label htmlFor="phone">{t("contact_telefon")}:</label>
+            <input id="phone" type="tel" placeholder={t("contact_telefon")}  required onChange={(e) => setEmailData({...emailData, telefon: e.target.value})} value={emailData.telefon}/>
           </div>
           <div>
-            <label htmlFor="email">Adresa de e-mail:</label>
-            <input id="email" type="email" placeholder="Adresa de e-mail" required onChange={(e) => setEmailData({...emailData, email: e.target.value})} value={emailData.email}/>
+            <label htmlFor="email">{t("contact_email")}:</label>
+            <input id="email" type="email" placeholder={t("contact_email")} required onChange={(e) => setEmailData({...emailData, email: e.target.value})} value={emailData.email}/>
           </div>
-          <p>Prin apăsarea butonului „Trimite Formular” și transmiterea acestuia confirmi că ai cu bună-credință convingerea că informațiile și susținerile cuprinse în cadrul formularului de notificare sunt exacte și complete.</p>
+          <p>{t("contact_adictional_info")}</p>
         </div>
-        <button type="submit" >Trimite Formularul</button>
+        <button type="submit">{t("contact_button")}</button>
       </form>
      </div>
 
      {/* under the form */}
-     <div className="contact_alternative_line"><p>sau</p></div>
+     <div className="contact_alternative_line"><p>{t("contact_or")}</p></div>
      <div className="contact_phone_email">
           <div>
             <FaPhone/>

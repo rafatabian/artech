@@ -13,12 +13,24 @@ const Navbar = () => {
     const [dark, setDark] = useState(false)
     const location = useLocation()
     const [t, i18n] = useTranslation("global")
+    const[language, setLanguage] = useState("")
 
 // changin language function
 const hanldleLanguage = (lang) => {
      i18n.changeLanguage(lang)
+     setLanguage(lang)
 }
 
+//see prefered language
+useEffect(() => {
+  const userLang = navigator.language || navigator.userLanguage
+  console.log(userLang)
+  if(userLang.startsWith("ro")){
+     setLanguage("ro")
+  }else{ 
+    setLanguage("en")
+  }
+}, [])
 
     // chech location and change nav color
     useEffect(() => {
@@ -39,8 +51,10 @@ const hanldleLanguage = (lang) => {
      {showMenu && <IoClose className="navbar_close_icon" onClick={() => setShowMenu(false)}/>}
 
       <div className={`navbar_buttons ${showMenu ? "show_menu_icon_clicked" : ""}`}> 
-        <button onClick={()=> hanldleLanguage("ro")}>RO</button>
-        <button onClick={()=> hanldleLanguage("en")}>EN</button>
+        <div className="navbar_languages">
+           <button onClick={()=> hanldleLanguage("ro")} className={language === "ro" ? "navbar_language_btn_activated" : "navbar_language_btn_nonSelected"}>RO</button>
+        <button onClick={()=> hanldleLanguage("en")} className={language === "en" ? "navbar_language_btn_activated" : "navbar_language_btn_nonSelected"}>EN</button>
+        </div>
         <Link to="/"><button onClick={() => setShowMenu(false)}>HOME</button></Link>
         <Link to="/branding"><button onClick={() => setShowMenu(false)}>BRANDING</button></Link>
         <Link to="/websites"><button onClick={() => setShowMenu(false)}>WEBSITES</button></Link>

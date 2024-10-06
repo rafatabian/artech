@@ -1,16 +1,18 @@
 .navbar_container{
     max-width: 100vw;
-    height: 40px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    padding: 0px 4rem 0px 4rem;
-    top: 10px;
+    padding: 10px 4rem 10px 4rem;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 99;
     position: fixed;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 } 
 .navbar_dark .navbar_menu-icon{
    background-color: black;
@@ -36,7 +38,8 @@
     z-index: 99;
 }
 .navbar_logo{ 
-    height: 42.5px;
+    height: 45px;
+    max-height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,17 +47,14 @@
 
 }
 .navbar_logo > img{
-    height: 42.5px;
+    height: 100%;
     object-fit: contain;
-    border-radius: 10px;
-    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 .navbar_buttons{
     display: flex;
     flex-direction: row;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    align-items: center;
+    justify-content: center;
 }
 .navbar_menu-icon{
     padding: 5px;
@@ -90,13 +90,55 @@
 .navbar_buttons > a:nth-child(6){
     margin:0 5px;
 }
-
-
+/* language btns and container */
+.navbar_languages{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-right: 10px;
+}
+.navbar_language_btn_nonSelected{
+   margin: 0 3px;
+   background: transparent;
+   color: var(--green);
+   font-family: "Roboto", Arial, sans-serif;
+   font-size: 15px;
+   width: 40px;
+   border-radius: 40px;
+   height: 25px;
+   font-weight: 500;
+   border: 1.5px solid var(--green);
+}
+.navbar_language_btn_activated{
+    margin: 0 3px;
+   color: white;
+   font-family: "Roboto", Arial, sans-serif;
+   font-size: 15px;
+   width: 40px;
+   height: 25px;
+   font-weight: 500;
+   border-radius: 40px;
+    background-color: var(--green);
+}
+.show_menu_icon_clicked .navbar_languages{
+   margin-right: unset;
+   margin-bottom:15px;
+}
+.show_menu_icon_clicked .navbar_language_btn_activated{
+    background-color: white;
+    color: var(--green);
+}
+.show_menu_icon_clicked .navbar_language_btn_nonSelected{
+    border: 1.5px solid white;
+    color: white;
+}
 .navbar_buttons > a > button {
     border: none;
     background-color: unset;
     height: 100%;
-    padding: 5px 10px;
+    padding: 0 5px;
     font-size: 15px;
     cursor: pointer; 
     font-family:"Roboto", Arial, sans-serif;
@@ -106,7 +148,7 @@
 
 @media screen and (min-width: 1600px){
     .navbar_container{
-        padding:7.5px 18vw 0 18vw;
+        padding:0 18vw 0 18vw;
     }
 }
 @media screen and (min-width:970px){
@@ -116,6 +158,13 @@
     }
 }
 @media screen and (max-width:970px){
+        .navbar_logo{
+        height: 42.5px;
+        max-height: 42.5px;
+        }
+    .navbar_logo > img{
+        height: 42.5px;
+    }
     .navbar_buttons{
         display: none;
     } 
@@ -155,8 +204,12 @@
 .navbar_contact{
     background-color: var(--green);
     border-radius: 10px;
-    padding: 5px;
+    padding: 0px 5px;
     margin-left: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .navbar_contact:hover{
     background-color:var(--greenHover);

@@ -46,7 +46,7 @@ const handlePlanClick = (e) => {
     </Helmet>
     
     <div className="plans_container">
-      <h1>Pachete</h1>
+      <h1>{t("navbar_pachete")}</h1>
       <div className="plans_presentation">
       <div className={`plans_first_plan ${planFocus === 0 ? "plans_focus_plan" : null}`} onClick={() => handlePlanClick(0)}>
          <span>STARTER <FaRocket /></span>

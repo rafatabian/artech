@@ -20,7 +20,7 @@ const HomeWebsites = () => {
           className="font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-emerald-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
           type="submit"
         >
-          Exemplu
+          {t("home_websites_example")}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 19"
@@ -39,7 +39,7 @@ const HomeWebsites = () => {
               d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
             ></path>
           </svg>
-          <span className="text">Exemplu</span>
+          <span className="text">{t("home_websites_example")}</span>
           <span className="circle"></span>
           <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -50,13 +50,13 @@ const HomeWebsites = () => {
 {/* third button */}
         <button className="btn-17">
           <span className="text-container">
-            <span className="text">Exemplu</span> 
+            <span className="text">{t("home_websites_example")}</span> 
           </span>
         </button>
 {/* forth button */}
         <button className="btn-23">
-          <span className="text">Exemplu</span>
-          <span aria-hidden="" className="marquee">Exemplu</span>
+          <span className="text">{t("home_websites_example")}</span>
+          <span aria-hidden="" className="marquee">{t("home_websites_example")}</span>
         </button>
         </div>
 
@@ -115,8 +115,8 @@ const HomeWebsites = () => {
 <div className="website_container_inputs">
   {/* first input */}
 <div className="first_input_group">
-    <input type="email" aria-label="example input" className="firstInput" id="Email" name="Email" placeholder="exemplu@gmail.com" autoComplete="off"/>
-    <input className="first_button--submit" value="Trimite" type="submit"/>
+    <input type="email" aria-label="example input" className="firstInput" id="Email" name="Email" placeholder={t("home_websites_example")} autoComplete="off"/>
+    <input className="first_button--submit" value={t("home_websites_submit")} type="submit"/>
 </div>
 {/* second input */}
 <div className="secondGroup">
@@ -140,7 +140,7 @@ const HomeWebsites = () => {
         <div className="searchbar-center">
             <div className="searchbar-input-spacer"></div>
 
-            <input type="text" className="searchbar-input" aria-label="input_example" maxLength="2048" name="q" autoCapitalize="off" autoComplete="off" title="Search" role="combobox" placeholder="Exemplu"/>
+            <input type="text" className="searchbar-input" aria-label="input_example" maxLength="2048" name="q" autoCapitalize="off" autoComplete="off" title="Search" role="combobox" placeholder="Search"/>
         </div>
 
         <div className="searchbar-right">
@@ -158,8 +158,8 @@ const HomeWebsites = () => {
 </div>
 {/* forth input */}
 <div className="input-container">
-  <input placeholder="Exemplu" className="input-field" type="text"/>
-  <label htmlFor="input-field" className="input-label">Nume si Prenume</label>
+  <input placeholder={t("home_websites_example")} className="input-field" type="text"/>
+  <label htmlFor="input-field" className="input-label">{t("contact_name")}</label>
   <span className="input-highlight"></span>
 </div>
 </div>
