@@ -8,6 +8,7 @@ import { AiFillLike } from "react-icons/ai"
 import { useNavigate} from "react-router-dom"
 import { Helmet } from "react-helmet-async"
 import { useTranslation } from "react-i18next"
+import { Link } from "react-router-dom"
 
 
 
@@ -118,6 +119,10 @@ const sendEmail = (e) => {
             <label htmlFor="email">{t("contact_email")}:</label>
             <input id="email" type="email" placeholder={t("contact_email")} required onChange={(e) => setEmailData({...emailData, email: e.target.value})} value={emailData.email}/>
           </div>
+          <label for="privacy" className="contact_privacy_label">
+            <input type="checkbox" id="privacy" required/>
+            <span>I agree to the <Link to="/terms">Terms of Use</Link> and acknowledge the <Link to="/privacy">Privacy Policy</Link></span>
+          </label>
           <p>{t("contact_adictional_info")}</p>
         </div>
         <button type="submit">{t("contact_button")}</button>
