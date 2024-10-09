@@ -1,0 +1,30 @@
+.privacy_container{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 15px;
+}
+.privacy_container > h1,
+.privacy_container > h2,
+.privacy_container > p{
+   font-family: Roboto;
+   max-width: 600px;
+   width: 100%;
+}
+.privacy_container > h1{
+    font-size: 30px;
+    font-weight: 500;
+    color: #222222;
+}
+.privacy_container > h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #222222;
+    margin-top:30px ;
+}
+.privacy_container > p{
+  font-size: 16px;
+  color: black;
+}

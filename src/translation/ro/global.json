@@ -152,6 +152,27 @@
     "contact_email":"Adresa de Email",
     "contact_adictional_info":"Prin apăsarea butonului „Trimite Formular” și transmiterea acestuia confirmi că ai cu bună-credință convingerea că informațiile și susținerile cuprinse în cadrul formularului de notificare sunt exacte și complete.",
     "contact_button":"Trimite Formularul",
-    "contact_or": "sau"
+    "contact_or": "sau",
+
+        "privacy_title": "Politica de confidențialitate",
+        "privacy_title1": "Informațiile pe care le colectăm",
+        "privacy_title2": "Scopul și baza legală pentru prelucrarea datelor",
+        "privacy_title3": "Cum gestionăm datele dumneavoastră",
+        "privacy_title4": "Drepturile dumneavoastră în calitate de persoană vizată",
+        "privacy_title5": "Securitatea datelor",
+        "privacy_title6": "Servicii terțe",
+        "privacy_title7": "Modificări ale acestei politici de confidențialitate",
+        "privacy_title8": "Jurisdicție legală",
+        "privacy_title9": "Contactați-ne",
+        "privacy_text1": "Când completați formularul de contact de pe site-ul nostru, colectăm următoarele informații personale: Nume complet (Nume și Prenume), Adresă de email, Număr de telefon",
+        "privacy_text2": "Colectăm și prelucrăm informațiile dumneavoastră personale strict în scopul răspunsului la întrebările adresate prin intermediul formularului nostru de contact. Folosim informațiile dumneavoastră pentru a: Comunica cu dumneavoastră pe baza cererii sau întrebării dumneavoastră. Oferi informații relevante legate de serviciile și ofertele noastre de afaceri. Baza noastră legală pentru prelucrarea datelor dumneavoastră este consimțământul acordat la trimiterea formularului de contact și interesul nostru legitim în a răspunde solicitărilor clienților.",
+        "privacy_text3": "Luăm următorii pași pentru a asigura gestionarea sigură a informațiilor dumneavoastră personale: Păstrarea datelor: Vom păstra informațiile dumneavoastră personale nu mai mult de 1 an după ultima noastră comunicare cu dumneavoastră. După această perioadă, informațiile vor fi șterse în siguranță din sistemele noastre, cu excepția cazului în care legea impune altfel. Nicio partajare ilegală: Nu partajăm, nu vindem și nu închiriem informațiile dumneavoastră personale către terți. Cu toate acestea, putem dezvălui datele dumneavoastră dacă suntem obligați prin lege, ordin judecătoresc sau autoritate de reglementare sau dacă este necesar pentru a proteja drepturile, proprietatea sau siguranța [Your Business Name].",
+        "privacy_text4": "În conformitate cu legile privind protecția datelor, aveți următoarele drepturi: Dreptul de acces: Puteți solicita o copie a datelor personale pe care le deținem despre dumneavoastră. Dreptul la rectificare: Puteți solicita corectarea oricăror inexactități sau informații incomplete. Dreptul la ștergere („dreptul de a fi uitat”): Puteți solicita ștergerea datelor dumneavoastră personale dacă nu mai sunt necesare pentru scopul pentru care au fost colectate sau dacă vă retrageți consimțământul. Dreptul de a obiecta: Aveți dreptul să vă opuneți prelucrării datelor dumneavoastră în anumite condiții. Dreptul la restricționarea prelucrării: Puteți solicita ca prelucrarea datelor dumneavoastră să fie temporar sau permanent oprită în anumite situații. Dreptul la portabilitatea datelor: Puteți solicita o copie a informațiilor dumneavoastră personale într-un format structurat, utilizat în mod obișnuit și ușor de citit automat. Pentru a exercita oricare dintre aceste drepturi, vă rugăm să ne contactați la claudiunegru@artech-agency.co. Vom răspunde la cererea dumneavoastră în termen de o lună de la primirea acesteia.",
+        "privacy_text5": "Luăm în serios securitatea datelor și am implementat măsuri tehnice și organizatorice adecvate pentru a proteja informațiile dumneavoastră personale de accesul neautorizat, utilizare abuzivă, pierdere sau distrugere. Aceste măsuri includ criptarea, controalele de acces și audituri regulate de securitate. Cu toate acestea, nicio metodă de transmitere pe internet nu este complet sigură. Deși ne străduim să vă protejăm datele, nu putem garanta securitatea absolută a acestora.",
+        "privacy_text6": "Site-ul nostru poate conține linkuri către site-uri web sau servicii terțe. Nu suntem responsabili pentru practicile de confidențialitate sau conținutul acestor site-uri. Vă încurajăm să revizuiți politicile de confidențialitate ale oricăror site-uri terțe pe care le vizitați.",
+        "privacy_text7": "Ne rezervăm dreptul de a actualiza sau modifica această politică de confidențialitate în orice moment pentru a asigura conformitatea cu cerințele legale sau pentru a reflecta modificările în practicile noastre de date. Orice modificări semnificative vor fi comunicate prin e-mail sau printr-un anunț vizibil pe site-ul nostru. Utilizarea continuă a serviciilor noastre constituie acceptarea acestor modificări.",
+        "privacy_text8": "Această politică de confidențialitate va fi guvernată și interpretată în conformitate cu legile din România, iar orice litigii care decurg din aceasta vor fi supuse jurisdicției exclusive a instanțelor din România.",
+        "privacy_text9": "Dacă aveți întrebări, nelămuriri sau solicitări cu privire la această politică de confidențialitate sau datele dumneavoastră personale, vă rugăm să ne contactați la: claudiunegru@artech-agency.co"
+      
 
 }

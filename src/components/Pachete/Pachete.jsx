@@ -104,10 +104,10 @@ const handlePlanClick = (e) => {
           <h1>PRO</h1>
           <p>{t("pachete_page_pro_sub")}</p>
           <div><span><FaCheckCircle />{t("pachete_page_pro_title1")}</span><p>{t("pachete_page_pro_p1")}</p></div>
-          <div><span><FaCheckCircle />{t("pachete_page_pro_title1")}</span><p>{t("pachete_page_pro_p2")}</p></div>
-          <div><span><FaCheckCircle />{t("pachete_page_pro_title1")}</span><p>{t("pachete_page_pro_p3")}</p></div>
-          <div><span><FaCheckCircle />{t("pachete_page_pro_title1")}</span><p>{t("pachete_page_pro_p4")}</p></div>
-          <div><span><FaCheckCircle />{t("pachete_page_pro_title1")}</span><p>{t("pachete_page_pro_p5")}</p></div>
+          <div><span><FaCheckCircle />{t("pachete_page_pro_title2")}</span><p>{t("pachete_page_pro_p2")}</p></div>
+          <div><span><FaCheckCircle />{t("pachete_page_pro_title3")}</span><p>{t("pachete_page_pro_p3")}</p></div>
+          <div><span><FaCheckCircle />{t("pachete_page_pro_title4")}</span><p>{t("pachete_page_pro_p4")}</p></div>
+          <div><span><FaCheckCircle />{t("pachete_page_pro_title5")}</span><p>{t("pachete_page_pro_p5")}</p></div>
 
          </div>
          : null}

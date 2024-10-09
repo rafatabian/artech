@@ -13,7 +13,8 @@ const Help = lazy(() => import("./containers/Help/Help"))
 const Contact = lazy(() => import("./components/Contact/Contact"))
 const Footer = lazy(() => import("./components/Footer/Footer"))
 const Pachete = lazy(() => import("./components/Pachete/Pachete"))
-
+const Privacy = lazy(() => import("./agreements/privacy/Privacy"))
+const Terms = lazy(() => import("./agreements/terms/Terms"))
 
 const App = () => {
   return (
@@ -33,6 +34,8 @@ const App = () => {
         <Route path="/plans" element={<Pachete />} />
         <Route path="/help" element={<Help />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacy" element={<Privacy />} /> 
         
        </Routes>
        <Footer/>
