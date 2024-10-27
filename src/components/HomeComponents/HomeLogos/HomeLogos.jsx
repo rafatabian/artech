@@ -6,11 +6,12 @@ import logo4 from "../../../assets/images/logos/logo4.webp"
 import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 
-const HomeLogos = () => {
+const HomeLogos = ({ logosRef }) => {
    const[t] = useTranslation("global")
 
+
   return (
-    <div className="home_logos">
+    <div className="home_logos" ref={logosRef}>
           <h1>Branding</h1>
           <p>{t("home_branding_sub1")}</p>
           <p>{t("home_branding_sib2")}</p>
