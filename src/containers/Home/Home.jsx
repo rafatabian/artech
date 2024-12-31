@@ -2,7 +2,7 @@ import "./Home.css"
 import "../../index.css"
 import homeVideo from "../../assets/videos/artech_home_video.mp4"
 import { Link } from "react-router-dom";
-import { lazy, useEffect, useRef } from "react";
+import { lazy, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 const HomeWebsites = lazy(()=> import("../../components/HomeComponents/HomeWebsites/HomeWebsites.jsx"))
@@ -13,16 +13,12 @@ const HomePachete = lazy(() => import("../../components/HomeComponents/HomePache
 
 const Home = () => {
   const [t] = useTranslation("global")
-  const logosRef = useRef(null)
 
 // scroll to top
 useEffect(() => {
     window.scrollTo(0, 0)
 }, [])
-// del
-const scrollToLogos = (() => {
-  logosRef.current.scrollIntoView({behavior: "smooth"})
-})
+
 
   return ( 
     <>
@@ -46,7 +42,7 @@ const scrollToLogos = (() => {
           <div className="home_new_btns_container">
             {/* add link to section */}
               <Link to="/plans">{t("home_intro_first_btn")}</Link>
-              <Link to="" onClick={() => scrollToLogos()}>{t("home_discover_btn")}</Link>
+              <Link to="/contact" >{t("home_discover_btn")}</Link>
           </div>
         </div>
         
@@ -57,7 +53,7 @@ const scrollToLogos = (() => {
       </div>
       
 {/* logos */}
-      <HomeBranding logosRef={logosRef}/>
+      <HomeBranding />
 
 {/* websites */}
       <div className="home_websites">
