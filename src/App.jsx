@@ -17,6 +17,8 @@ const Privacy = lazy(() => import("./agreements/privacy/Privacy"))
 const Terms = lazy(() => import("./agreements/terms/Terms"))
 
 const App = () => {
+      // TO DO make 'get a quote' call to action button to be under the footer.
+
   return (
   <div className="app_contianer">
     <Suspense fallback={<div id="loading_container">

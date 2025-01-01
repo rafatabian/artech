@@ -15,6 +15,7 @@ const Navbar = () => {
     const location = useLocation()
     const [t, i18n] = useTranslation("global")
     const[language, setLanguage] = useState("")
+    // TO DO make 'get a quote' call to action button to be under the footer.
 
 // changin language function
 const hanldleLanguage = (lang) => {
@@ -25,7 +26,6 @@ const hanldleLanguage = (lang) => {
 //see prefered language
 useEffect(() => {
   const userLang = navigator.language || navigator.userLanguage
-  console.log(userLang)
   if(userLang.startsWith("ro")){
      setLanguage("ro")
   }else{ 
@@ -37,9 +37,6 @@ useEffect(() => {
     useEffect(() => {
       setDark(location.pathname === "/websites" ? true : false)
     }, [location.pathname])
-
-
-
 
 
   return (
