@@ -33,12 +33,13 @@ const Footer = () => {
             </div>
         </div>
 
-        <div className="footer_legal"> 
-          {/* add terms and conditions and coockes */}
-        </div>
-
         <div className="footer_email">
            <span><MdEmail />claudiunegru@artech-agency.co</span> 
+        </div>
+
+        <div className="footer_legal"> 
+          <Link to="/terms">{t("terms_title")}</Link>
+          <Link to="/privacy">{t("privacy_title")}</Link>
         </div>
 
         <h2>&copy; 2024 Rata Fabian & Negru Claudiu. All rights reserved.</h2>

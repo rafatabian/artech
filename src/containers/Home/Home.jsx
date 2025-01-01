@@ -42,7 +42,7 @@ useEffect(() => {
           <div className="home_new_btns_container">
             {/* add link to section */}
               <Link to="/plans">{t("home_intro_first_btn")}</Link>
-              <Link to="/contact" >{t("home_discover_btn")}</Link>
+              <Link to="/contact" >{t("home_get_a_quote")}</Link>
           </div>
         </div>
         

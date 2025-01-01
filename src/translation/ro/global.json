@@ -4,7 +4,8 @@
     
     "home_intro": "Echipă de profesioniști în IT, specializați în dezvoltare web, design și marketing. Oferim servicii de calitate pentru a ajuta companiile să își atingă obiectivele online și să își realizeze potențialul maxim",
     "home_intro_first_btn": "Pachete",
-    "home_discover_btn": "Cere oferta",
+    "home_discover_btn": "Descopera",
+    "home_get_a_quote": "Cere oferta",
 
     "home_branding_sub1":"Logouri, Carti de vizita, Design si Culori.",
     "home_branding_sib2": "Fiecare element vizual al afacerii tale conteaza!",
@@ -172,7 +173,29 @@
         "privacy_text6": "Site-ul nostru poate conține linkuri către site-uri web sau servicii terțe. Nu suntem responsabili pentru practicile de confidențialitate sau conținutul acestor site-uri. Vă încurajăm să revizuiți politicile de confidențialitate ale oricăror site-uri terțe pe care le vizitați.",
         "privacy_text7": "Ne rezervăm dreptul de a actualiza sau modifica această politică de confidențialitate în orice moment pentru a asigura conformitatea cu cerințele legale sau pentru a reflecta modificările în practicile noastre de date. Orice modificări semnificative vor fi comunicate prin e-mail sau printr-un anunț vizibil pe site-ul nostru. Utilizarea continuă a serviciilor noastre constituie acceptarea acestor modificări.",
         "privacy_text8": "Această politică de confidențialitate va fi guvernată și interpretată în conformitate cu legile din România, iar orice litigii care decurg din aceasta vor fi supuse jurisdicției exclusive a instanțelor din România.",
-        "privacy_text9": "Dacă aveți întrebări, nelămuriri sau solicitări cu privire la această politică de confidențialitate sau datele dumneavoastră personale, vă rugăm să ne contactați la: claudiunegru@artech-agency.co"
+        "privacy_text9": "Dacă aveți întrebări, nelămuriri sau solicitări cu privire la această politică de confidențialitate sau datele dumneavoastră personale, vă rugăm să ne contactați la: claudiunegru@artech-agency.co",
+
+        "terms_title": "Termeni și Condiții Artech",
+        "terms_title1": "Introducere",
+        "terms_title2": "Servicii",
+        "terms_title3": "Termeni de Plată",
+        "terms_title4": "Politica de Rambursare",
+        "terms_title5": "Politica de Revizuire",
+        "terms_title6": "Proprietatea Lucrărilor",
+        "terms_title7": "Răspundere",
+        "terms_title8": "Responsabilitățile Clientului",
+        "terms_title9": "Confidențialitatea Datelor",
+        "terms_title10": "Legea Aplicabilă",
+        "terms_text1": "Bine ați venit la Artech Agency. Prin utilizarea serviciilor noastre, sunteți de acord să respectați următorii Termeni și Condiții. Vă rugăm să le citiți cu atenție înainte de a colabora cu noi.",
+        "terms_text2": "Artech oferă servicii de creare website, design logo, branding și marketing. Toate serviciile vor fi convenite în scris înainte de începerea proiectului.",
+        "terms_text3": "Se solicită un avans de 50% înainte de începerea oricărui proiect. Restul de 50% se va plăti la finalizarea proiectului și înainte de livrarea finală a lucrării. Plata poate fi efectuată prin transfer bancar sau alte metode specificate în facturile noastre.",
+        "terms_text4": "Rambursarile vor fi gestionate astfel: Dacă clientul anulează proiectul înainte de începerea lucrărilor, plata inițială va fi rambursată, minus taxele administrative. Dacă proiectul a început deja, nu se vor acorda rambursări pentru lucrările finalizate până la acel moment. Rambursările pentru nemulțumirea față de lucrările finalizate nu sunt garantate, dar ne străduim să rezolvăm problemele prin revizuiri sau soluții alternative.",
+        "terms_text5": "Clienții au dreptul la până la 2 runde de revizuiri după livrarea schițelor inițiale. Revizuirile suplimentare vor implica un cost suplimentar, care va fi comunicat din timp.",
+        "terms_text6": "După plata integrală, clienții vor deține drepturile de proprietate asupra livrabilelor finale. Artech își rezervă dreptul de a prezenta proiectele finalizate în portofoliul său, cu excepția cazului în care s-a convenit altfel în scris.",
+        "terms_text7": "Artech nu va fi responsabil pentru daune indirecte, accidentale sau consecințiale apărute în urma utilizării serviciilor noastre. Nu suntem responsabili pentru întârzierile cauzate de circumstanțe neprevăzute, inclusiv, dar fără a se limita la, probleme tehnice sau întârzieri ale clientului în furnizarea materialelor necesare.",
+        "terms_text8": "Clienții trebuie să furnizeze toate informațiile, materialele și feedback-ul necesare într-un mod prompt pentru a evita întârzierile în proiect. Orice întârzieri în comunicare sau furnizarea materialelor pot duce la extinderea termenului de livrare al proiectului.",
+        "terms_text9": "Procesăm datele clientului în conformitate cu politica noastră. Prin utilizarea serviciilor noastre, sunteți de acord cu colectarea și utilizarea datelor dumneavoastră așa cum este detaliat în",
+        "terms_text10": "Acești Termeni și Condiții vor fi guvernați de legile Regatului Unit. Orice dispute care decurg din acești termeni vor fi soluționate de instanțele din Regatul Unit."
       
 
 }

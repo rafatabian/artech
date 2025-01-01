@@ -1,8 +1,14 @@
 import "./Privacy.css"
 import { useTranslation } from 'react-i18next'
+import { useEffect } from "react"
 
 const Privacy = () => {
     const [t] = useTranslation("global")
+
+  // scroll to top when redirecting to this page
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div className='privacy_container'>

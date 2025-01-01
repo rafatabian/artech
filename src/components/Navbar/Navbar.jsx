@@ -6,6 +6,7 @@ import black_logo from "../../assets/images/navbar_white_logo.webp"
 import white_logo from "../../assets/images/navbar_dark_logo.webp"
 import { Link, useLocation } from "react-router-dom"
 import { useTranslation } from "react-i18next"
+import { FaArrowRight } from "react-icons/fa6"
 
 
 const Navbar = () => {
@@ -64,6 +65,7 @@ useEffect(() => {
         <Link to="/contact" className="navbar_contact"><button onClick={() => setShowMenu(false)}>CONTACT</button></Link>
      </div>
      
+     {location.pathname !== "/contact" && <Link to="/contact" className="navbar_call_to_action_btn">{t("home_get_a_quote")}{<FaArrowRight />}</Link>}
     </div>
   )
 }

@@ -138,7 +138,7 @@ const sendEmail = (e) => {
           </div>
           <div>
             <MdEmail /> 
-            <a href={`mailto:${"agency.artech1@gmail.com"}`}>agency.artech1@gmail.com</a>
+            <a href={`mailto:${"agency.artech1@gmail.com"}`}>claudiunegru@artech-agency.co</a>
         </div>
      </div>
 
