@@ -15,8 +15,7 @@ const HomeMarketing = () => {
 
   return (
     <div className="homeMarketing_conatiner">
-      <h1>Marketing</h1>
-      <p>{t("home_marketing_sub1")}</p>
+      <h1>{t("home_marketing_sub1")}</h1>
       <p>{t("home_marketing_sub2")}</p>
       <div className="homeMarketing_images_and_text">
         <div>
@@ -36,7 +35,10 @@ const HomeMarketing = () => {
             <img src={marketingClick} alt="marketing" />  
         </div>
       </div>
-      <Link to="/branding" aria-label="discover"><button>{t("home_discover_btn")}</button></Link>
+      <div className="home_marketing_buttons_container">
+            <Link to="/marketing" className="marketing_button">Discover More</Link>
+            <Link to="/contact" className="marketing_button">Get in Touch</Link>
+        </div>
     </div>
   )
 }

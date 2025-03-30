@@ -1,6 +1,6 @@
  .home_container{
     width: 100%;
-    padding-top: 40px;
+    /* padding-top: 40px; */
     min-height: 200vh;
     overflow: hidden;
     display: flex;
@@ -10,7 +10,8 @@
 }
 .home_new_container{
     max-height: 800px;
-    width: 1318px;
+    max-width: 1000px;
+    padding: 4rem 1rem 1rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,35 +73,30 @@
     z-index: 11;
 }
 .home_new_presentation > p{
-   font-family:"Roboto", Arial, sans-serif;
-   max-width: 500px;
-   margin: 35px 0;
-   font-size: 22px;
-   letter-spacing: 0.3px;
-   color: #777777;
-   font-weight: 400;
+   padding: 1rem 0;
+   font-size: 1.125rem;
+   color: #4a5568;
+   max-width: calc(100vw - 2rem);
+   font-family: Roboto, Arial, sans-serif;
 }
 .home_new_btns_container{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
 }
 .home_new_btns_container > a{
-    text-decoration: none;
-    /* background-color: #0082e6; */
     background-color: var(--green);
-    padding: 15px 20px;
-    max-width: 70%;
     color: white;
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 20px;
-    letter-spacing: 0.3px;
-    cursor: pointer;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
+    width: 150px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding:0.75rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s; 
+    text-align: center;
 }
  .home_new_btns_container > a:hover{
     background-color: var(--greenHover);
@@ -109,7 +105,7 @@
     outline: none;
 }
 .home_new_btns_container > a:first-child{
-    margin-bottom: 8px;
+    margin-right: 20px;
 }
 
 .home_websites_interactions{
@@ -123,50 +119,6 @@
     width: 100%;
 }
 
-@media screen and (min-width: 1700px){
-    .home_new_container{
-        width: 1636px;
-    }
-    .home_new_presentation{
-        width: 520px;
-    }
-    .home_moving_background{
-      height: 180px;
-    }
-    .home_new_title{
-        height: 180px;
-    }
-    .home_new_title > h1,
-    .home_new_title > h2{
-    font-size: 100px;
-    line-height: 90px;
-    letter-spacing: -1px;
-    }
-    .home_new_presentation > p{
-        font-size: 29px;
-        letter-spacing: 0.5px;
-    }
-    .home_new_btns_container > a{
-        padding: 18px 22px;
-        font-size: 24px;
-        letter-spacing: 0.5px;
-    }
-    .home_video{
-        z-index: 11;
-    }
-    .home_video > video{
-        width:auto;
-        height: 628px;
-    }
-}
-
-@media screen and (max-width: 1350px){
-     .home_new_container{
-        width: 100%;
-        padding: 0 2rem;
-     }
-}
-/* de aici esta codul vechi */
 @media screen and (max-width:970px){
     .home_new_container{
         display: flex;
@@ -174,6 +126,11 @@
         justify-content: start;
         flex-direction: column;
         max-height: unset;
+    }
+    .home_new_btns_container{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
     .home_new_presentation{
         width: 100%;
@@ -204,7 +161,7 @@
          transform: translateX(35%);
         }  
      }
-     .home_new_btns_container{
+     /* .home_new_btns_container{
         width: 100%;
         display: flex;
         align-items: center;
@@ -215,7 +172,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    } */
     .home_video{
         width: 100%;
         display: flex;
@@ -251,15 +208,6 @@
      } 
 }
 @media screen and (max-width:450px){
-    .home_new_presentation{
-        min-width: unset;
-    }
-    .home_container{
-      margin-top: 60px;
-    }
-    .home_new_container{
-        padding: 10px;
-    }
     .home_moving_background{
         height: 100px;
       }
@@ -272,16 +220,7 @@
       line-height: 50px;
       letter-spacing: -2px;
       }
-      .home_new_presentation > p{
-        font-size: 18px;
-        letter-spacing: 0.4px;
-        line-height: 27px;
-      }
-      .home_new_btns_container > a{
-       font-size: 18px;
-       max-width: 50%;
-       padding: 14px 20px;
-      }
+      
       .home_video{
         width: 140vw;
       }

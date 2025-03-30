@@ -12,16 +12,19 @@ const HomeLogos = () => {
 
   return (
     <div className="home_logos">
-          <h1>Branding</h1>
-          <p>{t("home_branding_sub1")}</p>
+          <h1>{t("home_branding_sub1")}</h1>
           <p>{t("home_branding_sib2")}</p>
-          <div>
+          <div className="home_logos_img_container">
             <img src={logo1} alt="logo" />
             <img src={logo2} alt="logo" />
             <img src={logo3} alt="logo" />
             <img src={logo4} alt="logo" />
           </div>
-          <Link to="/branding" aria-label="descopera"><button>{t("home_discover_btn")}</button></Link>
+
+          <div className="logos_buttons_container">
+            <Link to="/branding" className="logos_button">Discover More</Link>
+            <Link to="/contact" className="logos_button">Get in Touch</Link>
+        </div>
       </div>
   )
 }

@@ -1,0 +1,121 @@
+.website-section {
+    background-color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+    position: relative;
+    max-width: 1000px;
+  }
+  .website-section::after{
+    content: "";
+    width: 60%;
+    height: 1.5px;
+    border-radius: 1px;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: #96e5bb;
+  }
+  .website-section::before{
+    content: "";
+    width: 60%;
+    height: 1.5px;
+    border-radius: 1px;
+    position:absolute;
+    bottom:0;
+    right:0;
+    background-color: #96e5bb;
+}
+  .website-container {
+    max-width: 80rem;
+    margin: auto;
+  }
+  
+  .home-section_title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1a202c;
+    margin-bottom: 1.5rem;
+    font-family: Roboto, Arial, sans-serif;
+  }
+  
+  .website-description {
+    font-size: 1.125rem;
+    color: #4a5568;
+    margin-bottom: 2.5rem;
+    font-family: Roboto, Arial, sans-serif;
+  }
+  
+  .website-grid{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .website-card {
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    padding: 1.5rem;
+    background-color:#e5fff1;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .website-icon {
+    font-size: 2rem;
+    min-width: 2rem;
+    min-height: 2rem;
+    color: var(--green);
+    margin-bottom: 1rem;
+  }
+  
+  .website-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a202c;
+  }
+  
+  .website-card-text {
+    font-size: 0.875rem;
+    color: #4a5568;
+    margin-top: 0.5rem;
+  }
+  
+  .website-button-container{
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .website-button {
+    background-color: var(--green);
+    color: white;
+    width: 150px;
+    font-size: 1rem;
+    margin: 0 0.75rem;
+    font-weight: 600;
+    padding:0.75rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .website-button:hover {
+    background-color: var(--greenHover);
+  }
+  @media screen and (max-width:450px){
+    .website-card {
+        width: 90vw;
+        height: 150px;
+  }
+}

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { lazy, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
-const HomeWebsites = lazy(()=> import("../../components/HomeComponents/HomeWebsites/HomeWebsites.jsx"))
+const NewHomeWebsite = lazy(() => import("../../components/HomeComponents/newHomeWebsite/newHomeWebsite.jsx"))
 const HomeMarketing = lazy(()=> import("../../components/HomeComponents/HomeMarketing/HomeMarketing.jsx"))
 const HomeBranding = lazy(() => import("../../components/HomeComponents/HomeLogos/HomeLogos.jsx"))
 const HomePachete = lazy(() => import("../../components/HomeComponents/HomePachete/HomePachete.jsx"))
@@ -57,7 +57,8 @@ useEffect(() => {
 
 {/* websites */}
       <div className="home_websites">
-         <HomeWebsites />
+         {/* <HomeWebsites /> */}
+         <NewHomeWebsite />
       </div>
 {/* marketing */}
       <div className="home_branding">

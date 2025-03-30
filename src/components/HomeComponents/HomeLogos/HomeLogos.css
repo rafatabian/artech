@@ -1,27 +1,38 @@
 
 .home_logos{
-    width:1318px;
-    margin: 4rem;
+    /* width:1318px; */
+    max-width: 1000px;
+    padding: 4rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
   }
+.home_logos::after{
+    content: "";
+    width: 60%;
+    height: 1.5px;
+    border-radius: 1px;
+    position:absolute;
+    top:0;
+    right:0;
+    background-color: #96e5bb;
+}
   .home_logos > h1{
-      font-family: "Roboto";
-      width: 100%;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #1a202c;
+      margin-bottom: 1.5rem;
+      font-family: Roboto, Arial, sans-serif;
       text-align: center;
-      font-weight: 400;
-      font-size: 50px;
-      color: #222222;
   }
   .home_logos > p:nth-child(2){
-       font-size: 20px;
-       font-family: "Roboto";
-       letter-spacing: 0.2px;
-       font-weight: 400;
-       width:100%;
-       text-align:center;
+    font-size: 1.125rem;
+    color: #4a5568;
+    margin-bottom: 2.5rem;
+    font-family: Roboto, Arial, sans-serif;
+    text-align: center;
   }
   .home_logos > p:nth-child(3){
       font-family: "Roboto";
@@ -30,117 +41,65 @@
       width:100%;
       text-align:center;
   }
-  .home_logos > div{
+  .home_logos_img_container{
      display: flex;
-     align-items: flex-start;
-     justify-content: flex-start;
+     align-items: center;
+     justify-content: center;
      flex-direction: row;
      width: 100%;
-     margin: 2rem 0;
+     margin-bottom: 2rem;
   }
-  .home_logos > div > img{
+  .home_logos_img_container > img{
      object-fit: contain;
      margin: 0 15px; 
-     width: 300px;
-     height: 300px;
+     width: 200px;
+     height: 200px;
+     padding: 3px;
      min-width: 50px;
      min-height: 50px;
-     border-radius: 150px;
+     border-radius: 100px;
      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  .home_logos > div > img:first-child{
-      margin: unset !important;
-  }
-  .home_logos > div > img:nth-child(2){
-      margin-left:30px;
-  }
-  .home_logos > a{
-      text-decoration: none;
-  }
-  .home_logos > a > button{
-      width: 350px;
-      max-width: 350px;
-      font-family: "Roboto";
-      color: white;
-      background-color: var(--green);
-      padding: 15px 30px;
-      border: none;
-      font-size: 18px;
-      font-weight: 500;
-      letter-spacing: 0.1px;
-      border-radius: 10px;
-      letter-spacing: 0.3px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
-  }
-  .home_logos > a > button:hover{
-     background-color: var(--greenHover);
-  }
-  @media screen and (min-width: 1700px){
-    .home_logos{
-        width: 1636px;
-        margin: 6rem 0;
-     }
-     .home_logos > h1{
-        font-size: 70px;
-     }
-     .home_logos > p:nth-child(2),
-     .home_logos > p:nth-child(3){
-        font-size: 29px;
-     }
-     .home_logos > div > img{
-        width: 24%;
-        height: 24%;
-       border-radius: 50%
-     }
-     .home_logos > a > button{
-        padding: 18px 22px;
-        font-size: 24px;
-        letter-spacing: 0.5px;
-     }
-  }
-  @media screen and (max-width: 1350px){
-   .home_logos{
-   width: 100%;
-   padding: 0 2rem;
-   }
-   .home_logos > div > img{
-       width: calc(25% - 25px);
-       height: calc(25% - 25px);
-   }
-}
-@media screen and (max-width:970px){
-.home_logos{
+  .logos_buttons_container{
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.home_logos > div{
-    height: 375px;
-    width: 375px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-   color: green;
-   align-items: center;
-   justify-items: center;
-   gap: 15px;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .logos_button{
+    background-color: var(--green);
+    color: white;
+    width: 150px;
+    font-size: 1rem;
+    margin: 0 0.75rem;
+    text-align: center;
+    font-weight: 600;
+    padding:0.75rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  .logos_button:hover{
+    background-color: var(--greenHover);
+  }
 
-}
-.home_logos > div > img {
+@media screen and (max-width:970px){
+.home_logos_img_container > img {
     width: 100%;
     height: 100%;
 }
-.home_logos > div > img{
-    margin: 0;
-    margin-left: 0 !important
+.home_logos_img_container > img{
+    margin: 5px;
+}
+.home_logos_img_container > img:nth-child(2){
+    margin-left: 10px;
+}
+home_logos_img_container > img:nth-child(1){
+    margin-left:10px;
 }
 }
 @media screen and (max-width:450px){
-.home_logos{
-    /* margin: 0; */
-    padding: 0;
-  }
   .home_logos > h1{
     font-size: 35px;
     width: 100%;
@@ -162,6 +121,15 @@
     border-radius: 15px;
     max-width: 50vw;
    }
+   .home_logos_img_container > img{
+    margin: 2.5px;
+}
+.home_logos_img_container > img:nth-child(2){
+    margin-left: 5px;
+}
+home_logos_img_container > img:nth-child(1){
+    margin-left:5px;
+}
 }
 @media screen and (max-width:375px){
     .home_logos{
@@ -169,7 +137,7 @@
         padding: 0;
         width: 100%;
     }
-    .home_logos > div{
+    .home_logos_img_container{
         width: 95%;
         height: 95%;
     }
