@@ -1,4 +1,4 @@
-import "./newHomeWebsite.css"
+import "./HomeWebsite.css"
 import { Link } from "react-router-dom";
 import { FaLaptopCode, FaCogs, FaRocket, FaBrain } from "react-icons/fa";
 

@@ -10,7 +10,9 @@
     overflow: hidden;
     z-index: 10;
     background-color: white;
+    border-top: 1.5px solid #cdcdcd;
 }
+
 .footer_title_blackgorund{
      font-family: "Roboto";
      font-size: 300px;

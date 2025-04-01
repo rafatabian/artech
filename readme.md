@@ -19,3 +19,9 @@ and scroll to the plans detail section          selected.                       
 -scroll to top to every page when redirecting          DONE
 -safari hamepage video bug                             DONE
 -testing crossPlatforms
+
+-optimise images for blogs
+-make the same padding to all sections in homepage
+-improve the plans setion design
+
+
