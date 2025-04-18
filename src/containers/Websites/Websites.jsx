@@ -3,6 +3,10 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { Helmet } from "react-helmet-async"
 import { useTranslation } from "react-i18next"
+import { IoLogoJavascript } from "react-icons/io5"
+import { FaReact, FaHtml5, FaCss3, FaNpm, FaNode} from "react-icons/fa"
+import { RiTailwindCssFill } from "react-icons/ri"
+import { SiVite } from "react-icons/si";
 
 const HomeWebsites = () => {
     const [matrix, setMatrix] = useState([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1])
@@ -54,7 +58,40 @@ useEffect(() => {
 
     randomMargins();
   }, []);
-      
+  
+  // making tech section move
+
+  useEffect(() => {
+    const techSection = document.querySelector('.websites_technology_used_scroll');
+  
+    if (!techSection) return;
+  
+    let direction = 1
+    const speed = 0.5
+    let animationFrameId
+  
+    const animateScroll = () => {
+      if (!techSection) return;
+  
+      const maxScroll = techSection.scrollWidth - techSection.clientWidth;
+      techSection.scrollLeft += direction * speed;
+  
+      if (techSection.scrollLeft >= maxScroll) {
+        direction = -1; // reverse to left
+      } else if (techSection.scrollLeft <= 0) {
+        direction = 1; // reverse to right
+      }
+  
+      animationFrameId = requestAnimationFrame(animateScroll);
+    };
+  
+    animationFrameId = requestAnimationFrame(animateScroll);
+  
+    return () => cancelAnimationFrame(animationFrameId);
+  }, []);
+  
+
+
 
 
   return (
@@ -68,7 +105,7 @@ useEffect(() => {
       <div  className="websites_matrix_container">
       <h3 className="websites_titles">WEBSITES</h3>
          {matrixMargins.map((margins, index) => <span style={{marginLeft:`${margins}px`, animationDelay: `${index * 0.2}s`}} key={margins}>{matrix.map((number) => <p>{number}</p>)}</span>
-         )}
+          )} 
       </div>
 
 {/* another section */}          
@@ -97,6 +134,22 @@ useEffect(() => {
           <h1>{t("website_sub3")}</h1>
           <p>{t("website_details3")}</p>
         </div>
+
+<div className="websites_technology_used_container">
+            <h1>We use the latest technologies to provide the best services</h1>
+            <div className="websites_technology_used_scroll_shadows_and_content">
+                <div className="websites_technology_used_scroll">
+                 <span><IoLogoJavascript /> <p>JavaScript</p></span>
+                 <span><FaReact /> <p>React.js</p></span>
+                 <span><FaHtml5 /> <p>Html5</p></span>
+                 <span><FaCss3/> <p>Css3</p></span>
+                 <span><FaNpm /> <p>Npm</p></span>
+                 <span><RiTailwindCssFill /> <p>Tailwind</p></span>
+                 <span><SiVite /> <p>Vite</p></span>
+                 <span><FaNode /> <p>Node.js</p></span>
+                </div>
+            </div>
+         </div>
 
         <div className="websites_forth_parallax website_computer_parallax" style={{backgroundImage: `url(${require("../../assets/images/websites/websites_servers.webp")})`}}>
         <div className="website_ceata"></div>

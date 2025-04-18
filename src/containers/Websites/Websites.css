@@ -9,11 +9,79 @@
 .websites_matrix_container{
     width: 100%;
     height:100vh;
-    max-height: 100vh;
+    max-height: 700px;
     overflow: hidden !important;
     overflow: hidden;
 }
+.websites_technology_used_container{
+    background-color: white;
+    z-index: 10;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem 15px;
+}
+.websites_technology_used_container > h1{
+    font-size: 30px;
+    font-family: "Roboto";
+    text-align: center;
+    line-height: 35px;
+    margin: 10px;
+  
+}
+.websites_technology_used_scroll{
+   max-width: 1000px;
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+   flex-direction: row;
+   overflow-y: scroll;
+}
 
+.websites_technology_used_scroll::-webkit-scrollbar {
+    display: none;
+}
+.websites_technology_used_scroll_shadows_and_content{
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+}
+.websites_technology_used_scroll_shadows_and_content::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1rem;
+    height: 100%;
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+}
+.websites_technology_used_scroll_shadows_and_content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1rem;
+    height: 100%;
+    background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0) 100%);
+}
+.websites_technology_used_scroll > span{
+    min-width: 200px;
+    background-color: black;
+    margin: 0 10px;
+    padding: 25px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.websites_technology_used_scroll > span > svg{
+    width: 45px;
+    height: 45px;   
+}
 .websites_matrix_container > span{
     color: #00ff00;
     display: flex;
@@ -39,7 +107,9 @@
 }
 .websites_first_parallax{
     background-image:url("../../assets/images/websites/websites_intro.webp");
-    min-height: 100vh;
+    min-height: 700px;
+    max-height: 700px;
+    height: 700px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -47,22 +117,24 @@
 }
 .websites_matrix_container > h3{
     position: absolute;
-    top: calc(50vh - 37px);
+    top: calc(350px);
     left: calc(50vw - 120px);
 }
 .websites_second_parallax{
-    min-height:60vh;
+    min-height:700px;
+    max-height: 700px;
     background-size: contain;
     position: relative;
     z-index: 10;
-    /* background-color:black */
  }
  .websites_third_parallax{
-     min-height: 100vh;
+     min-height: 700px;
+     max-height:700px;
      background-size: cover;
  }
  .websites_forth_parallax{
-     min-height: 90vh;
+     min-height: 700px;
+     max-height: 700px;
      background-size: cover;
  }
  .websites_first_parallax,
