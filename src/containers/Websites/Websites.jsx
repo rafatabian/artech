@@ -12,6 +12,7 @@ const HomeWebsites = () => {
     const [matrix, setMatrix] = useState([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1])
     const [matrixMargins, setMatrixMargins] = useState([])
     const [t] = useTranslation("global")
+    const [scrollDirecton, setScrollDirection] = useState(1)
 
 // scroll to top
 useEffect(() => {
@@ -66,7 +67,6 @@ useEffect(() => {
   
     if (!techSection) return;
   
-    let direction = 1
     const speed = 0.5
     let animationFrameId
   
@@ -74,12 +74,12 @@ useEffect(() => {
       if (!techSection) return;
   
       const maxScroll = techSection.scrollWidth - techSection.clientWidth;
-      techSection.scrollLeft += direction * speed;
+      techSection.scrollLeft += scrollDirecton * speed;
   
       if (techSection.scrollLeft >= maxScroll) {
-        direction = -1; // reverse to left
+        setScrollDirection(-1); // reverse to left
       } else if (techSection.scrollLeft <= 0) {
-        direction = 1; // reverse to right
+        setScrollDirection(1); // reverse to right
       }
   
       animationFrameId = requestAnimationFrame(animateScroll);
@@ -88,7 +88,7 @@ useEffect(() => {
     animationFrameId = requestAnimationFrame(animateScroll);
   
     return () => cancelAnimationFrame(animationFrameId);
-  }, []);
+  }, [scrollDirecton]);
   
 
 
