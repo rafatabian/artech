@@ -8,7 +8,7 @@
     flex-direction: column;
     background-color: #f2f2f7;
     padding: 2rem 0;
-    padding-top: 80px;
+    padding-top: 110px;
 }
 .container_title,
 .contact_confirmation > h1{
@@ -229,6 +229,11 @@
 .contact_privacy_label > span a{
    color: rgb(0, 128, 255);
    text-decoration: underline;
+}
+@media screen and (max-width: 970px){
+    .contact_container{
+        padding-top: 65px
+    }
 }
 @media screen and (max-width: 730px){
     .contact_form,

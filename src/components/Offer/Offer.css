@@ -1,0 +1,20 @@
+.offer_container{
+    position: fixed;
+    margin-top: 45px;
+    width: 100%;
+    padding: 0.5rem 1rem ;
+    background-color: rgb(255, 221, 214);
+    z-index: 98;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.offer_container > h1{
+    text-align: center;
+}
+@media screen and (max-width: 970px) {
+    .offer_container{
+        margin-top: 0px;
+    }
+}

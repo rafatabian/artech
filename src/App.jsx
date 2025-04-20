@@ -15,9 +15,9 @@ const Footer = lazy(() => import("./components/Footer/Footer"))
 const Pachete = lazy(() => import("./components/Pachete/Pachete"))
 const Privacy = lazy(() => import("./agreements/privacy/Privacy"))
 const Terms = lazy(() => import("./agreements/terms/Terms"))
+const Offer = lazy(() => import("./components/Offer/Offer"))
 
 const App = () => {
-      // TO DO make 'get a quote' call to action button to be under the footer.
 
   return (
   <div className="app_contianer">
@@ -28,6 +28,7 @@ const App = () => {
      <ContextProvider>
       <Router>
       <Navbar />
+      <Offer />
        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/branding" element={<Branding/>} />
