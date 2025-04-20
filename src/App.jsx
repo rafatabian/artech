@@ -1,6 +1,6 @@
 import "./App.css"
 import { Suspense, lazy } from 'react'
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route} from 'react-router-dom'
 import logo from "./assets/images/artech_logo.webp"
 import { ContextProvider } from "./context/Context"
 
@@ -15,7 +15,8 @@ const Footer = lazy(() => import("./components/Footer/Footer"))
 const Pachete = lazy(() => import("./components/Pachete/Pachete"))
 const Privacy = lazy(() => import("./agreements/privacy/Privacy"))
 const Terms = lazy(() => import("./agreements/terms/Terms"))
-const Offer = lazy(() => import("./components/Offer/Offer"))
+const OfferBanner = lazy(() => import("./containers/OfferBanner/OfferBanner"))
+const Offer = lazy(() => import("./containers/Offer/Offer"))
 
 const App = () => {
 
@@ -24,17 +25,19 @@ const App = () => {
     <Suspense fallback={<div id="loading_container">
       <img src={logo} alt="logo" />
      </div>}>
+
      
      <ContextProvider>
       <Router>
       <Navbar />
-      <Offer />
+     <OfferBanner />
        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/branding" element={<Branding/>} />
         <Route path="/websites" element={<Websites />} />
         <Route path="/marketing" element={<Marketing />} />
         <Route path="/plans" element={<Pachete />} />
+        <Route path="/offer" element={<Offer />} />
         <Route path="/help" element={<Help />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/terms" element={<Terms />} />
