@@ -61,7 +61,6 @@ useEffect(() => {
   }, []);
   
   // making tech section move
-
   useEffect(() => {
     const techSection = document.querySelector('.websites_technology_used_scroll');
   
@@ -78,8 +77,10 @@ useEffect(() => {
   
       if (techSection.scrollLeft >= maxScroll) {
         setScrollDirection(-1); // reverse to left
+        console.log("left")
       } else if (techSection.scrollLeft <= 0) {
         setScrollDirection(1); // reverse to right
+        console.log("right")
       }
   
       animationFrameId = requestAnimationFrame(animateScroll);
