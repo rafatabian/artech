@@ -64,28 +64,35 @@ useEffect(() => {
   useEffect(() => {
     const techSection = document.querySelector('.websites_technology_used_scroll');
     if (!techSection) return;
-
+  
     const speed = 0.5;
+    const buffer = 2;
     let animationFrameId;
-
-    const animateScroll = () => {
+  
+    const startScroll = () => {
       const maxScroll = techSection.scrollWidth - techSection.clientWidth;
-      techSection.scrollLeft += scrollDirectionRef.current * speed;
-
-      if (techSection.scrollLeft >= maxScroll) {
-        scrollDirectionRef.current = -1; // scroll left
-        console.log("left");
-      } else if (techSection.scrollLeft <= 0) {
-        scrollDirectionRef.current = 1; // scroll right
-        console.log("right");
-      }
-
+  
+      const animateScroll = () => {
+        techSection.scrollLeft += scrollDirectionRef.current * speed;
+  
+        if (techSection.scrollLeft >= maxScroll - buffer) {
+          scrollDirectionRef.current = -1;
+        } else if (techSection.scrollLeft <= buffer) {
+          scrollDirectionRef.current = 1;
+        }
+  
+        animationFrameId = requestAnimationFrame(animateScroll);
+      };
+  
       animationFrameId = requestAnimationFrame(animateScroll);
     };
-
-    animationFrameId = requestAnimationFrame(animateScroll);
-
-    return () => cancelAnimationFrame(animationFrameId);
+  
+    const delay = setTimeout(startScroll, 100);
+  
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+      clearTimeout(delay);
+    };
   }, []);
   
 
