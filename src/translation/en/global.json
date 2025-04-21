@@ -4,16 +4,24 @@
 
     "home_intro": "We are a team of IT experts specializing in web development, design, and marketing. Our mission is to deliver top-tier services that empower businesses to achieve their online goals and unlock their full potential.",
     "home_intro_first_btn": "Plans",
-    "home_discover_btn": "Discover",
-    "home_get_a_quote": "Get a quote",
+    "home_discover_btn": "Discover more",
+    "home_get_a_quote": "Start a project",
+    "home_get_in_touch": "Get in touch",
 
     "home_branding_sub1":"Logos, Business Cards, Graphic Design, and Visual Identity.",
     "home_branding_sib2": "We create unique logos and graphic designs that reflect your brand's identity. From logos to business cards and website visuals, we ensure your design stands out and leaves a lasting impression.",
+    
 
-    "home_websites_example": "Example",
-    "home_websites_submit": "Submit",
-    "home_websites_sub1": "A well-designed website can increase client acquisition by 55%.",
-    "home_websites_sub2": "75% of customers evaluate a company's credibility based on its website's appearance.",
+    "home_websites_title": "Custom Websites, Tailored for Your Business",
+    "home_websites_desc": "We design and develop high-performance websites that align with your brand and business goals. Our services go beyond just building a website—we personalize every aspect, ensuring a unique digital presence that stands out.",
+    "home_websites_card1_title": "Custom Design",
+    "home_websites_card1_desc": "Tailored solutions crafted to fit your business needs.",
+    "home_websites_card2_title": "AI-Powered Features",
+    "home_websites_card2_desc": "Enhance engagement with AI-driven automation & chatbots.",
+    "home_websites_card3_title": "Optimized Performance",
+    "home_websites_card3_desc": "Fast, secure, and SEO-friendly web solutions.",
+    "home_websites_card4_title": "Ongoing Support",
+    "home_websites_card4_desc": "Stay ahead with continuous updates & improvements.",
 
     "home_marketing_sub1": "Effective marketing is essential for your success",
     "home_marketing_sub2": "Boost your brand with targeted campaigns, social media ads, and high-quality visuals that drive engagement and conversions.",
@@ -106,6 +114,17 @@
     "pachete_page_pro_p4":"For example, 'my-business.com.' We cover your domain registration costs for one year.",
     "pachete_page_pro_p5":"To ensure your site is secure and visible on Google, we host it on a high-performance server, offering you one year of free hosting.",
     "pachete_page_button":"CHOOSE ",
+
+    "insights_title": "Latest Insights & Trends",
+    "insights_desc": "Explore our latest articles on web design, branding, logos, and AI to keep your business ahead of the competition.",
+    "insights_web_subtitle": "Web Design Trends",
+    "insights_web_desc": "Stay updated with the latest web design trends to create stunning user experiences.",
+    "insights_branding_subtitle": "Power of Branding",
+    "insights_branding_desc": "Learn how branding can impact your business and create a lasting impression.",
+    "insights_logos_subtitle": "Logo Design Insights",
+    "insights_logos_desc": "Discover the principles of effective logo design and what makes a logo memorable.",
+    "insights_ai_subtitle": "AI in Websites",
+    "insights_ai_desc": "Explore how AI is revolutionizing web development and design automation.",
 
     "help_title": "Find a question",
     "help_branding_1": ["What is branding, and why is it important for your business?", "Branding is the identity and image of your business, encompassing the logo, design, colors, and communication style. It is crucial because it sets your business apart from competitors, enhances brand recognition and customer loyalty, and communicates your company’s values and mission."],

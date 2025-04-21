@@ -45,7 +45,7 @@ const Footer = () => {
           <Link to="/privacy">{t("privacy_title")}</Link>
         </div>
 
-        <h2>&copy; 2024 Rata Fabian & Negru Claudiu. All rights reserved.</h2>
+        <h2>&copy; 2024 All rights reserved.</h2>
 
     </div>
   )

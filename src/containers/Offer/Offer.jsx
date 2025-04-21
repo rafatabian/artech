@@ -38,14 +38,14 @@ const templates = [
       id: 1,
       title: "Restaurant Website",
       description: "A modern, mobile-friendly site for restaurants with menu pages, QR menus, booking, and reviews.",
-      price: "£399",
+      price: "£499",
       image: [third_proj_one, third_proj_two, third_proj_three, third_proj_four, third_proj_five, third_proj_six, third_proj_seven, third_proj_eight],
     },
     {
       id: 2,
       title: "Doctor's Clinic Website",
       description: "Professional and clean layout perfect for medical services, bookings, and contact forms.",
-      price: "£429",
+      price: "£399",
       image: [fourth_proj_one, fourth_proj_two, fourth_proj_three, fourth_proj_four],
     },
     {
@@ -59,14 +59,14 @@ const templates = [
       id: 4,
       title: "Interior Design Website",
       description: "Stylish and refined layout tailored for interior designers, featuring project showcases, service pages, and client testimonials.",
-      price: "£349",
+      price: "£399",
       image: [second_proj_one, second_proj_two, second_proj_three, second_proj_four],
     },
     {
       id: 5,
       title: "Real Estate Website",
       description: "A polished and responsive site for real estate agencies, including property listings, search filters, and contact forms.",
-      price: "£399",
+      price: "£429",
       image: [fifth_proj_one, fifth_proj_two, fifth_proj_three, fifth_proj_four, fifth_proj_five],
     },
   ];
@@ -87,7 +87,7 @@ const templates = [
               <p>{template.description}</p>
               <div className="template-meta">
                 <span className="price">{template.price}</span>
-                <Link to="/contact" className="buy-btn">Buy Template</Link>
+                <Link to="/contact" className="buy-btn">Get Template</Link>
               </div>
             </div>
           </div>

@@ -1,48 +1,46 @@
 import "./HomeWebsite.css"
 import { Link } from "react-router-dom";
 import { FaLaptopCode, FaCogs, FaRocket, FaBrain } from "react-icons/fa";
+import { useTranslation } from "react-i18next"
 
 
-const newHomeWebsite = () => {
+const NewHomeWebsite = () => {
+  const [t] = useTranslation("global")
+
   return (
     <div className="website-section">
       <div className="website-container">
-        <h1 className="home-section_title">
-          Custom Websites, Tailored for Your Business
-        </h1>
-        <p className="website-description">
-          We design and develop high-performance websites that align with your brand and business goals. 
-          Our services go beyond just building a website—we personalize every aspect, ensuring a unique digital presence that stands out.
-        </p>
+        <h1 className="home-section_title"> {t("home_websites_title")}</h1>
+        <p className="website-description">{t("home_websites_desc")}</p>
         <div className="website-grid">
           <div className="website-card">
             <FaLaptopCode className="website-icon" />
-            <h3 className="website-card-title">Custom Design</h3>
-            <p className="website-card-text">Tailored solutions crafted to fit your business needs.</p>
+            <h3 className="website-card-title">{t("home_websites_card1_title")}</h3>
+            <p className="website-card-text">{t("home_websites_card1_desc")}</p>
           </div>
           <div className="website-card">
             <FaBrain className="website-icon" />
-            <h3 className="website-card-title">AI-Powered Features</h3>
-            <p className="website-card-text">Enhance engagement with AI-driven automation & chatbots.</p>
+            <h3 className="website-card-title">{t("home_websites_card2_title")}</h3>
+            <p className="website-card-text">{t("home_websites_card2_desc")}</p>
           </div>
           <div className="website-card">
             <FaRocket className="website-icon" />
-            <h3 className="website-card-title">Optimized Performance</h3>
-            <p className="website-card-text">Fast, secure, and SEO-friendly web solutions.</p>
+            <h3 className="website-card-title">{t("home_websites_card3_title")}</h3>
+            <p className="website-card-text">{t("home_websites_card3_desc")}</p>
           </div>
           <div className="website-card">
             <FaCogs className="website-icon" />
-            <h3 className="website-card-title">Ongoing Support</h3>
-            <p className="website-card-text">Stay ahead with continuous updates & improvements.</p>
+            <h3 className="website-card-title">{t("home_websites_card4_title")}</h3>
+            <p className="website-card-text">{t("home_websites_card4_desc")}</p>
           </div>
         </div>
         <div className="website-button-container">
-          <Link to="/websites" className="website-button">Discover More</Link>
-          <Link to="/contact" className="website-button">Get in Touch</Link>
+          <Link to="/websites" className="website-button">{t("home_discover_btn")}</Link>
+          <Link to="/contact" className="website-button">{t("home_get_in_touch")}</Link>
         </div>
       </div>
     </div>
   )
 }
 
-export default newHomeWebsite
+export default NewHomeWebsite

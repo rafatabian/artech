@@ -1,5 +1,5 @@
 import "./Websites.css"
-import { useEffect, useState, useRef} from "react"
+import { useEffect, useState} from "react"
 import { Link } from "react-router-dom"
 import { Helmet } from "react-helmet-async"
 import { useTranslation } from "react-i18next"
@@ -12,7 +12,6 @@ const HomeWebsites = () => {
     const [matrix, setMatrix] = useState([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1])
     const [matrixMargins, setMatrixMargins] = useState([])
     const [t] = useTranslation("global")
-    const scrollDirectionRef = useRef(1);
 
 // scroll to top
 useEffect(() => {
@@ -60,44 +59,8 @@ useEffect(() => {
     randomMargins();
   }, []);
   
-  // making tech section move
-  useEffect(() => {
-    const techSection = document.querySelector('.websites_technology_used_scroll');
-    if (!techSection) return;
+  // TO DO make tech section move
   
-    const speed = 0.5;
-    const buffer = 2;
-    let animationFrameId;
-  
-    const startScroll = () => {
-      const maxScroll = techSection.scrollWidth - techSection.clientWidth;
-  
-      const animateScroll = () => {
-        techSection.scrollLeft += scrollDirectionRef.current * speed;
-  
-        if (techSection.scrollLeft >= maxScroll - buffer) {
-          scrollDirectionRef.current = -1;
-        } else if (techSection.scrollLeft <= buffer) {
-          scrollDirectionRef.current = 1;
-        }
-  
-        animationFrameId = requestAnimationFrame(animateScroll);
-      };
-  
-      animationFrameId = requestAnimationFrame(animateScroll);
-    };
-  
-    const delay = setTimeout(startScroll, 100);
-  
-    return () => {
-      cancelAnimationFrame(animationFrameId);
-      clearTimeout(delay);
-    };
-  }, []);
-  
-
-
-
 
   return (
     <>

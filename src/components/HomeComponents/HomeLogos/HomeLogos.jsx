@@ -22,8 +22,8 @@ const HomeLogos = () => {
           </div>
 
           <div className="logos_buttons_container">
-            <Link to="/branding" className="logos_button">Discover More</Link>
-            <Link to="/contact" className="logos_button">Get in Touch</Link>
+            <Link to="/branding" className="logos_button">{t("home_discover_btn")}</Link>
+            <Link to="/contact" className="logos_button">{t("home_get_in_touch")}</Link>
         </div>
       </div>
   )

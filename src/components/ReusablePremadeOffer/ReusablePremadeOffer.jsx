@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './ReusablePremadeOffer.css';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const PremadeShowcase = ({ images }) => {
@@ -33,7 +34,7 @@ const PremadeShowcase = ({ images }) => {
           {images.map((img, index) => (
             <div className="premade-image-wrapper" key={index}>
               <img src={img} alt={`Premade design ${index + 1}`} className="premade-image" />
-              <button className="claim-btn">Claim This Design</button>
+              <Link to="/offer" className="claim-btn">Claim This Design</Link>
             </div>
           ))}
         </div>

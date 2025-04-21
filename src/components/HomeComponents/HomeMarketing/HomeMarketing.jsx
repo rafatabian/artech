@@ -36,8 +36,8 @@ const HomeMarketing = () => {
         </div>
       </div>
       <div className="home_marketing_buttons_container">
-            <Link to="/marketing" className="marketing_button">Discover More</Link>
-            <Link to="/contact" className="marketing_button">Get in Touch</Link>
+            <Link to="/marketing" className="marketing_button">{t("home_discover_btn")}</Link>
+            <Link to="/contact" className="marketing_button">{t("home_get_in_touch")}</Link>
         </div>
     </div>
   )

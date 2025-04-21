@@ -34,22 +34,21 @@ const Offer = () => {
 
   return (
     rightLocation ? 
-    (<Link
-      to="/offer"
+    (<div
       className="offer-hover-wrapper"
       onMouseEnter={() => setDetails(true)}
       onMouseLeave={() => setDetails(false)}
     >
-      <div className="offer_container">
+      <Link to="/offer" className="offer_container">
         <h1>🔥 {t("offer_menu")}</h1>
-      </div>
+      </Link>
 
       {details && (
         <div className="dropdown-content">
           <ReusablePremadeOffer images={images} title={title} />
         </div>
       )}
-    </Link>)
+    </div>)
     : null 
   )
 }
