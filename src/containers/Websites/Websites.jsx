@@ -1,5 +1,5 @@
 import "./Websites.css"
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef} from "react"
 import { Link } from "react-router-dom"
 import { Helmet } from "react-helmet-async"
 import { useTranslation } from "react-i18next"
@@ -12,7 +12,7 @@ const HomeWebsites = () => {
     const [matrix, setMatrix] = useState([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1])
     const [matrixMargins, setMatrixMargins] = useState([])
     const [t] = useTranslation("global")
-    const [scrollDirecton, setScrollDirection] = useState(1)
+    const scrollDirectionRef = useRef(1);
 
 // scroll to top
 useEffect(() => {
@@ -63,33 +63,30 @@ useEffect(() => {
   // making tech section move
   useEffect(() => {
     const techSection = document.querySelector('.websites_technology_used_scroll');
-  
     if (!techSection) return;
-  
-    const speed = 0.5
-    let animationFrameId
-  
+
+    const speed = 0.5;
+    let animationFrameId;
+
     const animateScroll = () => {
-      if (!techSection) return;
-  
       const maxScroll = techSection.scrollWidth - techSection.clientWidth;
-      techSection.scrollLeft += scrollDirecton * speed;
-  
+      techSection.scrollLeft += scrollDirectionRef.current * speed;
+
       if (techSection.scrollLeft >= maxScroll) {
-        setScrollDirection(-1); // reverse to left
-        console.log("left")
+        scrollDirectionRef.current = -1; // scroll left
+        console.log("left");
       } else if (techSection.scrollLeft <= 0) {
-        setScrollDirection(1); // reverse to right
-        console.log("right")
+        scrollDirectionRef.current = 1; // scroll right
+        console.log("right");
       }
-  
+
       animationFrameId = requestAnimationFrame(animateScroll);
     };
-  
+
     animationFrameId = requestAnimationFrame(animateScroll);
-  
+
     return () => cancelAnimationFrame(animationFrameId);
-  }, [scrollDirecton]);
+  }, []);
   
 
 
