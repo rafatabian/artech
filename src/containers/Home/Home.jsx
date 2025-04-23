@@ -5,11 +5,14 @@ import { Link } from "react-router-dom";
 import { lazy, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
+// import { CheckCircle, PoundSterling } from "lucide-react";
 const NewHomeWebsite = lazy(() => import("../../components/HomeComponents/HomeWebsite/HomeWebsite.jsx"))
 const HomeMarketing = lazy(()=> import("../../components/HomeComponents/HomeMarketing/HomeMarketing.jsx"))
 const HomeBranding = lazy(() => import("../../components/HomeComponents/HomeLogos/HomeLogos.jsx"))
 const HomePachete = lazy(() => import("../../components/HomeComponents/HomePachete/HomePachete.jsx"))
 const HomeBlogs = lazy(() => import("../../components/HomeComponents/HomeBlogs/HomeBlogs.jsx"))
+
+
 
 
 const Home = () => {
@@ -52,6 +55,18 @@ useEffect(() => {
         </div>
          
       </div>
+{/* 100pounds offer */}
+    <section className="pricing-wrapper" id="fair-pricing">
+      <div className="pricing-content">
+        <h2 className="pricing-title">Simple & Fair Pricing</h2>
+        <p className="pricing-subtitle">Just <span className="price-amount">£100</span> upfront for small projects</p>
+        <p className="pricing-text">For projects valued up to £500, we charge just a £100 upfront deposit to get started.
+        The remaining balance is only due once the project is completed.</p>
+        <p className="pricing-highlight">You only pay in full when you're happy ✅</p>
+        <p className="pricing-description">We value transparency, trust, and quality above all. No hidden fees, No surprises, no pressure — just great work, delivered with your satisfaction in mind.<Link to="/terms"> Terms and conditions</Link> apply.</p>
+        <a href="#contact" className="pricing-button">Start Your Project</a>
+      </div>
+    </section>
       
 {/* logos */}
       <HomeBranding />
