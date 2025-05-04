@@ -1,0 +1,88 @@
+/* 100pounds offer */
+.pricing-wrapper {
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 0 30px 0 30px;
+    padding: 3rem 1rem 3rem 1rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+  .pricing-wrapper::after{
+    content: "";
+    position: absolute;
+    top: -1.3rem;
+    left: 0;
+    width: 60%;
+    border-radius: 1px;
+    height: 1.5px;
+    background-color: #96e5bb;
+    margin: 20px auto;
+  }
+  
+  .pricing-content {
+    text-align: center;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .pricing-title {
+    font-size: 2rem;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: #085c2b;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .pricing-subtitle {
+    font-size: 1.4rem;
+    font-family: Robo5to, Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .price-amount {
+    color: #085c2b;
+    font-weight: bold;
+  }
+  
+  .pricing-text {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    max-width: 800px;
+  }
+  
+  .pricing-highlight {
+    font-size: 1.2rem;
+    color: #085c2b;
+    margin: 20px 0 10px;
+    font-weight: 600;
+  }
+  
+  .pricing-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 800px;
+  }
+  
+  .pricing-button {
+    background-color: #085c2b;
+    color: white;
+    padding: 0.75rem 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pricing-button:hover {
+    background-color: #06481f;
+  }

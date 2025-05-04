@@ -1,10 +1,11 @@
 .privacy_container{
-    margin-top: 60px;
+    /* margin-top: 60px; */
+    padding: 130px 1rem 2rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 2rem 15px;
+    /* padding: 2rem 15px; */
 }
 .privacy_container > h1,
 .privacy_container > h2,
@@ -30,4 +31,9 @@
 }
 .privacy_policy_link{
     color: rgb(0, 89, 255) !important;
+}
+@media screen and (max-width:970px){
+    .privacy_container{
+        padding: 6rem 1rem 2rem 1rem;
+    }
 }

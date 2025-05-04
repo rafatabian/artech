@@ -2,7 +2,7 @@
     "navbar_pachete": "PLANS",
     "navbar_ajutor": "HELP",
 
-    "home_intro": "We are a team of IT experts specializing in web development, design, and marketing. Our mission is to deliver top-tier services that empower businesses to achieve their online goals and unlock their full potential.",
+    "home_intro": "We create custom websites, bold branding, and smart digital strategies — combining design, SEO, speed, and marketing to help you grow faster and stand out online.",
     "home_intro_first_btn": "Plans",
     "home_discover_btn": "Discover more",
     "home_get_a_quote": "Start a project",
@@ -27,7 +27,7 @@
     "home_marketing_sub2": "Boost your brand with targeted campaigns, social media ads, and high-quality visuals that drive engagement and conversions.",
     "home_marketing_img1": "Digital Marketing",
     "home_marketing_img2": "Socials advertising",
-    "home_marketing_img3": "Content creation",
+    "home_marketing_img3": "Posts creation",
     "home_marketing_img4": "PPC Campaigns (Pay-Per-Click)",
 
     "pachete_starter1": "Custom design",
@@ -162,7 +162,7 @@
     "contact_solicitare_2": "Branding",
     "contact_solicitare_3": "Websites",
     "contact_solicitare_4": "Marketing",
-    "contact_solicitare_5": "Packages",
+    "contact_solicitare_5": "Plans",
     "contact_solicitare_6": "Other",
     "contact_detalii": "Give us some details",
     "contact_date_personale": "Personal Information",

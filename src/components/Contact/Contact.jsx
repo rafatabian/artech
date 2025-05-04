@@ -134,11 +134,11 @@ const sendEmail = (e) => {
      <div className="contact_phone_email">
           <div>
             <FaPhone/>
-            <span><a href={`tel:${"+40 750 616 923"}`}>+40 750 616 923</a><a href={`tel:${"+44 740 422 3144"}`}>+44 740 422 3144</a></span>
+            <span><a href={`tel:${"+40 750 616 923"}`}>+40 750 616 923 ~RO</a><a href={`tel:${"+44 7424 177 665"}`}>+44 7424 177 665 ~UK</a></span>
           </div>
           <div>
             <MdEmail /> 
-            <a href={`mailto:${"agency.artech1@gmail.com"}`}>claudiunegru@artech-agency.co</a>
+            <a href={`mailto:${"business@artech-agency.co"}`}>business@artech-agency.co</a>
         </div>
      </div>
 

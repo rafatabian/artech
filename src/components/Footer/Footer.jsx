@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
 
         <div className="footer_email">
-           <span><MdEmail />claudiunegru@artech-agency.co</span> 
+           <span><MdEmail />business@artech-agency.co</span> 
         </div>
 
         <div className="footer_legal"> 
@@ -45,7 +45,7 @@ const Footer = () => {
           <Link to="/privacy">{t("privacy_title")}</Link>
         </div>
 
-        <h2>&copy; 2024 All rights reserved.</h2>
+        <h2>&copy; 2025 All rights reserved.</h2>
 
     </div>
   )
