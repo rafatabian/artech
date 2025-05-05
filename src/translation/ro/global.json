@@ -2,7 +2,7 @@
     "navbar_pachete": "PACHETE",
     "navbar_ajutor": "AJUTOR",
     
-    "home_intro": "Echipă de profesioniști în IT, specializați în dezvoltare web, design și marketing. Oferim servicii de calitate pentru a ajuta companiile să își atingă obiectivele online și să își realizeze potențialul maxim",
+    "home_intro": "Creăm site-uri web personalizate, branding profesional și strategii digitale inteligente — îmbinând designul, SEO-ul, viteza și marketingul pentru a te ajuta să crești mai rapid și să te remarci în mediul online.",
     "home_intro_first_btn": "Pachete",
     "home_discover_btn": "Descopera",
     "home_get_a_quote": "Incepe proiect",
@@ -10,6 +10,26 @@
 
     "home_branding_sub1":"Logouri, Carti de vizita, Design si Culori.",
     "home_branding_sib2": "Fiecare element vizual al afacerii tale conteaza!",
+
+    "home_our_services_title": "Serviciile Noastre",
+    "home_our_services_1": "Creare personalizată de site-uri web",
+    "home_our_services_2": "Optimizare SEO și îmbunătățirea vitezei de încărcare",
+    "home_our_services_3": "Actualizări continue până când ești complet mulțumit",
+    "home_our_services_4": "Integrare AI și configurare de chatbot",
+    "home_our_services_5": "Găzduire pe server si domenii personalizate",
+    "home_our_services_6": "Design de logo și identitate vizuală",
+    "home_our_services_7": "Cărți de vizită și editare foto/video",
+    "home_our_services_8": "Configurare rețele sociale și creare de conținut",
+    "home_our_services_9": "Atrage-ți primii clienți prin promovare țintită",
+    "home_our_services_10": "Configurare email profesional și răspunsuri automate",
+    "home_our_services_11": "Analiză de marketing și rapoarte de performanță",
+
+    "home_pricing_title": "Prețuri Simple și Corecte",
+    "home_pricing_subtitle1": "Doar",
+    "home_pricing_subtitle2":"600lei",
+    "home_pricing_subtitle3":"avans pentru proiecte mici",
+    "home_pricing_description": "Pentru proiectele cu o valoare de până la 3000lei, percepem doar un avans de £100 pentru a începe. Restul sumei se achită doar la finalizarea proiectului.",
+    "home_pricing_guarantee": "Vom actualiza proiectul până când ești pe deplin mulțumit",
 
     "home_websites_title": "Website-uri personalizate pentru afacerea ta",
     "home_websites_desc": "Creăm și dezvoltăm site-uri performante care se aliniază cu brandul și obiectivele tale de afaceri. Serviciile noastre merg dincolo de construirea unui site – personalizăm fiecare detaliu pentru o prezență digitală unică, care iese în evidență.",
@@ -21,6 +41,7 @@
     "home_websites_card3_desc": "Soluții rapide, sigure și optimizare SEO.",
     "home_websites_card4_title": "Suport Continuu",
     "home_websites_card4_desc": "Fii mereu cu un pas înainte cu actualizări și îmbunătățiri constante.",
+    "websites_scroll_menu":"Folosim tehnologii de ultima generatie pentru a va oferi cele mai bune servicii.",
 
     "home_marketing_sub1": "Marketing-ul eficient este cheia succesului oricărei afaceri.",
     "home_marketing_sub2": "Crește-ți brandul cu campanii direcționate, reclame pe rețelele sociale și materiale vizuale de înaltă calitate care atrag engagement și generează conversii.",
@@ -115,6 +136,8 @@
     "pachete_page_pro_p5":"Pentru a-ți asigura un site sigur și vizibil în căutările Google, îl găzduim pe un server performant, oferindu-ți gratuit un an de hosting inclus din partea noastră.",
     "pachete_page_button":"ALEGE PLANUL ",
 
+    "pachete_final_text":"Credem ca fiecare proiect e unic si merita o atentie spaciala.De aceea avem preturi diferite pentru fiecare tip de buget. Costul final depinde de complexitatea proiectului si timpul alocat dezvoltarii acestuia. Te incurajam sa ne contactezi pentru a discuta viziunea ta asftel incat putem veni cu o oferta personalizata care indeplineste cerintele proiectului tau. Hai sa-ti aducem ideeile la realitate!",
+
     "insights_title": "Ultimele Trenduri & Tendințe",
     "insights_desc": "Descoperă cele mai noi articole despre web design, branding, logo-uri și AI pentru a-ți menține afacerea în fața concurenței.",
     "insights_web_subtitle": "Web Design",
@@ -169,6 +192,10 @@
     "contact_name":"Nume si Prenume",
     "contact_telefon":"Telefon",
     "contact_email":"Adresa de Email",
+    "contact_termeni1":"Sunt de acord cu",
+    "contact_termeni2":"Termenii si Conditiile",
+    "contact_termeni3":"si am luat la cunostitinta",
+    "contact_termeni4":"Politica de Confidentialitate",
     "contact_adictional_info":"Prin apăsarea butonului „Trimite Formular” și transmiterea acestuia confirmi că ai cu bună-credință convingerea că informațiile și susținerile cuprinse în cadrul formularului de notificare sunt exacte și complete.",
     "contact_button":"Trimite Formularul",
     "contact_or": "sau",
@@ -215,5 +242,25 @@
         "terms_text9": "Procesăm datele clientului în conformitate cu politica noastră. Prin utilizarea serviciilor noastre, sunteți de acord cu colectarea și utilizarea datelor dumneavoastră așa cum este detaliat în",
         "terms_text10": "Acești Termeni și Condiții vor fi guvernați de legile Regatului Unit. Orice dispute care decurg din acești termeni vor fi soluționate de instanțele din Regatul Unit.",
       
-        "offer_menu": "Ofertă Limitată – Alege un design de website gata făcut și devino singurul lui proprietar!"
+        "offer_menu": "Ofertă Limitată – Alege un design de website gata făcut și devino singurul lui proprietar!",
+        "offer_button":"Obtine acest design",
+        "offer_page_button":"Obtime Design",
+        "offer_template1_title": "Website tip Restaurant",
+        "offer_template2_title": "Website tip Clinica Medicală",
+        "offer_template3_title": "Website tip Cabinet de Avocatură",
+        "offer_template4_title": "Website tip Design Interior",
+        "offer_template5_title": "Website Imobiliar",
+
+        "offer_template1_p": "Un site modern și optimizat pentru mobil destinat restaurantelor, cu pagini pentru meniu, meniuri QR, rezervări și recenzii.",
+        "offer_template2_p": "Design profesional și aerisit, ideal pentru servicii medicale, programări și formulare de contact.",
+        "offer_template3_p": "Șablon elegant și informativ pentru cabinete de avocatură, cu pagini dedicate serviciilor și formulare de contact.",
+        "offer_template4_p": "Design rafinat și stilat, creat special pentru designeri de interior, cu portofoliu de proiecte, pagini de servicii și testimoniale ale clienților.",
+        "offer_template5_p": "Un site elegant pentru agenții imobiliare, care include listări de proprietăți, filtre de căutare și formulare de contact.",
+
+        "offer_template1_price": "2999lei",
+        "offer_template2_price": "2399lei",
+        "offer_template3_price": "2999lei",
+        "offer_template4_price": "2399lei",
+        "offer_template5_price": "£2570lei"
+        
 }

@@ -121,7 +121,7 @@ const sendEmail = (e) => {
           </div>
           <label for="privacy" className="contact_privacy_label">
             <input type="checkbox" id="privacy" required defaultChecked={false} />
-            <span>I agree to the <Link to="/terms">Terms of Use</Link> and acknowledge the <Link to="/privacy">Privacy Policy</Link></span>
+            <span>{t("contact_termeni1")} <Link to="/terms">{t("contact_termeni2")}</Link> {t("contact_termeni3")} <Link to="/privacy">{t("contact_termeni4")}</Link></span>
           </label>
           <p>{t("contact_adictional_info")}</p>
         </div>

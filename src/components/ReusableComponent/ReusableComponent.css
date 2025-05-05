@@ -51,6 +51,9 @@
     animation: rotate_card 5s linear infinite;
     margin-top: 50px;
     z-index: 3;
+    box-shadow:
+    0 6px 12px rgba(0, 0, 0, 0.15),
+    0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .homeBranding_side {
@@ -81,7 +84,8 @@
     100% {
         transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
     }
-}
+} 
+
 .branding_white_text_contianer,
 .branding_green_text_contianer{
     width: 100%;

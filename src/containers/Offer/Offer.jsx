@@ -32,46 +32,51 @@ import fifth_proj_two from "../../assets/images/offer_extra_imgs/offer_third_pro
 import fifth_proj_three from "../../assets/images/offer_extra_imgs/offer_third_project_three.webp"
 import fifth_proj_four from "../../assets/images/offer_extra_imgs/offer_third_project_four.webp"
 import fifth_proj_five from "../../assets/images/offer_extra_imgs/offer_third_project_five.webp"
+import { useTranslation } from "react-i18next"
+import { t } from "i18next"
 
-const templates = [
-    {
-      id: 1,
-      title: "Restaurant Website",
-      description: "A modern, mobile-friendly site for restaurants with menu pages, QR menus, booking, and reviews.",
-      price: "£499",
-      image: [third_proj_one, third_proj_two, third_proj_three, third_proj_four, third_proj_five, third_proj_six, third_proj_seven, third_proj_eight],
-    },
-    {
-      id: 2,
-      title: "Doctor's Clinic Website",
-      description: "Professional and clean layout perfect for medical services, bookings, and contact forms.",
-      price: "£399",
-      image: [fourth_proj_one, fourth_proj_two, fourth_proj_three, fourth_proj_four],
-    },
-    {
-      id: 3,
-      title: "Law Firm Website",
-      description: "Elegant and informative template for legal practices with service pages and contact forms.",
-      price: "£449",
-      image: [first_proj_one, first_proj_two, first_proj_three, first_proj_four, first_proj_five, first_proj_six],
-    },
-    {
-      id: 4,
-      title: "Interior Design Website",
-      description: "Stylish and refined layout tailored for interior designers, featuring project showcases, service pages, and client testimonials.",
-      price: "£399",
-      image: [second_proj_one, second_proj_two, second_proj_three, second_proj_four],
-    },
-    {
-      id: 5,
-      title: "Real Estate Website",
-      description: "A polished and responsive site for real estate agencies, including property listings, search filters, and contact forms.",
-      price: "£429",
-      image: [fifth_proj_one, fifth_proj_two, fifth_proj_three, fifth_proj_four, fifth_proj_five],
-    },
-  ];
   
   const Offer = () => {
+    const [t] = useTranslation("global");
+
+    const templates = [
+      {
+        id: 1,
+        title: t("offer_template1_title"),
+        description: t("offer_template1_p"),
+        price: t("offer_template1_price"),
+        image: [third_proj_one, third_proj_two, third_proj_three, third_proj_four, third_proj_five, third_proj_six, third_proj_seven, third_proj_eight],
+      },
+      {
+        id: 2,
+        title:t("offer_template2_title"),
+        description: t("offer_template2_p"),
+        price: t("offer_template2_price"),
+        image: [fourth_proj_one, fourth_proj_two, fourth_proj_three, fourth_proj_four],
+      },
+      {
+        id: 3,
+        title: t("offer_template3_title"),
+        description: t("offer_template3_p"),
+        price: t("offer_template3_price"),
+        image: [first_proj_one, first_proj_two, first_proj_three, first_proj_four, first_proj_five, first_proj_six],
+      },
+      {
+        id: 4,
+        title: t("offer_template4_title"),
+        description: t("offer_template4_p"),
+        price: t("offer_template4_price"),
+        image: [second_proj_one, second_proj_two, second_proj_three, second_proj_four],
+      },
+      {
+        id: 5,
+        title: t("offer_template5_title"),
+        description: t("offer_template5_p"),
+        price: t("offer_template5_price"),
+        image: [fifth_proj_one, fifth_proj_two, fifth_proj_three, fifth_proj_four, fifth_proj_five],
+      },
+    ];
+
     return (
 <div className="offers-page">
       {templates.map((template) => (
@@ -87,7 +92,7 @@ const templates = [
               <p>{template.description}</p>
               <div className="template-meta">
                 <span className="price">{template.price}</span>
-                <Link to="/contact" className="buy-btn">Get Template</Link>
+                <Link to="/contact" className="buy-btn">{t("offer_page_button")}</Link>
               </div>
             </div>
           </div>

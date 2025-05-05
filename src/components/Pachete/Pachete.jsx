@@ -76,8 +76,7 @@ useEffect(() => {
         </div>
 
         <div className="plans_final_text">
-          <span>We believe that every project is unique and deserves a tailored approach. That's why our pricing is customized to meet the specific needs and requirements of each client. The final cost depends on the complexity of the project, the time needed for completion, and the scope of work involved. We encourage you to contact us to discuss your vision, so we can provide a personalized quote that reflects exactly what you're looking for. We look forward to working together and bringing your ideas to life.
-          </span>
+          <span>{t("pachete_final_text")}</span>
     
          <div className="plans_button_last_container">
             <Link to="/contact">{t("branding_contact")}</Link>  

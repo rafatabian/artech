@@ -104,7 +104,7 @@ useEffect(() => {
         </div>
 
 <div className="websites_technology_used_container">
-            <h1>We use the latest technologies to provide the best services</h1>
+            <h1>{t("websites_scroll_menu")}</h1>
             <div className="websites_technology_used_scroll_shadows_and_content">
                 <div className="websites_technology_used_scroll">
                  <span><IoLogoJavascript /> <p>JavaScript</p></span>

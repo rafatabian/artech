@@ -2,11 +2,13 @@ import React, { useEffect, useRef, useState } from 'react';
 import './ReusablePremadeOffer.css';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 const PremadeShowcase = ({ images }) => {
   const [webpage, setWebpage] = useState(false)
   const location = useLocation();
+  const [t] = useTranslation('global');
 
   const scrollRef = useRef(null);
 
@@ -34,7 +36,7 @@ const PremadeShowcase = ({ images }) => {
           {images.map((img, index) => (
             <div className="premade-image-wrapper" key={index}>
               <img src={img} alt={`Premade design ${index + 1}`} className="premade-image" />
-              <Link to="/offer" className="claim-btn">Claim This Design</Link>
+              <Link to="/offer" className="claim-btn">{t("offer_button")}</Link>
             </div>
           ))}
         </div>

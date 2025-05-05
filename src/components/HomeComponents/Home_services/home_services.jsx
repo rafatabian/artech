@@ -1,33 +1,29 @@
-import "./home_services.css"
+import "./Home_services.css"
 import { Link } from "react-router-dom";
-import { FaServer, FaPaintBrush, FaForward, FaPaintRoller, FaVideo } from "react-icons/fa";
-import { BsFillLightningChargeFill } from "react-icons/bs"
-import { RiRobot2Fill } from "react-icons/ri";
-import { IoPeople, IoCardSharp } from "react-icons/io5";
-import { MdEmail } from "react-icons/md";
-import { TbReportSearch } from "react-icons/tb";
+import { useTranslation } from "react-i18next";
 
-const home_services = () => {
+const Home_services = () => {
+  const [t] = useTranslation("global");
 
   return (
     <div className="home_our_services">
-    <h2>Our Services</h2>
-  {/* TO DO add links to each li to help navigate on the website*/}
-    <ul>
-      <li> <Link to="/websites">Custom website design and development</Link> </li>
-      <li> <Link to="/websites">SEO optimization and speed improvements</Link> </li>
-      <li> <Link to="/Websites">Ongoing updates until you're fully satisfied</Link> </li>
-      <li> <Link to="/Websites">AI integration and chatbot setup</Link> </li>
-      <li> <Link to="/Websites">Website hosting and custom domain registration</Link> </li>
-      <li> <Link to="/branding">Logo design and brand identity</Link> </li>
-      <li> <Link to="/branding">Visit cards and photo/video editing</Link> </li>
-      <li> <Link to="/marketing">Social media setup and content creation</Link> </li>
-      <li> <Link to="/marketing">Attract your first customers with targeted promotion</Link> </li>
-      <li> <Link to="/marketing">Business email setup and automated responses</Link> </li>
-      <li> <Link to="/marketing">Marketing analytics and performance reports</Link> </li>
-    </ul>
+   <h2>{t("home_our_services_title")}</h2>
+<ul>
+  <li> <Link to="/websites">{t("home_our_services_1")}</Link> </li>
+  <li> <Link to="/websites">{t("home_our_services_2")}</Link> </li>
+  <li> <Link to="/websites">{t("home_our_services_3")}</Link> </li>
+  <li> <Link to="/websites">{t("home_our_services_4")}</Link> </li>
+  <li> <Link to="/websites">{t("home_our_services_5")}</Link> </li>
+  <li> <Link to="/branding">{t("home_our_services_6")}</Link> </li>
+  <li> <Link to="/branding">{t("home_our_services_7")}</Link> </li>
+  <li> <Link to="/marketing">{t("home_our_services_8")}</Link> </li>
+  <li> <Link to="/marketing">{t("home_our_services_9")}</Link> </li>
+  <li> <Link to="/marketing">{t("home_our_services_10")}</Link> </li>
+  <li> <Link to="/marketing">{t("home_our_services_11")}</Link> </li>
+</ul>
+
   </div>
   )
 }
 
-export default home_services
+export default Home_services

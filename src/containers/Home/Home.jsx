@@ -10,7 +10,7 @@ const HomeMarketing = lazy(()=> import("../../components/HomeComponents/HomeMark
 const HomeBranding = lazy(() => import("../../components/HomeComponents/HomeLogos/HomeLogos.jsx"))
 const HomePachete = lazy(() => import("../../components/HomeComponents/HomePachete/HomePachete.jsx"))
 const HomeBlogs = lazy(() => import("../../components/HomeComponents/HomeBlogs/HomeBlogs.jsx"))
-const HomeServices = lazy(() => import("../../components/HomeComponents/Home_services/home_services.jsx"))
+const HomeServices = lazy(() => import("../../components/HomeComponents/Home_services/Home_services.jsx"))
 const HomeOffer = lazy(() => import("../../components/HomeComponents/Home_offer/Home_offer.jsx"))
 
 

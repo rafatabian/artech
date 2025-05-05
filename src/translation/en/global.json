@@ -10,7 +10,27 @@
 
     "home_branding_sub1":"Logos, Business Cards, Graphic Design, and Visual Identity.",
     "home_branding_sib2": "We create unique logos and graphic designs that reflect your brand's identity. From logos to business cards and website visuals, we ensure your design stands out and leaves a lasting impression.",
-    
+
+    "home_our_services_title": "Our Services",
+    "home_our_services_1":"Custom website design and development",
+    "home_our_services_2":"SEO optimization and speed improvements",
+    "home_our_services_3":"Ongoing updates until you're fully satisfied",
+    "home_our_services_4":"AI integration and chatbot setup",
+    "home_our_services_5":"Website hosting and custom domain registration",
+    "home_our_services_6":"Logo design and brand identity",
+    "home_our_services_7":"Visit cards and photo/video editing",
+    "home_our_services_8":"Social media setup and content creation",
+    "home_our_services_9":"Attract your first customers with targeted promotion",
+    "home_our_services_10":"Business email setup and automated responses",
+    "home_our_services_11":"Marketing analytics and performance reports",
+
+    "home_pricing_title": "Simple & Fair Pricing",
+    "home_pricing_subtitle1": "Just",
+    "home_pricing_subtitle2":"£100",
+    "home_pricing_subtitle3":"upfront for small projects",
+    "home_pricing_description": "For projects valued up to £500, we charge just a £100 upfront deposit to get started. The remaining balance is only due once the project is completed.",
+    "home_pricing_guarantee": "We will update your project till you're happy",
+
 
     "home_websites_title": "Custom Websites, Tailored for Your Business",
     "home_websites_desc": "We design and develop high-performance websites that align with your brand and business goals. Our services go beyond just building a website—we personalize every aspect, ensuring a unique digital presence that stands out.",
@@ -70,6 +90,9 @@
     "website_details2": "We specialize in crafting custom websites that align with your brand and meet your specific goals. Whether you need a simple, sophisticated site or a more complex solution, we ensure a distinctive design, smooth functionality, and a compelling user experience that sets your business apart online.",
     "website_details3": "Our websites are built with speed, performance, and SEO in mind, ensuring quick load times and better rankings on Google and other search engines. We don’t just focus on aesthetics—our sites are engineered to perform, helping you attract more visitors and achieve better business outcomes.",
     "website_details4": "Our commitment doesn’t end with launching your website. We provide ongoing maintenance, regular updates, and domain management to keep your site running smoothly. While you focus on growing your business, we ensure your website stays up-to-date and fully optimized for success.",
+    "websites_scroll_menu":"We use the latest technologies to provide the best services",
+
+
 
     "marketing_title2": "DIGITAL MARKETING",
     "marketing_title3": "INSIGHTS & REPORTING",
@@ -114,6 +137,8 @@
     "pachete_page_pro_p4":"For example, 'my-business.com.' We cover your domain registration costs for one year.",
     "pachete_page_pro_p5":"To ensure your site is secure and visible on Google, we host it on a high-performance server, offering you one year of free hosting.",
     "pachete_page_button":"CHOOSE ",
+
+    "pachete_final_text":"We believe that every project is unique and deserves a tailored approach. That's why our pricing is customized to meet the specific needs and requirements of each client. The final cost depends on the complexity of the project, the time needed for completion, and the scope of work involved. We encourage you to contact us to discuss your vision, so we can provide a personalized quote that reflects exactly what you're looking for. We look forward to working together and bringing your ideas to life.",
 
     "insights_title": "Latest Insights & Trends",
     "insights_desc": "Explore our latest articles on web design, branding, logos, and AI to keep your business ahead of the competition.",
@@ -169,6 +194,10 @@
     "contact_name": "First and Last Name",
     "contact_telefon": "Phone number",
     "contact_email": "Email Address",
+    "contact_termeni1":"I agree to the",
+    "contact_termeni2":"Terms of use",
+    "contact_termeni3":"and I acknowledge the",
+    "contact_termeni4":"Privacy Policy",
     "contact_adictional_info": "By pressing the 'Submit Form' button, you confirm that your information are accurate and complete.",
     "contact_button": "Submit Form",
     "contact_or": "or",
@@ -215,6 +244,22 @@
     "terms_text9": "We process client data in accordance with our policy. By using our services, you consent to the collection and use of your data as outlined in the",
     "terms_text10": "These Terms and Conditions shall be governed by the laws of the United Kingdom. Any disputes arising from these terms will be resolved in the courts of the United Kingdom.",
 
-    "offer_menu": "Limited-Time Website Offer – Pre-made Designs You Can Own Exclusively!"
-
+    "offer_menu": "Limited-Time Website Offer – Pre-made Designs You Can Own Exclusively!",
+    "offer_button":"Claim This Design",
+    "offer_page_button":"Get Template",
+    "offer_template1_title":"Restaurant Website",
+    "offer_template2_title":"Doctor's Clinic Website",
+    "offer_template3_title":"Law Firm Website",
+    "offer_template4_title":"Interior Design Website",
+    "offer_template5_title":"Real Estate Website",
+    "offer_template1_p":"A modern, mobile-friendly site for restaurants with menu pages, QR menus, booking, and reviews.",
+    "offer_template2_p":"Professional and clean layout perfect for medical services, bookings, and contact forms.",
+    "offer_template3_p":"Elegant and informative template for legal practices with service pages and contact forms.",
+    "offer_template4_p":"Stylish and refined layout tailored for interior designers, featuring project showcases, service pages, and client testimonials.",
+    "offer_template5_p":"A polished and responsive site for real estate agencies, including property listings, search filters, and contact forms.",
+    "offer_template1_price":"£499",
+    "offer_template2_price":"£399",
+    "offer_template3_price":"£449",
+    "offer_template4_price":"£399",
+    "offer_template5_price":"£429"
 }
