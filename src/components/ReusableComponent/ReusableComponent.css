@@ -85,7 +85,21 @@
         transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
     }
 } 
-
+.branding_ReusablePlans_container{
+    background-color: var(--green);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+.branding_ReusablePlans_container > h1{
+    font-size: 30px;
+    font-family: "Roboto";
+    color: white;
+    margin-bottom: 0rem;
+}
 .branding_white_text_contianer,
 .branding_green_text_contianer{
     width: 100%;
@@ -112,8 +126,8 @@
 .branding_white_text_contianer{
     flex-direction: column;
 }
-.branding_white_text_contianer p,
-.branding_green_text_contianer  p{
+.branding_white_text_contianer > p,
+.branding_green_text_contianer > p{
     font-family: "Roboto";
     max-width: 600px;
     text-align: center;
@@ -122,19 +136,19 @@
     letter-spacing: 0.2px;
     line-height: 30px;
 }
-.branding_white_text_contianer h1,
-.branding_green_text_contianer h1{
+.branding_white_text_contianer > h1,
+.branding_green_text_contianer > h1{
    font-size: 30px;
    font-family: "Roboto";
    width: 100%;
    text-align: center;
 }  
-.branding_green_text_contianer h1,
-.branding_green_text_contianer p{
-    color: white !important;
+.branding_green_text_contianer > h1,
+.branding_green_text_contianer > p{
+    color: rgb(0, 0, 0) !important;
 }
 .branding_green_text_contianer{
-    background-color: var(--green);
+    background-color: rgb(255, 255, 255);
 }
 .branding_button{
     background-color: var(--green);
