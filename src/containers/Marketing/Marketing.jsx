@@ -1,5 +1,6 @@
 
-import { lazy, useEffect } from "react"
+import { lazy, Suspense, useEffect } from "react"
+import packages from "../../assets/data/plansData.js"
 import { Helmet } from "react-helmet-async"
 import firstMarketingURL from "../../assets/images/marketing/marketing_first_img.webp"
 import secondMarktingURL from "../../assets/images/marketing/marketing_marketing_img.webp"
@@ -7,6 +8,8 @@ import thirdMarketingURL from "../../assets/images/marketing/marketing_digital.w
 import forthMakretingURL from "../../assets/images/marketing/marketing_strategy.webp"
 import { useTranslation } from "react-i18next"
 const ReusableComponent = lazy(() => import("../../components/ReusableComponent/ReusableComponent"))
+const ReusablePlans = lazy(() => import("../../components/ReusablePlans/ReusablePlans"))
+
 
 
 const HomeMarketing = () => {
@@ -30,6 +33,8 @@ useEffect(() => {
     forthText: `${t("marketing_details4")}`
 }
 
+
+
   return (
     <>
      <Helmet>
@@ -37,7 +42,9 @@ useEffect(() => {
       <meta name="description" content="Creste-ti numarul de vizitatori pe pagina si atrage mai multe priviri cu noi"/>
       <link rel="canonical" href="https://artech-agency.co/#/marketing"/>
     </Helmet>
-    <ReusableComponent props={marketingProps}/>
+
+       <ReusableComponent props={marketingProps}/>
+      { packages && <ReusablePlans data={packages.marketing}/>}
     </>
    
   )

@@ -1,12 +1,13 @@
 import "./Websites.css"
-import { useEffect, useState} from "react"
-import { Link } from "react-router-dom"
+import { lazy, useEffect, useState} from "react"
 import { Helmet } from "react-helmet-async"
 import { useTranslation } from "react-i18next"
 import { IoLogoJavascript } from "react-icons/io5"
 import { FaReact, FaHtml5, FaCss3, FaNpm, FaNode} from "react-icons/fa"
 import { RiTailwindCssFill } from "react-icons/ri"
 import { SiVite } from "react-icons/si";
+import packages from "../../assets/data/plansData.js"
+const ReusablePlans = lazy(() => import("../../components/ReusablePlans/ReusablePlans"))
 
 const HomeWebsites = () => {
     const [matrix, setMatrix] = useState([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1])
@@ -60,7 +61,6 @@ useEffect(() => {
   }, []);
   
   // TO DO make tech section move
-  
 
   return (
     <>
@@ -125,15 +125,12 @@ useEffect(() => {
         </div>
 
         
-        <div className="websites_green_text_contianer">
+        <div className="websites_white_text_contianer">
         <h1>{t("website_sub4")}</h1>
         <p>{t("website_details4")}</p>  
       </div>
 
-
-        <div className="websites_button_container">
-        <Link to="/contact" className="websites_button" aria-label="contact">{t("branding_contact")}</Link>
-        </div>
+      {packages && <ReusablePlans data={packages.websites}/>}
 
       </div>
       </>

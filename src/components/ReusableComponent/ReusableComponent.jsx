@@ -52,11 +52,6 @@ const HomeBranding = ({props}) => {
         <div className="ceata"></div>
            <h3 className="branding_titles">{props.titles[3]}</h3>
         </div>
-        
-        <div className="branding_ReusablePlans_container">
-          <h1>Branding Packages</h1>
-          <ReusablePlans />
-        </div>
          
         <div className="branding_green_text_contianer">
          
@@ -64,8 +59,8 @@ const HomeBranding = ({props}) => {
         <p>{props.forthText}</p>        
         </div>
 
-        <Link to="/contact" className="branding_button" aria-label="contact">{t("branding_contact")}</Link>
-
+        <ReusablePlans />
+      
     </div>
   )
 

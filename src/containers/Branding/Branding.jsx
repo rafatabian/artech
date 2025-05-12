@@ -1,11 +1,17 @@
 import { lazy, useEffect } from "react"
+import { Link } from "react-router-dom"
 import firstImageURL from "../../assets/images/branding/branding_first_img.webp"
 import secondImageURL from "../../assets/images/branding/logos.webp"
 import thirdImageURL from "../../assets/images/branding/branding_visit_card.webp"
 import forthImageURL from "../../assets/images/branding/branding_graphic_design.webp"
 import { Helmet } from "react-helmet-async"
 import { useTranslation } from "react-i18next"
+import packages from "../../assets/data/plansData.js"
+
+
 const ReusableComponent = lazy(() => import("../../components/ReusableComponent/ReusableComponent"))
+const ReusablePlans = lazy(() => import("../../components/ReusablePlans/ReusablePlans"))
+
 
 const HomeBranding = () => {
     const [t] = useTranslation("global")
@@ -36,6 +42,7 @@ const brandingProps={
         <link rel="canonical" href="https://artech-agency.co/#/branding"/>
     </Helmet> 
     <ReusableComponent props={brandingProps} />
+    {packages && <ReusablePlans data={packages.branding}/>}
     </>
  )
 }
