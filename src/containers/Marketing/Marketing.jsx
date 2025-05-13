@@ -44,7 +44,7 @@ useEffect(() => {
     </Helmet>
 
        <ReusableComponent props={marketingProps}/>
-      { packages && <ReusablePlans data={packages.marketing}/>}
+      { packages && <ReusablePlans data={packages.Marketing} name="Marketing"/>}
     </>
    
   )

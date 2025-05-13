@@ -118,6 +118,41 @@
 }
 
 /*  */
+@media screen and (min-width: 1700px) {
+  .package-grid{
+    max-width: 1300px;
+  }
+  .package_container > h1{
+    font-size: 35px;
+  }
+  .package-card h2 {
+    font-size: 1.7rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    margin-top: 0.3rem;
+  }
+  
+  .price {
+    margin: 1.2rem 0 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .features {
+    margin: 1.2rem 0;
+  }
+  
+  .features li {
+    margin-bottom: 0.7rem;
+    font-size: 18px;
+  }
+  
+  .delivery {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
 @media screen and (max-width: 1000px) {
   .package-grid {
     flex-direction: column;

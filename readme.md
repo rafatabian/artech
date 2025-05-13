@@ -24,4 +24,10 @@ and scroll to the plans detail section          selected.                       
 -make the same padding to all sections in homepage
 -improve the plans setion design
 
+Future updates:
+- change white backgound color to a light gray all over the page
+- improve texts readability everywhere and make it seameless across pages
+- make the buttons in the navbar have the green backgound if you are in that specific page
+
+
 

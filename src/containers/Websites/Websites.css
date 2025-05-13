@@ -209,10 +209,6 @@
     text-align: center;
     color: white ;
  }  
- .websites_green_text_contianer h1,
- .websites_green_text_contianer p{
-     color: white !important;
- }
  .websites_green_text_contianer{
      background-color: rgb(0, 0, 0);
  }
@@ -249,9 +245,10 @@
      } 
      .websites_white_text_contianer p,
      .websites_green_text_contianer p{
-      font-size: 25px;
+      font-size: 22px;
       max-width: 1000px;
       line-height: 40px;
+
      } 
  }
  @media screen and (max-width: 700px){

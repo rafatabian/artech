@@ -130,7 +130,7 @@ useEffect(() => {
         <p>{t("website_details4")}</p>  
       </div>
 
-      {packages && <ReusablePlans data={packages.websites}/>}
+      {packages && <ReusablePlans data={packages.Websites} name="Websites"/>}
 
       </div>
       </>

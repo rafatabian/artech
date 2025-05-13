@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 
 
-const ReusablePlans = ({data}) => {
+const ReusablePlans = ({data, name}) => {
   const [t] = useTranslation("global")
 
 
@@ -11,7 +11,7 @@ const ReusablePlans = ({data}) => {
     data?.length > 0 &&(
       <div className="package_content_and_button_container">
     <div className="package_container">
-     <h1>Branding Packages</h1>
+     <h1>{name} Packages</h1>
     <div className="package-grid">
       {data.map((pkg, index) => (
         <div className="package-card" key={index}>

@@ -42,7 +42,7 @@ const brandingProps={
         <link rel="canonical" href="https://artech-agency.co/#/branding"/>
     </Helmet> 
     <ReusableComponent props={brandingProps} />
-    {packages && <ReusablePlans data={packages.branding}/>}
+    {packages && <ReusablePlans data={packages.Branding} name="Branding"/>}
     </>
  )
 }

@@ -1,7 +1,7 @@
 import "./ReusableComponent.css"
 import  businessCardOne  from "../../assets/images/artech_visit_card_1.webp"
 import  businessCardTwo  from "../../assets/images/artech_visit_card_2.webp"
-import { Link, useLocation } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 import { lazy } from "react"
 const ReusablePlans = lazy(() => import("../ReusablePlans/ReusablePlans"))
@@ -58,8 +58,6 @@ const HomeBranding = ({props}) => {
         <h1>{props.headings[3]}</h1>
         <p>{props.forthText}</p>        
         </div>
-
-        <ReusablePlans />
       
     </div>
   )
