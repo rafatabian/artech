@@ -1,5 +1,4 @@
 .homeMarketing_conatiner{
-    /* max-width: 1318px; */
     max-width: 1000px;
     width: 100vw;
     padding: 4rem 0;
@@ -59,14 +58,14 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
 .homeMarketing_images_and_text > div > h2{
     position: absolute;
     font-family: Roboto, Arial, sans-serif;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     text-align: center;
     z-index: 90;

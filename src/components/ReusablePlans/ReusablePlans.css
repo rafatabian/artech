@@ -9,8 +9,25 @@
   margin: 1rem 0;
   max-width: 1000px;
 }
-.package_container{
+.package-grid > .package-card:nth-child(2){
   background-color: var(--green);
+  scale:1.05;
+  z-index: 11;
+}
+.package-grid > .package-card:nth-child(2) h2,
+.package-grid > .package-card:nth-child(2) .subtitle,
+.package-grid > .package-card:nth-child(2) .price,
+.package-grid > .package-card:nth-child(2)  .features li,
+.package-grid > .package-card:nth-child(2) .delivery {
+   color: white;
+}
+.package-grid > .package-card:nth-child(2) .cta-btn{
+  background-color: white;
+  color: var(--green)
+}
+
+.package_container,
+.package_container_websites{
   width: 100%;
   display: flex;
   align-items: center;
@@ -18,17 +35,31 @@
   flex-direction: column;
   padding: 2rem 0;
 }
-.package_container > h1{
+.package_container{
+  background-color:#F0F0F0;
+}
+/* websites version of the packages black background */
+.package_container_websites{
+  background-color: #0a0a0a;
+}
+.package_container_websites > h1{
+   color: white
+}
+.package_container > h1,
+.package_container_websites > h1{
   font-size: 30px;
   font-family: "Roboto";
-  color: white;
-  margin-bottom: 0rem;
+  font-weight: 600;
+
+  margin-bottom: 1rem;
+}
+.package_container > h1{
+    color: var(--green);
 }
 .package-card {
   width: 33%;
   background: #fff;
-  margin: 0 7px;
-  border: 1px solid #eaeaea;
+  margin: 0 10px;
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
@@ -48,6 +79,7 @@
 .package-card h2 {
   margin: 0.3rem 0 0;
   font-size: 1.3rem;
+  font-weight: 500;
   color: #085c2b;
   font-family:Roboto, Arial, Helvetica, sans-serif
 }
@@ -60,7 +92,7 @@
 }
 
 .price {
-  font-weight: bold;
+  font-weight: 600;
   margin: 1rem 0 0.5rem;
   font-size: 1.1rem;
   color: #000;
@@ -92,7 +124,7 @@
   border: none;
   background-color: #085c2b;
   color: #fff;
-  font-weight: bold;
+  font-weight: 500;
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.2s ease;
@@ -105,13 +137,16 @@
 /*  */
 .branding_button{
   background-color: var(--green);
-  padding: 10px 25px;
-  font-family: "Roboto";
   color: white;
-  font-weight: 400;
-  font-size: 20px;
+  width: 150px;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75rem;
   border-radius: 10px;
-  margin: 2rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  text-align: center;
 }
 .branding_button:hover{
   background-color: var(--greenHover);

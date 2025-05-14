@@ -1,16 +1,19 @@
 import "./ReusablePlans.css"
 import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
+import { useLocation } from "react-router-dom"
+
 
 
 const ReusablePlans = ({data, name}) => {
   const [t] = useTranslation("global")
+  const location = useLocation()
 
 
   return (
     data?.length > 0 &&(
       <div className="package_content_and_button_container">
-    <div className="package_container">
+    <div className={location.pathname == "/websites" ? 'package_container_websites' : 'package_container'}>
      <h1>{name} Packages</h1>
     <div className="package-grid">
       {data.map((pkg, index) => (

@@ -7,7 +7,7 @@ const Home_services = () => {
 
   return (
     <div className="home_our_services">
-   <h2>{t("home_our_services_title")}</h2>
+   <h2>{t("home_our_services_title")}:</h2>
 <ul>
   <li> <Link to="/websites">- {t("home_our_services_1")}</Link> </li>
   <li> <Link to="/websites">- {t("home_our_services_2")}</Link> </li>
