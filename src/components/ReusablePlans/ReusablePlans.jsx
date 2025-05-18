@@ -2,6 +2,8 @@ import "./ReusablePlans.css"
 import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 import { useLocation } from "react-router-dom"
+import { FaLeaf, FaRocket } from "react-icons/fa"
+import { IoExtensionPuzzle } from "react-icons/io5"
 
 
 
@@ -19,7 +21,7 @@ const ReusablePlans = ({data, name}) => {
       {data.map((pkg, index) => (
         <div className="package-card" key={index}>
           <div className="header">
-            <h2>{pkg.tier}</h2>
+            <h2>{pkg.tier}{index === 0 ? <FaLeaf /> : index === 1 ?<IoExtensionPuzzle /> : <FaRocket />}</h2>
             <p className="subtitle">{pkg.subtitle}</p>
           </div>
           <p className="price">{pkg.price}</p>
@@ -33,8 +35,8 @@ const ReusablePlans = ({data, name}) => {
         </div>
       ))}
     </div>
-    </div>
     <Link to="/contact" className="branding_button" aria-label="contact">{t("branding_contact")}</Link>
+    </div>
     </div>
     )
   )

@@ -13,6 +13,7 @@ const HomeWebsites = () => {
     const [matrix, setMatrix] = useState([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1])
     const [matrixMargins, setMatrixMargins] = useState([])
     const [t] = useTranslation("global")
+    const [techScroll] = useState(0)
 
 // scroll to top
 useEffect(() => {
@@ -61,6 +62,21 @@ useEffect(() => {
   }, []);
   
   // TO DO make tech section move
+  //make tech section move
+  // useEffect(() => {
+  //     const movingSection = document.getElementsByClassName("websites_technology_used_scroll")
+  //     if(movingSection){
+  //      if(techScroll === 0){
+  //       const scrollWidth = movingSection[0].scrollWidth
+  //       movingSection[0].scrollTo(scrollWidth, 10000)
+  //      }else if(techScroll === 1) {
+
+  //      }else{
+
+  //      }
+        
+  //     }
+  // }, [])
 
   return (
     <>
@@ -72,7 +88,7 @@ useEffect(() => {
     <div className="homeWebsites_container">
       <div  className="websites_matrix_container">
       <h3 className="websites_titles">WEBSITES</h3>
-         {matrixMargins.map((margins, index) => <span style={{marginLeft:`${margins}px`, animationDelay: `${index * 0.2}s`}} key={margins}>{matrix.map((number) => <p>{number}</p>)}</span>
+         {matrixMargins.map((margins, index) => <span style={{marginLeft:`${margins}px`, animationDelay: `${index * 0.2}s`}} key={margins}>{matrix.map((number, index) => <p key={index}>{number}</p>)}</span>
           )} 
       </div>
 

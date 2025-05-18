@@ -47,7 +47,7 @@
 }
 .package_container > h1,
 .package_container_websites > h1{
-  font-size: 30px;
+  font-size: 35px;
   font-family: "Roboto";
   font-weight: 600;
 
@@ -75,7 +75,18 @@
   margin-bottom: 1rem;
   font-family:Roboto, Arial, Helvetica, sans-serif
 }
-
+.header > h2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header > h2 > svg{
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  margin-left: 5px;
+}
 .package-card h2 {
   margin: 0.3rem 0 0;
   font-size: 1.3rem;
@@ -139,6 +150,7 @@
   background-color: var(--green);
   color: white;
   width: 150px;
+  margin-top: 1.5rem;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 500;

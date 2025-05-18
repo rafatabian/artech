@@ -42,8 +42,6 @@
     left: 0;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.2);
-
-
 } 
 .homeBranding_business_card {
     width: 350px;
@@ -136,19 +134,7 @@
 .branding_green_text_contianer{
     background-color: rgb(255, 255, 255);
 }
-.branding_button{
-    background-color: var(--green);
-    padding: 10px 25px;
-    font-family: "Roboto";
-    color: white;
-    font-weight: 400;
-    font-size: 20px;
-    border-radius: 10px;
-    margin: 2rem 0;
-}
-.branding_button:hover{
-    background-color: var(--greenHover);
-}
+
 @media screen and (min-width: 1700px){
     .branding_second_parallax{
        min-height:60vh;
@@ -210,9 +196,6 @@
     .branding_white_text_contianer > p,
     .branding_green_text_contianer > p{
         font-size: 16px;
-    }
-    .branding_button{
-        font-size: 16px
     }
     .homeBranding_business_card{
     width: 300px;
