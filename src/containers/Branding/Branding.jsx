@@ -1,5 +1,5 @@
 import { lazy, useEffect } from "react"
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 import firstImageURL from "../../assets/images/branding/branding_first_img.webp"
 import secondImageURL from "../../assets/images/branding/logos.webp"
 import thirdImageURL from "../../assets/images/branding/branding_visit_card.webp"
@@ -22,7 +22,7 @@ useEffect(() => {
 }, [])
 
 const brandingProps={
-    titles: ["BRANDING", `${t("branding_title2")}`, `${t("branding_title3")}`, `${t("branding_title4")}`],
+    titles: ["BRAND DESIGN", `${t("branding_title2")}`, `${t("branding_title3")}`, `${t("branding_title4")}`],
     headings: [`${t("branding_sub1")}`, `${t("branding_sub2")}`, `${t("branding_sub3")}`, `${t("branding_sub4")}`],
     firstImage: firstImageURL,
     secondImage: secondImageURL,

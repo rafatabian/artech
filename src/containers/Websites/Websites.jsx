@@ -13,7 +13,7 @@ const HomeWebsites = () => {
     const [matrix, setMatrix] = useState([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1])
     const [matrixMargins, setMatrixMargins] = useState([])
     const [t] = useTranslation("global")
-    const [techScroll] = useState(0)
+    // const [techScroll] = useState(0)
 
 // scroll to top
 useEffect(() => {

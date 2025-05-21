@@ -3,8 +3,6 @@ import  businessCardOne  from "../../assets/images/artech_visit_card_1.webp"
 import  businessCardTwo  from "../../assets/images/artech_visit_card_2.webp"
 import { useLocation } from "react-router-dom"
 import { useTranslation } from "react-i18next"
-import { lazy } from "react"
-const ReusablePlans = lazy(() => import("../ReusablePlans/ReusablePlans"))
 
 const HomeBranding = ({props}) => {
   const location = useLocation()
