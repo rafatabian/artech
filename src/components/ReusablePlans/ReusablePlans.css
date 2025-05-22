@@ -34,6 +34,7 @@
   justify-content: center;
   flex-direction: column;
   padding: 2rem 0;
+  max-width: 1500px;
 }
 .package_container{
   background-color:#F0F0F0;
@@ -165,9 +166,10 @@
 }
 
 /*  */
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1500px) {
   .package-grid{
-    max-width: 1300px;
+    max-width: 1500px;
+    padding:  0 3rem;
   }
   .package_container > h1{
     font-size: 35px;
@@ -207,8 +209,17 @@
     justify-content: center;
     padding: 0 1rem;
   }
+  .package_container{
+    padding: 2.5rem 0 ;
+  }
+  .package_container > h1{
+    font-size: 26px;
+    margin-bottom: -0.4rem;
+  }
   .package-card {
     margin: 7px;
     width: 100%;
+    margin: 0.5 1rem;
+    scale: 1 !important
   }
 }

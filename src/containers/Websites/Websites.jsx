@@ -40,7 +40,7 @@ useEffect(() => {
         let marginGenerated;
 
         do {
-          marginGenerated = Math.floor(Math.random() * window.innerWidth);
+          marginGenerated = Math.floor(Math.random() * (window.innerWidth > 1500 ? 1500 : window.innerWidth ));
           attempts++;
         } while (
           margins.some(number => Math.abs(marginGenerated - number) < minDistance) &&

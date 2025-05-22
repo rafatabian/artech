@@ -22,15 +22,15 @@ useEffect(() => {
 
   const marketingProps={
     titles: ["MARKETING", `${t("marketing_title2")}`, `${t("marketing_title3")}`, `${t("marketing_title4")}`],
-    headings: [`${t("marketing_sub1")}`, "Social Media Marketing", `${t("marketing_sub3")}`, `${t("marketing_sub4")}` ],
+    headings: [`${t("marketing_sub1")}`, `${t("marketing_sub2")}`, `${t("marketing_sub3")}`, `${t("marketing_sub4")}` ],
     firstImage: firstMarketingURL,
     secondImage: secondMarktingURL,
     thirdImage: thirdMarketingURL,
     forthImage: forthMakretingURL,
     firstText: `${t("marketing_details1")}`,
-    secondText: `${t("marketing_details2")}`,
-    thirdText: `${t("marketing_details3")}`,
-    forthText: `${t("marketing_details4")}`
+    secondText:[`${t("marketing_details2")}`, `${t("marketing_details2.1")}`], 
+    thirdText: [`${t("marketing_details3")}`, `${t("marketing_details3.1")}`],
+    forthText: [`${t("marketing_details4")}`, `${t("marketing_details4.1")}`],
 }
 
 

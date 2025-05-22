@@ -23,7 +23,7 @@ const HomeBranding = ({props}) => {
    
         <div className="branding_white_text_contianer">
         <h1>{props.headings[0]}</h1>
-        <p>{props.firstText}</p>
+        <p className={location.pathname == "/marketing" ? "branding_marketing_p_color" : "branding_branding_p_color"}>{props.firstText}</p>
         </div>
 
         <div className={`${location.pathname === "/branding" ? "branding_second_parallax" : "branding_third_parallax"}`} style={{backgroundImage: `url(${props.secondImage})`}}>
@@ -33,7 +33,18 @@ const HomeBranding = ({props}) => {
 
         <div className="branding_green_text_contianer">
           <h1>{props.headings[1]}</h1>
-          <p>{props.secondText}</p>
+          <p className={location.pathname == "/marketing" ? "branding_marketing_p_color" : "branding_branding_p_color"}>{location.pathname == "/branding" ? props.secondText : props.secondText[0]}</p>
+          {location.pathname === "/marketing" &&
+          <ul className="branding_ul">
+            {
+            props.secondText[1].split(",").map((item, index) => (
+              <li key={index}>
+                <p>-{item}</p>
+              </li>
+            ))
+          }
+          </ul>
+          }
         </div>
 
         <div className="branding_third_parallax" style={{backgroundImage: `url(${props.thirdImage})`}}>
@@ -43,10 +54,19 @@ const HomeBranding = ({props}) => {
 
         <div className="branding_white_text_contianer">
         <h1>{props.headings[2]}</h1>
-        <p>{props.thirdText}</p>
+        <p className={location.pathname == "/marketing" ? "branding_marketing_p_color" : "branding_branding_p_color"}>{location.pathname == "/branding" ? props.secondText : props.secondText[0]}</p>
+         {location.pathname === "/marketing" &&
+        <ul className="branding_ul">
+        {props.thirdText[1].split(",").map((item, index) => (
+            <li key={index}>
+              <p>-{item}</p>
+            </li>
+        ))} 
+        </ul>
+     }
       </div>
 
-        <div className="branding_forth_parallax" style={{backgroundImage: `url(${props.forthImage})`}}>
+        <div className={`${location.pathname === "/branding" ? "branding_forth_parallax" : "branding_third_parallax"}`} style={{backgroundImage: `url(${props.forthImage})`}}>
         <div className="ceata"></div>
            <h3 className="branding_titles">{props.titles[3]}</h3>
         </div>
@@ -54,7 +74,16 @@ const HomeBranding = ({props}) => {
         <div className="branding_green_text_contianer">
          
         <h1>{props.headings[3]}</h1>
-        <p>{props.forthText}</p>        
+        <p  className={location.pathname == "/marketing" ? "branding_marketing_p_color" : "branding_branding_p_color"}>{location.pathname == "/branding" ? props.secondText : props.secondText[0]}</p>        
+         {location.pathname === "/marketing" &&
+        <ul className="branding_ul">
+        {props.forthText[1].split(",").map((item, index) => (
+            <li key={index}>
+              <p>-{item}</p>
+            </li>
+        ))}
+         </ul>
+        }
         </div>
       
     </div>
