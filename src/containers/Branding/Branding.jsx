@@ -31,6 +31,8 @@ const MovingSection = lazy(() => import("../../components/MovingSection/MovingSe
 const HomeBranding = () => {
     const [t] = useTranslation("global")
 
+    const moving_section_translation = t("moving_section_title_v1")
+
 
     // scroll to top
 useEffect(() => {
@@ -80,7 +82,7 @@ const brandingProps={
     </Helmet> 
     <ReusableComponent props={brandingProps} />
     {packages && <ReusablePlans data={packages.Branding} name="Branding"/>}
-        <MovingSection props={props}/>
+        <MovingSection props={props} translation={moving_section_translation}/>
     </>
  )
 }

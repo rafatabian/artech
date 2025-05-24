@@ -263,5 +263,8 @@
     "offer_template2_price":"£399",
     "offer_template3_price":"£449",
     "offer_template4_price":"£399",
-    "offer_template5_price":"£429"
+    "offer_template5_price":"£429",
+
+    "moving_section_title_v1": ["From code to creativity...", "we use the best to create the best"],
+    "moving_section_title_v2":["Empowered by the latest technologies...", "to bring your vision to life"]
 }

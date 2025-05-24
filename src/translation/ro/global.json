@@ -265,6 +265,9 @@
         "offer_template2_price": "2399lei",
         "offer_template3_price": "2999lei",
         "offer_template4_price": "2399lei",
-        "offer_template5_price": "2570lei"
+        "offer_template5_price": "2570lei",
+
+        "moving_section_title_v1": ["Un brand bun începe cu o fundație solidă...", "și noi construim cu cele mai bune resurse"],
+        "moving_section_title_v2": ["În spatele fiecărei idei bune e o alegere corectă...", "noi alegem tehnologia care o susține"]
         
 }

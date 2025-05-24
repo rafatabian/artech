@@ -2,18 +2,29 @@ import "./Websites.css"
 import { lazy, useEffect, useState} from "react"
 import { Helmet } from "react-helmet-async"
 import { useTranslation } from "react-i18next"
-import { IoLogoJavascript } from "react-icons/io5"
-import { FaReact, FaHtml5, FaCss3, FaNpm, FaNode} from "react-icons/fa"
-import { RiTailwindCssFill } from "react-icons/ri"
-import { SiVite } from "react-icons/si";
 import packages from "../../assets/data/plansData.js"
+//images
+import img1 from "../../assets/images/moving_section_icons/websites/img1.png"
+import img2 from "../../assets/images/moving_section_icons/websites/img2.png"
+import img3 from "../../assets/images/moving_section_icons/websites/img3.png"
+import img4 from "../../assets/images/moving_section_icons/websites/img4.png"
+import img5 from "../../assets/images/moving_section_icons/websites/img5.png"
+import img13 from "../../assets/images/moving_section_icons/websites/img13.png"
+import img7 from "../../assets/images/moving_section_icons/websites/img7.png"
+import img8 from "../../assets/images/moving_section_icons/websites/img8.png"
+import img9 from "../../assets/images/moving_section_icons/websites/img9.png"
+import img10 from "../../assets/images/moving_section_icons/websites/img10.png"
+import img11 from "../../assets/images/moving_section_icons/websites/img11.png"
+import img12 from "../../assets/images/moving_section_icons/websites/img12.png"
+
+
 const ReusablePlans = lazy(() => import("../../components/ReusablePlans/ReusablePlans"))
+const MovingSection = lazy(() => import("../../components/MovingSection/MovingSection.jsx"))
 
 const HomeWebsites = () => {
     const [matrix, setMatrix] = useState([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1])
     const [matrixMargins, setMatrixMargins] = useState([])
     const [t] = useTranslation("global")
-    // const [techScroll] = useState(0)
 
 // scroll to top
 useEffect(() => {
@@ -61,22 +72,27 @@ useEffect(() => {
     randomMargins();
   }, []);
   
-  // TO DO make tech section move
-  //make tech section move
-  // useEffect(() => {
-  //     const movingSection = document.getElementsByClassName("websites_technology_used_scroll")
-  //     if(movingSection){
-  //      if(techScroll === 0){
-  //       const scrollWidth = movingSection[0].scrollWidth
-  //       movingSection[0].scrollTo(scrollWidth, 10000)
-  //      }else if(techScroll === 1) {
-
-  //      }else{
-
-  //      }
+  const moving_section_translation = t("moving_section_title_v2")
+const props = {
+    firstSet: [
+        { image: img1},
+        { image: img2},
+        { image: img3},
+        { image: img4},
+        { image: img5},
+        { image: img13},
         
-  //     }
-  // }, [])
+    ],
+
+    secondSet: [
+        { image: img7},
+        { image: img8},
+        { image: img9},
+        { image: img10},
+        { image: img11},
+        { image: img12}
+    ]
+}
 
   return (
     <>
@@ -119,22 +135,6 @@ useEffect(() => {
           <p>{t("website_details3")}</p>
         </div>
 
-<div className="websites_technology_used_container">
-            <h1>{t("websites_scroll_menu")}</h1>
-            <div className="websites_technology_used_scroll_shadows_and_content">
-                <div className="websites_technology_used_scroll">
-                 <span><IoLogoJavascript /> <p>JavaScript</p></span>
-                 <span><FaReact /> <p>React.js</p></span>
-                 <span><FaHtml5 /> <p>Html5</p></span>
-                 <span><FaCss3/> <p>Css3</p></span>
-                 <span><FaNpm /> <p>Npm</p></span>
-                 <span><RiTailwindCssFill /> <p>Tailwind</p></span>
-                 <span><SiVite /> <p>Vite</p></span>
-                 <span><FaNode /> <p>Node.js</p></span>
-                </div>
-            </div>
-         </div>
-
         <div className="websites_forth_parallax website_computer_parallax" style={{backgroundImage: `url(${require("../../assets/images/websites/websites_servers.webp")})`}}>
         <div className="website_ceata"></div>
            <h3 className="websites_titles">{t("website_title4")}</h3>
@@ -147,7 +147,8 @@ useEffect(() => {
       </div>
 
       {packages && <ReusablePlans data={packages.Websites} name="Websites"/>}
-
+      
+      <MovingSection props={props} translation={moving_section_translation}/>
       </div>
       </>
   )

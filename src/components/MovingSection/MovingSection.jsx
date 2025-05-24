@@ -1,11 +1,15 @@
+import { useLocation } from "react-router-dom";
 import "./MovingSection.css"
 import { useEffect, useRef } from "react";
 
-const MovingSection = ({props}) => {
+const MovingSection = ({props, translation}) => {
   const scrollRef = useRef(null);
   const directionRef = useRef(1);
   //seconde moving section
   const secondScrollRef = useRef(null);
+  const location = useLocation();
+
+
 
  useEffect(() => {
   const el = scrollRef.current;
@@ -42,14 +46,18 @@ const MovingSection = ({props}) => {
 
 
   return (
+    <div className={location.pathname === "/websites" ? "moving_section_main_container_dark" : "moving_section_main_container"}>
     <div className="moving_section_container"> 
-        <h1>Tech we use:</h1>
+        <span>
+          <h2>" {translation[0]}</h2>
+          <h2>{translation[1]} "</h2>
+        </span>
         <div className="moving_section"  ref={scrollRef}>
             {props.firstSet.map((item, index) => (
                 <div key={index} className="moving_section_item">
                     <img src={item.image} alt={item.title} />
-                </div> 
-            ))} 
+                </div>
+            ))}
         </div>
         <div className="second_moving_section"  ref={secondScrollRef}>
             {props.secondSet.map((item, index) => (
@@ -58,6 +66,7 @@ const MovingSection = ({props}) => {
                 </div> 
             ))} 
         </div>
+    </div>
     </div>
   )
 }
