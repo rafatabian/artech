@@ -119,7 +119,7 @@ const sendEmail = (e) => {
             <label htmlFor="email">{t("contact_email")}:</label>
             <input id="email" type="email" placeholder={t("contact_email")} required onChange={(e) => setEmailData({...emailData, email: e.target.value})} value={emailData.email}/>
           </div>
-          <label for="privacy" className="contact_privacy_label">
+          <label htmlFor="privacy" className="contact_privacy_label">
             <input type="checkbox" id="privacy" required defaultChecked={false} />
             <span>{t("contact_termeni1")} <Link to="/terms">{t("contact_termeni2")}</Link> {t("contact_termeni3")} <Link to="/privacy">{t("contact_termeni4")}</Link></span>
           </label>

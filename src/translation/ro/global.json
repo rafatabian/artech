@@ -99,12 +99,13 @@
     "marketing_sub3": "Fără presupuneri, doar date",
     "marketing_sub4": "Planificare inteligentă, execuție clară",
     "marketing_details1": "Oferim servicii de marketing gândite strategic și adaptate nevoilor tale, cu rezultate reale, nu doar vizibilitate. Cum aducem marketingul în afacerea ta? Începem prin a înțelege brandul tău, publicul țintă și obiectivele de business. Îți integrăm marketingul în mod natural în toate procesele, pentru creștere susținută și direcție clară.",
-    "marketing_details2": "Construim și gestionăm campanii digitale eficiente, pe platformele potrivite pentru afacerea ta. Serviciile noastre includ:",
+    "marketing_details2": "Construim și gestionăm campanii digitale eficiente, pe platformele potrivite pentru afacerea ta",
     "marketing_details2.1": ["Social Media Management", "Creare de conținut vizual și textual", "Campanii de advertising", "Email marketing și automatizări", "Optimizare SEO", "Audit și consultanță digitală"],
     "marketing_details3": "Monitorizăm constant campaniile și comportamentul utilizatorilor pentru a-ți oferi rapoarte clare și acțiuni bazate pe date reale. Ce oferim:",
     "marketing_details3.1": ["Dashboard-uri personalizate", "Rapoarte lunare de performanță", "Recomandări pentru optimizare"],
-    "marketing_details4": "Fie că lansezi, scalezi sau reinventezi brandul, îți livrăm planuri strategice adaptate obiectivelor tale. Serviciile includ:",
+    "marketing_details4": "Fie că lansezi, scalezi sau reinventezi brandul, îți livrăm planuri strategice adaptate obiectivelor tale",
     "marketing_details4.1": ["Dezvoltarea unei strategii de marketing", "Planificarea campaniilor (promoții, lansări, branding)", "Tactici personalizate pentru fiecare canal", "Ghiduri și consultanță pentru implementare"],
+    "marketing_details_services": "Servicii",
 
     "pachete_page_starter_sub":"Pentru cei care doresc sa isi contureze identitatea de brand, acest pachet ofera fundatia perfecta",
     "pachete_page_standard_sub":"Ideal pentru afaceri in expansiune, acest pachet combina creativitatea cu strategia pentru a-ti transforma prezenta online",
@@ -268,6 +269,9 @@
         "offer_template5_price": "2570lei",
 
         "moving_section_title_v1": ["Un brand bun începe cu o fundație solidă...", "și noi construim cu cele mai bune resurse"],
-        "moving_section_title_v2": ["În spatele fiecărei idei bune e o alegere corectă...", "noi alegem tehnologia care o susține"]
+        "moving_section_title_v2": ["În spatele fiecărei idei bune e o alegere corectă...", "noi alegem tehnologia care o susține"],
+
+        "marketing_graph_title": "Campanii inteligente, mai mulți clienți — facem marketingul să lucreze pentru tine",
+        "marketing_graph_scale_plan": ["cu planul", ""]
         
 }

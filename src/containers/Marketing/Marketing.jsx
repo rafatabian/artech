@@ -7,8 +7,10 @@ import secondMarktingURL from "../../assets/images/marketing/marketing_marketing
 import thirdMarketingURL from "../../assets/images/marketing/marketing_digital.webp"
 import forthMakretingURL from "../../assets/images/marketing/marketing_strategy.webp"
 import { useTranslation } from "react-i18next"
+
 const ReusableComponent = lazy(() => import("../../components/ReusableComponent/ReusableComponent"))
 const ReusablePlans = lazy(() => import("../../components/ReusablePlans/ReusablePlans"))
+const MarketingGraph = lazy(() => import("../../components/MarketingGraph/MarketingGraph.jsx")) 
 
 
 
@@ -44,6 +46,9 @@ useEffect(() => {
     </Helmet>
 
        <ReusableComponent props={marketingProps}/>
+       
+       <MarketingGraph/>
+
       { packages && <ReusablePlans data={packages.Marketing} name="Marketing"/>}
     </>
    

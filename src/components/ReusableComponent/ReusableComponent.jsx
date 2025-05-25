@@ -35,7 +35,9 @@ const HomeBranding = ({props}) => {
           <h1>{props.headings[1]}</h1>
           <p className={location.pathname == "/marketing" ? "branding_marketing_p_color" : "branding_branding_p_color"}>{location.pathname == "/branding" ? props.secondText : props.secondText[0]}</p>
           {location.pathname === "/marketing" &&
-          <ul className="branding_ul">
+          <div className="branding_services">
+            <h3>{t("marketing_details_services")}</h3>
+            <ul>
             {
             props.secondText[1].split(",").map((item, index) => (
               <li key={index}>
@@ -44,6 +46,7 @@ const HomeBranding = ({props}) => {
             ))
           }
           </ul>
+          </div>
           }
         </div>
 
@@ -56,13 +59,16 @@ const HomeBranding = ({props}) => {
         <h1>{props.headings[2]}</h1>
         <p className={location.pathname == "/marketing" ? "branding_marketing_p_color" : "branding_branding_p_color"}>{location.pathname == "/branding" ? props.secondText : props.secondText[0]}</p>
          {location.pathname === "/marketing" &&
-        <ul className="branding_ul">
+          <div className="branding_services">
+            <h3>{t("marketing_details_services")}</h3>
+            <ul>
         {props.thirdText[1].split(",").map((item, index) => (
             <li key={index}>
               <p>-{item}</p>
             </li>
         ))} 
         </ul>
+       </div> 
      }
       </div>
 
@@ -76,13 +82,16 @@ const HomeBranding = ({props}) => {
         <h1>{props.headings[3]}</h1>
         <p  className={location.pathname == "/marketing" ? "branding_marketing_p_color" : "branding_branding_p_color"}>{location.pathname == "/branding" ? props.secondText : props.secondText[0]}</p>        
          {location.pathname === "/marketing" &&
-        <ul className="branding_ul">
+        <div className="branding_services">
+          <h3>{t("marketing_details_services")}</h3>
+          <ul>
         {props.forthText[1].split(",").map((item, index) => (
             <li key={index}>
               <p>-{item}</p>
             </li>
         ))}
-         </ul>
+        </ul>
+         </div>
         }
         </div>
       

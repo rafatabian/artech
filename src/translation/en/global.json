@@ -100,12 +100,13 @@
   "marketing_sub3": "No Guesswork Just Real Data",
   "marketing_sub4": "Smart Planning, Clear Execution",
   "marketing_details1": "We offer strategically designed marketing services tailored to your business goals – focused on real results, not just visibility. How do we bring marketing into your business? It starts with understanding your brand, your target audience, and your objectives. Then, we seamlessly integrate marketing into your operations to ensure sustainable growth and clear direction.",
-  "marketing_details2": "We create and manage high-performing digital campaigns across the platforms that make the most sense for your business. Our services include:",
+  "marketing_details2": "We create and manage high-performing digital campaigns across the platforms that make the most sense for your business",
   "marketing_details2.1": ["Social Media Management","Visual & Copy Content Creation","Advertising Campaigns","Email Marketing & Automation","SEO Optimization","Digital Audits & Consulting"],
   "marketing_details3": "We continuously monitor your campaigns and user behavior to provide clear, data-driven reports and actionable insights. Here’s what we deliver:",
   "marketing_details3.1": ["Custom Dashboards","Monthly Performance Reports","Optimization Recommendations"],
-  "marketing_details4": "Whether you're launching, scaling, or rebranding, we provide strategic marketing plans aligned with your business goals. Our services include:",
+  "marketing_details4": "Whether you're launching, scaling, or rebranding, we provide strategic marketing plans aligned with your business goals",
   "marketing_details4.1": ["Marketing Strategy Development","Campaign Planning (Promotions, Launches, Branding)","Channel-Specific Tactics","Step-by-Step Guidance & Implementation Support"],  
+  "marketing_details_services": "Services",
     
     "pachete_page_starter_sub":"For those looking to establish their brand identity, this package provides the perfect foundation",
     "pachete_page_standard_sub":"Ideal for growing businesses, this package blends creativity with strategy to elevate your online presence.",
@@ -266,5 +267,8 @@
     "offer_template5_price":"£429",
 
     "moving_section_title_v1": ["From code to creativity...", "we use the best to create the best"],
-    "moving_section_title_v2":["Empowered by the latest technologies...", "to bring your vision to life"]
+    "moving_section_title_v2":["Empowered by the latest technologies...", "to bring your vision to life"],
+
+    "marketing_graph_title": "Smart campaigns, more customers — we make marketing work for you",
+    "marketing_graph_scale_plan": ["with", "plan"]
 }

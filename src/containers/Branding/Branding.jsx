@@ -82,7 +82,8 @@ const brandingProps={
     </Helmet> 
     <ReusableComponent props={brandingProps} />
     {packages && <ReusablePlans data={packages.Branding} name="Branding"/>}
-        <MovingSection props={props} translation={moving_section_translation}/>
+    <MovingSection props={props} translation={moving_section_translation}/>
+
     </>
  )
 }
