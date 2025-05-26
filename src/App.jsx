@@ -12,7 +12,7 @@ const Marketing = lazy(() => import("./containers/Marketing/Marketing"))
 const Help = lazy(() => import("./containers/Help/Help"))
 const Contact = lazy(() => import("./components/Contact/Contact"))
 const Footer = lazy(() => import("./components/Footer/Footer"))
-const Pachete = lazy(() => import("./components/Pachete/Pachete"))
+const Plans = lazy(() => import("./components/Plans/Plans"))
 const Privacy = lazy(() => import("./agreements/privacy/Privacy"))
 const Terms = lazy(() => import("./agreements/terms/Terms"))
 const OfferBanner = lazy(() => import("./containers/OfferBanner/OfferBanner"))
@@ -36,7 +36,7 @@ const App = () => {
         <Route path="/branding" element={<Branding/>} />
         <Route path="/websites" element={<Websites />} />
         <Route path="/marketing" element={<Marketing />} />
-        <Route path="/plans" element={<Pachete />} />
+        <Route path="/plans" element={<Plans />} />
         <Route path="/offer" element={<Offer />} />
         <Route path="/help" element={<Help />} />
         <Route path="/contact" element={<Contact />} />
