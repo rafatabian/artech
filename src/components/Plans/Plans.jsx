@@ -3,42 +3,16 @@ import { useEffect, useRef } from "react"
 import { Link} from "react-router-dom"
 import { Helmet } from "react-helmet-async"
 import { useTranslation } from "react-i18next"
-import { motion } from "framer-motion"
 //imgs
-import starter_img from "../../assets/images/plans_imgs/plans_starter.webp" 
-import standard_img from "../../assets/images/plans_imgs/plans_standard.webp"
-import pro_img from "../../assets/images/plans_imgs/plans_pro.webp"
+import leafs from "../../assets/images/plans_imgs/leaf.jpg"
+import coffee_park from "../../assets/images/plans_imgs/coffee_park.jpg"
 
 
 const PlanCard = ({ title, details, delivery, price, upfront }) => (
-  <motion.div
-    initial="hidden"
-    whileInView="show"
-    variants={{
-      hidden: {},
-      show: { transition: { staggerChildren: 0.2 } },
-    }}
-    viewport={{ once: true, amount: 0.4 }}
-  >
-    <motion.div
-      variants={{
-        hidden: { opacity: 0, y: 30 },
-        show: { opacity: 1, y: 0 },
-      }}
-      transition={{ duration: 0.5, ease: "easeOut", delay: 0.1}}
-    >
       <div className="plans_pannel_option">
-        <div className="plans_pannele_title_container"  style={{backgroundImage: `url(${title === "STARTER" ? starter_img : title === "STANDARD" ? standard_img : pro_img})`}}>
+        <div className="plans_pannele_title_container">
           <h1>{title}</h1>
-        </div>
-        <div>
-          <h3 className="plans_pannel_includes">Includes:</h3>
-          <ul>
-            {details.map((item, i) => (
-              <li key={i}>-{item}</li>
-            ))}
-          </ul>
-          <div className="plans_pannel_option_details">
+             <div className="plans_pannel_option_details">
             <p>{delivery}</p>
             <p>{price}</p>
             {upfront && <p>{upfront}</p>}
@@ -47,9 +21,14 @@ const PlanCard = ({ title, details, delivery, price, upfront }) => (
             <Link to="/contact" >Get Started</Link>
           </div>
         </div>
+        <div>
+          <ul>
+            {details.map((item, i) => (
+              <li key={i}>-{item}</li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </motion.div>
-  </motion.div>
 );
 
 const Pachete = () => {
@@ -68,43 +47,41 @@ const Pachete = () => {
   }, []);
 
   const starterDetails = [
-    "30 minutes consultation",
-    "Custom Design and one Page Website optimised for fast performance",
-    "Custom Domain name and server hosting for one year",
-    "Custom Logo based on your needs",
-    "We can change your website one time after completion",
-    "Social media accounts setup (Google Business, Facebook, Instagram, Maps)",
+     "30 minute consultation",
+     "Custom design and one-page website optimized for fast performance",
+     "Custom domain name and hosting for one year",
+     "Tailored logo design based on your preferences",
+     "One-time website revision after completion",
+     "Social media account setup (Google Business, Facebook, Instagram, Maps)",
   ];
 
   const standardDetails = [
-    "1 hour consultation",
-    "3 pages custom website with form integration, SEO and performance optimised",
-    "Custom Domain name and server hosting for 5 years",
-    "2 Custom Logos based on your needs",
+    "1-hour consultation",
+    "3-page custom website with form integration, SEO, and performance optimization",
+    "Custom domain name and hosting for 5 years",
+    "Two custom logo concepts based on your preferences",
     "Business card design",
-    "Up to 2 revisions after completion",
-    "Social media accounts setup (Google Business, Facebook, Instagram, Maps)",
-    "Advertisement posts creation",
-    "166k views",
-    "2 weeks marketing ads",
+    "Up to two revisions after completion",
+    "Social media account setup (Google Business, Facebook, Instagram, Maps)",
+    "Ad post creation for social media",
+    "2 weeks of paid marketing ads",
   ];
 
   const proDetails = [
     "Up to 3 hours of consultation",
-    "High functionality website (login panels, bookings, contact forms) integrated",
-    "SEO and performance optimised",
-    "Lifetime domain name and server hosting",
-    "3 Custom Logos based on your needs (choose your favorite :) )",
-    "Business card design",
-    "Banners, Posters Design",
-    "Social media accounts setup (Google Business, Facebook, Instagram, Maps)",
-    "Advertisement posts creation (photo/video)",
-    "One month of marketing ads",
-    "FREE 3 months maintenance",
-    "Competition research",
-    "Traffic reports on website",
-    "250k views",
-    "Email marketing",
+  "Advanced website with features like login panels, bookings, and contact forms",
+  "SEO and performance optimized",
+  "Lifetime domain name and hosting",
+  "Three custom logo concepts — choose your favorite!",
+  "Business card design",
+  "Banner and poster design",
+  "Social media account setup (Google Business, Facebook, Instagram, Maps)",
+  "Ad post creation (photo/video)",
+  "1 month of paid marketing ads",
+  "FREE maintenance for 3 months",
+  "Competitor research",
+  "Website traffic reports",
+  "Email marketing campaign setup",
   ];
 
   return (
@@ -118,21 +95,18 @@ const Pachete = () => {
         <link rel="canonical" href="https://artech-agency.co/#/plans" />
       </Helmet>
 
-      <div className="plans_container" ref={plansRef}>
-        <div className="plans_conteiner_intro_section">
-          <h1>Branding + Websites + Marketing all together</h1>
+      <div className="plans_container" ref={plansRef} style={{backgroundImage:`url(${leafs})`}}>
+        <div className="plans_conteiner_intro_section" style={{backgroundImage:`url(${coffee_park})`}}>
+          <div className="plans_text_shadow">
+        <h1>Branding + Websites + Marketing all together</h1>
         <h2>
-          All our plans include an initial consultation where we understand your
-          business target so we can make the best website design, functionality
-          and promote it to the right audience for maximum profit for every pound
-          invested in our services. We do weekly updates to let you know how is
-          your project going and we provide full support after the completion of
-          the project so you don't have to worry about anything. For the PRO plan
-          we provide FREE maintenance for 3 months, meaning if you want to update
-          your website, add new pictures or make changes, we will do it for you
-          at no extra cost. We focus on the quality of each project rather than
-          the quantity.
+           All our plans include an initial consultation to understand your business goals, so we can create the best website design and functionality tailored to your audience. Our goal is to help you get the most value and profit for every pound you invest in our services.
+           We provide weekly updates to keep you informed on your project’s progress, and full support after completion — so you never have to worry about what’s next.
+           The PRO plan includes FREE 3-month maintenance, meaning we’ll update your website, change pictures, or make edits at no extra cost during that time.
         </h2>
+        <h2>We care deeply about the quality of every project we take on — because your success is our priority.</h2>
+          </div>
+          
         </div>
         
 
@@ -140,14 +114,14 @@ const Pachete = () => {
           title="STARTER"
           details={starterDetails}
           delivery="Fast delivery: 3-7 days"
-          price="Starting from: £499 (ideal is £150 per day for each person working on the project)"
+          price="Starting from: £499"
         />
 
         <PlanCard
           title="STANDARD"
           details={standardDetails}
           delivery="Delivery: 1-2 weeks"
-          price="Price: from £1999 (- £500 for ads and programs = £1500 profit)"
+          price="Price: from £1999"
           upfront="50% upfront payment"
         />
 
@@ -155,13 +129,15 @@ const Pachete = () => {
           title="PRO"
           details={proDetails}
           delivery="Delivery time: 2-3 weeks"
-          price="Price: £3500 (- £500 in ads and other programs)"
+          price="Price: £3500"
           upfront="30% upfront payment"
         />
 
         <p className="plans_final_text">
-          Or make your own plan and we will make a separate price, but be careful
-          of needy people who will want many things for a small price.
+          Prefer something different? Tell us what you need, and we’ll tailor a plan and price just for you
+          <div className="plans_last_btn_conteiner">
+            <Link to="/contact" >Start</Link>
+          </div>
         </p>
       </div>
     </>
