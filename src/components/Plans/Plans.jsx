@@ -109,7 +109,7 @@ const Pachete = () => {
           
         </div>
         
-
+      <div className="plans_card_container">
         <PlanCard
           title="STARTER"
           details={starterDetails}
@@ -132,13 +132,14 @@ const Pachete = () => {
           price="Price: £3500"
           upfront="30% upfront payment"
         />
-
+        </div>
         <p className="plans_final_text">
           Prefer something different? Tell us what you need, and we’ll tailor a plan and price just for you
           <div className="plans_last_btn_conteiner">
             <Link to="/contact" >Start</Link>
           </div>
         </p>
+      
       </div>
     </>
   );
