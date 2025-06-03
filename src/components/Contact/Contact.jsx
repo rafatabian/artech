@@ -1,7 +1,7 @@
 import "./Contact.css"
 import { useRef, useState, useEffect } from "react"
 import emailjs from "@emailjs/browser"
-import { FaPhone } from "react-icons/fa6"
+import { RiWhatsappFill } from "react-icons/ri"
 import { MdEmail } from "react-icons/md"
 import logo from "../../assets/images/navbar_white_logo.webp"
 import { AiFillLike } from "react-icons/ai" 
@@ -133,7 +133,7 @@ const sendEmail = (e) => {
      <div className="contact_alternative_line"><p>{t("contact_or")}</p></div>
      <div className="contact_phone_email">
           <div>
-            <FaPhone/>
+            <RiWhatsappFill/>
             <span><a href={`tel:${"+40 750 616 923"}`}>+40 750 616 923 ~RO</a><a href={`tel:${"+44 7424 177 665"}`}>+44 7424 177 665 ~UK</a></span>
           </div>
           <div>

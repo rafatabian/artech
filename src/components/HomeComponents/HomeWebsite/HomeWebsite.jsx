@@ -35,7 +35,7 @@ const NewHomeWebsite = () => {
           </div>
         </div>
         <div className="website-button-container">
-          <Link to="/websites" className="website-button">{t("home_discover_btn")}</Link>
+          <Link to="/websites" className="website-button">Websites</Link>
           <Link to="/contact" className="website-button">{t("home_get_in_touch")}</Link>
         </div>
       </div>

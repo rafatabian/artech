@@ -22,7 +22,7 @@ const HomeLogos = () => {
           </div>
 
           <div className="logos_buttons_container">
-            <Link to="/branding" className="logos_button">{t("home_discover_btn")}</Link>
+            <Link to="/branding" className="logos_button">Branding</Link>
             <Link to="/contact" className="logos_button">{t("home_get_in_touch")}</Link>
         </div>
       </div>
