@@ -76,10 +76,10 @@ const sendEmail = (e) => {
         },
       );
       setConfirmation(true)
-      setTimeout(() => {
-        setConfirmation(false)
-        navigate("/")
-      }, 3000)
+      // setTimeout(() => {
+      //   setConfirmation(false)
+      //   navigate("/")
+      // }, 3000)
 }
 
   //funcnition  for recaptcha
@@ -166,11 +166,11 @@ const sendEmail = (e) => {
      {/* form confirmation pop up */}
     {confirmation && <div className="contact_confirmation">
       <img src={logo} alt="logo"/>
-      <h1>Multumim pentru timpul acordat!</h1>
+       <h1>Thank you for your time!</h1>
+       <h2>We will be back asap</h2>
       <div>
         <AiFillLike />
       </div>
-      <h2>Vom reveni in cel mai scurt timp posibil</h2>
      </div>}
     </div>
     </>

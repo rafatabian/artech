@@ -103,7 +103,7 @@ const props = {
     </Helmet>
     <div className="homeWebsites_container">
       <div  className="websites_matrix_container">
-      <h3 className="websites_titles">WEBSITES</h3>
+      <h3 className="websites_titles">" Most websites look good... Ours help your business grow "</h3>
          {matrixMargins.map((margins, index) => <span style={{marginLeft:`${margins}px`, animationDelay: `${index * 0.2}s`}} key={margins}>{matrix.map((number, index) => <p key={index}>{number}</p>)}</span>
           )} 
       </div>
