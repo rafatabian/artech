@@ -1,6 +1,6 @@
 import "./Plans.css"
 import { useEffect, useRef } from "react"
-import { Link} from "react-router-dom"
+import { Link, useNavigate} from "react-router-dom"
 import { Helmet } from "react-helmet-async"
 import { useTranslation } from "react-i18next"
 //imgs
@@ -8,7 +8,7 @@ import leafs from "../../assets/images/plans_imgs/leaf.jpg"
 import coffee_park from "../../assets/images/plans_imgs/coffee_park.jpg"
 
 
-const PlanCard = ({ title, details, delivery, price, upfront }) => (
+const PlanCard = ({ title, details, delivery, price, upfront, funct }) => (
       <div className="plans_pannel_option">
         <div className="plans_pannele_title_container">
           <h1>{title}</h1>
@@ -18,7 +18,10 @@ const PlanCard = ({ title, details, delivery, price, upfront }) => (
             {upfront && <p>{upfront}</p>}
           </div>
           <div className="plans_pannel_btn_conteiner">
-            <Link to="/contact" >Get Started</Link>
+            <Link to="#" onClick={(e) => {
+          e.preventDefault(); // prevent default link navigation
+          funct(title.toLowerCase());
+        }}>Get Started</Link>
           </div>
         </div>
         <div>
@@ -32,8 +35,14 @@ const PlanCard = ({ title, details, delivery, price, upfront }) => (
 );
 
 const Pachete = () => {
+  const navigate = useNavigate()
   const plansRef = useRef();
   const [t] = useTranslation("global");
+
+  //send data to contact with the plans selected
+const handleSubmit = (planName) => {
+    navigate(`/contact#/${planName}`);
+}
 
   useEffect(() => {
     const hash = window.location.hash;
@@ -115,6 +124,7 @@ const Pachete = () => {
           details={starterDetails}
           delivery="Fast delivery: 3-7 days"
           price="Starting from: £499"
+          funct={handleSubmit}
         />
 
         <PlanCard
@@ -123,6 +133,7 @@ const Pachete = () => {
           delivery="Delivery: 1-2 weeks"
           price="Price: from £1999"
           upfront="50% upfront payment"
+          funct={handleSubmit}
         />
 
         <PlanCard
@@ -131,6 +142,7 @@ const Pachete = () => {
           delivery="Delivery time: 2-3 weeks"
           price="Price: £3500"
           upfront="30% upfront payment"
+          funct={handleSubmit}          
         />
         </div>
         <p className="plans_final_text">

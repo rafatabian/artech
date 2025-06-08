@@ -9,12 +9,14 @@ import { useNavigate} from "react-router-dom"
 import { Helmet } from "react-helmet-async"
 import { useTranslation } from "react-i18next"
 import { Link } from "react-router-dom"
+import ReCAPTCHA from "react-google-recaptcha"
 
 
 
 const Contact = () => {
   const formRef = useRef()
   const [confirmation, setConfirmation] = useState(false)
+  const [captchaValue, setCaptchaValue] = useState(null);
   const [emailData, setEmailData] = useState({
     tip_solicitare: "",
     planul:"",
@@ -24,23 +26,22 @@ const Contact = () => {
     email:""
   })
   const [t] = useTranslation("global")
-
 // scroll to top
 useEffect(() => {
   window.scrollTo(0, 0)
 }, [])
 
   const navigate = useNavigate()
-  // TO DO make sure the paan choosed by the user in pachete page is sended by email
 // getting the plan from the url
 useEffect(() => {
-  const hash = window.location.hash
-  const hashParts = hash.split('/')
-  const plan = hashParts[hashParts.length - 1]
-  if(plan !== "contact"){
-    setEmailData({
-      ...emailData, planul: plan
-  })
+  const hash = window.location.hash;
+  const hashParts = hash.split('/');
+  const plan = hashParts[hashParts.length - 1];
+  if (plan !== "contact") {
+    setEmailData((prevData) => ({
+      ...prevData,
+      planul: plan,
+    }));
   }
 }, []);
 
@@ -56,9 +57,15 @@ const handleSelectChange = (e) => {
 // function for sending emails
 const sendEmail = (e) => {
   e.preventDefault()
+
+  if(!captchaValue){
+    alert("please confirm you're not a bot.")
+    return
+  }
+
   emailjs
-      .send('service_vztopwc', 'template_lylcs4q', emailData, {
-        publicKey: '3EZTg7KvgmPiXOfnr',
+      .send('service_bxwwj7b', 'template_85xbllk', emailData, {
+        publicKey: 'zRB_M2l24GAb2ixBd',
       })
       .then(
         () => {
@@ -75,6 +82,10 @@ const sendEmail = (e) => {
       }, 3000)
 }
 
+  //funcnition  for recaptcha
+  function onChange(value) {
+  setCaptchaValue(value)
+}
 
   return (
     <>
@@ -119,6 +130,15 @@ const sendEmail = (e) => {
             <label htmlFor="email">{t("contact_email")}:</label>
             <input id="email" type="email" placeholder={t("contact_email")} required onChange={(e) => setEmailData({...emailData, email: e.target.value})} value={emailData.email}/>
           </div>
+
+          <span className="reCaptcha">
+           <ReCAPTCHA
+            sitekey="6Lerc1krAAAAAFFsnPwl5woNWd0N2DNg29mepHKF"
+            onChange={onChange}
+            />
+        </span>
+           
+            
           <label htmlFor="privacy" className="contact_privacy_label">
             <input type="checkbox" id="privacy" required defaultChecked={false} />
             <span>{t("contact_termeni1")} <Link to="/terms">{t("contact_termeni2")}</Link> {t("contact_termeni3")} <Link to="/privacy">{t("contact_termeni4")}</Link></span>
@@ -140,6 +160,7 @@ const sendEmail = (e) => {
             <MdEmail /> 
             <a href={`mailto:${"business@artech-agency.co"}`}>business@artech-agency.co</a>
         </div>
+     
      </div>
 
      {/* form confirmation pop up */}
