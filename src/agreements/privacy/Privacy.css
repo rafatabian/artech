@@ -1,11 +1,9 @@
 .privacy_container{
-    /* margin-top: 60px; */
     padding: 130px 1rem 2rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* padding: 2rem 15px; */
 }
 .privacy_container > h1,
 .privacy_container > h2,

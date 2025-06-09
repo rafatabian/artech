@@ -70,10 +70,7 @@
   margin-bottom: 3.3rem;
   position: relative;
   margin-top: 12px;
-  /* for safari border issue*/
-  border: none;
-  display: block;
-  background-color: white;
+
 }
 .home_video::after {
   content: "";
