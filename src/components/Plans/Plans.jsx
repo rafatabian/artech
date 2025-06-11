@@ -2,7 +2,6 @@ import "./Plans.css"
 import { useEffect, useRef } from "react"
 import { Link, useNavigate} from "react-router-dom"
 import { Helmet } from "react-helmet-async"
-import { useTranslation } from "react-i18next"
 //imgs
 import leafs from "../../assets/images/plans_imgs/leaf.jpg"
 import coffee_park from "../../assets/images/plans_imgs/coffee_park.jpg"
@@ -37,7 +36,6 @@ const PlanCard = ({ title, details, delivery, price, upfront, funct }) => (
 const Pachete = () => {
   const navigate = useNavigate()
   const plansRef = useRef();
-  const [t] = useTranslation("global");
 
   //send data to contact with the plans selected
 const handleSubmit = (planName) => {

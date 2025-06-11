@@ -23,7 +23,7 @@ const HomeBranding = ({props}) => {
    
         <div className="branding_white_text_contianer">
         <h1>{props.headings[0]}</h1>
-        <p className={location.pathname == "/marketing" ? "branding_marketing_p_color" : "branding_branding_p_color"}>{props.firstText}</p>
+        <p className={location.pathname === "/marketing" ? "branding_marketing_p_color" : "branding_branding_p_color"}>{props.firstText}</p>
         </div>
 
         <div className={`${location.pathname === "/branding" ? "branding_second_parallax" : "branding_third_parallax"}`} style={{backgroundImage: `url(${props.secondImage})`}}>
@@ -33,7 +33,7 @@ const HomeBranding = ({props}) => {
 
         <div className="branding_green_text_contianer">
           <h1>{props.headings[1]}</h1>
-          <p className={location.pathname == "/marketing" ? "branding_marketing_p_color" : "branding_branding_p_color"}>{location.pathname == "/branding" ? props.secondText : props.secondText[0]}</p>
+          <p className={location.pathname === "/marketing" ? "branding_marketing_p_color" : "branding_branding_p_color"}>{location.pathname === "/branding" ? props.secondText : props.secondText[0]}</p>
           {location.pathname === "/marketing" &&
           <div className="branding_services">
             <h3>{t("marketing_details_services")}</h3>
@@ -57,7 +57,7 @@ const HomeBranding = ({props}) => {
 
         <div className="branding_white_text_contianer">
         <h1>{props.headings[2]}</h1>
-        <p className={location.pathname == "/marketing" ? "branding_marketing_p_color" : "branding_branding_p_color"}>{location.pathname == "/branding" ? props.secondText : props.secondText[0]}</p>
+        <p className={location.pathname === "/marketing" ? "branding_marketing_p_color" : "branding_branding_p_color"}>{location.pathname === "/branding" ? props.secondText : props.secondText[0]}</p>
          {location.pathname === "/marketing" &&
           <div className="branding_services">
             <h3>{t("marketing_details_services")}</h3>
@@ -80,7 +80,7 @@ const HomeBranding = ({props}) => {
         <div className="branding_green_text_contianer">
          
         <h1>{props.headings[3]}</h1>
-        <p  className={location.pathname == "/marketing" ? "branding_marketing_p_color" : "branding_branding_p_color"}>{location.pathname == "/branding" ? props.secondText : props.secondText[0]}</p>        
+        <p  className={location.pathname === "/marketing" ? "branding_marketing_p_color" : "branding_branding_p_color"}>{location.pathname === "/branding" ? props.secondText : props.secondText[0]}</p>        
          {location.pathname === "/marketing" &&
         <div className="branding_services">
           <h3>{t("marketing_details_services")}</h3>

@@ -5,7 +5,6 @@ import { RiWhatsappFill } from "react-icons/ri"
 import { MdEmail } from "react-icons/md"
 import logo from "../../assets/images/navbar_white_logo.webp"
 import { AiFillLike } from "react-icons/ai" 
-import { useNavigate} from "react-router-dom"
 import { Helmet } from "react-helmet-async"
 import { useTranslation } from "react-i18next"
 import { Link } from "react-router-dom"
@@ -31,7 +30,6 @@ useEffect(() => {
   window.scrollTo(0, 0)
 }, [])
 
-  const navigate = useNavigate()
 // getting the plan from the url
 useEffect(() => {
   const hash = window.location.hash;

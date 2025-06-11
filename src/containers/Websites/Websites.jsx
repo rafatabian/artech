@@ -41,36 +41,40 @@ useEffect(() => {
 
 // NEW IMPROVED LOGIC FOR MATRIX
 useEffect(() => {
-    const randomMargins = () => {
-      let margins = [];
-      const minDistance = 20;
-      const maxIterations = 100; // To prevent infinite loop in case of very narrow conditions
+  const randomMargins = () => {
+    let margins = [];
+    const minDistance = 20;
+    const maxIterations = 100;
 
-      for (let i = 0; i < 30; i++) {
-        let attempts = 0;
-        let marginGenerated;
+    const isTooClose = (value, list) =>
+      list.some(existing => Math.abs(value - existing) < minDistance);
 
-        do {
-          marginGenerated = Math.floor(Math.random() * (window.innerWidth > 1500 ? 1500 : window.innerWidth ));
-          attempts++;
-        } while (
-          margins.some(number => Math.abs(marginGenerated - number) < minDistance) &&
-          attempts < maxIterations
+    for (let i = 0; i < 30; i++) {
+      let attempts = 0;
+      let marginGenerated;
+
+      do {
+        marginGenerated = Math.floor(
+          Math.random() * (window.innerWidth > 1500 ? 1500 : window.innerWidth)
         );
+        attempts++;
+      } while (isTooClose(marginGenerated, margins) && attempts < maxIterations);
 
-        if (attempts < maxIterations) {
-          margins.push(marginGenerated);
-        } else {
-          console.warn('could not generate a suitable margin within the attempt limit');
-          break;
-        }
+      if (attempts < maxIterations) {
+        margins.push(marginGenerated);
+      } else {
+        console.warn('could not generate a suitable margin within the attempt limit');
+        break;
       }
+    }
 
-      setMatrixMargins(margins);
-    };
+    setMatrixMargins(margins);
+  };
 
-    randomMargins();
-  }, []);
+  randomMargins();
+}, []);
+
+
   
   const moving_section_translation = t("moving_section_title_v2")
 const props = {

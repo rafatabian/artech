@@ -3,7 +3,6 @@ import "./Footer.css"
 import { FaFacebook,FaInstagram, FaTiktok } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
 import { Link, useLocation } from "react-router-dom"
-import { useEffect } from "react"
 
 const Footer = () => {
   const location = useLocation()

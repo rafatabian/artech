@@ -1,5 +1,5 @@
 
-import { lazy, Suspense, useEffect } from "react"
+import { lazy, useEffect } from "react"
 import packages from "../../assets/data/plansData.js"
 import { Helmet } from "react-helmet-async"
 import firstMarketingURL from "../../assets/images/marketing/marketing_first_img.webp"

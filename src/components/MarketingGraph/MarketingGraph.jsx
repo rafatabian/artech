@@ -13,6 +13,7 @@ const MarketingGraph = () => {
       const [t] = useTranslation("global");
     
       useEffect(() => {
+          const element = ref.current;
         const observer = new IntersectionObserver(
           ([entry]) => {
             if (entry.isIntersecting) {
@@ -24,9 +25,9 @@ const MarketingGraph = () => {
     
         if (ref.current) observer.observe(ref.current);
     
-        return () => {
-          if (ref.current) observer.unobserve(ref.current);
-        };
+      return () => {
+      if (element) observer.unobserve(element);
+    };
       }, []);
     
 

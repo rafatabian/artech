@@ -33,7 +33,6 @@ import fifth_proj_three from "../../assets/images/offer_extra_imgs/offer_third_p
 import fifth_proj_four from "../../assets/images/offer_extra_imgs/offer_third_project_four.webp"
 import fifth_proj_five from "../../assets/images/offer_extra_imgs/offer_third_project_five.webp"
 import { useTranslation } from "react-i18next"
-import { t } from "i18next"
 
   
   const Offer = () => {
