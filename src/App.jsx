@@ -1,6 +1,6 @@
 import "./App.css"
 import { Suspense, lazy } from 'react'
-import { HashRouter as Router, Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import logo from "./assets/images/artech_logo.webp"
 import { ContextProvider } from "./context/Context"
 
@@ -28,7 +28,7 @@ const App = () => {
 
      
      <ContextProvider>
-      <Router>
+      <BrowserRouter>
       <Navbar />
      <OfferBanner />
        <Routes>
@@ -45,7 +45,7 @@ const App = () => {
         
        </Routes>
        <Footer/>
-      </Router>
+      </BrowserRouter>
       </ContextProvider>
     </Suspense>
     
