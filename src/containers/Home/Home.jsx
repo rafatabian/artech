@@ -20,8 +20,8 @@ const HomePachete = lazy(() =>
 const HomeBlogs = lazy(() =>
   import("../../components/HomeComponents/HomeBlogs/HomeBlogs.jsx")
 );
-const HomeServices = lazy(() =>
-  import("../../components/HomeComponents/Home_services/Home_services.jsx")
+const HomeIntroMenu = lazy(() =>
+  import("../../components/HomeComponents/Home_intro_menu/Home_intro_menu.jsx")
 );
 const HomeOffer = lazy(() =>
   import("../../components/HomeComponents/Home_offer/Home_offer.jsx")
@@ -75,7 +75,7 @@ const Home = () => {
           </div>
         </div>
         {/* our services */}
-        <HomeServices />
+        <HomeIntroMenu />
 
         {/*  */}
         {/* 100pounds offer */}
