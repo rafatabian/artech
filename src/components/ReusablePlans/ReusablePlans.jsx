@@ -31,7 +31,7 @@ const ReusablePlans = ({data, name}) => {
             ))}
           </ul>
           <p className="delivery">⏱️ {pkg.delivery}</p>
-          <button className="cta-btn">Choose Package</button>
+          <Link to="/contact" className="cta-btn">Choose Package</Link>
         </div>
       ))}
     </div>
