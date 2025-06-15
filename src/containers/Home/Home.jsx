@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { lazy, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
+
+
 const NewHomeWebsite = lazy(() =>
   import("../../components/HomeComponents/HomeWebsite/HomeWebsite.jsx")
 );

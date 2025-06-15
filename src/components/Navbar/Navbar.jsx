@@ -50,7 +50,7 @@ useEffect(() => {
 
       <div className={`navbar_buttons ${showMenu ? "show_menu_icon_clicked" : ""}`}> 
         <div className="navbar_languages">
-           <button onClick={()=> hanldleLanguage("ro")} className={language === "ro" ? "navbar_language_btn_activated" : "navbar_language_btn_nonSelected"}>RO</button>
+           {/* <button onClick={()=> hanldleLanguage("ro")} className={language === "ro" ? "navbar_language_btn_activated" : "navbar_language_btn_nonSelected"}>RO</button> */}
         <button onClick={()=> hanldleLanguage("en")} className={language === "en" ? "navbar_language_btn_activated" : "navbar_language_btn_nonSelected"}>EN</button>
         </div>
         <Link to="/"><button onClick={() => setShowMenu(false)}>HOME</button></Link>
