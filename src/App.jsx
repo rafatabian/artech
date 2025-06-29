@@ -3,6 +3,9 @@ import { Suspense, lazy } from 'react'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import logo from "./assets/images/artech_logo.webp"
 import { ContextProvider } from "./context/Context"
+//vercel trasfic monitoring
+import { Analytics } from '@vercel/analytics/react';
+
 
 const Navbar = lazy(() => import("./components/Navbar/Navbar"))
 const Home = lazy(() => import("./containers/Home/Home"))
@@ -17,6 +20,7 @@ const Privacy = lazy(() => import("./agreements/privacy/Privacy"))
 const Terms = lazy(() => import("./agreements/terms/Terms"))
 const OfferBanner = lazy(() => import("./containers/OfferBanner/OfferBanner"))
 const Offer = lazy(() => import("./containers/Offer/Offer"))
+
 
 const App = () => {
 
@@ -49,6 +53,7 @@ const App = () => {
       </ContextProvider>
     </Suspense>
     
+    <Analytics />
   </div>
   )
 }

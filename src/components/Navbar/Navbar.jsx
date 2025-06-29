@@ -63,6 +63,7 @@ useEffect(() => {
      </div>
      
      {location.pathname !== "/contact" && <Link to="/contact" className="navbar_call_to_action_btn">{t("home_get_a_quote")}{<FaArrowRight />}</Link>}
+
     </div>
   )
 }
