@@ -74,10 +74,6 @@ const sendEmail = (e) => {
         },
       );
       setConfirmation(true)
-      // setTimeout(() => {
-      //   setConfirmation(false)
-      //   navigate("/")
-      // }, 3000)
 }
 
   //funcnition  for recaptcha
