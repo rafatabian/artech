@@ -20,7 +20,7 @@ const HomeBlogs = () => {
         <Link to ="https://rafatabian.github.io/artech-design-blog/" className="blog-card">
           <img src={design_img} alt="Web Design Blog" className="blog-image" />
           <div className="blog-content">
-            <h3 className="blog-card-title">{t("insights_web_subtitle")}</h3>
+            <h2 className="blog-card-title">{t("insights_web_subtitle")}</h2>
             <p className="blog-card-text">{t("insights_web_desc")}</p>
           </div>
         </Link>
@@ -28,7 +28,7 @@ const HomeBlogs = () => {
         <Link to="https://rafatabian.github.io/artech-branding-blog/#text" className="blog-card">
           <img src={cola_img} alt="Branding Blog" className="blog-image" />
           <div className="blog-content">
-            <h3 className="blog-card-title">{t("insights_branding_subtitle")}</h3>
+            <h2 className="blog-card-title">{t("insights_branding_subtitle")}</h2>
             <p className="blog-card-text">{t("insights_branding_desc")}</p>
           </div>
         </Link>
@@ -36,7 +36,7 @@ const HomeBlogs = () => {
         <Link to="https://rafatabian.github.io/artech-logos-blog/" className="blog-card">
           <img src={lambo_img} alt="Logos Blog" className="blog-image" />
           <div className="blog-content">
-            <h3 className="blog-card-title">{t("insights_logos_subtitle")}</h3>
+            <h2 className="blog-card-title">{t("insights_logos_subtitle")}</h2>
             <p className="blog-card-text">{t("insights_logos_desc")}</p>
           </div>
         </Link>
@@ -44,7 +44,7 @@ const HomeBlogs = () => {
         <Link to="https://rafatabian.github.io/artech-AI-blog/" className="blog-card">
           <img src={ai_img} alt="AI in Design Blog" className="blog-image" />
           <div className="blog-content">
-            <h3 className="blog-card-title">{t("insights_ai_subtitle")}</h3>
+            <h2 className="blog-card-title">{t("insights_ai_subtitle")}</h2>
             <p className="blog-card-text">{t("insights_ai_desc")}</p>
           </div>
         </Link>
