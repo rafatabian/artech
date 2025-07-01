@@ -232,21 +232,20 @@
 }
 .navbar_contact{
     background-color: var(--green);
-    border-radius: 10px;
-    margin-left: 5px;
+    /* border-radius: 10px;
     display: flex;
     height: 40px !important;
     align-items: center;
     justify-content: center;
     min-width: 110px;
-    margin-left: 10px;
+    margin-left: 10px; */
 }
 .navbar_contact:hover{
     background-color:var(--greenHover);
 }
 .navbar_contact > button{
     color: white !important;
-    margin: 0 !important;
+    /* margin: 0 !important; */
 }
 @keyframes left_scrolling_mobile_menu {
     0%{
