@@ -235,9 +235,11 @@
     border-radius: 10px;
     margin-left: 5px;
     display: flex;
+    height: 40px !important;
     align-items: center;
     justify-content: center;
     min-width: 110px;
+    margin-left: 10px;
 }
 .navbar_contact:hover{
     background-color:var(--greenHover);
