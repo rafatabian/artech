@@ -13,7 +13,7 @@ const Home_offer = () => {
         <p className="pricing-text">{t("home_pricing_description")}</p>
         <p className="pricing-highlight">{t("home_pricing_guarantee")}</p>
 
-        <a href="#contact" className="pricing-button">{t("home_get_a_quote")}</a>
+        <a href="/contact" className="pricing-button">{t("home_get_a_quote")}</a>
       </div>
     </div>
   )

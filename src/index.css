@@ -5,11 +5,8 @@
 }
 
 :root{
-    /* --blue: #0082e6 */
-    /* --blue: #438543 culoare veche in branding si marjketing*/
     --green:#085c2b;
-    /* --greenHover:#0d6e35; alternative of green when hovering buttons*/ 
-    --greenHover: #094b25
+    --greenHover: #094b25;
 
     --font-fam: system-ui, sans-serif;
 }
