@@ -19,7 +19,7 @@
     user-select: none;
 }
 .question_container > div > div:first-child > p{
-    font-family: "Roboto";
+    font-family: var(--font-fam);
     font-size: 16px;
     font-weight: 500;
     color: #333333;
@@ -36,7 +36,7 @@
     margin-top:15px;
 }
 .help_answer > p{
-   font-family: "Roboto";
+   font-family: var(--font-fam);
    letter-spacing: 0.3px;
    color: #333333;
    font-size: 16px;

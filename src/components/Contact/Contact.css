@@ -12,7 +12,7 @@
 }
 .container_title,
 .contact_confirmation > h1{
-   font-family: "Roboto";
+   font-family: var(--font-fam);
    font-size: 30px;
    color: #222222;
    font-weight: 400;
@@ -32,7 +32,7 @@
 }
 .contact_form > h1,
 .contact_confirmation > h2{
-    font-family: "Roboto";
+    font-family: var(--font-fam);
     font-weight: 400;
     font-size: 22px;
     color: #222222;
@@ -59,7 +59,7 @@
 .contact_form div:first-child > label,
 .contact_desctiption > label,
 .contact_form div:nth-child(3) > div > label{
-    font-family: "Roboto";
+    font-family: var(--font-fam);
     font-size: 15px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -90,12 +90,12 @@
 }
 .contact_desctiption > textarea{
     min-height: 100px;
-    font-family: "Roboto";
+    font-family: var(--font-fam);
     max-width: 636px;
     letter-spacing: 0.3px;
 }
 .contact_form div:nth-child(3) > h2{
-    font-family: "Roboto";
+    font-family: var(--font-fam);
     font-weight: 400;
     font-size: 22px;
     color: #222222;
@@ -106,7 +106,7 @@
 .contact_form p{
     font-size: 13px;
     color: #666666;
-    font-family: "Roboto";
+    font-family: var(--font-fam);
     margin-bottom: 25px;
     letter-spacing: 0.3px;
     margin-top:5px;
@@ -117,7 +117,7 @@
  border-radius: 8px;
  padding: 9px 16px;
  font-size: 17px;
- font-family: "Roboto";
+ font-family: var(--font-fam);
  border: none;
  letter-spacing: 0.3px;
  cursor: pointer;
@@ -175,7 +175,7 @@
 }
 .contact_phone_email div:first-child > span > a,
 .contact_phone_email div:nth-child(2) > a{
-    font-family: "Roboto";
+    font-family: var(--font-fam);
     font-size: 15px;
     color: #333333;
     letter-spacing: 0.3px;
@@ -217,13 +217,13 @@
 }
 .contact_confirmation > h1{
     font-size: 27px;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: var(--font-fam);
     color: #333333;
     font-weight: 500;
 }
 .contact_confirmation > h2{
     font-size: 20px;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: var(--font-fam);
     color: #333333;
 }
 .contact_privacy_label{

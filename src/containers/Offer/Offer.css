@@ -47,12 +47,12 @@
     font-size: 2rem;
     color: #222;
     margin-bottom: 12px;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: var(--font-fam);
   }
   
   .template-details p {
     font-size: 18px;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: var(--font-fam);
     color: #555;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -79,7 +79,7 @@
     font-size: 1rem;
     border-radius: 10px;
     cursor: pointer;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: var(--font-fam);
   }
   
   @media (max-width: 768px) {

@@ -10,7 +10,7 @@
     margin: 2rem 0;
 }
 .marketing_graps_container > h2{
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: var(--font-fam);
     font-size: 35px;
     font-weight: 500;
     color: #333333;
@@ -37,7 +37,7 @@
 }
 .markeging_graphs_numbers_container > div > p,
 .markeging_graphs_numbers_container > div > span{
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: var(--font-fam);
     color: #333333;
 }
 .markeging_graphs_numbers_container > div > p{
@@ -63,7 +63,7 @@
     align-items: center;
     width: 20vw;
     max-width: 200px;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: var(--font-fam);
     margin-top: 0.5rem ;
     color: #333333;
 }

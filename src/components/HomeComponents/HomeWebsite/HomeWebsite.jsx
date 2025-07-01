@@ -15,22 +15,22 @@ const NewHomeWebsite = () => {
         <div className="website-grid">
           <div className="website-card">
             <FaLaptopCode className="website-icon" />
-            <h3 className="website-card-title">{t("home_websites_card1_title")}</h3>
+            <h2 className="website-card-title">{t("home_websites_card1_title")}</h2>
             <p className="website-card-text">{t("home_websites_card1_desc")}</p>
           </div>
           <div className="website-card">
             <FaBrain className="website-icon" />
-            <h3 className="website-card-title">{t("home_websites_card2_title")}</h3>
+            <h2 className="website-card-title">{t("home_websites_card2_title")}</h2>
             <p className="website-card-text">{t("home_websites_card2_desc")}</p>
           </div>
           <div className="website-card">
             <FaRocket className="website-icon" />
-            <h3 className="website-card-title">{t("home_websites_card3_title")}</h3>
+            <h2 className="website-card-title">{t("home_websites_card3_title")}</h2>
             <p className="website-card-text">{t("home_websites_card3_desc")}</p>
           </div>
           <div className="website-card">
             <FaCogs className="website-icon" />
-            <h3 className="website-card-title">{t("home_websites_card4_title")}</h3>
+            <h2 className="website-card-title">{t("home_websites_card4_title")}</h2>
             <p className="website-card-text">{t("home_websites_card4_desc")}</p>
           </div>
         </div>

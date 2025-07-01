@@ -10,10 +10,10 @@
 .homePachete_container > h1{
     width: 100%;
     text-align: center;
-    font-size: 2.3rem;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 2.7rem;
+    font-family: var(--font-fam);
     color: var(--green);
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 30px;
 }
 .homePachete_text{
@@ -23,7 +23,7 @@
 .homePachete_container > a > button{
 width: 250px;
 max-width: 350px;
-font-family: "Roboto", Arial, Helvetica, sans-serif;
+font-family: var(--font-fam);
 color: white;
 background-color: var(--green);
 padding: 15px 30px;
@@ -78,7 +78,6 @@ margin-top: 40px;
     min-height: 450px;
     max-width: 400px;
     min-width: 350px;
-    /* background: linear-gradient(180deg, rgba(0, 123, 255, 1) 0%, rgba(0, 95, 255, 1) 100%); */
     background-color:var(--green) ;
     border-radius: 10px;
     margin-top:-20px;
@@ -89,7 +88,7 @@ margin-top: 40px;
 }
 .homePachete_second_card span:first-child{
     color: white;
-    font-family: "Roboto";
+    font-family: var(--font-fam);
     font-weight: 500;
     font-size: 25px;
     width: 100%;
@@ -104,7 +103,7 @@ margin-top: 40px;
 .homePachete_second_card > .homePachete_alege_btn{
     color: var(--green);
     background-color: white;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: var(--font-fam);
     font-weight: 500;
     font-size: 16px;
 }
@@ -125,7 +124,7 @@ margin-top: 40px;
     color: white;
     padding: 10px 35px;
     border-radius: 10px;
-    font-family: "Roboto";
+    font-family: var(--font-fam);
     position: absolute;
     bottom: 2rem;
     left: 2rem;
@@ -133,7 +132,7 @@ margin-top: 40px;
 
 .homePachete_first_card span:first-child,
 .homePachete_third_card span:first-child{
-    font-family: "Roboto";
+    font-family: var(--font-fam);
     font-weight: 500;
     font-size: 25px;
     width: 100%;
@@ -154,10 +153,9 @@ margin-top: 40px;
 .homePachetete_text{
     width: 100%;
     display: flex;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 1.125rem;
-    letter-spacing: 0.2px;
-    color: #222222;
+    font-family: var(--font-fam);
+    font-size: 1.15rem;
+    color: #333;
     margin-bottom: 12px;
 }
 .homePachetete_text > svg{

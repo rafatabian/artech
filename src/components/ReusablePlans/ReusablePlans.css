@@ -49,7 +49,7 @@
 .package_container > h1,
 .package_container_websites > h1{
   font-size: 35px;
-  font-family: "Roboto";
+  font-family: var(--font-fam);
   font-weight: 600;
 
   margin-bottom: 1rem;
@@ -74,7 +74,7 @@
 
 .header {
   margin-bottom: 1rem;
-  font-family:Roboto, Arial, Helvetica, sans-serif
+  font-family: var(--font-fam);
 }
 .header > h2{
   display: flex;
@@ -93,14 +93,14 @@
   font-size: 1.3rem;
   font-weight: 500;
   color: #085c2b;
-  font-family:Roboto, Arial, Helvetica, sans-serif
+  font-family: var(--font-fam);
 }
 
 .subtitle {
   font-size: 0.9rem;
   color: #444;
   margin-top: 0.2rem;
-  font-family:Roboto, Arial, Helvetica, sans-serif
+  font-family: var(--font-fam);
 }
 
 .price {
@@ -108,27 +108,27 @@
   margin: 1rem 0 0.5rem;
   font-size: 1.1rem;
   color: #000;
-  font-family:Roboto, Arial, Helvetica, sans-serif
+  font-family: var(--font-fam);
 }
 
 .features {
   list-style: none;
   padding: 0;
   margin: 1rem 0;
-  font-family:Roboto, Arial, Helvetica, sans-serif
+  font-family: var(--font-fam);
 }
 
 .features li {
   margin-bottom: 0.5rem;
   color: #333;
-  font-family:Roboto, Arial, Helvetica, sans-serif
+  font-family: var(--font-fam);
 }
 
 .delivery {
   font-size: 0.9rem;
   color: #666;
   margin-bottom: 1.2rem;
-  font-family:Roboto, Arial, Helvetica, sans-serif
+  font-family: var(--font-fam);
 }
 
 .cta-btn {
@@ -140,7 +140,7 @@
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.2s ease;
-  font-family:Roboto, Arial, Helvetica, sans-serif
+  font-family: var(--font-fam);
 }
 
 .cta-btn:hover {

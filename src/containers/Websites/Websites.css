@@ -127,7 +127,7 @@
     line-height: 43px;
     text-align: center;
     z-index: 2;
-    font-family: "Roboto";
+    font-family: var(--font-fam);
     padding: 1.2rem 1.5rem;                      
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
@@ -139,7 +139,7 @@
  }
  .websites_white_text_contianer p,
  .websites_green_text_contianer  p{
-     font-family: "Roboto";
+     font-family: var(--font-fam);
      max-width: 600px;
      text-align: center;
      font-size: 18px;
@@ -150,7 +150,7 @@
  .websites_white_text_contianer h1,
  .websites_green_text_contianer h1{
     font-size: 30px;
-    font-family: "Roboto";
+    font-family: var(--font-fam);
     width: 100%;
     text-align: center;
     color: white;

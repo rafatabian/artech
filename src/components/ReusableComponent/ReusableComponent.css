@@ -101,7 +101,7 @@
     letter-spacing: -.2px;
     text-align: center;
     z-index: 2;
-    font-family: "Roboto";
+    font-family: var(--font-fam);
     backdrop-filter: blur(6px);
      padding: 1.2rem 1.5rem;
      font-weight: 600;
@@ -128,11 +128,11 @@
     font-size: 26px;
     color: var(--green);
     font-weight: 500;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: var(--font-fam);
     margin-right: 1.5rem;
 }
 .branding_services > ul > li{
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: var(--font-fam);
     font-size: 18px;
     color: #333333;
     width: 100%;
@@ -144,7 +144,7 @@
 }
 .branding_white_text_contianer > p,
 .branding_green_text_contianer > p{
-    font-family: "Roboto";
+    font-family: var(--font-fam);
     max-width: 600px;
     text-align: center;
     font-size: 18px;
@@ -162,7 +162,7 @@
     max-width: 500px;
     margin-bottom: 10px;
    font-size: 30px;
-   font-family: "Roboto";
+   font-family: var(--font-fam);
    width: 100%;
    text-align: center;
 }  
