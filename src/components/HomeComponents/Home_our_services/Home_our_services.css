@@ -54,12 +54,12 @@
   fill: #c7c7c7;
   margin-bottom: 15px;
 }
-.home_our_services_card:nth-child(1) svg:nth-child(2){
+ .home_our_services_card:nth-child(1) svg{
   height: 156px;
   width: 156px;
   min-width: 156px;
   min-height: 156px;
-}
+  }
 .home_our_services_card img {
   width: 100%;
   height: auto;
@@ -70,7 +70,6 @@
   font-weight: 600;
   position: absolute;
   top: 20px;
-  /* margin: 10px 0; */
 }
 .home_our_services_card p {
   font-size: 1rem;
@@ -117,12 +116,17 @@
     text-align: left;
   }
   .home_our_services_title_container h1 {
-    font-size: 25px;
+    font-size: 26px;
     text-align: left;
+    line-height: 1.2;
+    max-width: 270px;
+    margin-bottom: 0.7rem;
   }
   .home_our_services_title_container h2 {
     text-align: left;
     font-size: 16px;
+    max-width: 200px;
+    line-height: 1.4;
   }
   .home_our_services_cards_container {
     width: calc(100vw - 4rem);
@@ -162,14 +166,17 @@
 .home_our_services_card svg {
   position: absolute;
   fill: #dcdcdc;
+  width: 35%;
 }
 .home_our_services_card:nth-child(1) svg{
     right:1.2rem; 
     bottom: -17px;
+    width: 42%;
+    min-width: 42%;
   }
 .home_our_services_card:nth-child(2) svg{
     right:2rem;
-      bottom: -3px;
+    bottom: -3px;
 }
 .home_our_services_card:nth-child(3) svg{
     right: 1.3rem;
