@@ -166,9 +166,12 @@ box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.2);
         min-height: 250px;
         padding: 1.5rem 3rem;
         margin: 2px 0;
+         /* width: calc(100vw - 4rem) !important; */
     }
     .home_plans_btn{
       font-size: 16px;
       letter-spacing: 0.2px;
+      width: calc(100vw - 4rem);
+      max-width: 365px;
     }
 }
