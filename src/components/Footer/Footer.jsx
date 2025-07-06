@@ -1,51 +1,90 @@
-import { useTranslation } from "react-i18next"
 import "./Footer.css"
+import emailjs from "@emailjs/browser"
 import { FaFacebook,FaInstagram, FaTiktok } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
-import { Link, useLocation } from "react-router-dom"
+import { Link} from "react-router-dom"
+import { useState } from "react"
 
 const Footer = () => {
-  const location = useLocation()
-  const websitesPage = location.pathname === "/websites"
-  const [t] = useTranslation("global")
 
+    const [emailData, setEmailData] = useState({
+    tip_solicitare: "/",
+    planul:"/",
+    descriere:"",
+    nume:"",
+    telefon:"/",
+    email:""
+    })
+
+    // function for sending emails
+const sendEmail = (e) => {
+  e.preventDefault()
+
+  emailjs
+      .send('service_bxwwj7b', 'template_85xbllk', emailData, {
+        publicKey: 'zRB_M2l24GAb2ixBd',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+}
 
 
   return (
-    <div className={`${websitesPage ? "footer_dark" : "footer_container"}`}>
-        <h1 className="footer_title_blackgorund">ARTECH</h1>
-
-        <div className="footer_socials">
-            <Link to="https://www.facebook.com/profile.php?id=61561101313220 " aria-label="facebook"><FaFacebook /></Link>
-            <Link to="https://www.instagram.com/artech.agency1?igsh=cDFycG50ZnVlZDFi" aria-label="instagram"><FaInstagram /></Link>
-            <Link to="https://www.tiktok.com/@artechagency" aria-label="tiktok"><FaTiktok / ></Link>
-        </div>
-
-        <div className="footer_links"> 
+    <div className= "footer_background">
+      <div className="footer_container">
+      <h1>ARTECH</h1>
+      <div className="footer_content">
+        {/* form */}
+        <div className="footer_form_column">
+          
+          <form onSubmit={sendEmail} className="footer_form">
+            {/* name */}
             <div>
-                <Link to="/" aria-label="home">HOME</Link>
-                <Link to="/help" aria-label="help">{t("navbar_ajutor")}</Link>
-                <Link to="/contact" aria-label="contact">CONTACT</Link>
+              <label htmlFor="name"></label>
+              <input id="name" type="text" placeholder="Name" required onChange={(e) => setEmailData({...emailData, nume: e.target.value})} value={emailData.nume}/>
             </div>
+           {/* email */}
+           <div>
+             <label htmlFor="email"></label>
+            <input id="email" type="email" placeholder="Email" required onChange={(e) => setEmailData({...emailData, email: e.target.value})} value={emailData.email}/>
+           </div>
+            {/* text */}
             <div>
-              <Link to="/branding" aria-label="branding">BRANDING</Link>
-              <Link to="/websites" aria-label="websites">WEBSITES</Link>
-              <Link to="/marketing" aria-label="marketing">MARKETING</Link>
-              <Link to="/plans" aria-label="pachete">{t("navbar_pachete")}</Link>
+              <label htmlFor="description"></label>
+              <textarea id="description" placeholder="Message" onChange={(e) => setEmailData({...emailData, descriere:e.target.value})} value={emailData.descriere} required></textarea>
             </div>
+           <button type="submit">Send</button>
+          </form>
         </div>
+        {/* links */}
+        <div className="footer_links_column">
+          <Link to="/" className="footer_link">HOME</Link>
+         <Link to="/websites" className="footer_link">WEBSITES</Link>
+         <Link to="/branding" className="footer_link">BRANDING</Link>
+         <Link to="/marketing" className="footer_link">MARKETING</Link>
+         <Link to="/plans" className="footer_link">PLANS</Link>
+         <Link to="/contact" className="footer_link">CONTACT</Link>
+         <Link to="/help" className="footer_link">HELP</Link>
 
-        <div className="footer_email">
-           <span><MdEmail />business@artech-agency.co</span> 
         </div>
-
-        <div className="footer_legal"> 
-          <Link to="/terms">{t("terms_title")}</Link>
-          <Link to="/privacy">{t("privacy_title")}</Link>
+        {/* last column */}
+        <div className="footer_last_column">
+            <Link to="https://www.facebook.com/profile.php?id=61561101313220" aria-label="facebook"><FaFacebook />Facebook</Link>
+            <Link to="https://www.instagram.com/artech.agency1?igsh=cDFycG50ZnVlZDFi" aria-label="instagram"><FaInstagram />Instagram</Link>
+            <Link to="https://www.tiktok.com/@artechagency" aria-label="tiktok"><FaTiktok />TikTok</Link>
+            <a href={`mailto:${"business@artech-agency.co"}`}><MdEmail />business@artech-agency.co</a>
+            <Link to="/privacy" className="footer_link">Privacy Policy</Link>
+            <Link to="/terms" className="footer_link">Terms and Conditions</Link>
+            <p>© 2025 ARTECH. All rights reserved.</p>
         </div>
-
-        <h2>&copy; 2025 All rights reserved.</h2>
-
+      </div>
+    </div>
     </div>
   )
 }

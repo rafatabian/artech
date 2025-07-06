@@ -5,28 +5,31 @@ import { Link } from "react-router-dom";
 import { lazy, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+// import home_intro from "../../assets/images/home/home_intro_desktop.webp";
 
 
-const NewHomeWebsite = lazy(() =>
-  import("../../components/HomeComponents/HomeWebsite/HomeWebsite.jsx")
-);
-const HomeMarketing = lazy(() =>
-  import("../../components/HomeComponents/HomeMarketing/HomeMarketing.jsx")
-);
-const HomeBranding = lazy(() =>
-  import("../../components/HomeComponents/HomeLogos/HomeLogos.jsx")
-);
+
 const HomePachete = lazy(() =>
   import("../../components/HomeComponents/HomePachete/HomePachete.jsx")
 );
 const HomeBlogs = lazy(() =>
   import("../../components/HomeComponents/HomeBlogs/HomeBlogs.jsx")
 );
-const HomeIntroMenu = lazy(() =>
-  import("../../components/HomeComponents/Home_intro_menu/Home_intro_menu.jsx")
+const HomeIntro = lazy(() =>
+  import("../../components/HomeComponents/Home_intro/Home_intro.jsx")
 );
-const HomeOffer = lazy(() =>
-  import("../../components/HomeComponents/Home_offer/Home_offer.jsx")
+const HomeOurServices = lazy(() =>
+  import("../../components/HomeComponents/Home_our_services/Home_our_services.jsx")
+);
+const HomeReviews = lazy(() =>
+  import("../../components/HomeComponents/Home_reviews/Home_reviews.jsx")
+);
+const HomeSteps = lazy(() =>
+  import("../../components/HomeComponents/Home_steps/Home_steps.jsx")
+);
+const HomeFaq = lazy(() =>
+  import("../../components/HomeComponents/Home_faq/Home_faq.jsx")
 );
 
 const Home = () => {
@@ -50,21 +53,24 @@ const Home = () => {
       <div className="home_container">
         {/* new home section */}
         <div className="home_new_container">
+          <div className="home_intro_img">
+
+         
           <div className="home_new_presentation">
             <div className="home_new_title">
               <h1>ARTECH</h1>
-              <h1>REDEFINED</h1>
+              <h2>BRANDING - WEBSITES - MARKETING</h2>
             </div>
 
-            <p>{t("home_intro")}</p>
+            <p>We create custom websites, bold branding, and smart digital strategies combining design, SEO, speed, and marketing to help you grow faster and stand out online.</p>
             <div className="home_new_btns_container">
               {/* add link to section */}
               <Link to="/plans">{t("home_intro_first_btn")}</Link>
               <Link to="/contact">{t("home_consultation")}</Link>
             </div>
           </div>
-
-          <div className="home_video">
+        </div>
+          {/* <div className="home_video">
             <video
               src={homeVideo}
               autoPlay
@@ -74,33 +80,40 @@ const Home = () => {
               controlsList="nofullscreen"
               preload="auto"
             />
-          </div>
+          </div> */}
         </div>
         {/* our services */}
-        <HomeIntroMenu />
+        <HomeIntro />
 
-        {/*  */}
-        {/* 100pounds offer */}
-        <HomeOffer />
+        <HomeOurServices />
+
+        <HomeReviews />
+
+        <HomeSteps />
+
+        <HomePachete />
+
+        <HomeBlogs />
+
+        <HomeFaq />
 
         {/* logos */}
-        <HomeBranding />
+        {/* <HomeBranding /> */}
 
         {/* websites */}
         <div className="home_websites">
           {/* <HomeWebsites /> */}
-          <NewHomeWebsite />
+          {/* <NewHomeWebsite /> */}
         </div>
         {/* marketing */}
         <div className="home_branding">
-          <HomeMarketing />
+          {/* <HomeMarketing /> */}
         </div>
         {/* pachete  */}
-        <div className="home_pachete">
+        {/* <div className="home_pachete">
           <HomePachete />
-        </div>
+        </div> */}
 
-        <HomeBlogs />
       </div>
     </>
   );

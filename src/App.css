@@ -26,3 +26,8 @@
     margin-top: 54.5px;
  }
 }
+@media screen and (max-width: 700px){
+.app_contianer{
+    margin-top:unset;
+ }
+}

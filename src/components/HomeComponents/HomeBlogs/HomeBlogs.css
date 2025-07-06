@@ -1,43 +1,51 @@
-.blog-section {
-    padding: 4rem 1rem;
-    text-align: center;
+.blog_conteiner_background{
+  width: 100%;
+    padding: 8rem 0;
+    background-color: #f7f9f8;
   }
   
   .blog-container {
-    max-width: 1000px;
+    max-width: 1140px;
+    width: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
-  
   .blog-title {
     font-size: 2.5rem;
-    font-weight: 600;
-    line-height: 50px;
-    color: #333;
-    margin-bottom: 1rem;
     font-family: var(--font-fam);
+    font-weight: 500;
+    margin-bottom: 0.2rem;
   }
   
   .blog-description {
-    font-size: 1.15rem;
-    color: #333;
-    margin-bottom: 2rem;
     font-family: var(--font-fam);
+    max-width: 600px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 27px;
   }
   
   .blog-grid {
+    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 20px;
   }
   
   .blog-card {
-    max-width:220px;
-    margin: 10px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 270px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: transform 0.3s ease;
   }
@@ -58,20 +66,52 @@
   
   .blog-card-title {
     font-size: 1.2rem;
-    color: #222;
-    margin-bottom: 10px;
+    margin: 10px 0 7px 0;
+    text-align: center;
+    font-family: var(--font-fam);
   }
   
   .blog-card-text {
     font-size: 1rem;
     color: #333;
     font-family: var(--font-fam);
+    text-align: center;
   }
-@media screen and (max-width:450px) {
-  .blog-card{
-    max-width: unset;
+@media screen and (max-width:700px){
+  .blog_conteiner_background{
+    padding:6rem 2rem;
+  }
+  .blog-container{
+    display: flex;;
+    align-items: flex-start;
+  }
+  .blog-title,
+  .blog-description {
+    text-align: left;
     width: 100%;
-
+    max-width: 300px;
+  }
+    .blog-title{
+      line-height: 1.2;
+      font-size: 25px;
+    }
+  .blog-description {
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+  }
+  .blog-grid {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 1rem;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+  }
+  .blog-card{
+    min-width: 270px;
+  }
+  .blog-card-title{
+     font-size: 1rem;
   }
 }
 

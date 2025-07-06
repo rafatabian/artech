@@ -112,7 +112,7 @@ useEffect(() => {
   useEffect(( ) => {
  const handleScroll = (() => {
   if(window.innerWidth >= 1000){
-   setOpacity(document.body.scrollHeight / 1.6 <= window.scrollY)
+   setOpacity(document.body.scrollHeight / 2 <= window.scrollY)
   }else{
     setOpacity(false)
   }

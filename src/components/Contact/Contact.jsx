@@ -1,6 +1,6 @@
 import "./Contact.css"
 import { useRef, useState, useEffect } from "react"
-import emailjs from "@emailjs/browser"
+import emailjs from "@emailjs/browser" 
 import { RiWhatsappFill } from "react-icons/ri"
 import { MdEmail } from "react-icons/md"
 import logo from "../../assets/images/navbar_white_logo.webp"

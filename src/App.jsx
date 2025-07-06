@@ -34,7 +34,7 @@ const App = () => {
      <ContextProvider>
       <BrowserRouter>
       <Navbar />
-     <OfferBanner />
+     {/* <OfferBanner /> */}
        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/branding" element={<Branding/>} />

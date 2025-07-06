@@ -1,0 +1,107 @@
+.home_intro_background{
+background-color: #e7e3da;
+width: 100%;
+height: 100%;
+}
+.home_intro_container{
+width: 100%;
+max-width: 1140px;
+margin: 0 auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+padding: 6rem 0px;  
+}
+.hone_intro_img_container{
+width: 50%;
+max-width: 530px;
+display: flex;
+align-items: center;
+justify-content: center;    
+}
+.hone_intro_img_container img{
+width: 100%;
+height: auto;
+max-width: 550px;
+  box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.2);
+
+}
+.hone_intro_text_container{
+width: 50%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+margin-left: 2rem;
+}
+.hone_intro_text_container h1{
+font-size: 2.5rem;
+font-weight: 600;
+margin-bottom: 1rem;
+line-height: 50px;
+}
+.hone_intro_text_container p{
+font-size: 1.2rem;
+margin-bottom: 1rem;
+}
+.hone_intro_text_container h2{
+font-size: 1.5rem;
+font-weight: 600;
+margin-bottom: 0.5rem;
+}
+.hone_intro_text_container h3{
+font-size: 1.2rem;
+font-weight: 500;
+margin-bottom: 1rem;
+}
+.cta-link{
+  display:block;
+  width: 200px;
+  text-align: center;
+font-size: 1.2rem;
+font-weight: 500;
+color: white;
+background-color: var(--green);
+padding: 7px 0;
+border-radius: 5px;
+text-decoration: none;
+transition: color 0.3s ease;
+box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 700px) {
+  .home_intro_container {
+    flex-direction: column-reverse;
+    padding: 4rem 2rem 6rem 2rem;
+  }
+
+  .hone_intro_img_container,
+  .hone_intro_text_container {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .hone_intro_text_container h1 {
+    font-size: 25px;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  .hone_intro_text_container > p{
+     font-size: 16px;
+  }
+    .hone_intro_text_container > h3{
+     font-size: 16px;
+  }
+
+  .cta-link{
+    width: 50vw;
+    min-width: 200px;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+  }
+  .hone_intro_img_container{
+    margin-top: 2rem;
+  }
+}

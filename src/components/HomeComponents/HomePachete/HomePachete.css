@@ -1,7 +1,14 @@
-.homePachete_container{
-    width: 1318px;  
-    background-color: #f0f0f0;
-    border-radius: 10px;
+.homePachete_background{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0px;
+}
+.homePachete_container{ 
+    width: 100%;
+    max-width: 1140px; 
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -10,141 +17,99 @@
 .homePachete_container > h1{
     width: 100%;
     text-align: center;
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     font-family: var(--font-fam);
-    color: var(--green);
-    font-weight: 700;
-    margin-bottom: 30px;
+    font-weight: 600;
+}
+.homePachete_container > h2{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-family: var(--fontFam);
 }
 .homePachete_text{
     width: 100%;
     max-width: 500px;
 }
-.homePachete_container > a > button{
-width: 250px;
-max-width: 350px;
+.home_plans_btn{
+    display: block;
+width: 365px;
+text-decoration: none;
+text-align: center;
 font-family: var(--font-fam);
 color: white;
 background-color: var(--green);
 padding: 15px 30px;
 border: none;
-font-size:16px;
+border-radius: 5px;
+margin-top: 1.2rem;
+font-size: 1.2rem;
 font-weight: 500;
-letter-spacing: 0.1px;
-border-radius: 10px;
-letter-spacing: 0.3px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
-margin-top: 40px;
+padding: 9px 0;
+box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.2);
+
+
 }
- .homePachete_container > a > button:hover{
- background-color: var(--greenHover);
-} 
 .homePachete_cards{
     width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.homePachete_first_card{
-    width: 100%;
-    min-height: 410px;
-    max-width: 300px;
-    min-width: 300px;
-    background-color: white;
-    border-radius: 10px;
+.homePachete_first_card,
+.homePachete_third_card {
+    width: 365px;
+    min-height: 361px;
+    background-color: #f7f9f8;
+    border-radius: 5px;
     padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.2);
     position: relative;
 }
-.homePachete_third_card{
-    width: 100%;
-    height: 410px;
-    max-height: 420px;
-    min-width: 300px;
-    background-color: white;
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-.homePachete_third_card{
-    width: 100%;
-    max-width: 300px;
-}
-/* second card styles */
 .homePachete_second_card{
-    width: 100%;
-    min-height: 450px;
-    max-width: 400px;
-    min-width: 350px;
-    background-color:var(--green) ;
-    border-radius: 10px;
-    margin-top:-20px;
-    z-index: 2;
+    width: 365px;
+    min-height: 362px;
+    background-color:var(--green);
+    border-radius: 5px;
     padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.2);
     position: relative;
 }
 .homePachete_second_card span:first-child{
     color: white;
     font-family: var(--font-fam);
     font-weight: 500;
-    font-size: 25px;
+    font-size: 30px;
     width: 100%;
     display: flex;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .homePachete_second_card > .homePachetete_text,
 .homePachete_second_card > .homePachetete_text > svg{
     color: white !important;
-}
-.homePachete_second_card > .homePachete_alege_btn{
-    color: var(--green);
-    background-color: white;
-    font-family: var(--font-fam);
-    font-weight: 500;
-    font-size: 16px;
-}
-.homePachete_first_card > .homePachete_alege_btn:hover,
-.homePachete_third_card > .homePachete_alege_btn:hover{
-    background-color: var(--greenHover);
-} 
-.homePachete_second_card > .homePachete_alege_btn:hover{
-    background-color: rgb(236, 236, 236)
-}
-.homePachete_first_card,
-.homePachete_second_card,
-.homePachete_third_card{
-    padding-bottom: 70px;
-}
-.homePachete_alege_btn{
-    background-color: var(--green);
-    color: white;
-    padding: 10px 35px;
-    border-radius: 10px;
-    font-family: var(--font-fam);
-    position: absolute;
-    bottom: 2rem;
-    left: 2rem;
 }
 
 .homePachete_first_card span:first-child,
 .homePachete_third_card span:first-child{
     font-family: var(--font-fam);
     font-weight: 500;
-    font-size: 25px;
+    font-size: 30px;
     width: 100%;
     display: flex;
     align-items: center;
     color: var(--green);
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .homePachete_first_card span:first-child > svg,
 .homePachete_second_card span:first-child > svg,
 .homePachete_third_card span:first-child > svg{
-    margin-left: 4px;
+    margin-left: 10px;
     width: 25px;
     height: 25px;
     min-width: 25px;
@@ -156,74 +121,53 @@ margin-top: 40px;
     font-family: var(--font-fam);
     font-size: 1.15rem;
     color: #333;
-    margin-bottom: 12px;
+    margin-bottom: 7px;
+    letter-spacing: 0.3px;
 }
-.homePachetete_text > svg{
-    /* color: #007BFF; */
-    color: var(--green);
-    margin-right: 5px;
-    margin-top: 3px;
-    width: 20px;
-    height: 20px;
-    min-width: 20px;
-    min-height: 20px;
-}
-/* probably useless if content is in the conter */
-@media screen and (min-width:1700px){
-    .homePachete_container{
-        width: 1636px;
-    }
-}
-@media screen and (max-width:1350px){
-    .homePachete_container{
-        width: 100vw;   
-        padding: 0 2rem;
-    }
-}
-/* up probably useless */
-@media screen and (max-width: 970px){
-    .homePachete_cards{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+@media screen and (max-width:700px){
+    .homePachete_background{
+        padding: 5rem 2rem;
     }
     .homePachete_container > h1{
-     margin-bottom: 0;
+        font-size: 25px;
+        margin-bottom: -3px ;
     }
-    .homePachete_first_card > span:first-child,
-    .homePachete_second_card > span:first-child,
-    .homePachete_third_card > span:first-child{
-        width: 100%;
-          display: flex;
-        align-items: flex-start;
-        justify-content: flex-start; 
+    .homePachete_container > h2{
+        font-size: 16px;
     }
-    .homePachete_first_card {
-        min-height: unset;
+    .homePachete_first_card span:first-child,
+    .homePachete_second_card span:first-child,
+    .homePachete_third_card span:first-child {
+        font-size: 21px;
+        margin-bottom: 5px;
+        
     }
-    .homePachete_alege_btn{
-        margin-top: 20px !important;
-    } 
+
+    .homePachete_first_card span:first-child > svg,
+    .homePachete_second_card span:first-child > svg,
+    .homePachete_third_card span:first-child > svg {
+        width: 18px;
+        height: 18px;
+        min-width: 18px;
+        min-height: 18px;
+        margin-left: 7px;
+    }
+
+    .homePachetete_text {
+        font-size: 16px;
+        margin-bottom: 2px;
+        letter-spacing: 0.2px;
+    }
+
     .homePachete_first_card,
     .homePachete_second_card,
-    .homePachete_third_card{
-        margin: 15px 0;
-        max-width: 400px;
-        /* min-width: 400px; */
-        min-height: 420px;
-        padding: 2rem !important;
-        max-height: unset;
-        height: 100%;
-        padding-bottom: unset;
+    .homePachete_third_card {
+        min-height: 250px;
+        padding: 1.5rem 3rem;
+        margin: 2px 0;
     }
-    .homePachete_second_card{
-       padding-bottom: 5rem !important;
-    }
-    .homePachete_container > a > button{
-        width: 300px;
-    }
-    .homePachete_container{
-        padding: 0 15px;
+    .home_plans_btn{
+      font-size: 16px;
+      letter-spacing: 0.2px;
     }
 }
