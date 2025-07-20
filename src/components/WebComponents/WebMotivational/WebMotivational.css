@@ -1,0 +1,82 @@
+.web_motivational_background{  
+    width: 100%;
+    background-color: hsl(0, 0%, 0%);
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 0;
+
+}
+.web_motivational{
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    background-color: #121212;
+    border-radius: 5px;
+}
+.web_motivational > img{
+    width: 100%;
+    max-width: 450px;
+    margin-right: 3rem;
+}
+.web_motiovational_text > h1{
+    font-size: 50px;
+    color: white;
+    font-family: var(--font-fam);
+    font-weight: 300;
+    margin-bottom: 2rem;
+    max-width: 450px;
+    line-height: 50px;
+}
+.web_motiovational_text > a {
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--green);
+    padding: 7px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+@media screen and (max-width: 1139px){
+ .web_motivational{
+    padding: 6rem;
+    flex-direction: column-reverse;
+    gap: 2rem;
+ }
+  .web_motiovational_text > h1{
+    max-width: 600px;
+  }
+ .web_motivational > img {
+    max-width: 600px;
+    margin-right: unset;
+}
+}
+@media screen and (max-width:700px){
+    .web_motivational{
+    padding: 6rem 2rem;
+}
+.web_motivational > img{
+    max-width: unset;
+    margin-right: unset;
+}
+.web_motiovational_text > h1{
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 1.5rem;
+    max-width: 450px;
+}
+.web_motiovational_text > a {
+    width: 220px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+}
+}

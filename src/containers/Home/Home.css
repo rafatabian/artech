@@ -1,6 +1,5 @@
 .home_container {
   width: 100%;
-  min-height: 200vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -9,7 +8,8 @@
 }
 .home_new_container {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 900px;
   background-image: url('../../assets/images/home/home_intro_desktop.webp');
   background-position: center;
   background-size: cover; 
@@ -36,7 +36,7 @@
   flex-direction: column;
   padding:3rem 6rem;
    backdrop-filter: blur(8px);
-   background:#18181887;
+   background:#171717ca;
   border-radius: 5px;
 }
 

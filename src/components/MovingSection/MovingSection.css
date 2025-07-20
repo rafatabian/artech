@@ -4,11 +4,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0;
+    margin: 6rem 0;
 }
 .moving_section_container{
     width: 100%;
-    max-width: 1500px;
+    max-width: 1140px;
     background-color: #F0F0F0;
     display: flex;
     align-items: center;
@@ -18,21 +18,21 @@
 }
 /* for websites */
 .moving_section_main_container_dark > div:first-child{
-    background-color: #222222;
+    background-color:rgb(18, 18, 18);
 }
-.moving_section_main_container_dark > div:first-child >  span > h2{
-    color: #FFFFFF;
+.moving_section_main_container_dark > div:first-child > h2{
+    color: white;
+    font-size: 50px;
+    font-family: var(--font-fam);
+    font-weight: 300;
+    margin-bottom: 0.3rem;
+    z-index: 2;
 }
-
-.moving_section_container > span{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-weight: 600;
-    margin: 2rem;
-    padding: 0 1rem;
+.moving_section_container > p:nth-child(2){
+    color: white;
+    font-size: 1rem;
+    font-family: var(--font-fam);
+    margin-bottom: 1.5rem;
 }
 .moving_section_container > span > h2{
     font-family: var(--font-fam);
@@ -56,7 +56,10 @@
     margin-right: -120px;
     text-align: end;
 }
-
+.moving_section_animation_container{
+    width: 100%;
+    max-width: 1140px;
+}
 .moving_section,
 .second_moving_section{
     width: 100%;
@@ -95,11 +98,10 @@
     user-select: none;
 }
 @media screen and (max-width: 800px){
-     .moving_section_container > span > h2{
-         font-size: 26px;
-         line-height: 30px;
-         max-width: 250px;
-     }
+     .moving_section_main_container_dark > div:first-child > h2 {
+        font-size: 28px;
+         line-height: 28px;
+     } 
     .moving_section_container > span h2:nth-child(1){
        margin-left: 0px;
        width: 100%;
@@ -117,9 +119,9 @@
 }
 .moving_section_item{
     background-color: white;
-    width: 200px;
-    min-width:200px;
-    height: 100px;
+    width: 150px;
+    min-width:150px;
+    height: 80px;
     margin: 5px;
 }
 .moving_section_item> img{
