@@ -1,0 +1,130 @@
+.marke_solubion_background{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6rem 0;
+}
+.marke_solution_container{
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+}
+.marke_solution_container > h1{
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-fam);
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+.marke_solution{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    border-top: 2px solid rgb(209, 209, 209);
+    padding: 1rem 0;
+}
+.marke_solution_container > div:nth-last-child(2){
+    border-bottom: 2px solid rgb(209, 209, 209);
+}
+.marke_solution > img{
+    width: 220px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.marke_solution > h2{
+    width: 100%;
+    max-width: 220px;
+    font-size: 24px;
+    font-family: var(--font-fam);
+    font-weight: 400;
+    line-height: 29px;
+    color: #333;
+}
+.marke_solution > p{
+    width: 100%;
+    max-width: 600px;
+    font-size: 16px;
+    font-family: var(--font-fam);
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.1px;
+}
+.marke_solution_button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.marke_solution_button > a{
+ display: block;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--green);
+    padding: 7px 0;
+    border-radius: 5px;
+    text-decoration: none;
+}
+@media screen and (max-width:1139px){
+    .marke_solution{
+        flex-direction: column;
+        width: 100%;
+        max-width: 600px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1rem;
+        /* padding: 3rem 0 ; */
+        margin-bottom: 2rem;
+    }
+    .marke_solution_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .marke_solution_button{
+        max-width: 600px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: unset;
+    }
+}
+@media screen and (max-width:700px){
+    .marke_solubion_background{
+        padding: 3rem 0;
+    }
+    .marke_solution{
+        margin-bottom: 1rem;
+    }
+    .marke_solution_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         padding: 2rem;
+    }
+   .marke_solution_container > h1{
+        font-size: 28px;
+        letter-spacing: 0.3px;
+        margin-bottom: 1.5rem;
+    }
+.marke_solution > p {
+    line-height: unset;
+}
+.marke_solution_button > a {
+    width: 220px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+}
+}

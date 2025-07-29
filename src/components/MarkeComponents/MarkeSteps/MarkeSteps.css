@@ -1,0 +1,135 @@
+.marke_steps_background{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    padding: 6rem 0;
+}
+.marke_steps_container{
+    width: 100% ;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.marke_steps_container > h1{
+    width: 100%;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-fam);
+    font-weight: 300;
+    margin-bottom: 4rem;
+}
+.merke_steps_content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+.merke_steps_content::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: calc(50% - 2px);
+    width: calc(100% - 16px);
+    height: 4px;
+    background-color: black;
+}.merke_steps_content::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 16px solid black; /* Small arrowhead */
+}
+.marke_steps_step{
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.marke_steps_step > h2{
+    font-size: 27px;
+    font-family: var(--font-fam);
+    font-weight: 300;
+    text-align: center;
+}
+.marke_steps_step > p{
+    width: 100%;
+    padding: 0.7rem 0;
+    font-size: 16px;
+    font-family: var(--font-fam);
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.marke_steps_button{
+     display: block;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--green);
+    padding: 7px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 6rem;
+}
+@media screen and (max-width:1139px){
+    .merke_steps_content{
+        flex-direction: column;
+        z-index: 3;
+        gap: 2rem;
+    }
+    .merke_steps_content::before,
+    .merke_steps_content::after{
+    display: none;
+}
+.marke_steps_step{
+    width: 100%;
+    max-width: 600px;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+}
+.marke_steps_button{
+    margin-top: 3rem;
+}
+.marke_steps_container > h1{
+    margin-bottom: 3rem;
+}
+}
+@media screen and (max-width:700px){
+.marke_steps_container > h1{
+    font-size: 28px;
+        letter-spacing: 0.3px;
+        margin-bottom: 1.5rem;
+}
+.marke_steps_background{
+   padding: 4rem 2rem;
+}
+.marke_steps_step > h2{
+    font-size: 22px;
+}
+.marke_steps_button{
+    margin-top: 2rem;
+    width: 220px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+}
+.merke_steps_content{
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,99 @@
+.marke_servies_background{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6.5rem 0 8.5rem 0;
+}
+.marke_services_conteiner{
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.marke_services_conteiner > h1{
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    font-family: var(--font-fam);
+    font-weight: 300;
+}
+.marke_services_conteiner > h2{
+    font-family: var(--fontFam);
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 1.5rem;
+    margin-bottom: 4rem;
+}
+.marke_services_content{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2.5rem;
+    row-gap: 1.1rem;
+}
+.marke_services_content > span{
+    width: 100%;
+    background-color: rgb(229, 229, 229);
+    box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.marke_services_content > span > svg{
+    width: 22px;
+    height: 22px;
+    fill: #333;
+}
+.marke_services_content > span > p{
+    font-family: var(--fontFam);
+    font-size: 1rem;
+    font-weight: 400;
+}
+@media screen and (max-width: 1139px){
+    .marke_services_content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .marke_services_content{
+        max-width: 600px;
+        column-gap: 1.4rem;
+    }
+    .marke_services_content > span{
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.8rem 1rem;
+}
+@media screen and (max-width: 700px){
+    .marke_servies_background{
+    padding:4rem 2rem;
+    }
+    .marke_services_content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .marke_services_conteiner > h1{
+    width: 100%;
+    text-align: start;
+    font-size: 28px;
+    letter-spacing: 0.3px;
+    margin-bottom: 0.4rem;
+}
+.marke_services_conteiner > h2{
+    width: 100%;
+    max-width: unset;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 1.7rem;
+}
+}
+}

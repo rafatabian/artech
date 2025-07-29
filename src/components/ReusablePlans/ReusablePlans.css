@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(32, 32, 32);
+  /* background-color: rgb(32, 32, 32); */
   width: 100%;
 }
 .package-grid {
@@ -38,11 +38,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 2rem 0;
+  padding: 4rem 0 6rem 0;
   max-width: 1500px;
 }
 .package_container{
-  background-color:#F0F0F0;
+  background-color:#ffffff;
 }
 /* websites version of the packages black background */
 .package_container_websites{
@@ -72,16 +72,11 @@
   justify-content: space-between;
   flex-direction: column;
   min-height: 610px;
-  background: #fff;
+  background: #f7f7f7;
   border-radius: 5px;
   padding: 2rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
-
-/* .package-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(8, 92, 43, 0.1);
-} */
 
 .header {
   font-family: var(--font-fam);

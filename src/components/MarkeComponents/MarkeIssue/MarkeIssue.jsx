@@ -1,11 +1,11 @@
-import "./WebIssues.css"
+import "../../WebComponents/WebIssues/WebIssues.css"
+import "./MarkeIssue.css"
 import { motion } from "framer-motion"
-import web_issues_img from "../../../assets/images/websites/web_issues.webp"
+import marke_issues_img from "../../../assets/images/marketing/marke_issue.webp"
 
-
-const WebIssues = () => {
+const MarkeIssue = () => {
   return (
-    <div className="web_issues_background">
+    <div className="marke_issues_background">
       <motion.div 
   initial="hidden"
   whileInView="visible"
@@ -18,7 +18,7 @@ const WebIssues = () => {
     },
   }}
 >
-        <div className="web_issues">
+        <div className="marke_issues">
           <motion.h1
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -26,7 +26,7 @@ const WebIssues = () => {
         viewport={{ once: true }}
       >Common issues</motion.h1>
       
-        <div className="web_issues_continer">
+        <div className="marke_issues_continer">
 
           <motion.div
               variants={{
@@ -35,7 +35,7 @@ const WebIssues = () => {
               }}
               transition={{ duration: 0.5}}
             >
-         <img src={web_issues_img} alt="issues" />
+         <img src={marke_issues_img} alt="issues" />
       </motion.div>
            
           <div>
@@ -73,13 +73,14 @@ const WebIssues = () => {
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 0.5}}
-            >No ungoing support</motion.span>
+            >Add one more</motion.span>
           </div>
         </div>
         </div>
+        
       </motion.div>
       </div>
   )
 }
 
-export default WebIssues
+export default MarkeIssue

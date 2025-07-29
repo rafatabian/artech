@@ -1,0 +1,96 @@
+.marke_motivational_background{  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 0;
+}
+.marke_motivational{
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    gap: 3rem;
+}
+.marke_motivational > img{
+   width: 35%;
+   height: auto;
+   border-radius: 5px;
+}
+.marke_motiovational_text{
+    width: 100%;
+}
+.marke_motiovational_text > h1{
+    font-size: 40px;
+    font-family: var(--font-fam);
+    font-weight: 300;
+    margin-bottom: 1rem;
+    width: 100%;
+    line-height: 50px;
+}
+.marke_motiovational_text > h2{
+    font-size: 20px;
+    font-family: var(--font-fam);
+    font-weight: 300;
+    margin-bottom: 1rem;
+    max-width: 400px;
+    line-height: 25px;
+}
+.marke_motiovational_text > a {
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--green);
+    padding: 7px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+@media screen and (max-width: 1139px){
+.marke_motivational_background{
+    padding: 4rem 2rem;
+}
+.marke_motivational{
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem;
+    gap: 1.5rem;
+    max-width: 600px;
+}
+.marke_motivational > img{
+   width: 100%;
+}
+}
+@media screen and (max-width:700px){
+.marke_motivational{
+    padding: 0;
+    background-color: unset;
+}
+.marke_motiovational_text > h1{
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.3px;
+    margin-bottom: 0.5rem;
+}
+.marke_motiovational_text > h2{
+    font-size: 17px;
+    line-height: 1.25;
+    font-family: var(--font-fam);
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+.marke_motiovational_text > a{
+    width: 220px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0rem;
+}
+}

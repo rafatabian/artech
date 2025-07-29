@@ -1,39 +1,28 @@
-
+import "./Marketing.css"
 import { lazy, useEffect } from "react"
 import packages from "../../assets/data/plansData.js"
 import { Helmet } from "react-helmet-async"
-import firstMarketingURL from "../../assets/images/marketing/marketing_first_img.webp"
-import secondMarktingURL from "../../assets/images/marketing/marketing_marketing_img.webp"
-import thirdMarketingURL from "../../assets/images/marketing/marketing_digital.webp"
-import forthMakretingURL from "../../assets/images/marketing/marketing_strategy.webp"
-import { useTranslation } from "react-i18next"
 
-const ReusableComponent = lazy(() => import("../../components/ReusableComponent/ReusableComponent"))
+// const ReusableComponent = lazy(() => import("../../components/ReusableComponent/ReusableComponent"))
 const ReusablePlans = lazy(() => import("../../components/ReusablePlans/ReusablePlans"))
-const MarketingGraph = lazy(() => import("../../components/MarketingGraph/MarketingGraph.jsx")) 
+const MarketingGraph = lazy(() => import("../../components/MarkeComponents/MarketingGraph/MarketingGraph.jsx")) 
+const MarkeIntro = lazy(() => import("../../components/MarkeComponents/MarkeIntro/MarkeIntro.jsx"))
+const MarkeIssues = lazy(() => import("../../components/MarkeComponents/MarkeIssue/MarkeIssue.jsx"))
+const MarkeSolution = lazy(() => import("../../components/MarkeComponents/MarkeSolution/MarkeSolution.jsx"))
+const MarkeSteps = lazy(() => import("../../components/MarkeComponents/MarkeSteps/MarkeSteps.jsx"))
+const MarkeStory = lazy(() => import("../../components/MarkeComponents/MarkeStory/MarkeStory.jsx"))
+const MarkeMotivational = lazy(() => import("../../components/MarkeComponents/MarkeMotivational/MarkeMotivational.jsx"))
+const MarkeServices = lazy(() => import("../../components/MarkeComponents/MarkeServices/MarkeServices.jsx"))
 
 
 
 const HomeMarketing = () => {
-  const [t] = useTranslation("global")
 
   // scroll to top
 useEffect(() => {
   window.scrollTo(0, 0)
 }, [])
 
-  const marketingProps={
-    titles: ["MARKETING", `${t("marketing_title2")}`, `${t("marketing_title3")}`, `${t("marketing_title4")}`],
-    headings: [`${t("marketing_sub1")}`, `${t("marketing_sub2")}`, `${t("marketing_sub3")}`, `${t("marketing_sub4")}` ],
-    firstImage: firstMarketingURL,
-    secondImage: secondMarktingURL,
-    thirdImage: thirdMarketingURL,
-    forthImage: forthMakretingURL,
-    firstText: `${t("marketing_details1")}`,
-    secondText:[`${t("marketing_details2")}`, `${t("marketing_details2.1")}`], 
-    thirdText: [`${t("marketing_details3")}`, `${t("marketing_details3.1")}`],
-    forthText: [`${t("marketing_details4")}`, `${t("marketing_details4.1")}`],
-}
 
 
 
@@ -44,12 +33,26 @@ useEffect(() => {
       <meta name="description" content="Creste-ti numarul de vizitatori pe pagina si atrage mai multe priviri cu noi"/>
       <link rel="canonical" href="https://artech-agency.co/#/marketing"/>
     </Helmet>
+    <div className="marketing_container">
+      <MarkeIntro />
+    <MarkeIssues />
+    <MarkeSolution />
+    <MarkeSteps />
+    <MarkeServices />
+    <MarkeStory />
+     { packages && <ReusablePlans data={packages.Marketing} name="Marketing"/>}
+    <MarketingGraph/>
+    <MarkeMotivational />
+    
 
-       <ReusableComponent props={marketingProps}/>
+    </div>
+
+    
+    
+
+       {/* <ReusableComponent props={marketingProps}/> */}
        
-       <MarketingGraph/>
-
-      { packages && <ReusablePlans data={packages.Marketing} name="Marketing"/>}
+      
     </>
    
   )

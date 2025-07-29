@@ -45,7 +45,6 @@
     padding: 7px 0;
     border-radius: 5px;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 .web_intro_btn_container > a:first-child{
     margin-right: 1.1rem;
