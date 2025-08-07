@@ -1,0 +1,128 @@
+.marke__intro_background{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.marke_intro_container{
+   width: 100%;
+    min-height: 800px;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:center;
+    justify-content: start;
+    padding: 4rem 0;
+}
+.marke_intro_text{
+    width: 100%;
+    margin-left: 2.4rem;
+}
+.marke_intro_text > h1{
+    font-size: 60px;
+    max-width: 550px;
+    line-height: 60px;
+    font-family: var(--font-fam);
+    font-weight: 300;
+    margin-bottom: 2.3rem;
+}
+.marke_intro_text > p{
+   font-size: 22px;
+   font-family: var(--font-fam);
+   max-width: 300px;
+   line-height: 27px;
+   margin-bottom: 2.3rem;
+}
+.marke_button_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+}
+.marke_button_container > a{
+  display: block;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--green);
+    padding: 7px 0;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.marke_intro_container > img:first-child{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+.brand_intro_img_container{
+   height: 420px;
+   width: 100%;
+}
+.brand_intro_img_container > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px 300px 300px 20px;
+}
+@media screen and (max-width: 1139px) {
+  .marke_intro_container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+
+  .marke_intro_text {
+    max-width: 600px;
+    margin-left: unset;
+  }
+  .marke_intro_container > img:first-child{
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .marke_intro_container {
+    padding: 6rem 2rem;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .marke_intro_text > h1 {
+    font-size: 32px;
+    line-height: 37px;
+    max-width: 350px;
+    margin-bottom: 2rem;
+  }
+
+  .marke_intro_text > p {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 300px;
+    margin-bottom: 2rem;
+  }
+
+  .marke_button_container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+  }
+
+  .marke_button_container > a {
+    width: 220px;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .marke_intro_container > img:first-child {
+    max-width: 100%;
+  }
+}

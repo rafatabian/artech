@@ -1,0 +1,66 @@
+.brand_section {
+  background-color: #f9f9f9; /* soft gray */
+  width: 100%;
+  padding: 6rem 0;
+}
+
+.brand_container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.brand_heading {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-family: var(--font-fam);
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.brand_grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.brand_card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.brand_card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.brand_label_before {
+  font-size: 0.9rem;
+  color: #ef4444;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.brand_before_text {
+  font-size: 1.1rem;
+  color: #444; 
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.brand_label_after {
+  font-size: 0.9rem;
+  color: #16a34a; 
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.brand_after_text {
+  font-size: 1.15rem;
+  color: #000000; 
+  font-weight: 500;
+  font-family: var(--font-fam);
+}

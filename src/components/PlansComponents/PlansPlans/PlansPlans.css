@@ -1,0 +1,117 @@
+.plans_backgound{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem 0; 
+}
+ .plans_card_container{
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:20px
+ }
+.plans_pannel_option{
+    height: 100%;
+    width: 1000px;
+    min-width: 300px;
+    min-height: 935px;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 5px;
+    padding:  2.5rem 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #f7f9f8;
+    position: relative;
+    z-index: 7;
+    box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.13)
+}
+.plans_pannel_option > img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+    width: 100%;
+    height: 266px;
+}
+.plans_pannel_option::after{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 266px;
+   background: linear-gradient(transparent 95%,#f7f9f8);
+   top: 0;
+   left: 0;
+   right: 0;
+}
+
+.plans_pannele_title_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.plans_pannele_title_container > h1{
+    font-family: var(--font-fam);
+    width: 100%;
+    text-align: start;
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    z-index: 9;
+    margin-top: 120px;
+}
+.plans_pannel_option > a{
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--green);
+    padding: 7px 0;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.plans_pannel_option > div:nth-child(3){
+    margin-top: 70px;
+    height: 450px;
+}
+.plans_pannel_option div:nth-child(2) > ul{
+    width: 100%;
+    max-width: 300px;
+}
+.plans_pannel_option div:nth-child(3) > ul > li{
+    font-family: var(--font-fam);
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+.plans_pannel_option_details{
+    margin-top: 2rem;
+    margin-bottom: 0.7rem;
+    width:100%;
+    text-align: start;
+}
+@media screen and (max-width: 1139px){
+     .plans_card_container{
+        flex-wrap:wrap;
+     }
+}
+@media screen and (max-width: 700px){
+     .plans_card_container{
+        flex-wrap:wrap;
+     }
+}

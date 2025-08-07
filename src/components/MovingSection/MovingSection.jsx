@@ -1,49 +1,13 @@
 import "./MovingSection.css"
 import { motion } from "framer-motion"
 import { useLocation } from "react-router-dom";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 const MovingSection = ({props}) => {
   const scrollRef = useRef(null);
-  const directionRef = useRef(1);
   //seconde moving section
-  const secondScrollRef = useRef(null);
   const location = useLocation();
 
-
-
- useEffect(() => {
-  const el = scrollRef.current;
-  const secondEl = secondScrollRef.current;
-
-  if (secondEl) {
-    secondEl.scrollLeft = secondEl.scrollWidth - secondEl.clientWidth;
-  }
-
-  let animationFrameId;
-
-  const scroll = () => {
-    if (!el || !secondEl) return;
-
-    const maxScrollLeft = el.scrollWidth - el.clientWidth;
-
-    const speed = 0.5;
-
-    // Scroll both
-    el.scrollLeft += directionRef.current * speed;
-    secondEl.scrollLeft -= directionRef.current * speed;
-
-    if (el.scrollLeft + 1 >= maxScrollLeft || el.scrollLeft <= 0) {
-      directionRef.current *= -1;
-    }
-
-    animationFrameId = requestAnimationFrame(scroll);
-  };
-
-  animationFrameId = requestAnimationFrame(scroll);
-
-  return () => cancelAnimationFrame(animationFrameId);
-}, []);
 
 
   return (
@@ -78,8 +42,6 @@ const MovingSection = ({props}) => {
                     <img src={item.image} alt={item.title} />
                 </div>
             ))}
-        </div>
-        <div className="second_moving_section"  ref={secondScrollRef}>
             {props.secondSet.map((item, index) => (
                 <div key={index} className="moving_section_item">
                     <img src={item.image} alt={item.title} />

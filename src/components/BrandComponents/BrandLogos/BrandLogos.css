@@ -1,0 +1,52 @@
+.brand_logo_background{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem 0;
+    background-color: rgb(240, 240, 240);
+}
+.brand_logo_container{
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+}
+.brand_logo_background > h1{ 
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-family: var(--font-fam);
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+.brand_logo_text{
+    padding: 3rem 4rem;
+    background-color: white;
+     border-radius: 5px;
+    margin-right: 1rem;
+    gap: 1rem;
+}
+.brand_logo_text > span{
+    width: 100%;
+    font-size: 50px;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    line-height: 38px;
+    color: #333;
+    margin-top: 2.5rem;
+}
+.brand_logo_text > span > p{
+    font-size: 1rem;
+    margin-left: 10px;
+    line-height: 20px;
+    max-width: 300px;
+    color: black;
+}
+.brand_img_container div:first-child{
+    margin-bottom: 1rem;
+
+}

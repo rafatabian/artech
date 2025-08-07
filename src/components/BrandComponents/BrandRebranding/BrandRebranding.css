@@ -1,0 +1,111 @@
+.rebranding-section {
+  padding: 6rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rebranding-container {
+    width: 100%;
+  max-width: 1140px;
+  text-align: center;
+}
+
+.rebranding-title {
+    font-size: 50px;
+    font-family: var(--font-fam);
+    font-weight: 300;
+    margin-bottom: 2rem;
+    z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .rebranding-title {
+    font-size: 3rem;
+  }
+}
+.card-comparison {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .card-comparison {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  min-height: 580px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  padding: 1.5rem 2.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.after-card {
+  background-color: #f9fafb;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card-image {
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.card-label {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 0.4rem;
+  /* text-align: left; */
+}
+
+.card-description {
+  color: #444;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.card-benefits {
+    text-align: left;
+    font-family: var(--font-fam);
+    font-size: 17px;
+    margin-top: 1.5rem;
+    letter-spacing: 0.2px;
+}
+
+.card-benefits li {
+  margin-bottom: 0.5rem;
+}
+
+.cta {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-button {
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--green);
+    padding: 7px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    z-index: 3;
+    margin-top: 15px;
+}
+
+.cta-button:hover {
+  background-color: #1f2937;
+}

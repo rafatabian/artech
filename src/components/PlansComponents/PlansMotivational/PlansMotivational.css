@@ -1,0 +1,101 @@
+.plans_motivational_background{  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 0;
+    background-color: #f4f4f4;
+}
+.plans_motivational{
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2rem 3rem;
+    gap: 3rem;
+    box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.1)
+}
+.plans_motivational > img{
+   width: 45%;
+   height: auto;
+   border-radius: 5px;
+   border: 2px solid rgb(236, 236, 236);
+}
+.plans_motiovational_text{
+    width: 100%;
+}
+.plans_motiovational_text > h1{
+    font-size: 40px;
+    font-family: var(--font-fam);
+    font-weight: 300;
+    max-width: 500px;
+    margin-bottom: 1rem;
+    width: 100%;
+    line-height: 45px;
+}
+.plans_motiovational_text > h2{
+    font-size: 18px;
+    font-family: var(--font-fam);
+    font-weight: 300;
+    margin-bottom: 1rem;
+    max-width: 450px;
+    line-height: 23px;
+}
+.plans_motiovational_text > a {
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--green);
+    padding: 7px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+@media screen and (max-width: 1139px){
+.marke_motivational_background{
+    padding: 4rem 2rem;
+}
+.plans_motivational{
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem;
+    gap: 1.5rem;
+    max-width: 600px;
+}
+.plans_motivational > img{
+   width: 100%;
+}
+}
+@media screen and (max-width:700px){
+.plans_motivational{
+    padding: 0;
+    background-color: unset;
+}
+.plans_motiovational_text > h1{
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.3px;
+    margin-bottom: 0.5rem;
+}
+.plans_motiovational_text > h2{
+    font-size: 17px;
+    line-height: 1.25;
+    font-family: var(--font-fam);
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+.plans_motiovational_text > a{
+    width: 220px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0rem;
+}
+}

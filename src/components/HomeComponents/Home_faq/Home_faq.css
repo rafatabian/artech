@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: #E7E3DA;
+    /* background-color: #e9e9e9; */
     padding: 2.4rem 0;
     box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.2);
 }
