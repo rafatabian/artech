@@ -4,7 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5rem 0px;
+    padding: 6rem 0px;
+    background-color: #f8f8f8;;
 }
 .homePachete_container{ 
     width: 100%;
@@ -15,18 +16,18 @@
     flex-direction: column;
 }
 .homePachete_container > h1{
-    width: 100%;
-    text-align: center;
-    font-size: 2.5rem;
+    line-height: 55px;
+    font-size: 50px;
     font-family: var(--font-fam);
-    font-weight: 600;
+    font-weight: 300;
+    margin-bottom: 0.3rem
 }
 .homePachete_container > h2{
     text-align: center;
     font-size: 1.3rem;
     font-weight: 400;
     color: #666;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     font-family: var(--fontFam);
 }
 .homePachete_text{
@@ -34,7 +35,7 @@
     max-width: 500px;
 }
 .home_plans_btn{
-    display: block;
+display: block;
 width: 365px;
 text-decoration: none;
 text-align: center;
@@ -44,7 +45,7 @@ background-color: var(--green);
 padding: 15px 30px;
 border: none;
 border-radius: 5px;
-margin-top: 1.2rem;
+margin-top: 1.8rem;
 font-size: 1.2rem;
 font-weight: 500;
 padding: 9px 0;
@@ -68,7 +69,7 @@ box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.2);
     background-color: #f7f9f8;
     border-radius: 5px;
     padding: 2rem;
-    box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.07);
     position: relative;
 }
 .homePachete_second_card{

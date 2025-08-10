@@ -4,10 +4,7 @@
     min-width: 300px;
     animation: 1s;
     padding: 20px 10px;
-    border-radius: 9px;
-}
-.question_green_container{
-    background-color: #e1f4e9;;
+    border-bottom: 1px solid rgb(212, 212, 212);
 }
 
 .question_container > div > div:first-child{
@@ -21,16 +18,17 @@
 .question_container > div > div:first-child > p{
     font-family: var(--font-fam);
     font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     color: #333333;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.2px;
 }
 .question_container > div > div:first-child > svg{
    width: 22px;
    height: 22px;
    min-width: 22px;
    min-height: 22px;
-   color: #333333;
+   color: #666;
 }
 .help_answer{
     margin-top:15px;

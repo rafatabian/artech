@@ -158,7 +158,7 @@
 .contact_phone_email div:first-child > svg{
     width: 26px;
     height: 26px;
-    color: #21b758;
+    color: #1fa851;
     margin-right: 5px;
 }
 .contact_phone_email div:nth-child(2) > svg{
@@ -244,16 +244,26 @@
     }
 }
 @media screen and (max-width: 730px){
+    .contact_container{
+        background-color: white;
+    }
     .contact_form,
     .contact_phone_email{
         width: 100%;
         border-radius: unset;
         max-width: unset;
         padding: 2rem 20px;
+        box-shadow: unset;
     }
     .contact_alternative_line{
         width: 100%;
     }
+    .contact_phone_email{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+     }
 }
 @media screen and (max-width: 510px){
      .contact_phone_email{

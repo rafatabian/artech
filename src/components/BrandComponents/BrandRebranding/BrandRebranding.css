@@ -27,7 +27,7 @@
 }
 .card-comparison {
   display: grid;
-  gap: 2.5rem;
+  gap: 2rem;
   grid-template-columns: 1fr;
   align-items: center;
 }
@@ -39,6 +39,7 @@
 }
 
 .card {
+  height: 100%;
   min-height: 580px;
   border: 1px solid #e5e7eb;
   border-radius: 5px;
@@ -52,7 +53,7 @@
 }
 
 .card-image {
-  border-radius: 0.5rem;
+  border-radius: 5px;
   margin-bottom: 1rem;
   width: 100%;
 }
@@ -108,4 +109,48 @@
 
 .cta-button:hover {
   background-color: #1f2937;
+}
+@media screen and (max-width:700px){
+  .rebranding-title {
+    font-size: 32px;
+    line-height: 37px;
+    max-width: unset;
+    margin: 0 0 1rem 0;
+    padding: 0 2rem;
+    text-align: left;
+}
+.card {
+  height: 100%;
+  min-height: unset;
+  border: unset;
+  border-radius: unset;
+  padding: 2rem;
+  box-shadow:unset;
+}
+.card-comparison{
+  gap: unset;
+}
+.after-card{
+  border-top: 1px solid gray;
+  background-color: white;
+}
+.card-image {
+  margin-bottom: 0.5rem;
+}
+.card-label {
+  text-align: left;
+}
+.card-label{
+  margin: 0;
+}
+.card-description{
+  margin-bottom: 1rem;
+}
+.cta{
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+margin: 0;
+padding-left: 2rem;
+}
 }

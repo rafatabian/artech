@@ -1,7 +1,7 @@
 .blog_conteiner_background{
   width: 100%;
-    padding: 8rem 0;
-    background-color: #f7f9f8;
+    padding: 6rem 0 7rem 0;
+    background-color: white;
   }
   
   .blog-container {
@@ -14,10 +14,11 @@
     justify-content: space-between;
   }
   .blog-title {
-    font-size: 2.5rem;
+    line-height: 55px;
+    font-size: 50px;
     font-family: var(--font-fam);
-    font-weight: 500;
-    margin-bottom: 0.2rem;
+    font-weight: 300;
+    margin-bottom: 0.3rem;
   }
   
   .blog-description {

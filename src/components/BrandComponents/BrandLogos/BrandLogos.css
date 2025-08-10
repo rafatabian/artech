@@ -5,12 +5,14 @@
     justify-content: center;
     flex-direction: column;
     padding: 6rem 0;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(245, 245, 245);
 }
 .brand_logo_container{
     width: 100%;
     max-width: 1140px;
     display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
 }
 .brand_logo_background > h1{ 
     width: 100%;
@@ -21,16 +23,15 @@
     margin-bottom: 2rem;
 }
 .brand_logo_text{
+    width: 50%;
     padding: 3rem 4rem;
     background-color: white;
      border-radius: 5px;
-    margin-right: 1rem;
-    gap: 1rem;
+     box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.02);
 }
 .brand_logo_text > span{
     width: 100%;
     font-size: 50px;
-    /* background-color: aquamarine; */
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -46,7 +47,154 @@
     max-width: 300px;
     color: black;
 }
+.brand_img_container{
+    width: 50%;
+    border: 2px solid rgb(226, 226, 226);
+    padding: 1.5rem 6rem;
+    border-radius: 5px;
+}
 .brand_img_container div:first-child{
-    margin-bottom: 1rem;
-
+    margin-bottom: -60px;
+    display: flex;
+    align-items: flex-end;
+}
+.brand_img_container div:first-child::after{
+    content: "";
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    margin-left: -60px;
+    margin-bottom: 20px;
+    width: 165px;
+    height: 150px;
+    border-radius: 75px;
+    border: 5px solid rgb(0, 0, 0);
+}
+.brand_img_container div:nth-child(2)::before{
+    content: "";
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    margin-right: -55px;
+    margin-bottom: -110px;
+    width: 155px;
+    height: 130px;
+    border-radius: 160px;
+    border: 5px solid rgb(0, 0, 0);
+}
+.brand_logo_img_container > img{
+    width: 100%;
+    max-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.brand_img_container > div:nth-child(2){
+    width: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: -60px;
+}
+.brand_logo_img_container > img:nth-child(1){
+    z-index: 12;
+}
+.brand_img_container div:nth-child(3) > img{
+    position: relative;
+    z-index: 13;
+}
+.brand_img_container > .brand_logo_img_container:nth-child(3) > img{
+    z-index: 13
+}
+.brand_logo_text > a{
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--green);
+    padding: 7px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    z-index: 3;
+    margin-top: 45px;
+}
+@media screen and (max-width:1000px){
+.brand_logo_container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.brand_logo_text,
+.brand_img_container{
+    width: 100%;
+    max-width: 600px;
+}
+.brand_img_container{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.brand_img_container div:nth-child(3) > img{
+    position: relative;
+    z-index: 13;
+    margin-right: 105px;
+}
+}
+@media screen and (max-width:700px){
+.brand_logo_background > h1{
+    font-size: 32px;
+    line-height: 37px;
+    margin: 0 0 1rem 0;
+    padding: 0 2rem;
+    text-align: left;
+}
+.brand_logo_container{
+    gap: unset;
+}
+.brand_logo_text,
+.brand_img_container{
+    box-shadow: unset;
+    border-radius: unset;
+}
+.brand_logo_text{
+    background-color: #f5f5f5;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    padding: 1rem 2rem 3rem 2rem;
+    margin-top: 1rem;
+}
+ .brand_img_container{
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 3rem 2rem;
+    border: unset;
+ }
+ .brand_logo_img_container{
+    max-width: 320px;
+}
+ .brand_logo_img_container > img{
+    width: 180px;
+}
+.brand_img_container div:first-child::after{
+    margin-left: -50px;
+    margin-bottom: 5px;
+    width: 135px;
+    height: 120px;
+}
+.brand_img_container div:nth-child(2)::before{
+    margin-right: -55px;
+    margin-bottom: -100px;
+    width: 135px;
+    height: 100px;
+}
+.brand_img_container > div:nth-child(2),
+.brand_img_container > div:nth-child(1){
+    margin-bottom: -35px;
+}
+.brand_logo_background{
+    padding: 5rem 0 3rem 0;
+}
 }

@@ -35,10 +35,11 @@ justify-content: center;
 margin-left: 2rem;
 }
 .hone_intro_text_container h1{
-font-size: 2.5rem;
-font-weight: 600;
-margin-bottom: 1rem;
-line-height: 50px;
+    line-height: 55px;
+    font-size: 50px;
+    font-family: var(--font-fam);
+    font-weight: 300;
+    margin-bottom: 1.5rem;
 }
 .hone_intro_text_container p{
 font-size: 1.2rem;

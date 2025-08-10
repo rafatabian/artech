@@ -1,0 +1,110 @@
+.services-section {
+  background-color: #ffffff;
+  padding: 6rem 0;
+}
+
+.services-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+}
+.service-icon-container > svg{
+   width: 50px;
+   height: 50px;
+   fill: rgb(58, 58, 58);
+   margin-bottom: 1rem;
+}
+.services-title {
+  margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    line-height: 55px;
+    font-size: 50px;
+    font-family: var(--font-fam);
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 2rem 1.5rem;
+}
+
+
+/* IMAGE CONTAINER */
+.service-image-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* makes it square */
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+
+/* OVERLAY TEXT */
+.service-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  padding: 1rem;
+  text-align: left;
+}
+
+.service-overlay-text {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.service-card-title{
+  text-align: start;
+  font-family: var(--font-fam);
+  font-size: 1.1rem;
+}
+/* DESCRIPTION */
+.service-card-desc {
+  color: #444;
+  font-family: var(--font-fam);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 0.7rem;
+  text-align: start;
+}
+@media screen and (max-width:1139px){
+  .services-grid {
+grid-template-columns: repeat(2, 1fr);}
+}
+@media screen and (max-width:700px){
+  .services-grid {
+grid-template-columns: repeat(1, 1fr);
+gap: unset;
+}
+.services-title {
+  margin-left: 0;
+  margin-right: 0; 
+  font-size: 32px;
+  line-height: 37px;
+  max-width: unset;
+  margin: 0 0 2rem 0;
+  padding: 0 2rem;
+  text-align: left;
+}
+.service-card {
+  padding: 2rem;
+  border-radius: unset;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  box-shadow: unset;
+}
+.services-grid > div:first-child{
+    border-top: 1px solid rgb(229, 229, 229);
+}
+}

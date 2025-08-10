@@ -64,10 +64,14 @@
 .brand_intro_img_container{
    height: 420px;
    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 .brand_intro_img_container > img{
     height: 100%;
     width: 100%;
+    max-width: 600px;
     object-fit: cover;
     display: block;
     border-radius: 20px 300px 300px 20px;
@@ -90,6 +94,11 @@
 }
 
 @media screen and (max-width: 700px) {
+  .brand_intro_img_container{
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+}
   .marke_intro_container {
     padding: 6rem 2rem;
     align-items: flex-start;
@@ -125,4 +134,8 @@
   .marke_intro_container > img:first-child {
     max-width: 100%;
   }
+  .brand_intro_img_container{
+   height: 320px;
+
+}
 }

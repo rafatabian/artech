@@ -1,44 +1,44 @@
 import "./BrandIssue.css"
 
-const Brandissue = () => {
-
+const BrandIssue = () => {
   const data = [
     {
-      before: "My logo doesn’t look professional",
-      after: "A logo I’m proud to show everywhere",
+      before: "My brand feels unclear and forgettable",
+      after: "A distinctive brand that captures attention instantly",
     },
     {
-      before: "People don’t get what I offer",
-      after: "Clear messaging that speaks to my audience",
+      before: "I struggle to communicate my value clearly",
+      after: "Messaging that connects deeply with my ideal clients",
     },
     {
-      before: "I don’t know how to use my brand",
-      after: "Templates and tools that make it easy",
+      before: "I’m unsure how to apply my branding consistently",
+      after: "Ready-to-use templates that simplify every touchpoint",
     },
     {
-      before: "I’m blending in with others",
-      after: "A brand that actually stands out",
+      before: "My business blends into a crowded market",
+      after: "A unique brand identity that sets you apart confidently",
     },
-  ]; 
-  
-  return (
-    <section className="brand_section">
-      <div className="brand_container">
-        <h2 className="brand_heading">From Frustrated to Fully Branded</h2>
+  ];
 
-        <div className="brand_grid">
+  return (
+    <section className="brand-issue-section">
+      <div className="brand-issue-container">
+        <h2 className="brand-issue-heading">From Brand Uncertainty to Clear Impact</h2>
+
+        <div className="brand-issue-grid">
           {data.map((item, index) => (
-            <div key={index} className="brand_card">
-              <div className="brand_label_before">Before</div>
-              <p className="brand_before_text">“{item.before}”</p>
-              <div className="brand_label_after">After</div>
-              <p className="brand_after_text">{item.after}</p>
+            <div key={index} className="brand-issue-card" tabIndex={0} aria-label={`Before: ${item.before}, After: ${item.after}`}>
+              <div className="brand-issue-label before">Before</div>
+              <p className="brand-issue-text before">“{item.before}”</p>
+              <div className="brand-issue-label after">After</div>
+              <p className="brand-issue-text after">{item.after}</p>
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Brandissue
+
+export default BrandIssue

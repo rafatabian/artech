@@ -1,66 +1,122 @@
-.brand_section {
-  background-color: #f9f9f9; /* soft gray */
-  width: 100%;
+.brand-issue-section {
+  background: #fafafa;
   padding: 6rem 0;
+  font-family: 'Inter', sans-serif;
 }
 
-.brand_container {
-  width: 100%;
+.brand-issue-container {
   max-width: 1140px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.brand_heading {
-    width: 100%;
-    text-align: center;
+.brand-issue-heading {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  line-height: 55px;
+  text-align: center;
     font-size: 50px;
     font-family: var(--font-fam);
     font-weight: 300;
     margin-bottom: 2rem;
+    z-index: 2;
 }
 
-.brand_grid {
+.brand-issue-grid {
   display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 1.3rem;
 }
 
-.brand_card {
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
+.brand-issue-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  outline-offset: 4px;
 }
 
-.brand_card:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.brand_label_before {
-  font-size: 0.9rem;
-  color: #ef4444;
-  font-weight: 600;
-  margin-bottom: 0.3rem;
-}
-
-.brand_before_text {
+.brand-issue-label {
   font-size: 1.1rem;
-  color: #444; 
-  font-weight: 500;
-  font-style: italic;
-  margin-bottom: 1.5rem;
-}
-
-.brand_label_after {
-  font-size: 0.9rem;
-  color: #16a34a; 
   font-weight: 600;
-  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
 }
 
-.brand_after_text {
-  font-size: 1.15rem;
-  color: #000000; 
-  font-weight: 500;
+.brand-issue-label.before {
+  color: #e53e3ece;
   font-family: var(--font-fam);
+}
+
+.brand-issue-label.after {
+  color: #2f855ac5;
+    font-family: var(--font-fam);
+}
+
+.brand-issue-text {
+  font-size: 1.15rem;
+  line-height: 1.5;
+    font-family: var(--font-fam);
+}
+
+.brand-issue-text.before {
+  color: #555;
+  font-style: italic;
+    font-family: var(--font-fam);
+    margin-bottom: 1.3rem;
+}
+
+.brand-issue-text.after {
+  color: #333;
+  font-weight: 500;
+    font-family: var(--font-fam);
+}
+@media screen and (max-width: 1139px) {
+  .brand-issue-container{
+    /* max-width: 600px; */
+    width: 100%;
+  }
+.brand-issue-grid{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.brand-issue-card{
+  width: 100%;
+  max-width: 600px;
+}
+.brand-issue-heading{
+  max-width: 600px;
+  text-align: start;
+}
+}
+@media screen and (max-width: 700px) {
+  .brand-issue-grid{
+   gap: unset
+  }
+.brand-issue-card{
+  max-width: unset;
+  border-radius: unset;
+  box-shadow: unset;
+  border-bottom: 1px solid rgb(205, 205, 205);
+  background-color: #fafafa;;
+  padding: 2.7rem 2rem;
+}
+.brand-issue-grid > div:first-child{
+  border-top: 1px solid rgb(205, 205, 205);
+}
+  .brand-issue-section {
+    padding: 4rem 0;
+  }
+.brand-issue-heading {
+  width: 100%;
+  font-size: 32px;
+  line-height: 37px;
+  max-width: 350px;
+  margin: 0 0 2rem 2rem;
+}
 }

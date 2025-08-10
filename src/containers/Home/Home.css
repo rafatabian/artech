@@ -20,31 +20,41 @@
 }
 .home_intro_img{
   width: 100%;
-  max-width: 1140px;
+  height: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
 }
 .home_new_presentation {
-  width: 80%;
+  width: 100%;
   height: 100%;
   overflow: hidden;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding:3rem 6rem;
-   backdrop-filter: blur(8px);
-   background:#171717ca;
+  padding:4rem 6rem;
+   /* backdrop-filter: blur(2px); */
+   /* background-color: rgba(255, 255, 255, 0.7); */
   border-radius: 5px;
 }
-
+.home_intro_text{
+  padding: 3rem 6rem;
+  width: 100%;
+  max-width: 1140px;
+  border-top: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+  backdrop-filter: blur(8px);
+    background: #171717ca;
+    border-radius: 5px;
+}
 .home_new_title > h1 {
   font-family: var(--font-fam);
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 70px;
+  font-size: 110px;
+  font-weight: 600;
+  letter-spacing: -3.5px;
+  line-height: 80px;
   color: rgb(255, 255, 255);
   text-align: start;
   user-select: none;
@@ -56,19 +66,19 @@
   font-weight: 500;
   line-height: 30px;
   margin-top: 1rem;
+  letter-spacing: -0.5px;
   text-align: start;
-  max-width: 800px;
     user-select: none;
  }
-.home_new_presentation > p {
-  color: rgb(255, 255, 255);
+.home_intro_text > p {
   font-family: var(--font-fam);
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   line-height: 1.4;
   max-width: 566px;
   padding: 1.5rem 0;
   text-align: start;
     user-select: none;
+    color:white
 }
 .home_new_btns_container {
   width: 100%;
@@ -114,7 +124,6 @@ border: 1px solid rgb(0, 66, 25);
   width: 100%;
 }
 
-/* add this styles to the other sections as well */
 .home_pachete {
   width: 100%;
   background-color: #f0f0f0;
@@ -123,57 +132,40 @@ border: 1px solid rgb(0, 66, 25);
   justify-content: center;
   padding: 2rem 0;
 }
-/* change img on phone for better performance */
 @media screen and (max-width:760px){
 .home_new_container {
-  background-image: url('../../assets/images/home/home_intro_phone.webp');
   background-size: cover;
   display: flex;
   align-self: center;
   justify-content: center;
 }
 .home_new_presentation{
-  width: 100%;
-  max-width: calc(100vw - 2rem);
-  height: 100%;
-  margin:0 1rem;
-  padding:2rem 2rem;
-  margin-top: -15vh;
-
-  backdrop-filter: blur(6px);
-  background:#2c2c2cba;
-  
+  padding:2rem;
 }
 .home_new_title > h1{
-  font-size: 60px;
+  font-size: 70px;
   width: 100%;
-  text-align: center;
-  font-weight: 600;
 }
 .home_new_title > h2{
-  font-size: 22px;
-  letter-spacing: 0.3px;
+  font-size: 21px;
+  letter-spacing: -0.1px;
   width: 100%;
-  text-align: center;
   margin-top: -4px;
-  font-weight: 400;
-  color: #f3f3f3;
-  line-height: 27px;
 }
-.home_new_presentation{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.home_intro_text{
+ padding: 1.5rem 0 2rem 0;
 }
-.home_new_presentation > p{
+.home_intro_text > p{
   font-size: 17px;
   max-width: 350px;
-  text-align: center;
+}
+.home_new_btns_container > a{
+   padding-left: 1.2rem;
+   justify-content: start;
+   height: 40px;
 }
 .home_new_btns_container{
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
 }
 .home_new_btns_container > a:nth-child(1) {
@@ -184,5 +176,6 @@ border: 1px solid rgb(0, 66, 25);
   max-width: 350px;
   font-size: 16px;
   letter-spacing: 0.2px;
+  text-align: start;
 }
 }

@@ -55,6 +55,7 @@ const Home = () => {
 
          
           <div className="home_new_presentation">
+            <div className="home_intro_text">
             <div className="home_new_title">
               <h1>ARTECH</h1>
               <h2>BRANDING - WEBSITES - MARKETING</h2>
@@ -67,21 +68,13 @@ const Home = () => {
               <Link to="/contact">{t("home_consultation")}</Link>
             </div>
           </div>
+          </div>
         </div>
-          {/* <div className="home_video">
-            <video
-              src={homeVideo}
-              autoPlay
-              loop
-              muted
-              playsInline
-              controlsList="nofullscreen"
-              preload="auto"
-            />
-          </div> */}
         </div>
-        {/* our services */}
-        <HomeIntro />
+
+
+        {/* to do intro section */}
+        {/* <HomeIntro /> */}
 
         <HomeOurServices />
 

@@ -1,12 +1,12 @@
 .home_steps_background{
-  background-color: #f7f9f8;
+  background-color:white;
   width: 100%;
   height: 100%;  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 8rem 0px; 
+  padding: 6rem 0px; 
 }
 .home_steps_container{
     width: 100%;
@@ -22,9 +22,12 @@
     width: 100%; 
 }
 .home_steps_titles > h1{
+     line-height: 55px;
+    font-size: 50px;
+    font-family: var(--font-fam);
+    font-weight: 300;
+    margin-bottom: 0.3rem;
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: 600;
 }
 .home_steps_titles > h2{
     text-align: center;
@@ -32,7 +35,7 @@
     font-weight: 400;
     color: #666;
       font-family: var(--fontFam);
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
 }
 .home_steps_step_container{
     display: flex;
@@ -91,7 +94,7 @@ padding: 6px 0;
 border-radius: 5px;
 text-decoration: none;
 transition: color 0.3s ease;
-margin-top: 2rem;
+margin-top: 4rem;
     box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.2);
 
 }

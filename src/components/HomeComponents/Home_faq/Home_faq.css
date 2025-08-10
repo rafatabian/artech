@@ -1,7 +1,8 @@
 .home_faq_background{
     width: 100%;
     height: 100%;
-    padding: 5rem 0;
+    padding: 6rem 0;
+    background-color: #f8f8f8;;
 }
 .home_faq_container{
     max-width: 1140px;
@@ -12,17 +13,16 @@
     align-items: center;
     justify-content: space-between;
     background-color: #E7E3DA;
-    /* background-color: #e9e9e9; */
     padding: 2.4rem 0;
     box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.2);
 }
 .faq_title{
-    width: 100%;
-    text-align: center;
-    font-size: 2.5rem;
+   text-align: center;
+     line-height: 55px;
+    font-size: 50px;
     font-family: var(--font-fam);
-    font-weight: 500;
-    margin-bottom: 1rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
 }
 .home_faq_background > h2{
     text-align: center;
@@ -73,7 +73,10 @@
 .home_faq_contact > a{
     text-decoration: none;
     width: 180px;
-    text-align: center;
+    max-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 500;
     color: white;
     background-color: var(--green);
