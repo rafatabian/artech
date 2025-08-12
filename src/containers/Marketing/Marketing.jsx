@@ -1,10 +1,10 @@
 import "./Marketing.css"
 import { lazy, useEffect } from "react"
-import packages from "../../assets/data/plansData.js"
+// import packages from "../../assets/data/plansData.js"
 import { Helmet } from "react-helmet-async"
 
 // const ReusableComponent = lazy(() => import("../../components/ReusableComponent/ReusableComponent"))
-const ReusablePlans = lazy(() => import("../../components/ReusablePlans/ReusablePlans"))
+// const ReusablePlans = lazy(() => import("../../components/ReusablePlans/ReusablePlans"))
 const MarketingGraph = lazy(() => import("../../components/MarkeComponents/MarketingGraph/MarketingGraph.jsx")) 
 const MarkeIntro = lazy(() => import("../../components/MarkeComponents/MarkeIntro/MarkeIntro.jsx"))
 const MarkeIssues = lazy(() => import("../../components/MarkeComponents/MarkeIssue/MarkeIssue.jsx"))
@@ -40,7 +40,7 @@ useEffect(() => {
     <MarkeSteps />
     <MarkeServices />
     <MarkeStory />
-     { packages && <ReusablePlans data={packages.Marketing} name="Marketing"/>}
+     {/* { packages && <ReusablePlans data={packages.Marketing} name="Marketing"/>} */}
     <MarketingGraph/>
     <MarkeMotivational />
     

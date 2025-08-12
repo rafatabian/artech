@@ -1,7 +1,7 @@
 import "./Websites.css"
 import { lazy, useEffect} from "react"
 import { Helmet } from "react-helmet-async"
-import packages from "../../assets/data/plansData.js"
+// import packages from "../../assets/data/plansData.js"
 //images
 import img1 from "../../assets/images/moving_section_icons/websites/img1.png"
 import img2 from "../../assets/images/moving_section_icons/websites/img2.png"
@@ -24,7 +24,7 @@ import WebSteps from "../../components/WebComponents/WebSteps/WebSteps.jsx"
 import WebOurWork from "../../components/WebComponents/WebOurWork/WebOurWork.jsx"
 import WebMotivational from "../../components/WebComponents/WebMotivational/WebMotivational.jsx"
 
-const ReusablePlans = lazy(() => import("../../components/ReusablePlans/ReusablePlans"))
+// const ReusablePlans = lazy(() => import("../../components/ReusablePlans/ReusablePlans"))
 const MovingSection = lazy(() => import("../../components/MovingSection/MovingSection.jsx"))
 
 const HomeWebsites = () => {
@@ -74,7 +74,7 @@ const props = {
       {/* fifth section */}
       <WebOurWork />
       {/* sisth section */}
-{packages && <ReusablePlans data={packages.Websites} name="Websites"/>}
+{/* {packages && <ReusablePlans data={packages.Websites} name="Websites"/>} */}
       {/* seventy section */}
       <MovingSection props={props}/>
       {/* last section */}

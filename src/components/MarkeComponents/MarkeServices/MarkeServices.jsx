@@ -1,6 +1,7 @@
 import "./MarkeServices.css"
-import { FaFacebookSquare, FaGoogle, FaLinkedin, FaInstagram, FaTiktok} from "react-icons/fa"
-import { IoMail } from "react-icons/io5";
+import { FaFacebookSquare, FaGoogle, FaSearch} from "react-icons/fa"
+import { FaArrowUpRightDots } from "react-icons/fa6"
+import { IoMail, IoDocumentText } from "react-icons/io5";
 
 const MarkeServices = () => {
   return (
@@ -12,27 +13,27 @@ const MarkeServices = () => {
       <div className="marke_services_content">
         <span>
           <FaFacebookSquare />
-          <p>Facebook marketing</p>
+          <p>Social media marketing</p>
         </span>
          <span>
          <FaGoogle />
           <p>Google ads</p>
         </span>
          <span>
-         <FaLinkedin />
-          <p>Linkedin marketing</p>
+         <FaSearch />
+          <p>Monitoring and reports</p>
         </span>
          <span>
-          <FaInstagram />
-          <p>Instagram marketing </p>
+          <FaArrowUpRightDots />
+          <p>360 launch campains</p>
         </span>
          <span>
           <IoMail />
           <p>Email marketing</p>
         </span>
          <span>
-          <FaTiktok />
-          <p>TikTok marketing</p>
+          <IoDocumentText />
+          <p>Content marketing</p>
         </span>
       </div>
     </div>

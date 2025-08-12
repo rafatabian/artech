@@ -91,7 +91,7 @@ const PlansPlans = ({ sectionRef }) => {
   "FREE maintenance for 1 month",
   "Competitor research",
   "Website traffic reports",
-  "Email marketing campaign setup",
+  "Email marketing setup",
   ];
   return (
     <div className="plans_backgound" ref={sectionRef}>

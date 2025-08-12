@@ -1,6 +1,6 @@
 import { lazy, useEffect } from "react"
 import { Helmet } from "react-helmet-async"
-import packages from "../../assets/data/plansData.js"
+// import packages from "../../assets/data/plansData.js"
 
 //images tools we use in branding
 import img1 from "../../assets/images/moving_section_icons/branding/img1.webp"
@@ -25,7 +25,7 @@ const BrandMotivational = lazy(() => import("../../components/BrandComponents/Br
 const BrandStory = lazy(() => import("../../components/BrandComponents/BrandStory/BrandStory.jsx"))
 const BrandServices = lazy(() => import("../../components/BrandComponents/BrandServices/BrandServices.jsx"))
 
-const ReusablePlans = lazy(() => import("../../components/ReusablePlans/ReusablePlans"))
+// const ReusablePlans = lazy(() => import("../../components/ReusablePlans/ReusablePlans"))
 const MovingSection = lazy(() => import("../../components/MovingSection/MovingSection.jsx"))
 
 
@@ -73,7 +73,7 @@ const props = {
     <BrandRebranding/>
     <BrandLogos/>
     <BrandStory/>
-    {packages && <ReusablePlans data={packages.Branding} name="Branding"/>}
+    {/* {packages && <ReusablePlans data={packages.Branding} name="Branding"/>} */}
     <MovingSection props={props}/>
     <BrandMotivational/>
     </>

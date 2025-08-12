@@ -59,6 +59,12 @@
     font-size: 1rem;
     font-weight: 400;
 }
+/* different sizes icons */
+.marke_services_content > span:nth-child(4) svg,
+.marke_services_content > span:nth-child(6) svg{
+    width: 24px;
+    height: 24px;
+}
 @media screen and (max-width: 1139px){
     .marke_services_content{
         grid-template-columns: repeat(2, 1fr);

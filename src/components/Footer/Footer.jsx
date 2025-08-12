@@ -7,14 +7,16 @@ import { useState } from "react"
 
 const Footer = () => {
 
-    const [emailData, setEmailData] = useState({
-    tip_solicitare: "/",
-    planul:"/",
-    descriere:"",
-    nume:"",
-    telefon:"/",
-    email:""
-    })
+  const initialEmailData = {
+  tip_solicitare: "/",
+  planul: "/",
+  descriere: "",
+  nume: "",
+  telefon: "/",
+  email: ""
+};
+
+const [emailData, setEmailData] = useState(initialEmailData);
 
     // function for sending emails
 const sendEmail = (e) => {
@@ -27,6 +29,8 @@ const sendEmail = (e) => {
       .then(
         () => {
           console.log('SUCCESS!');
+        // Reset the form state to clear the inputs
+        setEmailData(initialEmailData);
         },
         (error) => {
           console.log('FAILED...', error.text);

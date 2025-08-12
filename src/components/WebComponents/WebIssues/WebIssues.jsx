@@ -45,28 +45,28 @@ const WebIssues = () => {
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 0.5}}
-            >No clear strategy</motion.span>
+            >Slow website</motion.span>
             <motion.span
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 0.5}}
-            >Marketing campains are not optimised</motion.span>
+            >Leak of clear vision or strategy</motion.span>
             <motion.span
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 0.5}}
-            >No testing or data-based improvement</motion.span>
+            >No serach engine optimisation SEO</motion.span>
             <motion.span
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 0.5}}
-            >Ads that look good but don’t sell</motion.span>
+            >Leak of functionality and customisation</motion.span>
             <motion.span
               variants={{
                 hidden: { opacity: 0, y: 20 },
