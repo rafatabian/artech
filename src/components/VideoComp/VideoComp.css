@@ -1,0 +1,20 @@
+/* Layout.css */
+.layout {
+  min-height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.background-video {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.layout-content {
+  position: relative;
+  z-index: 1;
+}

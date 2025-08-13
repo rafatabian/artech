@@ -21,6 +21,10 @@ const Terms = lazy(() => import("./agreements/terms/Terms"))
 const OfferBanner = lazy(() => import("./containers/OfferBanner/OfferBanner"))
 const Offer = lazy(() => import("./containers/Offer/Offer"))
 
+//video
+const VideoComp = lazy(() => import("./components/VideoComp/VideoComp"))
+
+
 
 const App = () => {
 
@@ -34,6 +38,7 @@ const App = () => {
      <ContextProvider>
       <BrowserRouter>
       <Navbar />
+      <VideoComp />
      {/* <OfferBanner /> */}
        <Routes>
         <Route path="/" element={<Home />} />
