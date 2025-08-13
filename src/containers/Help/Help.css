@@ -4,6 +4,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: row;
+    background-color: white;
 }
 .help_question_title{
     width: 550px;
