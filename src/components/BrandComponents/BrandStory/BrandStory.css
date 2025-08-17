@@ -103,8 +103,9 @@
 }
 .brand_story_text > h1{
     letter-spacing: 0.3px;
-    font-size: 32px;
-    line-height: 37px;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 400;
     margin: 0 0 1rem 0;
     text-align: start;
 }
@@ -118,7 +119,7 @@
 .brand_story_text > h3{
     font-size: 22px;
     font-family: var(--font-fam);
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 0.5rem;
 }
 .brand_story_button{

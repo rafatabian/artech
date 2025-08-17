@@ -78,10 +78,11 @@
     background-color: unset;
 }
 .marke_motiovational_text > h1{
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
     letter-spacing: 0.3px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
 }
 .marke_motiovational_text > h2{
     font-size: 17px;

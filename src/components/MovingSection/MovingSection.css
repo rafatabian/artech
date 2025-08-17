@@ -148,8 +148,9 @@
     .moving_section_main_container_dark > .moving_section_container > h2,
     .moving_section_main_container > .moving_section_container > h2{
         width: 100%;
-        font-size: 32px !important;
-        line-height: 37px !important;
+        font-size: 30px !important;
+        line-height: 35px !important;
+        font-weight: 400;
         margin: 0 0 0.5rem 0;
         padding: 0 2rem;
         text-align: left;
