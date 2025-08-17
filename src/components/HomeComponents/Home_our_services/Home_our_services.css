@@ -32,7 +32,6 @@
     text-align: center;
     font-size: 1.3rem;
     font-weight: 400;
-    color: #666;
     margin-bottom: 2.5rem;
 }
 .home_our_services_cards_container{
@@ -123,7 +122,8 @@
     text-align: left;
   }
   .home_our_services_title_container h1 {
-    font-size: 26px;
+    font-size: 30px;
+    font-weight: 400;
     text-align: left;
     line-height: 1.2;
     max-width: 270px;
