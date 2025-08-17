@@ -147,12 +147,12 @@
      }
 }
 @media screen and (max-width: 819px){
-     .plans_branding_list,
-     .plans_websites_list,
-     .plans_marketing_list{
+    .plans_branding_list,
+    .plans_websites_list,
+    .plans_marketing_list{
      height: 100%;
      margin-bottom: 1.5rem;
-}
+    }
 }
 @media screen and (max-width: 700px){
      .plans_card_container{
