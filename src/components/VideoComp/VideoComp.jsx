@@ -24,7 +24,7 @@ export default function Layout() {
         loop
         muted
         playsInline
-        preload="none" // helps load immediately
+        preload="none" 
       >
         <source src={back_video} type="video/mp4" />
       </video>

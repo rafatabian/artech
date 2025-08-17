@@ -5,9 +5,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 6rem 0; 
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    background-color: rgba(255, 255, 255, 0.5);
+   background-color: white;
 }
  .plans_card_container{
     width: 100%;
@@ -22,16 +20,15 @@
     height: 100%;
     width: 1000px;
     min-width: 300px;
-    min-height: 935px;
+    /* min-height: 535px; */
     max-width: 400px;
-    background-color: white;
     border-radius: 5px;
-    padding:  2.5rem 1.5rem;
+    padding:  2.5rem 2.2rem;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
-    background-color: #f7f9f8;
+    background-color: #eeeeee;
     position: relative;
     z-index: 7;
     box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.13)
@@ -43,19 +40,8 @@
     right: 0;
     border-radius: 5px;
     width: 100%;
-    height: 266px;
+    height: 240px;
 }
-.plans_pannel_option::after{
-   content: "";
-   position: absolute;
-   width: 100%;
-   height: 266px;
-   background: linear-gradient(transparent 95%,#f7f9f8);
-   top: 0;
-   left: 0;
-   right: 0;
-}
-
 .plans_pannele_title_container{
     width: 100%;
     height: 100%;
@@ -77,6 +63,42 @@
     z-index: 9;
     margin-top: 120px;
 }
+.plans_branding_list{
+    height: 135px;
+}
+.plans_websites_list{
+    height: 170px;
+}
+.plans_marketing_list{
+   height: 150px;
+}
+.plans_branding_list > h3,
+.plans_websites_list > h3,
+.plans_marketing_list > h3{
+  font-size: 23px;
+  margin-bottom: 5px;
+  font-family: var(--font-fam);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.plans_branding_list > h3 > svg,
+.plans_websites_list > h3 > svg,
+.plans_marketing_list > h3 > svg{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.plans_branding_list > h3 > svg{
+   fill: #D0872E
+}
+.plans_websites_list > h3 > svg{
+   fill: #1C69A8
+}
+.plans_marketing_list > h3 > svg{
+   fill: #C11007
+}
 .plans_pannel_option > a{
     display: block;
     width: 200px;
@@ -90,12 +112,22 @@
     text-decoration: none;
 }
 .plans_pannel_option > div:nth-child(3){
-    margin-top: 70px;
-    height: 450px;
+    margin-top: 50px;
 }
+.plans_pannel_option ul {
+    list-style: disc;
+    padding-left: 1rem;
+}
+
 .plans_pannel_option div:nth-child(2) > ul{
     width: 100%;
     max-width: 300px;
+}
+.plans_websites_list > ul > li,
+.plans_branding_list > ul > li,
+.plans_marketing_list > ul > li{
+    line-height: 20px;
+    color: #555;
 }
 .plans_pannel_option div:nth-child(3) > ul > li{
     font-family: var(--font-fam);
@@ -105,6 +137,7 @@
 .plans_pannel_option_details{
     margin-top: 2rem;
     margin-bottom: 0.7rem;
+    height: 72px;
     width:100%;
     text-align: start;
 }
@@ -112,6 +145,14 @@
      .plans_card_container{
         flex-wrap:wrap;
      }
+}
+@media screen and (max-width: 819px){
+     .plans_branding_list,
+     .plans_websites_list,
+     .plans_marketing_list{
+     height: 100%;
+     margin-bottom: 1.5rem;
+}
 }
 @media screen and (max-width: 700px){
      .plans_card_container{
