@@ -109,7 +109,7 @@ const proDetails = {
   title="STARTER"
   details={starterDetails}
   delivery="Fast delivery: 3-7 days"
-  price="Starting from: £499"
+  price="Starting from: £599"
   img={plans_runner_img}
   funct={handleSubmit}
 />
