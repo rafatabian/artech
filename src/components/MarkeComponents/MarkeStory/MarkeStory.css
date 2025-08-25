@@ -92,7 +92,9 @@
 }
 @media screen and (max-width:700px){
     .marke_story_background{
-        padding: 4rem 2rem;
+        padding: 6rem 2rem 3rem 2rem;
+        border-bottom: 2px solid #ababab;
+        background-color: white;
     }
 .marke_story_container{
     padding: unset;
@@ -101,8 +103,9 @@
 }
 .marke_story_text > h1{
     text-align: start;
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 400;
     letter-spacing: 0.3px;
     margin-bottom: 0.4rem;
 }
@@ -110,13 +113,13 @@
     font-size: 17px;
     line-height: 1.25;
     font-family: var(--font-fam);
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 2rem;
 }
 .marke_story_text > h3{
     font-size: 22px;
     font-family: var(--font-fam);
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 0.5rem;
 }
 .marke_story_button{

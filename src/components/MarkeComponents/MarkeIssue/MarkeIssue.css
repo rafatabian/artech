@@ -78,10 +78,13 @@ box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 @media screen and (max-width: 700px) {
 .marke_issues_background{
-    padding: 6rem 2rem;
+    padding: 6rem 2rem 3rem 2rem;
+    border-top: 2px solid #ababab;
 }
 .marke_issues > h1{
-  font-size: 28px;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 400;
   letter-spacing: 0.3px;
   margin-bottom: 1.5rem;
 }

@@ -7,6 +7,7 @@
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid #ababab;
 }
 
 .rebranding-container {
@@ -110,6 +111,10 @@
   background-color: #1f2937;
 }
 @media screen and (max-width:700px){
+  .rebranding-section{
+    background-color: white;
+    padding: 6rem 0 3rem 0;
+  }
   .rebranding-title {
     font-size: 30px;
     line-height: 35px;
@@ -126,12 +131,15 @@
   border-radius: unset;
   padding: 2rem;
   box-shadow:unset;
+  /* background:linear-gradient(to bottom, transparent 1%, white 99%); */
+  background-color:white;
 }
 .card-comparison{
   gap: unset;
 }
 .after-card{
-  border-top: 1px solid gray;
+  /* border-top: 1px solid gray; */
+  /* background-color: white; */
   background-color: white;
 }
 .card-image {

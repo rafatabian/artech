@@ -29,7 +29,7 @@
     text-align: center;
     font-size: 1.3rem;
     font-weight: 400;
-    color: #666;
+    color: #000000;
     margin-bottom: 1.5rem;
     margin-bottom: 4rem;
 }
@@ -84,7 +84,8 @@
 }
 @media screen and (max-width: 700px){
     .marke_servies_background{
-    padding:4rem 2rem;
+    padding:6rem 2rem 3rem 2rem;
+    border-bottom: 2px solid #ababab;
     }
     .marke_services_content{
         grid-template-columns: repeat(1, 1fr);
@@ -92,7 +93,9 @@
     .marke_services_conteiner > h1{
     width: 100%;
     text-align: start;
-    font-size: 28px;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 400;
     letter-spacing: 0.3px;
     margin-bottom: 0.4rem;
 }

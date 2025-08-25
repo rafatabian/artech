@@ -81,6 +81,7 @@
     font-size: 32px;
     line-height: 37px;
     max-width: 350px;
+    font-weight: 400;
     margin-bottom: 2rem;
 }
 .web_intro > div:first-child > h2{

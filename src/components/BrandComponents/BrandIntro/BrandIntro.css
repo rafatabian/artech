@@ -8,6 +8,7 @@
      -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     background-color: rgba(255, 255, 255, 0.5);
+    padding-top: 45px;
 }
 .marke_intro_container{
    width: 100%;
@@ -109,9 +110,9 @@
   }
 
   .marke_intro_text > h1 {
-    font-size: 30px;
+    font-size: 32px;
+    line-height: 37px;
     font-weight: 400;
-    line-height: 35px;
     max-width: 350px;
     margin-bottom: 2rem;
   }

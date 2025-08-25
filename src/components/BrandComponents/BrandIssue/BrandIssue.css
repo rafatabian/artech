@@ -2,6 +2,8 @@
   background: #fafafa;
   padding: 6rem 0;
   font-family: 'Inter', sans-serif;
+  border-bottom: 2px solid #ababab;
+  border-top: 2px solid #ababab;
 }
 
 .brand-issue-container {
@@ -65,7 +67,7 @@
   color: #555;
   font-style: italic;
     font-family: var(--font-fam);
-    margin-bottom: 1.3rem;
+    margin-bottom: 1rem;
 }
 
 .brand-issue-text.after {
@@ -102,15 +104,11 @@
   max-width: unset;
   border-radius: unset;
   box-shadow: unset;
-  border-bottom: 1px solid rgb(205, 205, 205);
   background-color: #fafafa;;
-  padding: 2.7rem 2rem;
-}
-.brand-issue-grid > div:first-child{
-  border-top: 1px solid rgb(205, 205, 205);
+  padding: 2rem 2rem;
 }
   .brand-issue-section {
-    padding: 4rem 0;
+    padding: 5rem 0 3rem 0;
   }
 .brand-issue-heading {
   width: 100%;
@@ -118,6 +116,6 @@
   line-height: 35px;
   font-weight: 400;
   max-width: 350px;
-  margin: 0 0 2rem 2rem;
+  margin: 0 2rem 2rem;
 }
 }

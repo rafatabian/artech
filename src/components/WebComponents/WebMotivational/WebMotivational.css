@@ -4,7 +4,7 @@
    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 7rem 0;
+    padding: 6rem 0;
 
 }
 .web_motivational{
@@ -60,16 +60,21 @@
 }
 }
 @media screen and (max-width:700px){
+   .web_motivational_background{
+    padding: 6rem 0 3rem 0;
+   }
     .web_motivational{
-    padding: 6rem 2rem;
+    padding: 0rem 2rem;
+    background-color: transparent;
 }
 .web_motivational > img{
     max-width: unset;
     margin-right: unset;
 }
 .web_motiovational_text > h1{
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 400;
     margin-bottom: 1.5rem;
     max-width: 450px;
 }

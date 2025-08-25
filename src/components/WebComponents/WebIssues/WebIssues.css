@@ -78,10 +78,14 @@
 }
 @media screen and (max-width: 700px) {
 .web_issues_background{
-    padding: 6rem 2rem;
+    padding: 6rem 2rem 3rem 2rem;
+    border-top: 2px solid rgb(104, 104, 104);
+    border-bottom: 2px solid rgb(104, 104, 104);
 }
 .web_issues > h1{
-  font-size: 28px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
   letter-spacing: 0.3px;
   margin-bottom: 1.5rem;
 }

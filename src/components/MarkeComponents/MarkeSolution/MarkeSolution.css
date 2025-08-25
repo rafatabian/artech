@@ -49,7 +49,7 @@
     font-size: 24px;
     font-family: var(--font-fam);
     font-weight: 400;
-    line-height: 29px;
+    line-height: 25px;
     color: #333;
 }
 .marke_solution > p{
@@ -88,7 +88,6 @@
         align-items: flex-start;
         justify-content: flex-start;
         gap: 1rem;
-        /* padding: 3rem 0 ; */
         margin-bottom: 2rem;
     }
     .marke_solution_container{
@@ -104,23 +103,38 @@
     }
 }
 @media screen and (max-width:700px){
+    .marke_solution_container > div:nth-last-child(2){
+    border-bottom: unset;
+}
     .marke_solubion_background{
-        padding: 3rem 0;
+        padding: 6rem 0 3rem 0;
+        border-top: 2px solid #ababab;
+        border-bottom: 2px solid #ababab;
     }
     .marke_solution{
-        margin-bottom: 1rem;
+    border-top:unset;
+    margin-bottom: 3rem;
+    gap: 0.8rem;
+}
+    .marke_solution{
+        margin-bottom: 1.5rem;
     }
     .marke_solution_container{
         display: flex;
         align-items: center;
         justify-content: center;
-         padding: 2rem;
+         padding: 0 2rem;
     }
    .marke_solution_container > h1{
-        font-size: 28px;
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 400;
         letter-spacing: 0.3px;
         margin-bottom: 1.5rem;
     }
+       .marke_solution_container > h2{
+        color: black;
+       }
 .marke_solution > p {
     line-height: unset;
 }

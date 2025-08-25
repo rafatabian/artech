@@ -31,7 +31,6 @@
     text-align: center;
     font-size: 1.3rem;
     font-weight: 400;
-    color: #666;
     margin-bottom: 5rem;
 }
 .markeging_graphs_numbers_container{
@@ -103,14 +102,16 @@
 }
 @media screen and (max-width:700px){
     .marke_graph_background{
-        padding: 4rem 2rem;
+        padding: 6rem 2rem 3rem 2rem;
+        border-bottom: 2px solid #ababab;
     }
     .marketing_graps_container{
         padding: unset;
     }
     .marketing_graps_container > h1{
-    font-size: 28px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 400;
     letter-spacing: 0.3px;
     margin-bottom: 0.8rem;
 }
@@ -118,7 +119,7 @@
     font-size: 17px;
         line-height: 1.25;
         font-family: var(--font-fam);
-        font-weight: 300;
+        font-weight: 400;
         margin-bottom: 2rem;
 }
 .marketing_graphs_bar_container{

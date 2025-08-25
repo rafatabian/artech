@@ -73,6 +73,9 @@
 }
 }
 @media screen and (max-width:700px){
+    .marke_motivational_background{
+    padding: 6rem 2rem 3rem 2rem;
+}
 .marke_motivational{
     padding: 0;
     background-color: unset;
@@ -88,7 +91,7 @@
     font-size: 17px;
     line-height: 1.25;
     font-family: var(--font-fam);
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 1.5rem;
 }
 .marke_motiovational_text > a{

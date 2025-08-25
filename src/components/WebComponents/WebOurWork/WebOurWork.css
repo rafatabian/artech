@@ -18,6 +18,7 @@
 .web_work_cards_conteiner{
     width: 100%;
     overflow-x: scroll;
+    overflow-y: hidden;
     display: flex;
     flex-direction: row;
     /*  */
@@ -81,15 +82,18 @@
 
 @media screen and (max-width: 700px) {
 .web_work{
-    padding: 6rem 2rem;
+    padding: 6rem 0 3rem 0;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    border-bottom: 2px solid rgb(104, 104, 104);
 }
 .web_work > h1{
     width: 100%;
     text-align: center;
-    font-size: 28px;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 400;
     margin-bottom: 1.5rem;
 }
 .web_work_cards_conteiner{
@@ -107,6 +111,7 @@
     line-height: 22px;
     margin-top: 1.5rem;
     margin-bottom: 1.3rem;
+    font-weight: 400;
 }
 .web_work_card > p{
     font-size: 16px;
