@@ -51,7 +51,7 @@ const PlanCard = ({ title, details, delivery, price, upfront, funct, img }) => (
 
     <div className="plans_pannel_option_details">
       <p>{delivery}</p>
-      <p>{price}</p>
+      {/* <p>{price}</p> */}
       {upfront && <p>{upfront}</p>}
     </div>
 
@@ -109,7 +109,7 @@ const proDetails = {
   title="STARTER"
   details={starterDetails}
   delivery="Fast delivery: 3-7 days"
-  price="Starting from: £599"
+  // price="Starting from: £799"
   img={plans_runner_img}
   funct={handleSubmit}
 />
@@ -118,7 +118,7 @@ const proDetails = {
   title="STANDARD"
   details={standardDetails}
   delivery="Delivery: 1-2 weeks"
-  price="Price: from £1999"
+  // price="Price: from £1999"
   upfront="50% upfront payment"
   img={plans_climber_img}
   funct={handleSubmit}
@@ -128,7 +128,7 @@ const proDetails = {
   title="PRO"
   details={proDetails}
   delivery="Delivery time: 2-3 weeks"
-  price="Price: £3500"
+  // price="Price: £3500"
   upfront="30% upfront payment"
   img={plans_rocket_img}
   funct={handleSubmit}
