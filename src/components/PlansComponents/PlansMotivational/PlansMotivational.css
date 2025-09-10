@@ -5,6 +5,7 @@
     justify-content: center;
     padding: 7rem 0;
     background-color: #f4f4f4;
+    border-top: 2px solid #ababab;
 }
 .plans_motivational{
     width: 100%;
@@ -75,21 +76,26 @@
 }
 }
 @media screen and (max-width:700px){
+    .plans_motivational_background{
+    padding: 6rem 2rem 3rem 2rem;
+}
 .plans_motivational{
     padding: 0;
     background-color: unset;
+    box-shadow: unset;
 }
 .plans_motiovational_text > h1{
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
     letter-spacing: 0.3px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
 }
 .plans_motiovational_text > h2{
     font-size: 17px;
     line-height: 1.25;
     font-family: var(--font-fam);
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 1.5rem;
 }
 .plans_motiovational_text > a{

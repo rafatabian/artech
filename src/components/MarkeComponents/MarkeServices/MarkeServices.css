@@ -85,7 +85,6 @@
 @media screen and (max-width: 700px){
     .marke_servies_background{
     padding:6rem 2rem 3rem 2rem;
-    border-bottom: 2px solid #ababab;
     }
     .marke_services_content{
         grid-template-columns: repeat(1, 1fr);
